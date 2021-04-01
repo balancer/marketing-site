@@ -1,0 +1,26 @@
+
+
+
+@font-face {
+  font-family: "Tiempos Headline Medium";
+  src: url("../fonts/tiemposDispMed.woff2") format("woff2"),
+    url("../fonts/tiemposDispMed.woff") format("woff"), format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  @apply font-extrabold text-3xl pb-4;
+  font-family: "Tiempos Headline Medium";
+  line-height: 34px;
+}
+
+h2, .h2 {
+  font-size: 48px;
+}
+
+.transition-standard {
+  @apply transition duration-200 ease-in-out;
+}
+
+

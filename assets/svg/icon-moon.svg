@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Artboard-Copy-4" transform="translate(-81.000000, -1192.000000)" stroke="#000000" stroke-width="1.25633695">
+            <g id="Group-7" transform="translate(80.000000, 977.000000)">
+                <g id="moon" transform="translate(2.000000, 216.000000)">
+                    <path d="M22,11.9909465 C21.4639603,17.7914393 16.5073388,22.1736179 10.684878,21.994713 C4.86241731,21.8158081 0.184191894,17.1375827 0.00528700319,11.315122 C-0.173617888,5.49266122 4.20856066,0.536039673 10.0090535,-1.08785494e-15 C7.48637631,3.41289003 7.84021905,8.15782816 10.8411954,11.1588046 C13.8421718,14.159781 18.58711,14.5136237 22,11.9909465 L22,11.9909465 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
