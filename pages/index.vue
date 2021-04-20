@@ -4,6 +4,11 @@
   <HeroHome />
   <StatsHome />
   <ForInvestors />
+  <ForTraders />
+  <ForBuilders />
+  <Footer />
+
+
 
 
   <!-- <div class="container">

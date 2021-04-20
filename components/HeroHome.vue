@@ -23,8 +23,9 @@ export default {};
 <style scoped>
 .hero {
   @apply min-h-screen flex justify-center items-end md:items-center bg-cover bg-no-repeat bg-center;
-  background-image: url(~assets/svg/hero-home-bg.svg);
-  min-height: calc(100vh - 120px);
+  background-color: #eee;
+  /* background-image: url(~assets/svg/hero-home-bg2.svg); */
+  min-height: calc(100vh - 160px);
 }
 
 .hero-content {
@@ -39,9 +40,7 @@ export default {};
 .btn {
     @apply p-4 bg-blue-900 rounded-lg text-white font-semibold text-center shadow-xl;
 }
-.btn-primary {
-    background-image: linear-gradient(225deg, #FF00FF 0%, #0000FF 100%);    
-}
+
 .btn-secondary {
     @apply bg-white text-black;
 }

@@ -1,5 +1,15 @@
 
+--color-grey-blue: #718B98;
 
+
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { 
+    font-family: 'Inter var', sans-serif; 
+    font-feature-settings: "ss01";
+  }
+}
 
 @font-face {
   font-family: "Tiempos Headline Medium";
@@ -7,20 +17,39 @@
     url("../fonts/tiemposDispMed.woff") format("woff"), format("opentype");
   font-style: normal;
   font-weight: 400;
+
+}
+
+
+body {
+  background-color: #fafafa;
 }
 
 h1 {
   @apply font-extrabold text-3xl pb-4;
   font-family: "Tiempos Headline Medium";
-  line-height: 34px;
+  line-height: 64px;
+  color: var(--color-grey-blue);
 }
 
 h2, .h2 {
   font-size: 48px;
+  
 }
 
 .transition-standard {
   @apply transition duration-200 ease-in-out;
 }
 
+.content-container {
+  @apply mx-auto;
+  max-width: 1440px;
+}
+.btn-primary {
+  background-image: linear-gradient(225deg, #FF00FF 0%, #0000FF 100%);    
+}
+
+.bg-aave {
+  background-image: linear-gradient(223deg, #AF52A0 0%, #2FB6C6 100%);
+}
 

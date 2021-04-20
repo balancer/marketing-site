@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>balancer-bal-logo</title>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-4" transform="translate(-697.000000, -1899.000000)">
+            <g id="Group-38" transform="translate(-1.000000, 1507.000000)">
+                <g id="balancer-bal-logo" transform="translate(698.000000, 392.000000)">
+                    <path d="M50,0 C77.61,0 100,22.39 100,50 C100,77.61 77.61,100 50,100 C22.39,100 0,77.61 0,50 C0,22.39 22.39,0 50,0 Z" id="SVGID" fill="#1E1E1E"></path>
+                    <path d="M50.75,70.9 C34.76,70.9 21.8,66.28 21.8,60.09 C21.8,56.86 25.33,53.95 30.98,51.9 C35.39,54.73 42.79,56.18 51.18,56.18 C59.37,56.18 66.61,54.41 71.06,51.7 C76.39,53.73 79.7,56.56 79.7,59.68 C79.7,65.88 66.74,70.9 50.75,70.9 Z" id="SVGID-2" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M50.92,54.79 C38.8,54.79 28.97,50.99 28.97,46.3 C28.97,43.7 32,41.37 36.75,39.82 C40.14,41.59 45.22,42.72 50.92,42.72 C56.62,42.72 61.7,41.59 65.09,39.82 C69.85,41.38 72.8700076,43.7 72.8700076,46.3 C72.88,50.99 63.05,54.79 50.92,54.79 Z" id="SVGID-3" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    <path d="M50.84,41.31 C41.47,41.31 33.87,38.17 33.87,34.31 C33.87,30.45 41.47,27.31 50.84,27.31 C60.21,27.31 67.81,30.45 67.81,34.31 C67.81,38.17 60.21,41.31 50.84,41.31 L50.84,41.31 Z" id="SVGID-4" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
