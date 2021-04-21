@@ -38,7 +38,7 @@ export default {};
     line-height: 34px;
 }
 .btn {
-    @apply p-4 bg-blue-900 rounded-lg text-white font-semibold text-center shadow-xl;
+    @apply p-4 bg-blue-900 rounded-lg text-white font-semibold text-center shadow-lg;
 }
 
 .btn-secondary {
