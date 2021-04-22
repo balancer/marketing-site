@@ -2,10 +2,10 @@
   <div class="flex pb-5">
     <div class="mr-3">
       <div v-if="description" class="mt-2">        
-        <img class="mr-3" :src="require('assets/svg/' + icon)" alt="" />
+        <img class="icon" :src="require('assets/svg/' + icon)" alt="" />
       </div>
       <div v-else>        
-        <img class="mr-3" :src="require('assets/svg/' + icon)" alt="" />
+        <img class="icon" :src="require('assets/svg/' + icon)" alt="" />
       </div>
     </div>
     <div>
@@ -25,4 +25,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+
+.icon {
+  min-width: 24px;
+}
+</style>

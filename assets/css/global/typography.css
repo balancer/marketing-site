@@ -3,6 +3,10 @@ h1 {
   font-family: "Tiempos Headline Medium";
 }
 
+h2 {
+    @apply font-bold text-xl md:text-2xl pb-2 text-black;
+}
+
 .h1-sans-serif {
   @apply font-body;
   letter-spacing: -0.5px;
@@ -42,13 +46,13 @@ h1 {
 }
 
 .gradient-text-alt {
-    animation: gradient-text-alt-motion 30s linear infinite;
+    animation: gradient-text-motion 30s linear infinite;
     background: linear-gradient(
       45deg,
       rgba(255, 0, 255, 1) 0%,
-      rgba(0, 0, 255, 1) 33%,
+      rgba(255, 213, 0, 1) 33%,
       rgba(255, 0, 255, 1) 66%,
-      rgba(0, 0, 255, 1) 100%
+      rgba(255, 213, 0, 1) 100%
     );
     background-size: 200% 100%;
     -webkit-background-clip: text;

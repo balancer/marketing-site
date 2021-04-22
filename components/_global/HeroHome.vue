@@ -33,9 +33,7 @@ export default {};
   background: rgba(255,255,255,0.90);
 }
 
-.btn-hero {
-    min-width: 140px;
-}
+
 
 </style>
 
