@@ -22,12 +22,7 @@ module.exports = {
       ],
       display: [
         'Tiempos Headline Medium',
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Helvetica',
-        'Arial',
-        'sans-serif',
+        'serif',
         '"Apple Color Emoji"',
         '"Segoe UI Emoji"'
       ]
@@ -44,7 +39,9 @@ module.exports = {
       DEFAULT: theme('colors.gray.100', 'currentColor')
     }),
     extend: {
+      
       colors: {
+        accent: '#0000ff',
         gray: {
           50: '#F8FAFC',
           100: '#EAF0F6',
@@ -81,7 +78,22 @@ module.exports = {
           800: '#e100e1',
           900: '#d700d7'
         }
-      }
+      },
+      fontSize: {
+        xs: ['0.75rem', { lineHeight: '1rem' }], // 12 / 16px
+        sm: ['0.875rem', { lineHeight: '1.25rem' }], // 14 / 20px
+        base: ['0.9375rem', { lineHeight: '1.3125rem' }], // 15 / 21px
+        lg: ['1.125rem', { lineHeight: '1.75rem' }], // 18 / 28px
+        xl: ['1.25rem', { lineHeight: '1.75rem' }], // 20 / 28px
+        '2xl': ['1.5rem', { lineHeight: '1.75rem' }], // 24 / 28px
+        '3xl': ['1.875rem', { lineHeight: '2.25rem' }], // 30 / 36px        
+        '4xl': ['2.25rem', { lineHeight: '2.5rem' }], // 36 / 40px      
+        '5xl': ['3rem', { lineHeight: '1' }], // 48 / 40px
+        '6xl': ['3.75rem', { lineHeight: '1' }],
+        '7xl': ['4.5rem', { lineHeight: '1' }],
+        '8xl': ['6rem', { lineHeight: '1' }],
+        '9xl': ['8rem', { lineHeight: '1' }],
+      },      
     },
   },
   variants: {

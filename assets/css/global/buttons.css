@@ -1,0 +1,25 @@
+.btn {
+    @apply h-12 flex items-center justify-center bg-blue-900 rounded-lg text-white font-semibold shadow-lg mr-3 transition duration-200 ease-in-out;
+      
+} 
+
+.btn-primary {
+    background-image: linear-gradient(225deg, #FF00FF 0%, #0000FF 100%);    
+}
+
+.btn-primary::before {
+    background-image: linear-gradient(225deg, #FF00FF 50%, #0000FF 100%);    
+}
+
+
+.btn-primary:hover::before {
+    background-image: linear-gradient(225deg, #FF00FF -20%, #0000FF 100%);    
+}
+
+
+.btn-secondary {
+    @apply bg-white text-black hover:shadow-lg hover:text-blue-500;    
+}       
+
+
+

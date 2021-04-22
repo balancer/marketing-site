@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="content-container">
-      <div class="px-4 py-8 md:py-16 grid grid-cols-1 md:grid-cols-4 text-white">
+      <div class="px-4 py-16 grid grid-cols-1 md:grid-cols-4 text-white">
         <div class="pb-8 md:pb-0">
           <p class="text-gray-400 pb-1">Products</p>
           <p class="pb-1"><a href="https://balancer.fi/invest">Invest</a></p>
@@ -37,7 +37,7 @@
             >
           </p>
         </div>
-        <div>
+        <div class="pb-8 md:pb-0">
           <p class="text-gray-400 pb-1">Stay in touch</p>
           <div class="flex relative items-center">
           <input

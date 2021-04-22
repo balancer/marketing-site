@@ -1,23 +1,11 @@
 <template>
   <section class="p-4">
     <div class="content-container">
-      <div class="grid grid-cols-2 md:grid-cols-4">
-        <div class="stat-group justify-self-center">
-          <p class="label">Fees earned (7d)</p>
-          <p class="stat">$2.28m</p>
-        </div>
-        <div class="stat-group justify-self-center">
-          <p class="label">Trade vol (7d)</p>
-          <p class="stat">$326.4m</p>
-        </div>
-        <div class="stat-group justify-self-center">
-          <p class="label">Invested</p>
-          <p class="stat">$2.01b</p>
-        </div>
-        <div class="stat-group justify-self-center">
-          <p class="label">Total investors</p>
-          <p class="stat">26.9k</p>
-        </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 pt-8 md:pt-0 my-8 md:my-2">
+        <Stat label="Trade vol (7d)" stat="$2.28m" />
+        <Stat label="Fees earned" stat="$326.4m" />
+        <Stat label="Total invested" stat="$2.01b" />
+        <Stat label="Total investors" stat="26.9k" />
       </div>
     </div>
   </section>
@@ -28,9 +16,6 @@ export default {};
 </script>
 
 <style scoped>
-.stat-group {
-}
-.stat {
-  @apply text-2xl font-semibold;
-}
+
+
 </style>
