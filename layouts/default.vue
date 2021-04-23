@@ -2,10 +2,23 @@
   <div>
     <!-- <AnnouncementBar /> -->
     <Header />
+    <Sidebar />    
     <Nuxt />
     <Footer />
   </div>
 </template>
+
+<script>
+
+import Sidebar from "@/components/menu/Sidebar.vue";
+
+export default {
+  components: {
+    Sidebar
+  },
+}
+</script>
+
 
 <style>
 html {
