@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-12">
+  <div class="pb-12 max-w-lg">
     <img class="pb-4" :src="require('assets/svg/' + icon)" alt="" />
     <h2>{{title}}</h2>
     <p v-if="description">

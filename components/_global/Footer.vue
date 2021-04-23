@@ -37,7 +37,7 @@
             >
           </p>
         </div>
-        <div class="pb-8 md:pb-0">
+        <div class="">
           <p class="text-gray-400 pb-1">Stay in touch</p>
           <div class="flex relative items-center">
           <input

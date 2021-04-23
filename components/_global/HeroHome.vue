@@ -24,7 +24,7 @@ export default {};
 .hero {
   @apply min-h-screen flex justify-center items-end md:items-center bg-cover bg-no-repeat bg-center;
   background-color: #eee;
-  background-image: url(~assets/svg/hero-home-bg.svg);
+  /* background-image: url(~assets/svg/hero-home-bg.svg); */
   min-height: calc(100vh - 160px);
 }
 

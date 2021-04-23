@@ -1,6 +1,9 @@
 <template>
   <div>
+    <!-- <AnnouncementBar /> -->
+    <Header />
     <Nuxt />
+    <Footer />
   </div>
 </template>
 
@@ -59,4 +62,20 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+
+.slideup-enter-active {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.slideup-leave-active {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.slideup-enter,
+.slideup-leave-to {
+  opacity: 0;
+  transform: translate3d(0, 3px, 0);
+}
+
 </style>

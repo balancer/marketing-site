@@ -4,7 +4,7 @@
       <div
         class="grid grid-cols-1 md:grid-cols-2 px-4 lg:px-0 py-8 md:py-16 mb-8 items-center bg-white"
       >
-        <div class="md:mx-auto max-w-md pr-4">
+        <div class="md:mx-auto max-w-lg pr-4">
           <p class="eyebrow gradient-text pb-2 font-medium">For builders</p>
           <h1 class="h1-sans-serif">
             A protocol for programmable&nbsp;liquidity
@@ -25,6 +25,7 @@
             alt=""
           />
         </div>
+        
       </div>
       <div class="case-study">
         <div
@@ -48,7 +49,7 @@
               </li>
             </ol>
           </div>
-          <div class="max-w-lg">
+          <div class="md:mx-auto max-w-md">
             <img class="md:py-4" src="~assets/images/people/stani.png" alt="" />
             <p class="py-4 italic font-medium">
               “Part of what makes DeFi so exciting is its composability, and

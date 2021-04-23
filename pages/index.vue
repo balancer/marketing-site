@@ -1,18 +1,17 @@
 <template>
 <div>
-  <Header />
   <HeroHome />
   <StatsHome />
   <ForInvestors />
   <ForTraders />
   <ForBuilders />
-  <Footer />
-
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  transition: 'slideup'
+}
 </script>
 
 <style>

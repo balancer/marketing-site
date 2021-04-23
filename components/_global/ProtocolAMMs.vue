@@ -4,7 +4,7 @@
       <div
         class="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 lg:px-0 py-8 md:py-16 mb-8 items-center bg-white"
       >
-        <div class="md:mx-auto max-w-md pr-4">
+        <div class="md:mx-auto max-w-lg pr-4">
           <p class="eyebrow gradient-text pb-2 font-medium">SMARTER POOLS</p>
 
           <h1 class="h1-sans-serif">

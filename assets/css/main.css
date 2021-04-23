@@ -18,20 +18,6 @@ html { font-family: 'Inter', sans-serif; }
 
 }
 
-body {
-  
-}
-
-/* h1 {
-  @apply font-display text-gray-700 font-extrabold text-3xl pb-4 leading-loose;
-} */
-
-/* h2, .h2 {
-  font-size: 48px;
-} */
-
-
-
 .content-container {
   @apply max-w-screen-2xl mx-auto;
 }

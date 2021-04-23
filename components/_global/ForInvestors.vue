@@ -4,14 +4,13 @@
       <div
         class="grid grid-cols-1 md:grid-cols-2 px-4 lg:px-0 py-8 md:py-16 mb-8 items-center bg-white"
       >
-        <div class="md:mx-auto max-w-md pr-4">
+        <div class="md:mx-auto max-w-lg pr-4">
           <p class="eyebrow gradient-text pb-2 font-medium">For investors</p>
           <h1 class="h1-sans-serif">
             Continuous self-balancing&nbsp;portfolios
           </h1>
           <p class="pb-4">
-            Balancer is an automated portfolio manager turning the concept of an
-            index fund on its head: instead of paying fees to portfolio managers
+            Balancer turns the concept of an index fund on its head: instead of paying fees to portfolio managers
             to rebalance your portfolio, you collect fees from traders who
             rebalance your portfolio by following arbitrage opportunities.
           </p>
