@@ -50,9 +50,10 @@ export default {};
   .h1-hero {
     font-size: 48px;
   }
-  .p-hero {
+  .p-hero, .btn-hero {
     font-size: 18px;
   }
+
 }
 
 @media (min-width: 1200px) and (min-height: 768px) {
@@ -60,10 +61,12 @@ export default {};
     font-size: 72px;
     margin-bottom: 16px;
   }
-  .p-hero {
+  .p-hero, .btn-hero {
     font-size: 20px;
-    margin-bottom: 16px;
   }
+  .p-hero{
+    margin-bottom: 16px;
+  }  
 }
 
 

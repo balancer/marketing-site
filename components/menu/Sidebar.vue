@@ -27,6 +27,12 @@
               to="developers"
               >Developers</NuxtLink
             >
+            <NuxtLink
+              @click.native="toggleSidebar"
+              class="link text-lg leading-8"
+              to="balancer-V2"
+              >V2</NuxtLink
+            >
           </div>
           <div class="pb-4">
             <p class="text-gray-400 pb-1">Products</p>
@@ -69,7 +75,7 @@
             <p class="pb-1">
               <a
                 @click="toggleSidebar"
-                href="https://medium.com/balancer-protocol"
+                href="https://vote.balancer.finance/"
                 >Snapshot governance</a
               >
             </p>
@@ -141,7 +147,7 @@ export default {
   padding: 3rem 20px 2rem 20px;
   width: 300px;
   color: #fff;
-  transition: 0.2s all ease-in-out; 
+  transition: 0.2s all ease-in-out;
 }
 @media (min-width: 768px) {
   .sidebar-panel {

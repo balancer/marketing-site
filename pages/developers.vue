@@ -2,7 +2,13 @@
   <div>
     <section class="px-4 pb-16">
       <div>
-        <img width="1000" height="618" class="pt-1 pb-8" src="~assets/images/hero-protocol.png" alt="" />
+        <img
+          width="1000"
+          height="618"
+          class="pt-1 pb-8"
+          src="~assets/images/hero-protocol.png"
+          alt=""
+        />
       </div>
       <div>
         <h1>A core building block of DeFi</h1>
@@ -34,10 +40,121 @@
 
     <section>
       <div class="px-4 pb-12">
-        <p class="eyebrow gradient-text pb-2 font-medium">Liquidity Bootstapping Pools</p>
+        <div>
+          <p class="eyebrow gradient-text pb-2 font-medium">
+            Developer-friendly foundation
+          </p>
           <h1 class="h1-sans-serif">
-            Launch your token fairly with less capital upfront
+            Quickly set up liquidity management systems
           </h1>
+          <p class="pb-4">
+            It's the first innings of AMMs. Balancer is a launchpad for
+            developers building use-case specific AMMs with different trade-offs
+            optimizing for different goals and communities.
+          </p>
+        </div>
+        <div class="py-4">
+          <h3>
+            Balancer V2 lets you focus on new AMM logic instead of low-level
+            accounting
+          </h3>
+          <p>
+            Balancer V2 separates the AMM logic from the token management and
+            accounting. So you can innovate with different AMM strategies
+            without having to worry about low-level token transfers, balance
+            accounting, security checks and smart order routing. With Balancer
+            V2, this all comes out of the box.
+          </p>
+        </div>
+        <div class="py-4">
+          <Feature
+            title="Balancer protocol"
+            description="The Balancer protocol vault handles low level token management and balance accounting."
+            icon="icon-moon.svg"
+          />
+          <Feature
+            title="Developers"
+            description="Developers create pools with custom AMM logic to build use-case specific financial applications."
+            icon="icon-moon.svg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="px-4 pb-12">
+        <h1 class="h1-sans-serif">Start building</h1>
+        <LinkCard title="Create a smart pool" description="A code walkthrough to create your first one" />
+        <LinkCard title="Make a Liquidity Bootstrapping Pool" description="Tips on how to successfully launch" />
+        <LinkCard title="Get Balancer data" description="Via the Balancer subgraph" />
+        <LinkCard title="Get Balancer pool pricing data" description="Via the 'Instant' or 'Resilient' oracles" />        
+      </div>
+    </section>
+
+        <section>
+      <div class="px-4 pb-12">
+        <h1 class="h1-sans-serif">Projects building on Balancer</h1>
+          <div class="flex py-3 items-center gap-3">
+            <div>
+              <img src="@/assets/svg/tokens/aave.svg" alt="">
+            </div>
+            <div>
+              <h4 class="font-semibold">Aave</h4>
+              <p>Asset Manager &amp; 80/20 Safety Pool</p>
+            </div>
+          </div>
+          <div class="flex py-3 items-center gap-3">
+            <div>
+              <img src="@/assets/svg/tokens/gno.svg" alt="">
+            </div>
+            <div>
+              <h4 class="font-semibold">Gnosis</h4>
+              <p>Asset Manager &amp; 80/20 Safety Pool</p>
+            </div>
+          </div>
+          <div class="flex py-3 items-center gap-3">
+            <div>
+              <img src="@/assets/images/tokens/element.png" alt="">
+            </div>
+            <div>
+              <h4 class="font-semibold">Element</h4>
+              <p>Asset Manager &amp; 80/20 Safety Pool</p>
+            </div>
+          </div>
+          <div class="flex py-3 items-center gap-3">
+            <div>
+              <img src="@/assets/images/tokens/element.png" alt="">
+            </div>
+            <div>
+              <h4 class="font-semibold">Powerpool</h4>
+              <p>Asset Manager &amp; 80/20 Safety Pool</p>
+            </div>
+          </div>                              
+      </div>
+    </section>
+
+    <section>
+            <div class="px-4 pb-12">
+        <h1 class="h1-sans-serif">A few things you can build with Smart pools</h1>
+<p>Smart pools are dynamic liquidity pools with parameters that can be adjusted via smart contract code. Pool owners can specify who can join the pool. Innovate freely on Balancer’s open-source code. Here’s a few ideas to get you started.</p>
+        <LinkCard title="A fair token launch event" description="Via a Liquidity Bootstrapping Pool (LBP)" />
+        <LinkCard title="An index fund" description="Via a Swing Trading Pool" />
+        <LinkCard title="A Smart Treasury" description="Via a Buyback &amp; Make mechanism" />
+        <LinkCard title="An investors club" description="e.g. Whitelist the pool to KYC investors only" />     
+        <LinkCard title="Pool settings for experimentation" description="Capped token supply pools for testing" />     
+
+
+            </div>
+    </section>
+
+    <section>
+      <div class="px-4 pb-12">
+        <p class="eyebrow gradient-text pb-2 font-medium">
+          Liquidity Bootstapping Pools
+        </p>
+        <h1 class="h1-sans-serif">
+          Launch your token fairly with less capital upfront
+        </h1>
         <p class="pb-4">
           A Liquidity Bootstrapping Pool (LBP) is an adjustable Balancer pool
           designed for initial distribution and price discovery of new assets.
@@ -91,13 +208,12 @@
         </div>
       </div>
     </section>
-
   </div>
 </template>
 
 <script>
 export default {
-  transition: 'slideup'
+  transition: "slideup"
 };
 </script>
 

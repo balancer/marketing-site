@@ -36,6 +36,7 @@ export default {
   components: [
     '~/components/_global',
     '~/components/menu',
+    '~/components/cards',
   ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules

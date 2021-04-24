@@ -11,7 +11,12 @@
       <div class="mobile-hide">
         <NuxtLink class="link" to="protocol">Protocol</NuxtLink>
         <NuxtLink class="link" to="developers">Developers</NuxtLink>
-        <NuxtLink class="link" to="developers">Docs</NuxtLink>
+        <NuxtLink class="link" to="balancer-V2">V2</NuxtLink>
+        <a
+          class="link hover:text-accent transition-standard"
+          href="https://docs.balancer.finance"
+          >Docs</a
+        >        
         <!-- <NuxtLink class="link hover:text-accent transition-standard" to="whitepaper">Whitepaper</NuxtLink> -->
         <a
           class="link hover:text-accent transition-standard"
@@ -22,7 +27,7 @@
     </nav>
     <div class="flex items-center">
       <a
-        class="px-4 mr-3 py-2 rounded-3xl border border-grey"
+        class="px-4 mr-2 py-2 rounded-3xl border border-grey"
         href="https://app.balancer.fi/invest"
         >Launch&nbsp;app</a
       >
@@ -53,7 +58,7 @@ export default {
   }
 }
 .header {
-  @apply h-16 md:h-20 px-4 py-2 md:py-6 flex justify-between items-center;
+  @apply h-16 md:h-20 px-4 flex justify-between items-center;
   overflow: auto;
 }
 .link {

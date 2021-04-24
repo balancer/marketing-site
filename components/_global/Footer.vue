@@ -23,7 +23,7 @@
         <div class="pb-8 md:pb-0">
           <p class="text-gray-400 pb-1">Ecosystem</p>
           <p class="pb-1">
-            <a href="https://medium.com/balancer-protocol"
+            <a href="https://vote.balancer.finance/"
               >Snapshot governance</a
             >
           </p>
