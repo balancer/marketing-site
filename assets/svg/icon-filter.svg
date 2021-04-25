@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Group</title>
-    <g id="Protocol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Mobile-home" transform="translate(-12.000000, -3938.000000)">
-            <g id="Group-4" transform="translate(0.000000, 3723.000000)">
-                <g id="Group" transform="translate(12.000000, 215.000000)">
-                    <polygon id="Path" points="0 0 27 0 27 27 0 27"></polygon>
-                    <circle id="Oval" stroke="#000000" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" cx="6.75" cy="11.25" r="2.25"></circle>
-                    <line x1="6.75" y1="4.5" x2="6.75" y2="9" id="Path" stroke="#000000" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></line>
-                    <line x1="6.75" y1="13.5" x2="6.75" y2="22.5" id="Path" stroke="#000000" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></line>
-                    <circle id="Oval" stroke="#000000" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" cx="13.5" cy="18" r="2.25"></circle>
-                    <line x1="13.5" y1="4.5" x2="13.5" y2="15.75" id="Path" stroke="#000000" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></line>
-                    <line x1="13.5" y1="20.25" x2="13.5" y2="22.5" id="Path" stroke="#000000" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></line>
-                    <circle id="Oval" stroke="#000000" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" cx="20.25" cy="7.875" r="2.25"></circle>
-                    <line x1="20.25" y1="4.5" x2="20.25" y2="5.625" id="Path" stroke="#000000" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></line>
-                    <line x1="20.25" y1="10.125" x2="20.25" y2="22.5" id="Path" stroke="#000000" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></line>
-                </g>
-            </g>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-filter</title>
+    <g id="icon-filter" stroke="none" stroke-width="1.25" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group" transform="translate(1.000000, 1.000000)" stroke="#000000">
+            <circle id="Oval" cx="2.75" cy="8.25" r="2.75"></circle>
+            <line x1="2.75" y1="0" x2="2.75" y2="5.5" id="Path"></line>
+            <line x1="2.75" y1="11" x2="2.75" y2="22" id="Path"></line>
+            <circle id="Oval" cx="11" cy="16.5" r="2.75"></circle>
+            <line x1="11" y1="0" x2="11" y2="13.75" id="Path"></line>
+            <line x1="11" y1="19.25" x2="11" y2="22" id="Path"></line>
+            <circle id="Oval" cx="19.25" cy="4.125" r="2.75"></circle>
+            <line x1="19.25" y1="0" x2="19.25" y2="1.375" id="Path"></line>
+            <line x1="19.25" y1="6.875" x2="19.25" y2="22" id="Path"></line>
         </g>
     </g>
 </svg>

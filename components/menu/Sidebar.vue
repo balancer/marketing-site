@@ -68,17 +68,22 @@
                 >Whitepaper</a
               >
             </p>
-            <p><a href="https://github.com/balancer-labs/">Github code</a></p>
           </div>
           <div class="pb-4">
             <p class="text-gray-400 pb-1">Ecosystem</p>
             <p class="pb-1">
-              <a
-                @click="toggleSidebar"
-                href="https://vote.balancer.finance/"
+              <a @click="toggleSidebar" href="https://vote.balancer.finance/"
                 >Snapshot governance</a
               >
             </p>
+            <p class="pb-1">
+              <a
+                @click="toggleSidebar"
+                href="https://duneanalytics.com/balancerlabs"
+                >Dune analytics</a
+              >
+            </p>
+
             <p class="pb-1">
               <a @click="toggleSidebar" href="https://forum.balancer.finance/"
                 >Forum</a
@@ -91,6 +96,42 @@
                 >Grants</a
               >
             </p>
+          </div>
+
+          <div class="pb-4">
+            <div class="flex">
+              <a
+                class="mr-2"
+                @click="toggleSidebar"
+                href="https://twitter.com/BalancerLabs"
+                ><img src="@/assets/svg/icon-twitter.svg" alt=""
+              /></a>
+
+              <a
+                class="mr-2"
+                @click="toggleSidebar"
+                href="https://discord.com/invite/ARJWaeF"
+                ><img src="@/assets/svg/icon-discord.svg" alt=""
+              /></a>
+
+              <a
+                class="mr-2"
+                @click="toggleSidebar"
+                href="https://medium.com/balancer-protocol"
+                ><img src="@/assets/svg/icon-medium.svg" alt=""
+              /></a>
+
+              <a
+                class="mr-2"
+                @click="toggleSidebar"
+                href="https://github.com/balancer-labs/"
+                ><img src="@/assets/svg/icon-github.svg" alt=""
+              /></a>
+
+              <a @click="toggleSidebar" href="mailto:contact@balancer.finance"
+                ><img src="@/assets/svg/icon-mail.svg" alt=""
+              /></a>
+            </div>
           </div>
         </slot>
       </div>

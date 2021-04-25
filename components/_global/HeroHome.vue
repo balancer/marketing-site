@@ -1,16 +1,18 @@
 <template>
   <section class="hero">
     <div class="hero-content">
-      <h1 class="h1-hero transition-standard">Balancer is an automated portfolio manager and trading&nbsp;platform</h1>
+      <transition name="h1"> 
+        <h1 class="h1-hero transition-standard">Balancer is an automated portfolio manager and trading&nbsp;platform</h1>
+      </transition>
       <div class="pb-4">
           <p class="p-hero transition-standard">
-        High risk-adjusted returns for investors. <br /> Cheap crypto-asset exchanges for
+        High risk-adjusted returns for investors.<br />Cheap crypto-asset swaps for
         traders.
       </p>
       </div>
       <div class="flex justify-center pb-2 md:pb-0">
-        <a class="btn btn-primary btn-hero" href="https://app.balancer.fi/invest">Invest</a>
-        <a class="btn btn-secondary btn-hero" href="https://app.balancer.fi/trade">Trade</a>
+        <a class="btn btn-secondary btn-hero" href="https://app.balancer.fi/invest">Invest</a>
+        <a class="btn btn-skeleton-white btn-hero" href="https://app.balancer.fi/trade">Trade</a>
       </div>
     </div>
   </section>
@@ -23,7 +25,7 @@ export default {};
 <style scoped>
 .hero {
   @apply min-h-screen flex justify-center items-end items-center bg-cover bg-no-repeat bg-center;
-  background-color: #eee;
+  background-color: #21222C;
   background-image: url(~assets/svg/hero-home3.svg);
   min-height: 640px;
 }
@@ -31,6 +33,10 @@ export default {};
   .hero {
     min-height: calc(100vh - 200px);
   }
+}
+
+.btn-hero {
+  
 }
 
 .hero-content {
@@ -67,6 +73,21 @@ export default {};
   .p-hero{
     margin-bottom: 16px;
   }  
+}
+
+
+.h1-enter {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.h1-enter {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.h1-enter-active {
+  transition: 1s all ease-out;
 }
 
 

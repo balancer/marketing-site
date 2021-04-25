@@ -1,12 +1,14 @@
 <template>
   <header class="header">
-    <nav class="flex">
-      <NuxtLink class="link" to="/"
-        ><img class="logo" src="~assets/svg/logo-balancer.svg" alt="" /><span
-          class="logotype"
-          >Balancer</span
-        >
-      </NuxtLink>
+    <nav class="flex">      
+      <transition name="fade" appear mode="out-in">
+        <NuxtLink class="link" to="/"        
+          ><img class="logo" src="~assets/svg/logo-balancer.svg" alt="" /><span
+            class="logotype"
+            >Balancer</span
+          >
+        </NuxtLink>
+      </transition>
 
       <div class="mobile-hide">
         <NuxtLink class="link" to="protocol">Protocol</NuxtLink>
@@ -67,4 +69,19 @@ export default {
 .logotype {
   @apply px-3 pr-6 md:pr-2 font-semibold;
 }
+
+
+.fade-enter-from {
+  opacity: 0;
+  transform: translate3d(0,100px,0)
+  
+}
+.fade-enter-to {
+  opacity: 1;
+  transform: translate3d(0,0,0)
+}
+.fade-enter-active {
+  transition: 1s all ease-in-out 0.3s;
+}
+
 </style>

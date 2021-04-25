@@ -13,11 +13,11 @@
         </div>
         <div class=" max-w-lg md:order-1">
           <h1>The most flexible protocol for programmable liquidity</h1>
-          <p>
+          <p class="pb-4">
             Balancer algorithmically manages liquidity to mutually benefit
             investors and traders. Built on&nbsp;Ethereum.
           </p>
-          <div class="flex py-3 md:pb-0">
+          <div class="flex md:pb-0">
             <a
               class="btn btn-primary btn-hero"
               href="https://app.balancer.fi/invest"
@@ -93,6 +93,129 @@
         </div>
       </div>
     </section>
+
+    <section>
+      <div class="px-4 pb-16 max-w-3xl mx-auto">
+        <h1 class="h1-sans-serif py-8">
+          Core concepts
+        </h1>
+
+        <div class="pb-8">
+          <h2 class="pb-4">Pool types</h2>
+          <p class="pb-8">
+            Liquidity pools are the fundamental building block of the Balancer
+            Protocol. Pools are smart contracts that implement the Balancer
+            Protocol, and hold value in two or more ERC-20 tokens. Balancer
+            pools are essentially self-balancing index funds that are
+            continuously rebalanced. This rebalancing happens through
+            arbitrageurs who are incentivized to trade with pools, and by doing
+            that they sync the pool prices with those on the external market.
+          </p>
+          <vsa-list>
+            <!-- Here you can use v-for to loop through items  -->
+            <vsa-item>
+              <vsa-heading>
+                Public pools
+              </vsa-heading>
+
+              <vsa-icon>
+                <transition name="accordion-trigger">
+                <span class="open"
+                  ><img src="@/assets/svg/icon-chevron-down.svg" alt=""
+                /></span>
+                </transition>
+                <span class="close"
+                  ><img src="@/assets/svg/icon-chevron-up.svg" alt=""
+                /></span>
+              </vsa-icon>
+
+              <vsa-content>
+                This is the content
+              </vsa-content>
+            </vsa-item>
+            <vsa-item>
+              <vsa-heading>
+                Private pools
+              </vsa-heading>
+
+              <vsa-content>
+                This isfdsafdsa the content
+                <img src="@/assets/images/messari.png" alt="" />
+              </vsa-content>
+            </vsa-item>
+            <vsa-item>
+              <vsa-heading>
+                Smart pools
+              </vsa-heading>
+
+              <vsa-content>
+                This isfdsafdsa the content
+                <img src="@/assets/images/messari.png" alt="" />
+              </vsa-content>
+            </vsa-item>
+          </vsa-list>
+        </div>
+        <div class="py-8">
+          <h2 class="pb-4">Pool parameters</h2>
+          <p class="pb-8">
+            Dynamic liquidity pools have parameters that can be adjusted via
+            smart contract code. Pool owners can specify who can join the pool.
+          </p>
+          <vsa-list>
+            <!-- Here you can use v-for to loop through items  -->
+            <vsa-item>
+              <vsa-heading>
+                Pool tokens
+              </vsa-heading>
+              <vsa-content>
+                This is the content
+              </vsa-content>
+            </vsa-item>
+            <vsa-item>
+              <vsa-heading>
+                Token weights
+              </vsa-heading>
+              <vsa-content>
+                Lorem ipsum dolor sit amet
+              </vsa-content>
+            </vsa-item>
+            <vsa-item>
+              <vsa-heading>
+                Swap fees
+              </vsa-heading>
+              <vsa-content>
+                Lorem ipsum dolor sit amet
+              </vsa-content>
+            </vsa-item>
+            <vsa-item>
+              <vsa-heading>
+                Liquidity providers
+              </vsa-heading>
+              <vsa-content>
+                Lorem ipsum dolor sit amet
+              </vsa-content>
+            </vsa-item>
+            <vsa-item>
+              <vsa-heading>
+                Deposit limit
+              </vsa-heading>
+              <vsa-content>
+                Lorem ipsum dolor sit amet
+              </vsa-content>
+            </vsa-item>
+            <vsa-item>
+              <vsa-heading>
+                Start / stop trading
+              </vsa-heading>
+              <vsa-content>
+                Lorem ipsum dolor sit amet
+              </vsa-content>
+            </vsa-item>
+          </vsa-list>
+        </div>
+      </div>
+    </section>
+
     <section class="pb-16">
       <div class="px-4 max-w-7xl mx-auto">
         <h1 class="h1-sans-serif py-6">
@@ -117,7 +240,7 @@
           <Feature
             title="Gas efficiency"
             description="The cheapest gas fees in all of DeFi. Achieved by using internal balances of the V2 protocol vault. "
-            icon="icon-lightning.svg"
+            icon="icon-dashboard.svg"
           />
         </div>
       </div>
@@ -126,8 +249,24 @@
 </template>
 
 <script>
+import {
+  VsaList,
+  VsaItem,
+  VsaHeading,
+  VsaContent,
+  VsaIcon
+} from "vue-simple-accordion";
+import "vue-simple-accordion/dist/vue-simple-accordion.css";
+
 export default {
-  transition: "slideup"
+  transition: "slideup",
+  components: {
+    VsaList,
+    VsaItem,
+    VsaHeading,
+    VsaContent,
+    VsaIcon
+  }
 };
 </script>
 
@@ -136,5 +275,79 @@ export default {
   @apply py-4;
   width: 100%;
   max-width: 180px;
+}
+</style>
+
+<style>
+/* #TODO: how can i keep this global? */
+
+.vsa-list {
+  --vsa-max-width: 100%;
+  --vsa-bg-color: #fff;
+  --vsa-default-icon-size: 0.5;
+  --vsa-text-color: #000;
+  --vsa-border-color: #eee;
+  --vsa-heading-padding: 1rem 0;
+  --vsa-content-padding: 1rem 0;
+  --vsa-highlight-color: #0000ff;
+  --vsa-border-style: none;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  border-top: 1px solid #eee;
+}
+
+.vsa-item__trigger:focus,
+.vsa-item__trigger:hover {
+  @apply text-blue-500;
+  background-color: #fff;
+}
+
+.vsa-item__trigger:hover .vsa-item__trigger__icon--is-default:before,
+.vsa-item__trigger:hover .vsa-item__trigger__icon--is-default:after {
+  @apply bg-blue-500;
+}
+
+.vsa-item__trigger {
+  @apply text-black;
+  transition: all 0.2s ease-in-out;
+}
+
+.vsa-item__trigger__content {
+  @apply text-lg;
+}
+
+.vsa-item:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+
+.vsa-item {
+  border-bottom: 1px solid #eee;
+}
+
+/* Custom accordion header icons */
+
+.vsa-item--is-active .vsa-item__trigger__icon .open {
+  display: none;
+}
+.vsa-item--is-active .vsa-item__trigger__icon .close {
+  display: block;
+}
+.vsa-item__trigger__icon .open {
+  display: block;
+}
+.vsa-item__trigger__icon .close {
+  display: none;
+}
+
+.accoridion-trigger-enter-from, .accoridion-trigger-leave-to {
+  opacity: 0;
+}
+
+.accoridion-trigger-enter-to, .accoridion-trigger-leave-from  {
+  opacity: 1;
+}
+
+.accoridion-trigger-active {
+  transition: 0.2s all ease-in-out;
 }
 </style>

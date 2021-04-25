@@ -17,7 +17,7 @@
           <div class="grid grid-cols-1 pb-5">
             <div class="flex pb-5">
               <img class="mr-3" src="~/assets/svg/icon-moon.svg" alt="" />
-              <p class="font-medium">Designed to earn you more</p>
+              <p class="font-medium">High risk-adjusted returns</p>
             </div>
             <div class="flex pb-5">
               <img class="mr-3" src="~/assets/svg/icon-shield.svg" alt="" />
@@ -29,7 +29,7 @@
             </div>
             <div class="flex pb-5">
               <img class="mr-3" src="~/assets/svg/icon-sparkles.svg" alt="" />
-              <p class="font-medium">Liquidity mining rewards</p>
+              <p class="font-medium">Liquidity mining incentives</p>
             </div>
 
             <!-- <FeaturedBenefit benefit="Designed to earn you more"  iconPath="icon-moon.svg" /> -->

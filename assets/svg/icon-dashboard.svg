@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-dashboard</title>
+    <g id="icon-dashboard" stroke="none" stroke-width="1.25" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group" transform="translate(1.000000, 1.000000)" stroke="#000000">
+            <circle id="Oval" cx="11" cy="11.0550589" r="2.44430451"></circle>
+            <line x1="12.7721208" y1="9.2829381" x2="15.2775329" y2="6.77752597" id="Path"></line>
+            <path d="M4.15594737,19.6101247 C0.494060041,16.6995609 -0.926428217,11.791366 0.614938065,7.3749206 C2.15630435,2.95847518 6.32230824,0 11,0 C15.6776918,0 19.8436957,2.95847518 21.3850619,7.3749206 C22.9264282,11.791366 21.50594,16.6995609 17.8440526,19.6101247 L4.15594737,19.6101247 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

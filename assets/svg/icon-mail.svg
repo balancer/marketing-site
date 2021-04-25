@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-mail</title>
+    <g id="Protocol" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-2" transform="translate(-236.000000, -5685.000000)" fill-rule="nonzero">
+            <g id="icon-mail" transform="translate(236.075472, 5685.000000)">
+                <path d="M15.9622642,0 C7.14710377,0 0,7.164 0,16 C0,24.836 7.14710377,32 15.9622642,32 C24.7774245,32 31.9245283,24.836 31.9245283,16 C31.9245283,7.164 24.7774245,0 15.9622642,0 Z" id="logo-container" fill="#FFFFFF"></path>
+                <path d="M7.27169811,11.6115556 L15.9622642,18.6712889 L24.6528302,11.6128 L24.6528302,22.1955556 L7.27169811,22.1955556 L7.27169811,11.6115556 Z M24.6404151,9.75111111 L15.9622642,16.8021333 L7.2828717,9.75111111 L24.6404151,9.75111111 Z" id="logo" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>
