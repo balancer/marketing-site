@@ -230,7 +230,7 @@
             LAUNCH A TOKEN
           </p>
           <h1 class="h1-sans-serif">
-            LBPs for fair and liquid&nbsp;launches
+            LBPs for a fair and liquid&nbsp;launch
           </h1>
           <p class="pb-4 max-w-2xl">
             A Liquidity Bootstrapping Pool (LBP) is an adjustable Balancer smart

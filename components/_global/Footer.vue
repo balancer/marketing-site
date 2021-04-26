@@ -1,7 +1,9 @@
 <template>
   <footer>
     <div class="content-container">
-      <div class="px-4 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-white">
+      <div
+        class="px-4 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-white"
+      >
         <div class="flex flex-col mb-8 sidebar">
           <p class="text-gray-400 pb-1">Balancer.fi</p>
           <NuxtLink
@@ -65,35 +67,23 @@
         <div class="">
           <p class="text-gray-400 pb-2">Community</p>
           <div class="flex">
-            <a
-              class="mr-2"
-              @click="toggleSidebar"
-              href="https://twitter.com/BalancerLabs"
+            <a class="mr-2" href="https://twitter.com/BalancerLabs"
               ><img src="@/assets/svg/icon-twitter.svg" alt=""
             /></a>
 
-            <a
-              class="mr-2"
-              @click="toggleSidebar"
-              href="https://discord.com/invite/ARJWaeF"
+            <a class="mr-2" href="https://discord.com/invite/ARJWaeF"
               ><img src="@/assets/svg/icon-discord.svg" alt=""
             /></a>
 
-            <a
-              class="mr-2"
-              @click="toggleSidebar"
-              href="https://medium.com/balancer-protocol"
+            <a class="mr-2" href="https://medium.com/balancer-protocol"
               ><img src="@/assets/svg/icon-medium.svg" alt=""
             /></a>
 
-            <a
-              class="mr-2"
-              @click="toggleSidebar"
-              href="https://github.com/balancer-labs/"
+            <a class="mr-2" href="https://github.com/balancer-labs/"
               ><img src="@/assets/svg/icon-github.svg" alt=""
             /></a>
 
-            <a @click="toggleSidebar" href="mailto:contact@balancer.finance"
+            <a href="mailto:contact@balancer.finance"
               ><img src="@/assets/svg/icon-mail.svg" alt=""
             /></a>
           </div>

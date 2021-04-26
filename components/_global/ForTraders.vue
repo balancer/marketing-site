@@ -7,7 +7,7 @@
         <div class="md:mx-auto max-w-lg pr-4">
           <p class="eyebrow gradient-text pb-2 font-medium">For traders</p>
           <h1 class="h1-sans-serif">
-            Cheaper asset swaps via the automated market maker
+            Cheaper trades on the Automated Market Maker
           </h1>
           <p class="pb-4">
             Balancer facilitates cheap trades by utilizing the crowd-sourced
@@ -49,7 +49,7 @@
         <div>
           <div>
             <div class="grid grid-cols-2 gap-4 max-w-lg">
-              <a href="https://app.balancer.fi/trade/weth">
+              <a href="https://app.balancer.fi/trade/dai">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -60,7 +60,7 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p>ETH: <span>$1,962.65</span></p>
+                      <p class="text-sm truncate">DAI: <span>$1.00</span></p>
                     </div>
                   </div>
                 </div>
@@ -71,47 +71,47 @@
                   <div class="relative flex justify-center items-center">
                     <img
                       class="cover-img"
-                      src="~assets/images/tokens/dai-cover.jpg"
+                      src="~assets/images/tokens/weth-cover.jpg"
                       alt=""
                     />
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p>DAI: <span>$1.00</span></p>
+                      <p class="text-sm truncate">WETH: <span>$2,394</span></p>
                     </div>
                   </div>
                 </div>
               </a>
 
-              <a href="https://app.balancer.fi/trade/weth">
+              <a href="https://app.balancer.fi/trade/bal">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
                       class="cover-img"
-                      src="~assets/images/tokens/dai-cover.jpg"
+                      src="~assets/images/tokens/bal-cover.jpg"
                       alt=""
                     />
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p>BAL: <span>$56.24</span></p>
+                      <p class="text-sm truncate">BAL: <span>$56.24</span></p>
                     </div>
                   </div>
                 </div>
               </a>
 
-              <a href="https://app.balancer.fi/trade/weth">
+              <a href="https://app.balancer.fi/trade/wbtc">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
                       class="cover-img"
-                      src="~assets/images/tokens/dai-cover.jpg"
+                      src="~assets/images/tokens/wbtc-cover.jpg"
                       alt=""
                     />
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p>WBTC: <span>$59,456</span></p>
+                      <p class="text-sm truncate">WBTC: <span>$59,456</span></p>
                     </div>
                   </div>
                 </div>
@@ -133,8 +133,9 @@ export default {};
 
 <style scoped>
 .pool {
-  @apply rounded-lg shadow;
+  @apply rounded-lg;
   max-width: 300px;
+  box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
 }
 .cover-img {
   border-radius: 10px 10px 0 0;

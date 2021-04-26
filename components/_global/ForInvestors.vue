@@ -10,9 +10,10 @@
             Continuous self-balancing&nbsp;portfolios
           </h1>
           <p class="pb-4">
-            Balancer turns the concept of an index fund on its head: instead of paying fees to portfolio managers
-            to rebalance your portfolio, you collect fees from traders who
-            rebalance your portfolio by following arbitrage opportunities.
+            Balancer turns the concept of an index fund on its head: instead of
+            paying fees to portfolio managers to rebalance your portfolio, you
+            collect fees from traders who rebalance your portfolio by following
+            arbitrage opportunities.
           </p>
           <div class="grid grid-cols-1 pb-5">
             <div class="flex pb-5">
@@ -38,7 +39,23 @@
         <div>
           <div>
             <div class="grid grid-cols-2 gap-4 max-w-lg">
-              <div class="pool relative">
+              <a href="https://app.balancer.fi/trade/dai">
+                <div class="pool relative">
+                  <div class="relative flex justify-center items-center">
+                    <img
+                      class="cover-img"
+                      src="~assets/images/featured-pools/pool-weth-wbtc.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div class="p-2 md:p-3 text-center font-medium">
+                      <p class="text-sm truncate">50 WETH 50 WBTC</span></p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <!-- <div class="pool relative">
                 <div class="relative flex justify-center items-center">
                   <img
                     class="p-4"
@@ -54,71 +71,59 @@
                 </div>
                 <div>
                   <div class="pb-4 text-center font-medium">
-                    <p>50/50 WETH/BTC</p>
+                    <p class="text-sm truncate">50/50 WETH/BTC</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="pool relative">
-                <div class="relative flex justify-center items-center">
-                  <img
-                    class="p-4"
-                    src="~assets/images/featured-pools/weth-dai.webp"
-                    alt=""
-                  />
-                  <div class="absolute text-center">
-                    <p class="my-0 text-xs md:text-sm leading-4 font-semibold">APY</p>
-                    <p class="my-0 text-xl lg:text-2xl font-semibold">
-                      16.25<span class="superscript">%</span>
-                    </p>
+          <a href="https://app.balancer.fi/trade/dai">
+                <div class="pool relative">
+                  <div class="relative flex justify-center items-center">
+                    <img
+                      class="cover-img"
+                      src="~assets/images/featured-pools/pool-weth-dai.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div class="p-2 md:p-3 text-center font-medium">
+                      <p class="text-sm truncate">50 WETH 50 DAI</span></p>
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <div class="pb-4 text-center font-medium">
-                    <p>50/50 WETH/DAI</p>
+              </a>
+                        <a href="https://app.balancer.fi/trade/dai">
+                <div class="pool relative">
+                  <div class="relative flex justify-center items-center">
+                    <img
+                      class="cover-img"
+                      src="~assets/images/featured-pools/pool-bal-weth.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div class="p-2 md:p-3 text-center font-medium">
+                      <p class="text-sm truncate">80 BAL 20 WETH</span></p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="pool relative">
-                <div class="relative flex justify-center items-center">
-                  <img
-                    class="p-4"
-                    src="~assets/images/featured-pools/weth-dai.webp"
-                    alt=""
-                  />
-                  <div class="absolute text-center">
-                    <p class="my-0 text-xs md:text-sm leading-4 font-semibold">APY</p>
-                    <p class="my-0 text-xl lg:text-2xl font-semibold">
-                      24.26<span class="superscript">%</span>
-                    </p>
+              </a>
+                        <a href="https://app.balancer.fi/trade/dai">
+                <div class="pool relative">
+                  <div class="relative flex justify-center items-center">
+                    <img
+                      class="cover-img"
+                      src="~assets/images/featured-pools/pool-dpi-weth-wbtc.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div class="p-2 md:p-3 text-center font-medium">
+                      <p class="text-sm truncate">33 DPI 33 WETH 33&nbsp;WBTC</span></p>
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <div class="pb-4 text-center font-medium">
-                    <p>50/50 WETH/BAL</p>
-                  </div>
-                </div>
-              </div>
-              <div class="pool relative">
-                <div class="relative flex justify-center items-center">
-                  <img
-                    class="p-4"
-                    src="~assets/images/featured-pools/weth-dai.webp"
-                    alt=""
-                  />
-                  <div class="absolute text-center">
-                    <p class="my-0 text-xs md:text-sm leading-2 font-semibold">APY</p>
-                    <p class="my-0 text-xl lg:text-2xl font-semibold">
-                      8.35<span class="superscript">%</span>
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div class="pb-4 text-center font-medium">
-                    <p>STABLE POOL</p>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
             <p class="pt-4 text-gray-400">Featured investment pools</p>
           </div>
@@ -134,15 +139,20 @@ export default {};
 
 <style scoped>
 .pool {
-  @apply border border-gray-200 rounded-3xl shadow;
-  max-width: 240px;
+  @apply rounded-lg;
+  max-width: 300px;
+  box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
 }
+.cover-img {
+  border-radius: 10px 10px 0 0;
+}
+
 .superscript {
   font-family: Inter, sans-serif;
-font-feature-settings: 'kern' 1, 'numr' 1;
-    -webkit-font-feature-settings: 'kern' 1, 'numr' 1;
-    -ms-font-feature-settings: 'kern' 1, 'numr' 1;
-    -moz-font-feature-settings: 'kern' 1, 'numr' 1;
+  font-feature-settings: "kern" 1, "numr" 1;
+  -webkit-font-feature-settings: "kern" 1, "numr" 1;
+  -ms-font-feature-settings: "kern" 1, "numr" 1;
+  -moz-font-feature-settings: "kern" 1, "numr" 1;
   font-size: 10px;
   position: relative;
   top: -6px;
