@@ -8,7 +8,7 @@
       <Footer />
     </div>
     <div class="drawer-footer">
-        <img class="w-full max-w-lg mx-auto" src="@/assets/images/built-on-ethereum.png" alt="">
+        <img class="w-full max-w-sm mx-auto" src="@/assets/images/built-on-ethereum.png" alt="">
         <h2>Built on Ethereum</h2>
     </div>
   </div>

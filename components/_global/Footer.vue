@@ -21,11 +21,11 @@
             to="developers"
             >Developers</NuxtLink
           >
-          <NuxtLink
+          <!-- <NuxtLink
             class="link text-lg md:text-base pb-1 leading-8 text-white"
             to="balancer-V2"
             >V2</NuxtLink
-          >
+          > -->
         </div>
         <div class="pb-8 md:pb-16  lg:pb-0">
           <p class="text-gray-400 pb-1">Products</p>

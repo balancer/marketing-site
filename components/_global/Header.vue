@@ -13,7 +13,7 @@
       <div class="mobile-hide">
         <NuxtLink class="link" to="protocol">Protocol</NuxtLink>
         <NuxtLink class="link" to="developers">Developers</NuxtLink>
-        <NuxtLink class="link" to="balancer-V2">V2</NuxtLink>
+        <!-- <NuxtLink class="link" to="balancer-V2">V2</NuxtLink> -->
         <a
           class="link hover:text-accent transition-standard"
           href="https://docs.balancer.finance"
