@@ -36,7 +36,7 @@
     <section class="pb-12">
       <div class="px-4 md:flex mx-auto max-w-screen-xl">
         <div class="order-1 md:order-2">
-          <img class="py-4" src="~assets/svg/placeholder-ui.svg" alt="" />
+          <img class="py-12 md:py-0" src="~assets/images/ui-in-device.jpg" alt="" />
         </div>
         <div class="max-w-lg">
           <h1 class="h1-sans-serif gradient-text-alt py-6">
