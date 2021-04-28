@@ -25,82 +25,74 @@
         </div>
 
         <div>
-          <div>
-            <div class="grid grid-cols-2 gap-4 max-w-lg">
-              <a href="https://app.balancer.fi/trade/weth">
-                <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
-                    <img
-                      class="cover-img"
-                      src="~assets/images/pool-types/50-50.png"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
-                      <p>
-                        Uniswap-style <span class="block">50/50 pools</span>
-                      </p>
-                    </div>
-                  </div>
+          <div class="grid grid-cols-2 gap-4 max-w-lg">
+            <div class="pool relative">
+              <div class="relative flex justify-center items-center">
+                <img
+                  class="cover-img"
+                  src="~assets/images/pool-types/classic.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div class="p-2 md:p-3 text-center font-medium">
+                  <p class="text-sm truncate">
+                    Uniswap style<span class="block">50/50 pools</span>
+                  </p>
                 </div>
-              </a>
-
-              <a href="https://app.balancer.fi/trade/weth">
-                <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
-                    <img
-                      class="cover-img"
-                      src="~assets/images/pool-types/stable.png"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
-                      <p>Curve-style <span class="block">stable pools</span></p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-              <a href="https://app.balancer.fi/trade/weth">
-                <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
-                    <img
-                      class="cover-img"
-                      src="~assets/images/pool-types/8-pool.png"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
-                      <p>
-                        Weighted pools<span class="block">up to 8 tokens</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-              <a href="https://app.balancer.fi/trade/weth">
-                <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
-                    <img
-                      class="cover-img"
-                      src="~assets/images/pool-types/smart.png"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
-                      <p>Custom logic<span class="block">Smart pools</span></p>
-                    </div>
-                  </div>
-                </div>
-              </a>
+              </div>
             </div>
-          </div>
-        </div>
+
+            <div class="pool relative">
+              <div class="relative flex justify-center items-center">
+                <img
+                  class="cover-img"
+                  src="~assets/images/pool-types/weighted.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div class="p-2 md:p-3 text-center font-medium">
+                  <p class="text-sm truncate">
+                    Weighted pools<span class="block">up to 8 tokens</span>
+                  </p>
+                </div>
+              </div>
+            </div>            
+            <div class="pool relative">
+              <div class="relative flex justify-center items-center">
+                <img
+                  class="cover-img"
+                  src="~assets/images/pool-types/weighted.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div class="p-2 md:p-3 text-center font-medium">
+                  <p class="text-sm truncate">
+                    Curve-style<span class="block">stable pools</span>
+                  </p>
+                </div>
+              </div>
+            </div>      
+            <div class="pool relative">
+              <div class="relative flex justify-center items-center">
+                <img
+                  class="cover-img"
+                  src="~assets/images/pool-types/weighted.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div class="p-2 md:p-3 text-center font-medium">
+                  <p class="text-sm truncate">
+                    Curve-style<span class="block">stable pools</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>      
+          </div>        
       </div>
     </div>
   </section>
@@ -112,8 +104,9 @@ export default {};
 
 <style scoped>
 .pool {
-  @apply rounded-lg shadow;
+  @apply rounded-lg;
   max-width: 300px;
+  box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
 }
 .cover-img {
   border-radius: 10px 10px 0 0;

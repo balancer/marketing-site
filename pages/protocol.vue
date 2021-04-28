@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-white">
     <section class="px-4 pb-16 md:pb-32 py-8 md:pt-16">
       <div class="md:flex md:items-center mx-auto max-w-screen-xl">
         <div class="order-1 md:order-2">
@@ -12,7 +12,7 @@
           />
         </div>
         <div class=" max-w-lg md:order-1">
-          <h1>The most flexible protocol for programmable liquidity</h1>
+          <h1 class="h1-sans-serif">Programmable liquidity</h1>
           <p class="pb-4">
             Balancer algorithmically manages liquidity to mutually benefit
             investors and traders. Built on&nbsp;Ethereum.
@@ -35,7 +35,7 @@
 
     <section class="pb-12">
       <div class="px-4 md:flex mx-auto max-w-screen-xl">
-        <div class="order-1 md:order-2">
+        <div class="md:pr-8 lg:pr-12">
           <img class="py-12 md:py-0" src="~assets/images/ui-in-device.jpg" alt="" />
         </div>
         <div class="max-w-lg">

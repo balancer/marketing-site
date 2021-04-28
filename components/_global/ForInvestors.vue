@@ -50,49 +50,12 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">50 WETH 50 WBTC</span></p>
+                      <p class="text-sm truncate">50 WETH 50 WBTC</p>
                     </div>
                   </div>
                 </div>
               </a>
-              <!-- <div class="pool relative">
-                <div class="relative flex justify-center items-center">
-                  <img
-                    class="p-4"
-                    src="~assets/images/featured-pools/weth-dai.webp"
-                    alt=""
-                  />
-                  <div class="absolute text-center">
-                    <p class="my-0 text-xs md:text-sm leading-4 font-semibold">APY</p>
-                    <p class="my-0 text-xl lg:text-2xl font-semibold">
-                      12.51<span class="superscript">%</span>
-                    </p>
-                  </div>
-                </div>
-                <div>
-                  <div class="pb-4 text-center font-medium">
-                    <p class="text-sm truncate">50/50 WETH/BTC</p>
-                  </div>
-                </div>
-              </div> -->
-
-          <a href="https://app.balancer.fi/trade/dai">
-                <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
-                    <img
-                      class="cover-img"
-                      src="~assets/images/featured-pools/pool-weth-dai.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">50 WETH 50 DAI</span></p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-                        <a href="https://app.balancer.fi/trade/dai">
+              <a href="https://app.balancer.fi/trade/dai">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -103,12 +66,12 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">80 BAL 20 WETH</span></p>
+                      <p class="text-sm truncate">80 BAL 20 WETH</p>
                     </div>
                   </div>
                 </div>
               </a>
-                        <a href="https://app.balancer.fi/trade/dai">
+              <a href="https://app.balancer.fi/trade/dai">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -119,7 +82,25 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">33 DPI 33 WETH 33&nbsp;WBTC</span></p>
+                      <p class="text-sm truncate">
+                        33 DPI 33 WETH 33&nbsp;WBTC
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://app.balancer.fi/trade/dai">
+                <div class="pool relative">
+                  <div class="relative flex justify-center items-center">
+                    <img
+                      class="cover-img"
+                      src="~assets/images/featured-pools/pool-weth-dai.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <div class="p-2 md:p-3 text-center font-medium">
+                      <p class="text-sm truncate">50 WETH 50 DAI</p>
                     </div>
                   </div>
                 </div>

@@ -12,7 +12,7 @@
           />
         </div>
         <div class=" max-w-lg md:order-1">
-          <h1>A core building block of DeFi</h1>
+          <h1 class="h1-sans-serif">A core building block of&nbsp;DeFi</h1>
           <p class="pb-4">
             Balancer is reliable, open-source, permissionless protocol. Build on
             Balancer to create new innovative types of financial dapps and
@@ -149,8 +149,8 @@
     <section>
       <div class="max-w-7xl md:mx-auto px-4 pb-12">
         <h1 class="h1-sans-serif">Projects building on Balancer</h1>
-        <div class="flex py-3 items-center gap-3">
-          <div>
+        <div class="flex py-3 items-center">
+          <div class="mr-3">
             <img src="@/assets/svg/tokens/aave.svg" alt="" />
           </div>
           <div>
@@ -158,8 +158,8 @@
             <p>Asset Manager &amp; 80/20 Safety Pool</p>
           </div>
         </div>
-        <div class="flex py-3 items-center gap-3">
-          <div>
+        <div class="flex py-3 items-center">
+          <div class="mr-3">
             <img src="@/assets/svg/tokens/gno.svg" alt="" />
           </div>
           <div>
@@ -167,8 +167,8 @@
             <p>Asset Manager &amp; 80/20 Safety Pool</p>
           </div>
         </div>
-        <div class="flex py-3 items-center gap-3">
-          <div>
+        <div class="flex py-3 items-center">
+          <div class="mr-3">
             <img src="@/assets/images/tokens/element.png" alt="" />
           </div>
           <div>
@@ -176,8 +176,8 @@
             <p>Asset Manager &amp; 80/20 Safety Pool</p>
           </div>
         </div>
-        <div class="flex py-3 items-center gap-3">
-          <div>
+        <div class="flex py-3 items-center">
+          <div class="mr-3">
             <img src="@/assets/images/tokens/element.png" alt="" />
           </div>
           <div>
