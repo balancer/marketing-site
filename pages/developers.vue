@@ -1,13 +1,13 @@
 <template>
   <div>
-    <section class="px-4 pb-32 md:pb-32 py-8 md:pt-16">
-      <div class="md:flex md:items-center mx-auto max-w-screen-xl">
+    <section class="px-4 pb-32 md:pb-32 bg-white">
+      <div class="md:flex md:items-center mx-auto max-w-screen-2xl">
         <div class="order-1 md:order-2">
           <img
             width="1000"
             height="618"
             class="pt-1 pb-10"
-            src="~assets/images/hero-protocol.png"
+            src="@/assets/svg/hero-developers.svg"
             alt=""
           />
         </div>
@@ -33,11 +33,87 @@
         </div>
       </div>
     </section>
-    <section>
-      <div class="px-4 pb-32 flex justify-center items-center">
-        <p class="featured-stat">
-          50+ <span class="featured-stat-label">DeFi integrations</span>
-        </p>
+
+    <section class="bg-white">
+      <div class="max-w-7xl md:mx-auto px-4 pb-32 lg:pb-32">
+        <h1 class="h1-sans-serif pb-6 md:pb-8 lg:pb-12  md:text-center">
+          Start building
+        </h1>
+        <div class="md:flex">
+          <LinkCard
+            title="Create a smart pool"
+            description="A quick code walkthrough"
+            url="https://stackoverflow.com/questions/64858782/how-can-i-pass-props-through-an-anchor-tag"
+          />
+          <LinkCard
+            title="Make a Liquidity Bootstrapping Pool"
+            description="Tips on how to successfully launch"
+          />
+          <LinkCard
+            title="Get Balancer data"
+            description="Via the Balancer subgraph"
+          />
+          <LinkCard
+            title="Get Balancer pool pricing data"
+            description="Via the 'Instant' or 'Resilient' oracles"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="flex flex-col justify-center px-4 pb-32">
+        <div class="flex justify-between w-full max-w-6xl mx-auto pb-16">
+          <div class="h-40 md:h-80 flex items-end">
+            <img
+              class="integrations-logo"
+              src="@/assets/svg/tokens/gno.svg"
+              alt=""
+            />
+          </div>
+          <div class="h-40 md:h-80 flex items-start">
+            <img
+              class="integrations-logo"
+              src="@/assets/svg/tokens/aave.svg"
+              alt=""
+            />
+          </div>
+          <div class="h-40 md:h-80 flex items-end">
+            <img
+              class="integrations-logo"
+              src="@/assets/svg/tokens/elementfi.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="flex justify-center items-center pb-16">
+          <p class="featured-stat">
+            50+ <span class="featured-stat-label">DeFi integrations</span>
+          </p>
+        </div>
+        <div class="flex justify-between w-full max-w-6xl mx-auto pb-16">
+          <div class="h-40 md:h-80 flex items-start">
+            <img
+              class="integrations-logo"
+              src="@/assets/svg/tokens/gno.svg"
+              alt=""
+            />
+          </div>
+          <div class="h-40 md:h-80 flex items-end">
+            <img
+              class="integrations-logo"
+              src="@/assets/svg/tokens/aave.svg"
+              alt=""
+            />
+          </div>
+          <div class="h-40 md:h-80 flex items-start">
+            <img
+              class="integrations-logo"
+              src="@/assets/svg/tokens/elementfi.svg"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
     </section>
 
@@ -79,7 +155,7 @@
       </div>
     </section> -->
 
-    <section>
+    <section class="bg-white">
       <div class="md:mx-auto max-w-7xl px-4 pb-16">
         <div>
           <p class="eyebrow gradient-text">
@@ -120,32 +196,7 @@
       </div>
     </section>
 
-    <section>
-      <div class="max-w-7xl md:mx-auto px-4 pb-12">
-        <h1 class="h1-sans-serif pb-6">I want to</h1>
-        <div class="md:flex">
-          <LinkCard
-            title="Create a smart pool"
-            description="A quick code walkthrough"
-            url="https://stackoverflow.com/questions/64858782/how-can-i-pass-props-through-an-anchor-tag"
-          />
-          <LinkCard
-            title="Make a Liquidity Bootstrapping Pool"
-            description="Tips on how to successfully launch"
-          />
-          <LinkCard
-            title="Get Balancer data"
-            description="Via the Balancer subgraph"
-          />
-          <LinkCard
-            title="Get Balancer pool pricing data"
-            description="Via the 'Instant' or 'Resilient' oracles"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section>
+    <!-- <section class="bg-white">
       <div class="max-w-7xl md:mx-auto px-4 pb-12">
         <h1 class="h1-sans-serif">Projects building on Balancer</h1>
         <div class="flex py-3 items-center">
@@ -185,9 +236,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section>
+    <section class="bg-white">
       <div class="max-w-7xl md:mx-auto px-4 pb-16">
         <h1 class="h1-sans-serif">
           Create a Smart pool
@@ -222,7 +273,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="bg-white">
       <div class="max-w-7xl md:mx-auto px-4 pb-16">
         <div class="pb-16">
           <p class="eyebrow gradient-text pb-2 font-medium">
@@ -291,7 +342,7 @@
           <div class="lbp-features pb-12 md:pb-0">
             <h2 class="pb-4">LBP features</h2>
 
-            <icon-base width="20" height="20" icon-color="#0000ff" icon-hover-color="#ff0000" icon-name="ticket"><icon-ticket /></icon-base>
+            <!-- <icon-base width="20" height="20" icon-color="#0000ff" icon-hover-color="#ff0000" icon-name="ticket"><icon-ticket /></icon-base> -->
 
             <Feature
               title="Free & permissionless"
@@ -334,13 +385,35 @@
 </template>
 
 <script>
-
 export default {
-  transition: "slideup",
+  transition: "slideup"
 };
 </script>
 
 <style>
+.integrations-logo {
+  height: 72px;
+  width: 72px;
+  transition: 0.2s all ease-in-out;
+}
+.integrations-logo:hover, .integrations-logo:focus  {
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .integrations-logo {
+    height: 84px;
+    width: 84px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .integrations-logo {
+    height: 100px;
+    width: 100px;
+  }
+}
+
 .lbp-features {
 }
 .featured-stat {
@@ -369,7 +442,7 @@ export default {
 @media (min-width: 768px) {
   .featured-stat,
   .featured-stat-label {
-    font-size: 8vw;
+    font-size: 7vw;
   }
   .featured-stat.lbp-stat {
     font-size: 12vw;

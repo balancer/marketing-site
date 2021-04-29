@@ -1,8 +1,10 @@
 <template>
   <div class="bg-white">
     <section class="px-4 pb-16 md:pb-32 py-8 md:pt-16">
-      <div class="md:flex md:items-center mx-auto max-w-screen-xl">
-        <div class="order-1 md:order-2">
+      
+      <div class="protocol-hero flex items-center">
+      <div class="md:flex md:items-center mx-auto max-w-screen-2xl">
+        <div class="order-1 md:order-2 md:pl-8">
           <img
             width="1000"
             height="618"
@@ -30,13 +32,18 @@
             >
           </div>
         </div>
+        </div>
       </div>
     </section>
 
-    <section class="pb-12">
+    <section class="pb-12 bg-white">
       <div class="px-4 md:flex mx-auto max-w-screen-xl">
         <div class="md:pr-8 lg:pr-12">
-          <img class="py-12 md:py-0" src="~assets/images/ui-in-device.jpg" alt="" />
+          <img
+            class="py-12 md:py-0"
+            src="~assets/images/ui-in-device.jpg"
+            alt=""
+          />
         </div>
         <div class="max-w-lg">
           <h1 class="h1-sans-serif gradient-text-alt py-6">
@@ -56,8 +63,8 @@
 
     <ProtocolAMMs />
 
-    <section>
-      <div class="px-4 max-w-7xl mx-auto">
+    <section class="bg-white">
+      <div class="px-4 max-w-7xl mx-auto pb-16 md:pb-32">
         <div class="grid md:grid-cols-2 md:grid-rows-3 md:gap-4 ">
           <FeatureDetailed
             title="Capital efficient Asset Managers"
@@ -95,6 +102,48 @@
     </section>
 
     <section>
+      <div class="case-study max-w-7xl mx-auto">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 items-center mb-0 lg:mb-32 py-16 md:py-16 text-white bg-aave px-4"
+        >
+          <div class="md:mx-auto max-w-md">
+            <p class="py-4 uppercase tracking-widest">Case Study</p>
+            <img class="py-4" src="~assets/svg/logo-aave.svg" alt="" />
+            <ol class="font-medium pb-12 md:pb-0">
+              <li class="py-4 ">
+                Aave launched their 80/20 AAVE/ETH Safety Incentive pool on
+                Balancer, allowing LPs to help secure their protocol while
+                earning rewards in both AAVE and BAL.
+              </li>
+              <li>
+                Aave is also building the first Balancer V2 Asset
+                Manager—allowing idle assets in Balancer V2 pools to earn yield
+                on Aave. This partnership brings more capital efficiency to LPs
+                who earn additional fees on top of swap fees and BAL from
+                liquidity mining.
+              </li>
+            </ol>
+          </div>
+          <div class="md:mx-auto max-w-md">
+            <img class="md:py-4" src="~assets/images/people/stani.png" alt="" />
+            <p class="py-4 italic font-medium">
+              “Part of what makes DeFi so exciting is its composability, and
+              with Balancer this has resulted in a partnership that optimises
+              the experience for liquidity providers through the Aave-Balancer
+              Asset Manager and opens up new possibilities for Aave stakers with
+              the AAVE/ETH Safety Incentive pool. We look forward to exploring
+              more synergies with Balancer in the future.”
+            </p>
+            <p class="font-medium">
+              Stani Kulechov <br />
+              Founder and CEO of Aave
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
       <div class="px-4 pb-16 max-w-3xl mx-auto">
         <h1 class="h1-sans-serif py-8">
           Core concepts
@@ -120,9 +169,9 @@
 
               <vsa-icon>
                 <transition name="accordion-trigger">
-                <span class="open"
-                  ><img src="@/assets/svg/icon-chevron-down.svg" alt=""
-                /></span>
+                  <span class="open"
+                    ><img src="@/assets/svg/icon-chevron-down.svg" alt=""
+                  /></span>
                 </transition>
                 <span class="close"
                   ><img src="@/assets/svg/icon-chevron-up.svg" alt=""
@@ -216,7 +265,7 @@
       </div>
     </section>
 
-    <section class="pb-16">
+    <section class="pb-16 bg-white">
       <div class="px-4 max-w-7xl mx-auto">
         <h1 class="h1-sans-serif py-6">
           Balancer core tenants
@@ -271,6 +320,13 @@ export default {
 </script>
 
 <style scoped>
+
+.protocol-hero {
+  min-height: 600px;
+  height: 70vh;
+  max-height: calc(100vh - 200px);
+}
+
 .messari-logo {
   @apply py-4;
   width: 100%;
@@ -339,11 +395,13 @@ export default {
   display: none;
 }
 
-.accoridion-trigger-enter-from, .accoridion-trigger-leave-to {
+.accoridion-trigger-enter-from,
+.accoridion-trigger-leave-to {
   opacity: 0;
 }
 
-.accoridion-trigger-enter-to, .accoridion-trigger-leave-from  {
+.accoridion-trigger-enter-to,
+.accoridion-trigger-leave-from {
   opacity: 1;
 }
 

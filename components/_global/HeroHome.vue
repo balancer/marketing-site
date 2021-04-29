@@ -1,12 +1,12 @@
 <template>
-  <section class="hero">
+  <section class="hero bg-white">
     <div class="hero-content">
       <transition name="h1"> 
         <h1 class="h1-hero transition-standard">Balancer is an automated portfolio manager and trading&nbsp;platform</h1>
       </transition>
       <div class="pb-4">
           <p class="p-hero transition-standard">
-        High risk-adjusted returns for investors.<br />Cheap crypto-asset swaps for
+        High risk-adjusted returns for investors.<br />Better token swap prices for
         traders.
       </p>
       </div>

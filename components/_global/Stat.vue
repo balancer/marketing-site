@@ -1,5 +1,5 @@
 <template>
-  <div class="stat-group pb-4 md-pb-0">
+  <div class="stat-group pb-6 md:pb-8">
     <p class="label">{{label}}</p>
     <p class="stat">{{stat}}</p>
   </div>
@@ -24,8 +24,9 @@ export default {
 .stat-group {
   @apply justify-self-start md:justify-self-center;
 }
+
 .stat {
-  @apply text-2xl md:text-2xl font-bold;
+  @apply text-3xl md:text-4xl font-bold;
 }
 .label {
   @apply py-1;

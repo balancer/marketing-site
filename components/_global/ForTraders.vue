@@ -7,7 +7,7 @@
         <div class="md:mx-auto max-w-lg pr-4">
           <p class="eyebrow gradient-text pb-2 font-medium">For traders</p>
           <h1 class="h1-sans-serif">
-            Cheaper trades on the Automated Market Maker
+            Best swap prices on the decentralized exchange
           </h1>
           <p class="pb-4">
             Balancer facilitates cheap trades by utilizing the crowd-sourced
