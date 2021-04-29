@@ -33,7 +33,6 @@
         </div>
       </div>
     </section>
-
     <section>
       <div class="px-4 pb-32 flex justify-center items-center">
         <p class="featured-stat">
@@ -256,8 +255,9 @@
         <div>
           <h2 class="pb-2">LBPs are extremely customizable</h2>
           <p class="pb-4 max-w-2xl">
-            Instead of a permanent 50%&nbsp;/&nbsp;50% or 90%&nbsp;/&nbsp;10% weighting, LBP weightings
-            can be programmed to continually change to match a project's needs.
+            Instead of a permanent 50%&nbsp;/&nbsp;50% or 90%&nbsp;/&nbsp;10%
+            weighting, LBP weightings can be programmed to continually change to
+            match a project's needs.
           </p>
           <div class="md:flex md:pb-12">
             <div class="md:pr-2 lg:pr-4 pb-4">
@@ -268,8 +268,8 @@
                   alt=""
                 />
                 <p class="pb-4 text-greyDark text-sm">
-                  Example 1: An LBP starting at 90% / 10% weighting which continually
-                  changes in one direction to 10% / 90% over 3 days.
+                  Example 1: An LBP starting at 90% / 10% weighting which
+                  continually changes in one direction to 10% / 90% over 3 days.
                 </p>
               </div>
             </div>
@@ -280,7 +280,9 @@
                 alt=""
               />
               <p class="pb-4 text-greyDark text-sm">
-                Example 2: This LBP moves from 90%&nbsp;/&nbsp;10% to 50%&nbsp;/&nbsp;50%. After the sale, the pool continues unpaused to serve as a classic 50%&nbsp;/&nbsp;50% AMM.
+                Example 2: This LBP moves from 90%&nbsp;/&nbsp;10% to
+                50%&nbsp;/&nbsp;50%. After the sale, the pool continues unpaused
+                to serve as a classic 50%&nbsp;/&nbsp;50% AMM.
               </p>
             </div>
           </div>
@@ -288,6 +290,9 @@
         <div class="md:flex">
           <div class="lbp-features pb-12 md:pb-0">
             <h2 class="pb-4">LBP features</h2>
+
+            <icon-base width="20" height="20" icon-color="#0000ff" icon-hover-color="#ff0000" icon-name="ticket"><icon-ticket /></icon-base>
+
             <Feature
               title="Free & permissionless"
               description="No middle-man or monopoly resulting in unnecessarily high listing fees"
@@ -329,14 +334,14 @@
 </template>
 
 <script>
+
 export default {
-  transition: "slideup"
+  transition: "slideup",
 };
 </script>
 
 <style>
 .lbp-features {
-
 }
 .featured-stat {
   @apply font-black;
@@ -370,19 +375,18 @@ export default {
     font-size: 12vw;
   }
   .lbp-features {
-      width: 50%;
+    width: 50%;
   }
 }
 
 @media (min-width: 1024px) {
- .featured-stat.lbp-stat {
-   font-size: 140px;
- }
+  .featured-stat.lbp-stat {
+    font-size: 140px;
+  }
 }
 @media (min-width: 1280px) {
- .featured-stat.lbp-stat {
-   font-size: 170px;
- }
+  .featured-stat.lbp-stat {
+    font-size: 170px;
+  }
 }
-
 </style>
