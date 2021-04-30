@@ -35,7 +35,7 @@
     </section>
 
     <section class="bg-white">
-      <div class="max-w-7xl md:mx-auto px-4 pb-32 lg:pb-32">
+      <div class="max-w-7xl md:mx-auto px-4 pb-16 lg:pb-32">
         <h1 class="h1-sans-serif pb-6 md:pb-8 lg:pb-12  md:text-center">
           Start building
         </h1>
@@ -62,7 +62,7 @@
     </section>
 
     <section class="bg-white">
-      <div class="flex flex-col justify-center px-4 pb-32">
+      <div class="flex flex-col justify-center px-4 pb-16 lg:pb-32">
         <div class="flex justify-between w-full max-w-6xl mx-auto pb-16">
           <div class="h-40 md:h-80 flex items-end">
             <img
@@ -95,21 +95,21 @@
           <div class="h-40 md:h-80 flex items-start">
             <img
               class="integrations-logo"
-              src="@/assets/svg/tokens/gno.svg"
+              src="@/assets/svg/tokens/ocean.svg"
               alt=""
             />
           </div>
           <div class="h-40 md:h-80 flex items-end">
             <img
               class="integrations-logo"
-              src="@/assets/svg/tokens/aave.svg"
+              src="@/assets/svg/tokens/enzyme.svg"
               alt=""
             />
           </div>
           <div class="h-40 md:h-80 flex items-start">
             <img
               class="integrations-logo"
-              src="@/assets/svg/tokens/elementfi.svg"
+              src="@/assets/svg/tokens/powerpool.svg"
               alt=""
             />
           </div>
@@ -338,7 +338,7 @@
             </div>
           </div>
         </div>
-        <div class="md:flex">
+        <div class="md:flex pb-12">
           <div class="lbp-features pb-12 md:pb-0">
             <h2 class="pb-4">LBP features</h2>
 
@@ -379,6 +379,93 @@
             </div>
           </div>
         </div>
+
+        <div class="px-4 xl:px-0 w-full max-w-7xl mx-auto pb-16 xl:pb-32">
+          <div
+            class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-8 text-center"
+          >
+            <div
+              class="order-1 md:order-2 card flex flex-col justify-between w-full"
+            >
+              <div class="pb-6">
+                <p class="text-greyDark">
+                  Raised
+                </p>
+                <p class="text-3xl font-bold">$33.2m</p>
+              </div>
+              <div class="flex justify-center">
+                <div class="w-20">
+                  <img
+                    class="pb-2"
+                    src="@/assets/images/tokens/illuvium.png"
+                    alt=""
+                  />
+                  <p class="font-medium">Illuvium</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="order-1 md:order-2 card flex flex-col justify-between w-full"
+            >
+              <div class="pb-6">
+                <p class="text-greyDark">
+                  Raised
+                </p>
+                <p class="text-3xl font-bold">$33.2m</p>
+              </div>
+              <div class="flex justify-center">
+                <div class="w-20">
+                  <img
+                    class="pb-2"
+                    src="@/assets/images/tokens/illuvium.png"
+                    alt=""
+                  />
+                  <p class="font-medium">Illuvium</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="order-1 md:order-2 card flex flex-col justify-between w-full"
+            >
+              <div class="pb-6">
+                <p class="text-greyDark">
+                  Raised
+                </p>
+                <p class="text-3xl font-bold">$33.2m</p>
+              </div>
+              <div class="flex justify-center">
+                <div class="w-20">
+                  <img
+                    class="pb-2"
+                    src="@/assets/images/tokens/illuvium.png"
+                    alt=""
+                  />
+                  <p class="font-medium">Illuvium</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="order-1 md:order-2 card flex flex-col justify-between w-full"
+            >
+              <div class="pb-6">
+                <p class="text-greyDark">
+                  Raised
+                </p>
+                <p class="text-3xl font-bold">$33.2m</p>
+              </div>
+              <div class="flex justify-center">
+                <div class="w-20">
+                  <img
+                    class="pb-2"
+                    src="@/assets/images/tokens/illuvium.png"
+                    alt=""
+                  />
+                  <p class="font-medium">Illuvium</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -391,12 +478,18 @@ export default {
 </script>
 
 <style>
+.card {
+  @apply rounded-lg p-4 md:p-6 lg:p-8;
+  box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
+}
+
 .integrations-logo {
   height: 72px;
   width: 72px;
   transition: 0.2s all ease-in-out;
 }
-.integrations-logo:hover, .integrations-logo:focus  {
+.integrations-logo:hover,
+.integrations-logo:focus {
   transform: scale(1.1);
 }
 
@@ -411,6 +504,13 @@ export default {
   .integrations-logo {
     height: 100px;
     width: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .integrations-logo {
+    height: 120px;
+    width: 120px;
   }
 }
 

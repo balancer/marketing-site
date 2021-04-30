@@ -2,7 +2,7 @@
   <section>
     <div class="max-w-screen-2xl mx-auto">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 px-4 lg:px-0 py-8 md:py-16 mb-8 items-center bg-white"
+        class="grid grid-cols-1 md:grid-cols-2 px-4 xl:px-0 py-8 md:py-16 mb-8 items-center bg-white"
       >
         <div class="md:mx-auto max-w-lg pr-4">
           <p class="eyebrow gradient-text pb-2 font-medium">For investors</p>
