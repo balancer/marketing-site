@@ -1,37 +1,36 @@
 <template>
   <div class="bg-white">
     <section class="px-4 pb-16 md:pb-32 py-8 md:pt-16">
-      
       <div class="protocol-hero flex items-center">
-      <div class="md:flex md:items-center mx-auto max-w-screen-2xl">
-        <div class="order-1 md:order-2 md:pl-8">
-          <img
-            width="1000"
-            height="618"
-            class="pt-1 pb-10"
-            src="~assets/images/hero-protocol.png"
-            alt=""
-          />
-        </div>
-        <div class=" max-w-lg md:order-1">
-          <h1 class="h1-sans-serif">Programmable liquidity</h1>
-          <p class="pb-4">
-            Balancer algorithmically manages liquidity to mutually benefit
-            investors and traders. Built on&nbsp;Ethereum.
-          </p>
-          <div class="flex md:pb-0">
-            <a
-              class="btn btn-primary btn-hero"
-              href="https://app.balancer.fi/invest"
-              >Launch app</a
-            >
-            <a
-              class="btn btn-secondary btn-hero"
-              href="https://docs.balancer.finance/"
-              >View docs</a
-            >
+        <div class="md:flex md:items-center mx-auto max-w-screen-2xl">
+          <div class="order-1 md:order-2 md:pl-8">
+            <img
+              width="1000"
+              height="618"
+              class="pt-1 pb-10"
+              src="~assets/images/hero-protocol.png"
+              alt=""
+            />
           </div>
-        </div>
+          <div class=" max-w-lg md:order-1">
+            <h1 class="h1-sans-serif">Programmable liquidity</h1>
+            <p class="pb-4">
+              Balancer algorithmically manages liquidity to mutually benefit
+              investors and traders. Built on&nbsp;Ethereum.
+            </p>
+            <div class="flex md:pb-0">
+              <a
+                class="btn btn-primary btn-hero"
+                href="https://app.balancer.fi/invest"
+                >Launch app</a
+              >
+              <a
+                class="btn btn-secondary btn-hero"
+                href="https://docs.balancer.finance/"
+                >View docs</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -320,7 +319,6 @@ export default {
 </script>
 
 <style scoped>
-
 .protocol-hero {
   min-height: 600px;
   height: 70vh;

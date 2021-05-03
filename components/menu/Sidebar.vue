@@ -24,8 +24,8 @@
             <NuxtLink
               @click.native="toggleSidebar"
               class="link text-lg leading-8"
-              to="developers"
-              >Developers</NuxtLink
+              to="build"
+              >Build</NuxtLink
             >
             <!-- <NuxtLink
               @click.native="toggleSidebar"

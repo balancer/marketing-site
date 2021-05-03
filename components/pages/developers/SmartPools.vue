@@ -2,20 +2,27 @@
   <section class="bg-white">
     <div class="max-w-screen-2xl mx-auto">
       <div
-        class="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 xl:px-0 pb-16 lg:pb-32 mb-8 items-center bg-white"
+        class="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 xl:px-0 py-8 md:py-16 mb-8 items-center bg-white"
       >
         <div class="md:mx-auto max-w-lg pr-4">
-          <p class="eyebrow gradient-text pb-2 font-medium">For traders</p>
+          <p class="eyebrow gradient-text pb-2 font-medium">SMART POOLs</p>
           <h1 class="h1-sans-serif">
-            Best swap prices on the decentralized exchange
+            Customizable AMM logic with Smart Pools
           </h1>
           <p class="pb-4">
-            Balancer facilitates cheap trades by utilizing the crowd-sourced
-            liquidity pools from investor’s self-balancing portfolios. Balancer
-            looks across all these different liquidity pools and smartly routes
-            the exchange to give the trader the best available price.
+            Smart Pools are dynamic liquidity pools with parameters that can be
+            adjusted via smart contract code. Pool owners can specify who can
+            join the pool. Innovate freely on Balancer’s open-source code.
           </p>
-          <div class="grid grid-cols-1 pb-4">
+
+          <p class="pb-4 italic">New Balancer V2 Smart Pools are coming soon.</p>
+            <a
+              class="btn btn-secondary btn-inline mb-8 md:mb-4"
+              href="https://docs.balancer.finance/guides/creating-a-smart-pool"
+              >V1 Smart Pool docs</a
+            >
+
+          <!-- <div class="grid grid-cols-1 pb-4">
             <div class="flex pb-5">
               <img
                 class="mr-3"
@@ -42,9 +49,7 @@
                 Gas subsidies to lower trading costs
               </p>
             </div>
-
-            <!-- <FeaturedBenefit benefit="Designed to earn you more"  iconPath="icon-moon.svg" /> -->
-          </div>
+          </div> -->
         </div>
         <div>
           <div>
@@ -59,8 +64,11 @@
                     />
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">DAI: <span>$1.00</span></p>
+                    <div class="p-2 md:p-3 text-center">
+                      <p class="font-semibold">Fair token launches</p>
+                      <p class="hidden">
+                        Via a Liquidity Bootstrapping Pool (LBP)
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -76,8 +84,9 @@
                     />
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">WETH: <span>$2,394</span></p>
+                    <div class="p-2 md:p-3 text-center">
+                      <p class="font-semibold">Index funds</p>
+                      <p class="hidden">Via a Swing Trading Pool</p>
                     </div>
                   </div>
                 </div>
@@ -93,8 +102,9 @@
                     />
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">BAL: <span>$56.24</span></p>
+                    <div class="p-2 md:p-3 text-center">
+                      <p class="font-semibold">Smart treasuries</p>
+                      <p class="hidden">Via a Swing Trading Pool</p>
                     </div>
                   </div>
                 </div>
@@ -110,15 +120,16 @@
                     />
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">WBTC: <span>$59,456</span></p>
+                    <div class="p-2 md:p-3 text-center">
+                      <p class="font-semibold">Investor clubs</p>
+                      <p class="hidden">Via a Swing Trading Pool</p>
                     </div>
                   </div>
                 </div>
               </a>
             </div>
             <p class="pt-4 text-gray-400">
-              Featured tokens
+              Example use cases
             </p>
           </div>
         </div>

@@ -3,11 +3,12 @@
     <div class="hero-content">
       <transition name="h1">
         <h1 class="h1-hero transition-standard">
-          Balancer is an automated portfolio manager and trading&nbsp;platform
+          Automated portfolio manager and trading&nbsp;platform
         </h1>
       </transition>
       <div class="pb-4">
-        <p class="p-hero transition-standard">
+        <p class="p-hero transition-standard font-medium">
+          <!-- Investors 🤝 Traders -->
           High risk-adjusted returns for investors.<br />Better token swap
           prices for traders.
         </p>

@@ -1,6 +1,6 @@
 <template>
-  <div class="px-4 xl:px-0 w-full max-w-7xl mx-auto pb-16 xl:pb-32">
-    <h1 class="h1-sans-serif md:text-center pb-8">Backed by</h1>
+  <div class="px-4 xl:px-0 w-full max-w-7xl mx-auto pb-20  lg:pb-40">
+    <!-- <h1 class="h1-sans-serif md:text-center pb-8">Backed by</h1> -->
     <div class="grid md:grid-cols-3 gap-4 xl:gap-8">
       <div class="order-1 md:order-2 card flex flex-col justify-between w-full">
         <div class="pb-6">

@@ -18,8 +18,8 @@
           >
           <NuxtLink
             class="link text-lg md:text-base pb-1 leading-8 text-white"
-            to="developers"
-            >Developers</NuxtLink
+            to="build"
+            >Build</NuxtLink
           >
           <!-- <NuxtLink
             class="link text-lg md:text-base pb-1 leading-8 text-white"

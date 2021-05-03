@@ -37,7 +37,7 @@
               <div>
                 <div class="p-2 md:p-3 text-center font-medium">
                   <p class="text-sm truncate">
-                    Uniswap style<span class="block">50/50 pools</span>
+                    Regular AMM<span class="block">50/50 pools</span>
                   </p>
                 </div>
               </div>
@@ -63,7 +63,7 @@
               <div class="relative flex justify-center items-center">
                 <img
                   class="cover-img"
-                  src="~assets/images/pool-types/weighted.jpg"
+                  src="~assets/images/pool-types/stable.jpg"
                   alt=""
                 />
               </div>
@@ -79,14 +79,14 @@
               <div class="relative flex justify-center items-center">
                 <img
                   class="cover-img"
-                  src="~assets/images/pool-types/weighted.jpg"
+                  src="~assets/images/pool-types/smart.jpg"
                   alt=""
                 />
               </div>
               <div>
                 <div class="p-2 md:p-3 text-center font-medium">
                   <p class="text-sm truncate">
-                    Curve-style<span class="block">stable pools</span>
+                    Custom logic<span class="block">Smart Pools</span>
                   </p>
                 </div>
               </div>
