@@ -7,10 +7,12 @@
         </h1>
       </transition>
       <div class="pb-4">
-        <p class="p-hero transition-standard font-medium">
+        <p class="p-hero transition-standard font-medium max-w-sm mx-auto">
           <!-- Investors 🤝 Traders -->
-          High risk-adjusted returns for investors.<br />Better token swap
-          prices for traders.
+          <!-- High risk-adjusted returns for investors.<br />Better token swap
+          prices for traders. -->
+
+          Put your cryptoassets to work and get the best prices for trades
         </p>
       </div>
       <div class="flex justify-center pb-2 md:pb-0">

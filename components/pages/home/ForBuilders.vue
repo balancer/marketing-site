@@ -10,12 +10,20 @@
             A protocol for programmable&nbsp;liquidity
           </h1>
           <p class="pb-4">
-            The Balancer protocol has become a core part of DeFi
+            <!-- The Balancer protocol has become a core part of DeFi
             infrastructure—a liquidity primative. Balancer is the most flexible
             and versatile Automated Market Maker with nearly unlimited options
             for customizing token ratios and fees. Developers can use Balancer
             as a permissionless building block to innovate freely and create new
-            types of treasury management systems.
+            types of treasury management systems.  -->
+            
+            The Balancer Protocol is a
+            core building block of DeFi infrastructure—a unique financial
+            primitive. Balancer is the most flexible and versatile Automated
+            Market Maker, giving developers unprecedented customizability over
+            pool logic, asset management, token weights, and swap fees.
+            Developers can use Balancer as a permissionless platform to create
+            endless possibilities for financial products and services.
           </p>
         </div>
         <div>

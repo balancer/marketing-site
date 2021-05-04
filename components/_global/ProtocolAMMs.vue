@@ -17,7 +17,7 @@
           </p>
 
           <p class="pb-4">
-            For example, create an equally weighted 50/50 Uniswap style pool, or
+            For example, you can create an equally weighted 50/50 Uniswap style pool, or
             a stable soft pegged pool like Curve. But that’s just the start.
             Dream big with smart pools to create almost any kind of asset
             management system.

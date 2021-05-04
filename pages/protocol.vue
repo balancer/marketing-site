@@ -3,7 +3,7 @@
     <section class="protocol-hero">
       <div class="flex items-center mx-auto max-w-screen-2xl">
         <div class="md:flex md:items  items-center mx-auto max-w-screen-2xl">
-          <div class="order-1 md:order-2 md:pl-8">
+          <div class="pt-4 md:pt-0 order-1 md:order-2 md:pl-8">
             <img
               width="1000"
               height="618"
@@ -13,10 +13,9 @@
             />
           </div>
           <div class=" max-w-lg md:order-1 text-white">
-            <h1 class="h1-sans-serif text-white">Programmable liquidity</h1>
-            <p class="pb-4">
-              Balancer algorithmically manages liquidity to mutually benefit
-              investors and traders. Built on&nbsp;Ethereum.
+            <h1 class="h1-sans-serif text-white">Flexible, efficient, liquid.</h1>
+            <p class="pb-4 font-medium text-lg">
+              Balancer algorithmically manages liquidity to mutually benefit investors and traders. Built on&nbsp;Ethereum.
             </p>
             <div class="flex md:pb-0">
               <a

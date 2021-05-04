@@ -7,19 +7,25 @@
         <div class="md:mx-auto max-w-lg pr-4">
           <p class="eyebrow gradient-text pb-2 font-medium">For investors</p>
           <h1 class="h1-sans-serif">
-            Continuous self-balancing&nbsp;portfolios
+            <!-- Continuous self-balancing&nbsp;portfolios -->
+            Portfolios that generate yield and rebalance automatically
           </h1>
           <p class="pb-4">
+            <!-- Balancer turns the concept of an index fund on its head: instead of
+            paying fees to portfolio managers to rebalance your portfolio, you
+            collect fees from traders who rebalance your portfolio by following
+            arbitrage opportunities. -->
+
             Balancer turns the concept of an index fund on its head: instead of
             paying fees to portfolio managers to rebalance your portfolio, you
             collect fees from traders who rebalance your portfolio by following
             arbitrage opportunities.
           </p>
           <div class="grid grid-cols-1 pb-5">
-            <div class="flex pb-5">
+            <!-- <div class="flex pb-5">
               <img class="mr-3" src="~/assets/svg/icon-moon.svg" alt="" />
               <p class="font-medium">High risk-adjusted returns</p>
-            </div>
+            </div> -->
             <div class="flex pb-5">
               <img class="mr-3" src="~/assets/svg/icon-shield.svg" alt="" />
               <p class="font-medium">Battle tested and secure</p>
@@ -30,7 +36,7 @@
             </div>
             <div class="flex pb-5">
               <img class="mr-3" src="~/assets/svg/icon-sparkles.svg" alt="" />
-              <p class="font-medium">Liquidity mining incentives</p>
+              <p class="font-medium">Earn $BAL token incentives</p>
             </div>
 
             <!-- <FeaturedBenefit benefit="Designed to earn you more"  iconPath="icon-moon.svg" /> -->
@@ -39,7 +45,9 @@
         <div>
           <div>
             <div class="grid grid-cols-2 gap-4 max-w-lg">
-              <a href="https://app.balancer.fi/#/pool/0x0297e37f1873d2dab4487aa67cd56b58e2f27875000200000000000000000003">
+              <a
+                href="https://app.balancer.fi/#/pool/0x0297e37f1873d2dab4487aa67cd56b58e2f27875000200000000000000000003"
+              >
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -55,7 +63,9 @@
                   </div>
                 </div>
               </a>
-              <a href="https://app.balancer.fi/#/pool/0x647c1fd457b95b75d0972ff08fe01d7d7bda05df000200000000000000000002">
+              <a
+                href="https://app.balancer.fi/#/pool/0x647c1fd457b95b75d0972ff08fe01d7d7bda05df000200000000000000000002"
+              >
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -71,7 +81,9 @@
                   </div>
                 </div>
               </a>
-              <a href="https://app.balancer.fi/#/pool/0x61d5dc44849c9c87b0856a2a311536205c96c7fd000100000000000000000001">
+              <a
+                href="https://app.balancer.fi/#/pool/0x61d5dc44849c9c87b0856a2a311536205c96c7fd000100000000000000000001"
+              >
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -89,7 +101,9 @@
                   </div>
                 </div>
               </a>
-              <a href="https://app.balancer.fi/#/pool/0x571046eae58c783f29f95adba17dd561af8a871200020000000000000000000c">
+              <a
+                href="https://app.balancer.fi/#/pool/0x571046eae58c783f29f95adba17dd561af8a871200020000000000000000000c"
+              >
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
