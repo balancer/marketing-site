@@ -1,19 +1,19 @@
 <template>
-  <div class="bg-white">
-    <section class="px-4 pb-16 md:pb-32 py-8 md:pt-16">
-      <div class="protocol-hero flex items-center">
-        <div class="md:flex md:items-center mx-auto max-w-screen-2xl">
+  <div>
+    <section class="protocol-hero">
+      <div class="flex items-center mx-auto max-w-screen-2xl">
+        <div class="md:flex md:items  items-center mx-auto max-w-screen-2xl">
           <div class="order-1 md:order-2 md:pl-8">
             <img
               width="1000"
               height="618"
               class="pt-1 pb-10"
-              src="~assets/images/hero-protocol.png"
+              src="@/assets/images/hero-protocol.png"
               alt=""
             />
           </div>
-          <div class=" max-w-lg md:order-1">
-            <h1 class="h1-sans-serif">Programmable liquidity</h1>
+          <div class=" max-w-lg md:order-1 text-white">
+            <h1 class="h1-sans-serif text-white">Programmable liquidity</h1>
             <p class="pb-4">
               Balancer algorithmically manages liquidity to mutually benefit
               investors and traders. Built on&nbsp;Ethereum.
@@ -25,7 +25,7 @@
                 >Launch app</a
               >
               <a
-                class="btn btn-secondary btn-hero"
+                class="btn btn-skeleton-white btn-hero"
                 href="https://docs.balancer.finance/"
                 >View docs</a
               >
@@ -35,7 +35,7 @@
       </div>
     </section>
 
-    <section class="pb-12 bg-white">
+    <section class="pt-16 lg:pt-32 pb-12 lg:pb-32 bg-white">
       <div class="px-4 md:flex mx-auto max-w-screen-xl">
         <div class="md:pr-8 lg:pr-12">
           <img
@@ -45,7 +45,7 @@
           />
         </div>
         <div class="max-w-lg">
-          <h1 class="h1-sans-serif gradient-text-alt py-6">
+          <h1 class="h1-sans-serif py-6">
             An Automated Portfolio Manager and Decentralized Exchange
           </h1>
           <p class="italic">
@@ -63,38 +63,38 @@
     <ProtocolAMMs />
 
     <section class="bg-white">
-      <div class="px-4 max-w-7xl mx-auto pb-16 md:pb-32">
-        <div class="grid md:grid-cols-2 md:grid-rows-3 md:gap-4 ">
+      <div class="px-4 xl:px-0 max-w-7xl mx-auto pb-16 md:pb-32">
+        <div class="grid md:grid-cols-2 md:grid-rows-3 md:gap-8 lg:grid-cols-3 lg:grid-rows-2 lg:gap-12 xl:gap-16">
           <FeatureDetailed
-            title="Capital efficient Asset Managers"
+            title="Efficient Asset Managers"
             description="Asset Managers improve capital efficiency by putting idle pool assets to work to earn yield for investors on other DeFi protocols like Aave."
-            icon="placeholder-icon.svg"
+            icon="icon-lightning.svg"
           />
           <FeatureDetailed
             title="Dynamic swap fee pricing"
             description="Like ride-sharing app surge pricing, dynamic fees earn higher yields for investors while meeting the liquidity needs for traders."
-            icon="placeholder-icon.svg"
+            icon="icon-sliders.svg"
           />
           <FeatureDetailed
             title="Smart Order routing"
             description="Trades are split through a Smart Order Router which performs multi-path swaps and optimizations across all V1 and V2 pools for best price execution."
-            icon="placeholder-icon.svg"
+            icon="icon-smart-routing.svg"
           />
 
           <FeatureDetailed
-            title="Pools with less impermanent loss"
+            title="Less impermanent loss options"
             description="Invest in an uneven pool (e.g. an 80/20 pool) for less exposure to impermanent loss compared to standard equally weighted 50/50 pools."
-            icon="placeholder-icon.svg"
+            icon="icon-umbrella.svg"
           />
           <FeatureDetailed
-            title="‘Instant’ and ‘Resilient’ oracles"
-            description="Two types of low gas cost, Sandwich Attack resistant oracles. An ‘Instant’ oracle with timely prices, and a less timely, harder to manipulate ‘Resilient’ oracle."
-            icon="placeholder-icon.svg"
+            title="Resilient oracles"
+            description="Two types of low gas cost, Sandwich Attack resistant oracles. An ‘Instant’ oracle with timely prices, and a harder to manipulate ‘Resilient’ oracle."
+            icon="icon-crystal-ball.svg"
           />
           <FeatureDetailed
             title="Governable protocol fees"
             description="Community governance can vote on and update parameters which control Protocol fees (Trading fees, Withdrawal fees and Flash Loan fees)."
-            icon="placeholder-icon.svg"
+            icon="icon-thumbs-up.svg"
           />
         </div>
       </div>
@@ -142,7 +142,7 @@
       </div>
     </section>
 
-    <section class="bg-white">
+    <!-- <section class="bg-white">
       <div class="px-4 pb-16 max-w-3xl mx-auto">
         <h1 class="h1-sans-serif py-8">
           Core concepts
@@ -159,8 +159,7 @@
             arbitrageurs who are incentivized to trade with pools, and by doing
             that they sync the pool prices with those on the external market.
           </p>
-          <vsa-list>
-            <!-- Here you can use v-for to loop through items  -->
+          <vsa-list>            
             <vsa-item>
               <vsa-heading>
                 Public pools
@@ -210,7 +209,6 @@
             smart contract code. Pool owners can specify who can join the pool.
           </p>
           <vsa-list>
-            <!-- Here you can use v-for to loop through items  -->
             <vsa-item>
               <vsa-heading>
                 Pool tokens
@@ -262,8 +260,8 @@
           </vsa-list>
         </div>
       </div>
-    </section>
-
+    </section> -->
+<!-- 
     <section class="pb-16 bg-white">
       <div class="px-4 max-w-7xl mx-auto">
         <h1 class="h1-sans-serif py-6">
@@ -292,7 +290,7 @@
           />
         </div>
       </div>
-    </section>
+    </section> -->
   </div>
 </template>
 
@@ -320,10 +318,21 @@ export default {
 
 <style scoped>
 .protocol-hero {
-  min-height: 600px;
-  height: 70vh;
-  max-height: calc(100vh - 200px);
+  @apply  px-4 pb-16 md:pb-32 py-8 md:pt-16;
+  /* max-height: calc(100vh - 200px); */
+  background-image: linear-gradient(227deg, #353646 0%, #21222b 100%);
 }
+
+
+@media (orientation: landscape) {
+  .protocol-hero {
+    @apply flex items-center;
+    min-height: calc(100vh - 100px);
+
+  }
+}
+
+
 
 .messari-logo {
   @apply py-4;

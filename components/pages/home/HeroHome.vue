@@ -16,12 +16,12 @@
       <div class="flex justify-center pb-2 md:pb-0">
         <a
           class="btn btn-secondary btn-hero"
-          href="https://app.balancer.fi/invest"
+          href="https://app.balancer.fi/#/"
           >Invest</a
         >
         <a
           class="btn btn-skeleton-white btn-hero"
-          href="https://app.balancer.fi/trade"
+          href="https://app.balancer.fi/#/trade"
           >Trade</a
         >
       </div>

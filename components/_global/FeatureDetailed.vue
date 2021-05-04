@@ -1,6 +1,6 @@
 <template>
   <div class="pb-12 max-w-lg">
-    <img class="pb-4" :src="require('assets/svg/' + icon)" alt="" />
+    <img class="icon" :src="require('assets/svg/' + icon)" alt="" />
     <h2>{{title}}</h2>
     <p v-if="description">
       {{description}}
@@ -24,4 +24,11 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+
+.icon {
+  @apply mb-4;
+  width: 40px;
+  height: 40px;
+}
+</style>

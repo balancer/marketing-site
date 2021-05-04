@@ -54,18 +54,18 @@
         <div>
           <div>
             <div class="grid grid-cols-2 gap-4 max-w-lg">
-              <a href="https://app.balancer.fi/trade/dai">
+              <a href="https://docs.balancer.finance/guides/smart-pool-templates-gui/liquidity-bootstrapping-pool">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
                       class="cover-img"
-                      src="~assets/images/tokens/dai-cover.jpg"
+                      src="@/assets/images/smart-pools/fair-launch.jpg"
                       alt=""
                     />
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center">
-                      <p class="font-semibold">Fair token launches</p>
+                      <p class="font-semibold">Fair token launch</p>
                       <p class="hidden">
                         Via a Liquidity Bootstrapping Pool (LBP)
                       </p>
@@ -74,12 +74,12 @@
                 </div>
               </a>
 
-              <a href="https://app.balancer.fi/trade/weth">
+              <a href="https://docs.balancer.finance/guides/smart-pool-templates-gui/swing-trading-pool">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
                       class="cover-img"
-                      src="~assets/images/tokens/weth-cover.jpg"
+                      src="@/assets/images/smart-pools/index-fund.jpg"
                       alt=""
                     />
                   </div>
@@ -92,12 +92,12 @@
                 </div>
               </a>
 
-              <a href="https://app.balancer.fi/trade/bal">
+              <a href="https://docs.balancer.finance/guides/smart-pool-templates-gui/smart-treasury">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
                       class="cover-img"
-                      src="~assets/images/tokens/bal-cover.jpg"
+                      src="@/assets/images/smart-pools/smart-treasury.jpg"
                       alt=""
                     />
                   </div>
@@ -110,12 +110,12 @@
                 </div>
               </a>
 
-              <a href="https://app.balancer.fi/trade/wbtc">
+              <a href="https://docs.balancer.finance/guides/smart-pool-templates-gui/investors-club">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
                       class="cover-img"
-                      src="~assets/images/tokens/wbtc-cover.jpg"
+                      src="@/assets/images/smart-pools/investor-clubs.jpg"
                       alt=""
                     />
                   </div>

@@ -7,10 +7,10 @@
       <Nuxt />
       <Footer />
     </div>
-    <div class="drawer-footer">
+    <!-- <div class="drawer-footer">
         <img class="w-full max-w-sm mx-auto" src="@/assets/images/built-on-ethereum.png" alt="">
         <p class="font-semibold text-lg">Built on Ethereum</p>
-    </div>
+    </div> -->
   </div>
 </template>
 

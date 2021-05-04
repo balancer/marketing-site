@@ -39,7 +39,7 @@
         <div>
           <div>
             <div class="grid grid-cols-2 gap-4 max-w-lg">
-              <a href="https://app.balancer.fi/trade/dai">
+              <a href="https://app.balancer.fi/#/pool/0x0297e37f1873d2dab4487aa67cd56b58e2f27875000200000000000000000003">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -55,7 +55,7 @@
                   </div>
                 </div>
               </a>
-              <a href="https://app.balancer.fi/trade/dai">
+              <a href="https://app.balancer.fi/#/pool/0x647c1fd457b95b75d0972ff08fe01d7d7bda05df000200000000000000000002">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -71,7 +71,7 @@
                   </div>
                 </div>
               </a>
-              <a href="https://app.balancer.fi/trade/dai">
+              <a href="https://app.balancer.fi/#/pool/0x61d5dc44849c9c87b0856a2a311536205c96c7fd000100000000000000000001">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -89,7 +89,7 @@
                   </div>
                 </div>
               </a>
-              <a href="https://app.balancer.fi/trade/dai">
+              <a href="https://app.balancer.fi/#/pool/0x571046eae58c783f29f95adba17dd561af8a871200020000000000000000000c">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img

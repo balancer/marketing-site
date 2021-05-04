@@ -1,53 +1,9 @@
 <template>
   <div>
-    <section class="px-4 pb-32 md:pb-32 bg-white">
-      <div class="build-hero md:flex md:items-center mx-auto max-w-screen-2xl">
-        <div class="order-1 md:order-2 md:pl-4 xl:pl-16">
-          <img
-            width="1000"
-            height="618"
-            class="pt-1 pb-10"
-            src="@/assets/svg/hero-developers2.svg"
-            alt=""
-          />
-        </div>
-        <div class=" max-w-lg md:order-1">
-          <h1 class="h1-sans-serif">A core building block of&nbsp;DeFi</h1>
-          <p class="pb-4">
-            Balancer is reliable, open-source, permissionless protocol. Build on
-            Balancer to create new innovative types of financial dapps and
-            treasury management systems.
-          </p>
-          <div class="pb-2">
-            <Feature
-              
-              description="The Balancer Protocol vault handles token management and accounting, security checks and smart order routing."
-              icon="icon-balancer-protocol.svg"
-            />
-            <Feature
-              
-              description="You configure liquidity pools with custom AMM logic to build use-case specific apps for your community's needs."
-              icon="icon-developer.svg"
-            />
-          </div>
-          <div class="flex md:pb-0">
-            <a
-              class="btn btn-primary btn-hero"
-              href="https://docs.balancer.finance/"
-              >Developer docs</a
-            >
-            <a
-              class="btn btn-secondary btn-hero"
-              href="https://github.com/balancer-labs/"
-              >Github code</a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
+  
+    <BuildHero />
     <section class="bg-white">
-      <div class="max-w-7xl md:mx-auto px-4 pb-20 lg:pb-32">
+      <div class="max-w-7xl md:mx-auto px-4 pt-16 lg:pt-40 pb-32 lg:pb-40">
         <div class="md:text-center pb-4">
         <h1 class="h1-sans-serif pb-4">
           Start building
@@ -58,7 +14,7 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-screen-lg mx-auto">
 
-              <a href="https://app.balancer.fi/trade/dai">
+              <a href="https://docs.balancer.finance/guides/smart-pool-templates-gui">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -77,7 +33,7 @@
                   </div>
                 </div>
               </a>              
-              <a href="https://app.balancer.fi/trade/dai">
+              <a href="https://docs.balancer.finance/smart-contracts/smart-pools/liquidity-bootstrapping-faq">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -97,7 +53,7 @@
                 </div>
               </a>
 
-              <a href="https://app.balancer.fi/trade/dai">
+              <a href="https://thegraph.com/explorer/subgraph/balancer-labs/balancer">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -116,7 +72,7 @@
                   </div>
                 </div>
               </a>
-              <a href="https://app.balancer.fi/trade/dai">
+              <a href="https://docs-v2.balancer.finance/getting-started/faqs/trading#what-are-balancer-price-oracles-coming-soon">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -159,7 +115,7 @@
     </section>
 
     <section class="bg-white">
-      <div class="flex flex-col justify-center px-4 pb-16 lg:pb-32">
+      <div class="flex flex-col justify-center px-4 pb-4 lg:pb-32">
         <div class="flex justify-between w-full max-w-6xl mx-auto pb-16">
           <div class="h-40 md:h-80 flex items-end">
             <img
@@ -341,12 +297,14 @@
 </template>
 
 <script>
-import SmartPools from "@/components/pages/developers/SmartPools.vue";
-import LBPs from "@/components/pages/developers/LBPs.vue";
+import BuildHero from "@/components/pages/build/BuildHero.vue";
+import SmartPools from "@/components/pages/build/SmartPools.vue";
+import LBPs from "@/components/pages/build/LBPs.vue";
 
 export default {
   transition: "slideup",
   components: {
+    BuildHero, 
     SmartPools,
     LBPs
   }

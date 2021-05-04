@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-umbrella</title>
+    <g id="icon-umbrella" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="umbrella" transform="translate(1.000000, 2.000000)" stroke="#000000" stroke-width="1.25">
+            <path d="M22,10 C21.4587504,4.32976584 16.696008,-2.22044605e-16 11,-2.22044605e-16 C5.30399205,-2.22044605e-16 0.541249625,4.32976584 2.22044605e-16,10 L22,10 Z M17,17 C17,18.6568542 15.6568542,20 14,20 C12.3431458,20 11,18.6568542 11,17 L11,10" id="Shape"></path>
+        </g>
+    </g>
+</svg>

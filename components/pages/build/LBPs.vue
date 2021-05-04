@@ -33,7 +33,7 @@
             />
           </div>
         </div>
-        <div>
+        <div class="overflow-hidden">
           <div class="pb-12">
             <p class="featured-stat lbp-stat pb-4">20+</p>
             <p class="featured-stat lbp-stat-label">Token launches</p>
