@@ -39,7 +39,7 @@ export default {};
 .hero {
   @apply min-h-screen flex justify-center items-end items-center bg-cover bg-no-repeat bg-center;
   background-color: #21222c;
-  background-image: url(~assets/svg/hero-home3.svg);
+  background-image: url(~assets/svg/hero-home.svg);
   min-height: 640px;
 }
 @media (min-height: 768px) {
