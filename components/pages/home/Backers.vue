@@ -48,7 +48,7 @@
         <div class="pb-6">
           <img class="w-10 mb-4 md:w-16 lg:w-20 lg:mb-6" src="@/assets/svg/icon-quotemark.svg" alt="" />
           <p>
-            The Balancer team has pioneered a great deal of innovation in the
+            Balancer has pioneered a great deal of innovation in the
             DeFi space and is one of the most widely used liquidity protocols.
             We are excited to help them expand&nbsp;further.
           </p>

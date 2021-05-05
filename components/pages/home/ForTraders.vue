@@ -26,7 +26,7 @@
                 src="~/assets/svg/icon-smart-routing.svg"
                 alt=""
               />
-              <p class="font-medium">Intelligent price matching</p>
+              <p class="font-medium">Intelligent price routing</p>
             </div>
             <div class="flex pb-5">
               <img
@@ -66,7 +66,8 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">DAI: <span>$1.00</span></p>
+                      <!-- <p class="text-sm truncate">DAI: <span>$1.00</span></p> -->
+                      <p class="text-sm truncate">DAI</p>
                     </div>
                   </div>
                 </div>
@@ -85,7 +86,8 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">WETH: <span>$2,394</span></p>
+                      <!-- <p class="text-sm truncate">WETH: <span>$2,394</span></p> -->
+                      <p class="text-sm truncate">WETH</p>
                     </div>
                   </div>
                 </div>
@@ -104,7 +106,7 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">BAL: <span>$56.24</span></p>
+                      <p class="text-sm truncate">BAL</p>
                     </div>
                   </div>
                 </div>
@@ -123,7 +125,7 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">WBTC: <span>$59,456</span></p>
+                      <p class="text-sm truncate">WBTC</p>
                     </div>
                   </div>
                 </div>
