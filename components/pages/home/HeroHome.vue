@@ -1,33 +1,35 @@
 <template>
   <section class="hero bg-white">
-    <div class="hero-content">
-      <transition name="h1">
-        <h1 class="h1-hero transition-standard">
-          Automated portfolio manager and trading&nbsp;platform
-        </h1>
-      </transition>
-      <div class="pb-4">
-        <p class="p-hero transition-standard font-medium max-w-sm mx-auto">
-          <!-- Investors 🤝 Traders -->
-          <!-- High risk-adjusted returns for investors.<br />Better token swap
-          prices for traders. -->
-
-          Put your cryptoassets to work and get the best prices for trades
-        </p>
+    <transition name="bg" appear>
+      <div class="hero-content">
+        <transition name="h1" appear>
+          <h1 class="h1-hero transition-standard">
+            Automated portfolio manager and trading&nbsp;platform
+          </h1>
+        </transition>
+        <div class="pb-4">
+          <transition name="p" appear>
+            <p class="p-hero transition-standard font-medium max-w-sm mx-auto">
+              Put your cryptoassets to work and get the best prices for trades
+            </p>
+          </transition>
+        </div>
+        <transition name="buttons" appear>
+          <div class="flex justify-center pb-2 md:pb-0">
+            <a
+              class="btn btn-secondary btn-hero"
+              href="https://app.balancer.fi/#/"
+              >Invest</a
+            >
+            <a
+              class="btn btn-skeleton-white btn-hero"
+              href="https://app.balancer.fi/#/trade"
+              >Trade</a
+            >
+          </div>
+        </transition>
       </div>
-      <div class="flex justify-center pb-2 md:pb-0">
-        <a
-          class="btn btn-secondary btn-hero"
-          href="https://app.balancer.fi/#/"
-          >Invest</a
-        >
-        <a
-          class="btn btn-skeleton-white btn-hero"
-          href="https://app.balancer.fi/#/trade"
-          >Trade</a
-        >
-      </div>
-    </div>
+    </transition>
   </section>
 </template>
 
@@ -89,16 +91,60 @@ export default {};
 }
 
 .h1-enter {
-  transform: translateY(50px);
+  transform: translateY(20px) scale(0.95);
   opacity: 0;
 }
 
-.h1-enter {
+.h1-enter-to {
+  transform: translateY(0px) scale(1);
+  opacity: 1;
+}
+
+.h1-enter-active,
+.h1-leave-active {
+  transition: all 0.4s ease-out;
+}
+
+.p-enter {
+  transform: translateY(20px) scale(0.95);
+  opacity: 0;
+}
+
+.p-enter-to {
   transform: translateY(0px);
   opacity: 1;
 }
 
-.h1-enter-active {
-  transition: 1s all ease-out;
+.p-enter-active,
+.p-leave-active {
+  transition: all 0.4s ease-out 0.1s;
+}
+
+.buttons-enter {
+  transform: translateY(20px) scale(0.95);
+  opacity: 0;
+}
+
+.buttons-enter-to {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.buttons-enter-active,
+.buttons-leave-active {
+  transition: all 0.4s ease-out 0.2s;
+}
+
+.bg-enter {
+  opacity: 0;
+}
+
+.bg-enter-to {
+  opacity: 1;
+}
+
+.bg-enter-active,
+.bg-leave-active {
+  transition: all 0.3s ease-out;
 }
 </style>

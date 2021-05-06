@@ -1,24 +1,24 @@
 <template>
   <header class="header">
-    <nav class="flex">      
-      <transition name="fade" appear mode="out-in">
-        <NuxtLink class="link" to="/"        
-          ><img class="logo" src="~assets/svg/logo-balancer.svg" alt="" /><span
-            class="logotype"
-            >Balancer</span
-          >
-        </NuxtLink>
-      </transition>
+    <nav class="flex">
+      <NuxtLink class="link" to="/">
+        <img class="logo" src="~assets/svg/logo-balancer.svg" alt="" /><span
+          class="logotype"
+          >Balancer</span
+        >
+      </NuxtLink>
 
       <div class="mobile-hide">
-        <NuxtLink class="link" to="protocol">Protocol</NuxtLink>
+        <transition name="fade" appear>
+          <NuxtLink class="link" to="protocol">Protocol</NuxtLink>
+        </transition>
         <NuxtLink class="link" to="build">Build</NuxtLink>
         <!-- <NuxtLink class="link" to="balancer-V2">V2</NuxtLink> -->
         <a
           class="link hover:text-accent transition-standard"
           href="https://docs.balancer.finance"
           >Docs</a
-        >        
+        >
         <!-- <NuxtLink class="link hover:text-accent transition-standard" to="whitepaper">Whitepaper</NuxtLink> -->
         <a
           class="link hover:text-accent transition-standard"
@@ -70,18 +70,34 @@ export default {
   @apply px-3 pr-6 md:pr-2 font-semibold;
 }
 
-
-.fade-enter-from {
+/* .fade-enter-from {
   opacity: 0;
-  transform: translate3d(0,100px,0)
+  transform: translateY(-10px);
   
 }
 .fade-enter-to {
   opacity: 1;
-  transform: translate3d(0,0,0)
+  transform: translateY(0px);
 }
 .fade-enter-active {
   transition: 1s all ease-in-out 0.3s;
+} */
+
+
+
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+ 
 }
+
+.fade-enter-to, .fade-leave-from {
+  opacity: 1;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 1s ease-in-out;
+}
+
 
 </style>

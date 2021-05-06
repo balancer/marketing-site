@@ -26,7 +26,7 @@
                 src="~/assets/svg/icon-smart-routing.svg"
                 alt=""
               />
-              <p class="font-medium">Intelligent price routing</p>
+              <p class="font-medium">Intelligent pricing</p>
             </div>
             <div class="flex pb-5">
               <img

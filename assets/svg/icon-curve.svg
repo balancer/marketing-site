@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-curve</title>
+    <g id="icon-curve" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <line x1="1.5" y1="1.5" x2="1.5" y2="22.5" id="Line" stroke="#000000" stroke-width="1.25"></line>
+        <line x1="22" y1="22.5" x2="1.5" y2="22.5" id="Line" stroke="#000000" stroke-width="1.25"></line>
+        <path d="M5.34314575,3 L5.34314575,4 C5.34314575,12.2842712 12.0588745,19 20.3431458,19 L20.3431458,19 L20.3431458,19" id="Path-2" stroke="#000000" stroke-width="1.25"></path>
+    </g>
+</svg>

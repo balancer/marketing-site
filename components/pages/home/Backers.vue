@@ -27,11 +27,10 @@
         <div class="pb-6">
           <img class="w-10 mb-4 md:w-16 lg:w-20 lg:mb-6" src="@/assets/svg/icon-quotemark.svg" alt="" />
           <p>
-            The Balancer team is the epitome of technical excellence and
+            Balancer is the epitome of technical excellence and
             innovation in the DeFi space. The soon to be released Balancer V2 is
-            another testimony of the team’s continued effort to innovate through
-            clever design. DeFiance Capital is proud to support Fernando and his
-            team in this exciting&nbsp;journey.
+            another testimony of continued effort to innovate through
+            clever design. DeFiance Capital is proud to support Balancer in this exciting&nbsp;journey.
           </p>
         </div>
         <div class="flex items-center">

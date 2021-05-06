@@ -1,39 +1,9 @@
 <template>
   <div>
-    <section class="protocol-hero">
-      <div class="flex items-center mx-auto max-w-screen-2xl">
-        <div class="md:flex md:items  items-center mx-auto max-w-screen-2xl">
-          <div class="pt-4 md:pt-0 order-1 md:order-2 md:pl-8">
-            <img
-              width="1000"
-              height="618"
-              class="pt-1 pb-10"
-              src="@/assets/images/hero-protocol.png"
-              alt=""
-            />
-          </div>
-          <div class=" max-w-lg md:order-1 text-white">
-            <h1 class="h1-sans-serif text-white">Flexible, efficient, liquid.</h1>
-            <p class="pb-4 font-medium text-lg">
-              Balancer algorithmically manages liquidity to mutually benefit investors and traders. Built on&nbsp;Ethereum.
-            </p>
-            <div class="flex md:pb-0">
-              <a
-                class="btn btn-primary btn-hero"
-                href="https://app.balancer.fi/invest"
-                >Launch app</a
-              >
-              <a
-                class="btn btn-skeleton-white btn-hero"
-                href="https://docs.balancer.finance/"
-                >View docs</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
+    <ProtocolHero />
+
+    
     <section class="pt-16 lg:pt-32 pb-12 lg:pb-32 bg-white">
       <div class="px-4 md:flex mx-auto max-w-screen-xl">
         <div class="md:pr-8 lg:pr-12">
@@ -294,6 +264,8 @@
 </template>
 
 <script>
+
+import ProtocolHero from "@/components/pages/protocol/ProtocolHero.vue";
 import {
   VsaList,
   VsaItem,
@@ -310,26 +282,15 @@ export default {
     VsaItem,
     VsaHeading,
     VsaContent,
-    VsaIcon
+    VsaIcon, 
+    ProtocolHero
   }
 };
+
+
 </script>
 
 <style scoped>
-.protocol-hero {
-  @apply  px-4 pb-16 md:pb-32 py-8 md:pt-16;
-  /* max-height: calc(100vh - 200px); */
-  background-image: linear-gradient(227deg, #353646 0%, #21222b 100%);
-}
-
-
-@media (orientation: landscape) {
-  .protocol-hero {
-    @apply flex items-center;
-    min-height: calc(100vh - 100px);
-
-  }
-}
 
 
 

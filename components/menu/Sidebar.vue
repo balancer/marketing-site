@@ -174,7 +174,7 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  cursor: pointer;
+  z-index: 1;
 }
 
 .sidebar-panel {

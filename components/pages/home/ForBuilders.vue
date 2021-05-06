@@ -16,15 +16,25 @@
             for customizing token ratios and fees. Developers can use Balancer
             as a permissionless building block to innovate freely and create new
             types of treasury management systems.  -->
-            
-            The Balancer Protocol is a
-            core building block of DeFi infrastructure—a unique financial
-            primitive. Balancer is the most flexible and versatile Automated
-            Market Maker, giving developers unprecedented customizability over
-            pool logic, asset management, token weights, and swap fees.
-            Developers can use Balancer as a permissionless platform to create
-            endless possibilities for financial products and services.
+
+            The Balancer Protocol is a core building block of DeFi
+            infrastructure—a unique financial primitive and permissionless
+            development platform. Balancer is the most flexible and versatile
+            Automated Market Maker, giving developers unprecedented
+            customizability.
           </p>
+          <div class="flex pb-5">
+            <img class="mr-3" src="~/assets/svg/icon-sliders.svg" alt="" />
+            <p class="font-medium">Custom token weights & swap fees</p>
+          </div>
+          <div class="flex pb-5">
+            <img class="mr-3" src="~/assets/svg/icon-curve.svg" alt="" />
+            <p class="font-medium">Liquidity pools can operate on any price curve</p>
+          </div>
+          <div class="flex pb-5">
+            <img class="mr-3" src="~/assets/svg/icon-asset-manager.svg" alt="" />
+            <p class="font-medium">Asset managers re-utilize dormant liquidity (coming soon)</p>
+          </div>
         </div>
         <div>
           <img
