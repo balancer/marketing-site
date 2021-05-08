@@ -37,12 +37,18 @@
           <div class="pb-4">
             <p class="text-gray-400 pb-1">Products</p>
             <p class="pb-1">
-              <a @click="toggleSidebar" href="https://balancer.fi/invest"
+              <a
+                class="link"
+                @click="toggleSidebar"
+                href="https://balancer.fi/invest"
                 >Invest</a
               >
             </p>
             <p>
-              <a @click="toggleSidebar" href="https://balancer.fi/trade"
+              <a
+                class="link"
+                @click="toggleSidebar"
+                href="https://balancer.fi/trade"
                 >Trade</a
               >
             </p>
@@ -51,18 +57,23 @@
             <p class="text-gray-400 pb-1">Learn</p>
             <p class="pb-1">
               <a
+                class="link"
                 @click="toggleSidebar"
                 href="https://medium.com/balancer-protocol"
                 >Blog</a
               >
             </p>
             <p class="pb-1">
-              <a @click="toggleSidebar" href="https://docs.balancer.finance/"
+              <a
+                class="link"
+                @click="toggleSidebar"
+                href="https://docs.balancer.finance/"
                 >Documentation</a
               >
             </p>
             <p class="pb-1">
               <a
+                class="link"
                 @click="toggleSidebar"
                 href="https://balancer.finance/whitepaper/"
                 >Whitepaper</a
@@ -72,12 +83,16 @@
           <div class="pb-4">
             <p class="text-gray-400 pb-1">Ecosystem</p>
             <p class="pb-1">
-              <a @click="toggleSidebar" href="https://vote.balancer.finance/"
+              <a
+                class="link"
+                @click="toggleSidebar"
+                href="https://vote.balancer.finance/"
                 >Snapshot governance</a
               >
             </p>
             <p class="pb-1">
               <a
+                class="link"
                 @click="toggleSidebar"
                 href="https://duneanalytics.com/balancerlabs"
                 >Dune analytics</a
@@ -85,12 +100,16 @@
             </p>
 
             <p class="pb-1">
-              <a @click="toggleSidebar" href="https://forum.balancer.finance/"
+              <a
+                class="link"
+                @click="toggleSidebar"
+                href="https://forum.balancer.finance/"
                 >Forum</a
               >
             </p>
             <p>
               <a
+                class="link"
                 @click="toggleSidebar"
                 href="https://forum.balancer.finance/t/ecosystem-fund-grant-process/166"
                 >Grants</a
@@ -98,40 +117,28 @@
             </p>
           </div>
 
-          <div class="pb-4">
-            <div class="flex">
-              <a
-                class="mr-2"
-                @click="toggleSidebar"
-                href="https://twitter.com/BalancerLabs"
-                ><img src="@/assets/svg/icon-twitter.svg" alt=""
-              /></a>
+          <div class="pb-4 pt-4">
+                      <div class="flex">
+            <a class="mr-2" href="https://twitter.com/BalancerLabs"
+              >
+              <icon-twitter />
+              </a>
 
-              <a
-                class="mr-2"
-                @click="toggleSidebar"
-                href="https://discord.com/invite/ARJWaeF"
-                ><img src="@/assets/svg/icon-discord.svg" alt=""
-              /></a>
+            <a class="mr-2" href="https://discord.com/invite/ARJWaeF"
+              ><icon-discord /></a>
 
-              <a
-                class="mr-2"
-                @click="toggleSidebar"
-                href="https://medium.com/balancer-protocol"
-                ><img src="@/assets/svg/icon-medium.svg" alt=""
-              /></a>
+            <a class="mr-2" href="https://medium.com/balancer-protocol"
+              ><icon-medium /></a>
 
-              <a
-                class="mr-2"
-                @click="toggleSidebar"
-                href="https://github.com/balancer-labs/"
-                ><img src="@/assets/svg/icon-github.svg" alt=""
-              /></a>
+            <a class="mr-2" href="https://github.com/balancer-labs/"
+              ><icon-github /></a>
 
-              <a @click="toggleSidebar" href="mailto:contact@balancer.finance"
-                ><img src="@/assets/svg/icon-mail.svg" alt=""
-              /></a>
-            </div>
+            <a class="mr-2" href="mailto:contact@balancer.finance"
+              ><icon-mail /></a>
+
+            <a href="https://www.linkedin.com/company/balancer-labs/"
+              ><icon-linkedin /></a>              
+          </div>
           </div>
         </slot>
       </div>
@@ -141,8 +148,22 @@
 <script>
 import { mapState, mapMutations } from "vuex";
 import MenuLinks from "@/components/menu/MenuLinks.vue";
+import IconTwitter from "@/components/icons/IconTwitter.vue";
+import IconDiscord from "@/components/icons/IconDiscord.vue";
+import IconMedium from "@/components/icons/IconMedium.vue";
+import IconGithub from "@/components/icons/IconGithub.vue";
+import IconMail from "@/components/icons/IconMail.vue";
+import IconLinkedin from "@/components/icons/IconLinkedin.vue";
 
 export default {
+    components: {
+    IconTwitter,
+    IconDiscord,
+    IconMedium,
+    IconGithub,
+    IconMail,
+    IconLinkedin
+  },
   computed: {
     ...mapState({
       sidebarOpen: state => state.sidebar
@@ -156,6 +177,19 @@ export default {
 };
 </script>
 <style>
+.link {
+  transition: all 0.2s ease-out;
+}
+
+.link:hover,
+.link:focus-visible {
+  @apply text-defaultRed;
+}
+
+.link:focus:not(:focus-visible) {
+  outline: none;
+}
+
 .slide-enter-active,
 .slide-leave-active {
   transition: transform 0.25s ease-in-out;
@@ -168,7 +202,7 @@ export default {
 }
 
 .sidebar-backdrop {
-  background-color: rgba(19, 15, 64, 0.6);
+  background-color: rgba(19, 15, 64, 0.8);
   width: 100vw;
   height: 100vh;
   position: fixed;

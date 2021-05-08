@@ -43,6 +43,11 @@ module.exports = {
       colors: {
         accent: '#0000ff',
         greyDark: '#718B98',
+        defaultRed: '#F12954',
+        defaultBlue: '#0055FF',
+        defaultPurple: '#8000FF',
+        defaultPink: 'FF00FF',
+
 
         gray: {
           50: '#F8FAFC',

@@ -29,35 +29,35 @@
         </div>
         <div class="pb-8 md:pb-16  lg:pb-0">
           <p class="text-gray-400 pb-1">Products</p>
-          <p class="pb-1"><a href="https://balancer.fi/invest">Invest</a></p>
-          <p><a href="https://balancer.fi/trade">Trade</a></p>
+          <p class="pb-1"><a class="link" href="https://app.balancer.fi/#/">Invest</a></p>
+          <p><a class="link" href="https://app.balancer.fi/#/trade">Trade</a></p>
         </div>
         <div class="pb-8 md:pb-0">
           <p class="text-gray-400 pb-1">Learn</p>
           <p class="pb-1">
-            <a href="https://medium.com/balancer-protocol">Blog</a>
+            <a class="link" href="https://medium.com/balancer-protocol">Blog</a>
           </p>
           <p class="pb-1">
-            <a href="https://docs.balancer.finance/">Documentation</a>
+            <a class="link" href="https://docs.balancer.finance/">Documentation</a>
           </p>
           <p class="pb-1">
-            <a href="https://balancer.finance/whitepaper/">Whitepaper</a>
+            <a class="link" href="https://balancer.finance/whitepaper/">Whitepaper</a>
           </p>
-          <p><a href="https://github.com/balancer-labs/">Github code</a></p>
+          <p><a class="link" href="https://github.com/balancer-labs/">Github code</a></p>
         </div>
         <div class="pb-8 md:pb-16  lg:pb-0">
           <p class="text-gray-400 pb-1">Ecosystem</p>
           <p class="pb-1">
-            <a href="https://vote.balancer.finance/">Snapshot governance</a>
+            <a class="link" href="https://vote.balancer.finance/">Snapshot governance</a>
           </p>
           <p class="pb-1">
-            <a href="https://duneanalytics.com/balancerlabs">Dune analytics</a>
+            <a class="link" href="https://duneanalytics.com/balancerlabs">Dune analytics</a>
           </p>
           <p class="pb-1">
-            <a href="https://forum.balancer.finance/">Forum</a>
+            <a class="link" href="https://forum.balancer.finance/">Forum</a>
           </p>
           <p>
-            <a
+            <a class="link"
               href="https://forum.balancer.finance/t/ecosystem-fund-grant-process/166"
               >Grants</a
             >
@@ -68,24 +68,24 @@
           <p class="text-gray-400 pb-2">Community</p>
           <div class="flex">
             <a class="mr-2" href="https://twitter.com/BalancerLabs"
-              ><img src="@/assets/svg/icon-twitter.svg" alt=""
-            /></a>
+              >
+              <icon-twitter />
+              </a>
 
             <a class="mr-2" href="https://discord.com/invite/ARJWaeF"
-              ><img src="@/assets/svg/icon-discord.svg" alt=""
-            /></a>
+              ><icon-discord /></a>
 
             <a class="mr-2" href="https://medium.com/balancer-protocol"
-              ><img src="@/assets/svg/icon-medium.svg" alt=""
-            /></a>
+              ><icon-medium /></a>
 
             <a class="mr-2" href="https://github.com/balancer-labs/"
-              ><img src="@/assets/svg/icon-github.svg" alt=""
-            /></a>
+              ><icon-github /></a>
 
-            <a href="mailto:contact@balancer.finance"
-              ><img src="@/assets/svg/icon-mail.svg" alt=""
-            /></a>
+            <a class="mr-2" href="mailto:contact@balancer.finance"
+              ><icon-mail /></a>
+
+            <a href="https://www.linkedin.com/company/balancer-labs/"
+              ><icon-linkedin /></a>              
           </div>
         </div>
 
@@ -107,10 +107,41 @@
 </template>
 
 <script>
-export default {};
+import IconExternalLink from "@/components/icons/IconExternalLink.vue";
+import IconTwitter from "@/components/icons/IconTwitter.vue";
+import IconDiscord from "@/components/icons/IconDiscord.vue";
+import IconMedium from "@/components/icons/IconMedium.vue";
+import IconGithub from "@/components/icons/IconGithub.vue";
+import IconMail from "@/components/icons/IconMail.vue";
+import IconLinkedin from "@/components/icons/IconLinkedin.vue";
+
+export default {
+  components: {  
+    IconExternalLink, 
+    IconTwitter, 
+    IconDiscord, 
+    IconMedium, 
+    IconGithub,
+    IconMail, 
+    IconLinkedin
+  }
+};
 </script>
 
 <style scoped>
+
+.link {
+  transition: all 0.2s ease-out;
+}
+
+.link:hover, .link:focus-visible {
+  @apply text-defaultRed;
+}
+
+.link:focus:not(:focus-visible) {
+  outline: none;
+}
+
 footer {
   @apply bg-black;
 }

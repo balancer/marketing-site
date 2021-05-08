@@ -66,7 +66,7 @@ export default {};
   letter-spacing: -0.5px;
 }
 
-@media (min-width: 768px) and (min-height: 768px) {
+@media (min-width: 768px) {
   .h1-hero {
     font-size: 48px;
   }

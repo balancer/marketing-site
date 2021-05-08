@@ -20,8 +20,8 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ...headMeta()
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    link: [      
+      { rel: 'icon', href: '/favicon.svg' }
     ],
     script: [
       { src: 'https://chipmunk.balancer.fi/script.js', site: process.env.FATHOM_SITE_ID || 'xxx', defer: true, 'data-spa': 'auto' }

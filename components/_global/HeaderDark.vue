@@ -18,35 +18,24 @@
           >Build</NuxtLink
         >
         <!-- <NuxtLink class="link" to="balancer-V2">V2</NuxtLink> -->
+        <a
+          class="nav-link"
+          data-hover="Docs"
+          href="https://docs.balancer.finance"
+          >Docs</a
+        >
+        <!-- <NuxtLink class="link hover:text-accent transition-standard" to="whitepaper">Whitepaper</NuxtLink> -->
+        <a
+          class="nav-link"
+          data-hover="Blog"
+          href="https://medium.com/balancer-protocol"
+          >Blog</a
+        >
       </div>
     </nav>
     <div class="flex items-center">
-      <div class="mobile-hide">
-        <div class="flex items-center nav-utility-link">
-          <a
-            class="nav-link"
-            data-hover="Docs"
-            href="https://docs.balancer.finance"
-            >Docs
-            <icon-base width="14" height="14" icon-name="external link"
-              ><icon-external-link /></icon-base
-          ></a>
-        </div>
-        <!-- <NuxtLink class="link hover:text-accent transition-standard" to="whitepaper">Whitepaper</NuxtLink> -->
-        <div class="flex items-center nav-utility-link">
-          <a
-            class="nav-link"
-            data-hover="Blog"
-            href="https://medium.com/balancer-protocol"
-            >Blog
-            <icon-base width="14" height="14" icon-name="external link"
-              ><icon-external-link
-            /></icon-base>
-          </a>
-        </div>
-      </div>
       <a
-        class="btn-header"
+        class="px-4 mr-2 py-2 rounded-3xl border border-grey text-white"
         href="https://app.balancer.fi/invest"
         >Launch&nbsp;app</a
       >
@@ -57,14 +46,10 @@
 
 <script>
 import Burger from "@/components/menu/Burger.vue";
-import IconBase from "@/components/icons/IconBase.vue";
-import IconExternalLink from "@/components/icons/IconExternalLink.vue";
 
 export default {
   components: {
-    Burger,
-    IconBase,
-    IconExternalLink
+    Burger
   }
 };
 </script>
@@ -81,7 +66,7 @@ export default {
   }
 }
 .header {
-  @apply h-16 md:h-20 px-3 flex justify-between items-center;
+  @apply h-16 md:h-20 px-4 flex justify-between items-center bg-black;
   overflow: auto;
 }
 .link {
@@ -119,20 +104,17 @@ export default {
 }
 
 .nav-link {
+  @apply font-medium;
   position: relative;
   outline: none;
-  color: #0000ff;
   text-decoration: none;
-  color: #000;
+  color: #ccc;
   margin-right: 1rem;
-}
-
-.nav-utility-link {
-  @apply mr-4;
-}
-
-.nav-utility-link .nav-link {
-  margin-right: 5px;
+  /* text-transform: uppercase; */
+  /* letter-spacing: 1px; */
+  /* font-weight: 400; */
+  /* text-shadow: 0 0 1px rgba(255,255,255,0.3); */
+  /* font-size: 1.35em; */
 }
 
 .nav-link:hover,
@@ -146,37 +128,16 @@ export default {
   left: 0;
   overflow: hidden;
   max-width: 0;
-  border-bottom: 2px solid purple;
-  color: purple;
+  border-bottom: 2px solid #0000ff;
+  color: #fff;
   content: attr(data-hover);
-  -webkit-transition: max-width 0.2s ease-out;
-  -moz-transition: max-width 0.2s ease-out;
-  transition: max-width 0.2s ease-out;
+  -webkit-transition: max-width 0.2s ease-in-out;
+  -moz-transition: max-width 0.2s ease-in-out;
+  transition: max-width 0.2s ease-in-out;
 }
 
 .nav-link:hover::before,
 .nav-link:focus::before {
   max-width: 100%;
 }
-
-.btn-header {
-  @apply px-4 mr-2 py-2 rounded-lg border font-medium;
-    background-size: 300% 100%;
-
-    transition: all .1s ease-out;    
-    background-image: linear-gradient(to right, #fff, #FFf, #0000ff, #FF00FF);  
-}
-.btn-header:hover {
-    background-position: 100% 0;
-    box-shadow: 0 4px 15px 0 rgba(300, 100, 50, 0.1);   
-    transition: all .2s ease-out;
-    color: white;
-    border: 1px solid transparent;
-}
-
-.btn-header:focus {
-    outline: none;
-}
-
-
 </style>

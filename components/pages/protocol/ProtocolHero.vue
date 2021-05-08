@@ -1,8 +1,8 @@
 <template>
     <section class="protocol-hero">
-      <div class="flex items-center mx-auto max-w-screen-2xl">
+      <div class="protocol-hero-container">
         <div class="md:flex md:items items-center">
-          <div class="pt-4 md:pt-0 order-1 md:order-2 md:pl-8">
+          <div class="pt-12 md:pt-0 order-1 md:order-2 md:pl-8 xl:pl-16">
               <transition name="img" appear>
             <img
               width="1000"
@@ -50,14 +50,20 @@
 
 <style scoped>
 .protocol-hero {
-  @apply  px-4 pb-16 md:pb-0;
+  @apply  px-4 pb-16 md:pb-0 md:flex;
   /* max-height: calc(100vh - 200px); */
+  min-height: 600px;
   background-image: linear-gradient(227deg, #353646 0%, #21222b 100%);
 }
 
 .protocol-hero-content {
     @apply md:pl-8 xl:pl-0 md:order-1 text-white;
 }
+
+.protocol-hero-container {
+    @apply flex items-center mx-auto max-w-screen-2xl;
+}
+
 
 
 @media (orientation: landscape) {

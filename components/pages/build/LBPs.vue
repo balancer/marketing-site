@@ -174,6 +174,7 @@ export default {};
   max-width: 300px;
   box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
 }
+
 .cover-img {
   border-radius: 10px 10px 0 0;
 }

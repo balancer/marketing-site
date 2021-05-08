@@ -58,7 +58,7 @@ button:focus {
 }
 
 .burger-bar {
-  background-color: #130f40;
+  background-color: #333;
   position: absolute;
   top: 50%;
   right: 6px;
@@ -82,7 +82,12 @@ button:focus {
 }
 
 .burger-button:hover .burger-bar--2 {
+  @apply bg-defaultRed;
   transform: scaleX(1);
+}
+
+.burger-button:hover .burger-bar--1, .burger-button:hover .burger-bar--3 {
+  @apply bg-defaultRed;
 }
 
 .no-touchevents .burger-bar--2:hover {
@@ -112,4 +117,11 @@ button:focus {
 #burger.active .burger-bar--3 {
   transform: rotate(-45deg);
 }
+
+#burger.active:hover .burger-bar--1, #burger.active:hover .burger-bar--3 {
+  @apply bg-yellow-200;
+}
+
+
+
 </style>

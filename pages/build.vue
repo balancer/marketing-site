@@ -300,6 +300,7 @@
 import BuildHero from "@/components/pages/build/BuildHero.vue";
 import SmartPools from "@/components/pages/build/SmartPools.vue";
 import LBPs from "@/components/pages/build/LBPs.vue";
+import { headMeta } from "@/lib/meta";
 
 export default {
   transition: "slideup",
@@ -307,28 +308,37 @@ export default {
     BuildHero, 
     SmartPools,
     LBPs
+  },
+  head() {
+    return {
+      title: 'Build on Balancer – a core building block of DeFi ', 
+      description: 'yolo',
+      ...headMeta({
+        description: 'description lorem',
+      })
+    }
   }
 };
 </script>
 
 <style>
 
-/* .build-hero {
-  min-height: 600px;
-  height: 90vh;
-  max-height: calc(100vh - 200px);
-} */
-
 .card {
   @apply rounded-lg p-4 md:p-6 lg:p-8;
   box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
+  transition: box-shadow 0.2s ease-out;
 }
 
 .pool {
   @apply rounded-lg;
   max-width: 300px;
   box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
+  transition: box-shadow 0.2s ease-out;
 }
+.card:hover, .pool:hover {
+  box-shadow: 8px 8px 30px #e6e6e6, -8px -8px 30px #ffffff;
+}
+
 
 .cover-img {
   border-radius: 10px 10px 0 0;

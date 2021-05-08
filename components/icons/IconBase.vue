@@ -36,11 +36,11 @@ export default {
     },
     iconColor: {
       type: String,
-      default: "currentColor"
+      // default: "currentColor"
     },
     iconHoverColor: {
       type: String,
-      default: "currentColor"
+      // default: "currentColor"
     }
   },
   data() {
@@ -57,7 +57,14 @@ svg {
   vertical-align: baseline;
   margin-bottom: -2px;
 }
+
+.nav-link:hover .icon-group {
+  fill: purple;
+}
+
 .icon-group {
   transition: fill 0.2s ease-in-out;
 }
+
+
 </style>
