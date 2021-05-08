@@ -79,7 +79,7 @@
             <p class="pb-1">
               <a
                 @click="toggleSidebar"
-                href="https://duneanalytics.com/balancerlabs"
+                href="https://duneanalytics.com/projects/balancer"
                 >Dune analytics</a
               >
             </p>

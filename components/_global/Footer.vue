@@ -51,7 +51,7 @@
             <a href="https://vote.balancer.finance/">Snapshot governance</a>
           </p>
           <p class="pb-1">
-            <a href="https://duneanalytics.com/balancerlabs">Dune analytics</a>
+            <a href="https://duneanalytics.com/projects/balancer">Dune analytics</a>
           </p>
           <p class="pb-1">
             <a href="https://forum.balancer.finance/">Forum</a>
