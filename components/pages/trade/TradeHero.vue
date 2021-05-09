@@ -28,6 +28,7 @@
           <transition name="buttons" appear>
             <div class="flex md:pb-0">
               <a
+                onclick="fathom.trackGoal('NDN2AJWP', 0);"
                 class="btn btn-primary btn-hero"
                 href="https://app.balancer.fi/invest"
                 >Start trading</a

@@ -17,11 +17,13 @@
         <transition name="buttons" appear>
           <div class="flex justify-center pb-2 md:pb-0">
             <a
+              onclick="fathom.trackGoal('YZKHSNU0', 0);"
               class="btn btn-secondary btn-hero"
               href="https://app.balancer.fi/#/"
               >Invest</a
             >
             <a
+              onclick="fathom.trackGoal('OUY5RF8L', 0);"
               class="btn btn-skeleton-white btn-hero"
               href="https://app.balancer.fi/#/trade"
               >Trade</a

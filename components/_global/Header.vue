@@ -47,7 +47,7 @@
           </a>
         </div>
       </div>
-      <a class="btn-header" href="https://app.balancer.fi/invest"
+      <a onclick="fathom.trackGoal('OMNVISTW', 0);" class="btn-header" href="https://app.balancer.fi/invest"
         >Launch&nbsp;app</a
       >
       <Burger />
