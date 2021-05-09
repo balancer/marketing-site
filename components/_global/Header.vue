@@ -8,12 +8,14 @@
         >
       </NuxtLink>
 
+
       <div class="mobile-hide">
-        <transition name="fade" appear>
-          <NuxtLink class="nav-link" data-hover="Protocol" to="protocol"
-            >Protocol</NuxtLink
-          >
-        </transition>
+        <NuxtLink class="nav-link" data-hover="Invest" to="invest"
+          >Invest</NuxtLink
+        >
+        <NuxtLink class="nav-link" data-hover="Trade" to="trade"
+          >Trade</NuxtLink
+        >                
         <NuxtLink class="nav-link" data-hover="Build" to="build"
           >Build</NuxtLink
         >
@@ -45,9 +47,7 @@
           </a>
         </div>
       </div>
-      <a
-        class="btn-header"
-        href="https://app.balancer.fi/invest"
+      <a class="btn-header" href="https://app.balancer.fi/invest"
         >Launch&nbsp;app</a
       >
       <Burger />
@@ -161,22 +161,20 @@ export default {
 
 .btn-header {
   @apply px-4 mr-2 py-2 rounded-lg border font-medium;
-    background-size: 300% 100%;
+  background-size: 300% 100%;
 
-    transition: all .1s ease-out;    
-    background-image: linear-gradient(to right, #fff, #FFf, #0000ff, #FF00FF);  
+  transition: all 0.1s ease-out;
+  background-image: linear-gradient(to right, #fff, #fff, #0000ff, #ff00ff);
 }
 .btn-header:hover {
-    background-position: 100% 0;
-    box-shadow: 0 4px 15px 0 rgba(300, 100, 50, 0.1);   
-    transition: all .2s ease-out;
-    color: white;
-    border: 1px solid transparent;
+  background-position: 100% 0;
+  box-shadow: 0 4px 15px 0 rgba(300, 100, 50, 0.1);
+  transition: all 0.2s ease-out;
+  color: white;
+  border: 1px solid transparent;
 }
 
 .btn-header:focus {
-    outline: none;
+  outline: none;
 }
-
-
 </style>

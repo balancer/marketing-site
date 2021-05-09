@@ -28,7 +28,7 @@ export default {
 
 .icon {
   @apply mb-4;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
 }
 </style>

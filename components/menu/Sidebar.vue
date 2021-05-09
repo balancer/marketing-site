@@ -18,9 +18,15 @@
             <NuxtLink
               @click.native="toggleSidebar"
               class="link text-lg leading-8"
-              to="protocol"
-              >Protocol</NuxtLink
+              to="invest"
+              >Invest</NuxtLink
             >
+            <NuxtLink
+              @click.native="toggleSidebar"
+              class="link text-lg leading-8"
+              to="trade"
+              >Trade</NuxtLink
+            >            
             <NuxtLink
               @click.native="toggleSidebar"
               class="link text-lg leading-8"

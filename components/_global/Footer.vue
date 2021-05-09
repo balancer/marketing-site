@@ -13,9 +13,14 @@
           >
           <NuxtLink
             class="link text-lg md:text-base pb-1 leading-8 text-white"
-            to="protocol"
-            >Protocol</NuxtLink
+            to="invest"
+            >Invest</NuxtLink
           >
+          <NuxtLink
+            class="link text-lg md:text-base pb-1 leading-8 text-white"
+            to="trade"
+            >Trade</NuxtLink
+          >          
           <NuxtLink
             class="link text-lg md:text-base pb-1 leading-8 text-white"
             to="build"

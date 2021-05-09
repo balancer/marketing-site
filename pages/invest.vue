@@ -1,70 +1,82 @@
 <template>
   <div>
-
-    <ProtocolHero />
-
-    
-    <section class="pt-16 lg:pt-32 pb-12 lg:pb-32 bg-white">
-      <div class="px-4 md:flex mx-auto max-w-screen-xl">
-        <div class="md:pr-8 lg:pr-12">
-          <img
-            class="py-12 md:py-0"
-            src="~assets/images/ui-in-device.jpg"
-            alt=""
-          />
-        </div>
-        <div class="max-w-lg">
-          <h1 class="h1-sans-serif py-6">
-            An Automated Portfolio Manager and Decentralized Exchange
-          </h1>
-          <p class="italic">
-            “The big idea of Balancer is, it is a new financial primitive that
-            combines asset management and decentralized exchange. In traditional
-            finance, this is similar to combining Fidelity Asset Management and
-            NASDAQ’s exchange, and then distributing NASDAQ’s trading profits to
-            Fidelity’s asset holders.”
-          </p>
-          <img class="messari-logo" src="~assets/images/messari.png" alt="" />
-        </div>
-      </div>
-    </section>
-
+    <InvestHero />
     <ProtocolAMMs />
 
     <section class="bg-white">
       <div class="px-4 xl:px-0 max-w-7xl mx-auto pb-16 md:pb-32">
-        <div class="grid md:grid-cols-2 md:grid-rows-3 md:gap-8 lg:grid-cols-3 lg:grid-rows-2 lg:gap-12 xl:gap-16">
-          <FeatureDetailed
-            title="Efficient Asset Managers"
-            description="Asset Managers improve capital efficiency by putting idle pool assets to work to earn yield for investors on other DeFi protocols like Aave."
-            icon="icon-lightning.svg"
-          />
-          <FeatureDetailed
-            title="Dynamic swap fee pricing"
-            description="Like ride-sharing app surge pricing, dynamic fees earn higher yields for investors while meeting the liquidity needs for traders."
-            icon="icon-sliders.svg"
-          />
-          <FeatureDetailed
-            title="Smart Order routing"
-            description="Trades are split through a Smart Order Router which performs multi-path swaps and optimizations across all V1 and V2 pools for best price execution."
-            icon="icon-smart-routing.svg"
-          />
+        <div
+          class="grid md:grid-cols-2 md:grid-rows-3 md:gap-8 lg:grid-cols-3 lg:grid-rows-2 lg:gap-12 xl:gap-16"
+        >
+          <div class="card pb-12 max-w-lg">
+            <div class="mb-4">
+              <icon-lego />
+            </div>
+            <h2>Plug and play options</h2>
+            <p>
+              Balancer offers easy portfolio configurations that have been
+              designed and used by thousands of individual and institutional
+              investors.
+            </p>
+          </div>
+          <div class="card pb-12 max-w-lg">
+            <div class="mb-4">
+              <icon-filter />
+            </div>
+            <h2>Customizability and choice</h2>
+            <p>
+              Balancer allows advanced investors to choose their level of
+              exposure to each asset in their portfolio and to set custom price
+              curves, enabling infinite strategies.
+            </p>
+          </div>
 
-          <FeatureDetailed
-            title="Less impermanent loss options"
-            description="Invest in an uneven pool (e.g. an 80/20 pool) for less exposure to impermanent loss compared to standard equally weighted 50/50 pools."
-            icon="icon-umbrella.svg"
-          />
-          <FeatureDetailed
-            title="Resilient oracles"
-            description="Two types of low gas cost, Sandwich Attack resistant oracles. An ‘Instant’ oracle with timely prices, and a harder to manipulate ‘Resilient’ oracle."
-            icon="icon-crystal-ball.svg"
-          />
-          <FeatureDetailed
-            title="Governable protocol fees"
-            description="Community governance can vote on and update parameters which control Protocol fees (Trading fees, Withdrawal fees and Flash Loan fees)."
-            icon="icon-thumbs-up.svg"
-          />
+          <div class="card pb-12 max-w-lg">
+            <div class="mb-4">
+              <icon-shield />
+            </div>
+            <h2>Built for security</h2>
+            <p>
+              Balancer’s battle-tested smart contracts are designed with
+              security of investor funds as the top priority. They carry a
+              history of security audits by elite firms and a 1,000 ETH bug
+              bounty— the largest in the industry.
+            </p>
+          </div>
+
+          <div class="card pb-12 max-w-lg">
+            <div class="mb-4">
+              <icon-fees />
+            </div>
+            <h2>Maximize earnings from fees</h2>
+            <p>
+              Dynamic fee pools take advantage of market conditions to adjust
+              trading fees and optimize revenue for investors.
+            </p>
+          </div>
+          <div class="card pb-12 max-w-lg">
+            <div class="mb-4">
+              <icon-sparkles />
+            </div>
+            <h2>$BAL incentives</h2>
+            <p>
+              Investors on Balancer receive $BAL token liquidity mining
+              distributions for depositing assets into incentivized liquidity
+              pools.
+            </p>
+          </div>
+
+          <div class="card pb-12 max-w-lg">
+            <div class="mb-4">
+              <icon-key />
+            </div>
+            <h2>Permissionless platform</h2>
+            <p>
+              Balancer is a non-custodial protocol, so investor funds are always
+              controlled by the investors themselves and not a centralized team
+              or third party.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -110,162 +122,11 @@
         </div>
       </div>
     </section>
-
-    <!-- <section class="bg-white">
-      <div class="px-4 pb-16 max-w-3xl mx-auto">
-        <h1 class="h1-sans-serif py-8">
-          Core concepts
-        </h1>
-
-        <div class="pb-8">
-          <h2 class="pb-4">Pool types</h2>
-          <p class="pb-8">
-            Liquidity pools are the fundamental building block of the Balancer
-            Protocol. Pools are smart contracts that implement the Balancer
-            Protocol, and hold value in two or more ERC-20 tokens. Balancer
-            pools are essentially self-balancing index funds that are
-            continuously rebalanced. This rebalancing happens through
-            arbitrageurs who are incentivized to trade with pools, and by doing
-            that they sync the pool prices with those on the external market.
-          </p>
-          <vsa-list>            
-            <vsa-item>
-              <vsa-heading>
-                Public pools
-              </vsa-heading>
-
-              <vsa-icon>
-                <transition name="accordion-trigger">
-                  <span class="open"
-                    ><img src="@/assets/svg/icon-chevron-down.svg" alt=""
-                  /></span>
-                </transition>
-                <span class="close"
-                  ><img src="@/assets/svg/icon-chevron-up.svg" alt=""
-                /></span>
-              </vsa-icon>
-
-              <vsa-content>
-                This is the content
-              </vsa-content>
-            </vsa-item>
-            <vsa-item>
-              <vsa-heading>
-                Private pools
-              </vsa-heading>
-
-              <vsa-content>
-                This isfdsafdsa the content
-                <img src="@/assets/images/messari.png" alt="" />
-              </vsa-content>
-            </vsa-item>
-            <vsa-item>
-              <vsa-heading>
-                Smart pools
-              </vsa-heading>
-
-              <vsa-content>
-                This isfdsafdsa the content
-                <img src="@/assets/images/messari.png" alt="" />
-              </vsa-content>
-            </vsa-item>
-          </vsa-list>
-        </div>
-        <div class="py-8">
-          <h2 class="pb-4">Pool parameters</h2>
-          <p class="pb-8">
-            Dynamic liquidity pools have parameters that can be adjusted via
-            smart contract code. Pool owners can specify who can join the pool.
-          </p>
-          <vsa-list>
-            <vsa-item>
-              <vsa-heading>
-                Pool tokens
-              </vsa-heading>
-              <vsa-content>
-                This is the content
-              </vsa-content>
-            </vsa-item>
-            <vsa-item>
-              <vsa-heading>
-                Token weights
-              </vsa-heading>
-              <vsa-content>
-                Lorem ipsum dolor sit amet
-              </vsa-content>
-            </vsa-item>
-            <vsa-item>
-              <vsa-heading>
-                Swap fees
-              </vsa-heading>
-              <vsa-content>
-                Lorem ipsum dolor sit amet
-              </vsa-content>
-            </vsa-item>
-            <vsa-item>
-              <vsa-heading>
-                Liquidity providers
-              </vsa-heading>
-              <vsa-content>
-                Lorem ipsum dolor sit amet
-              </vsa-content>
-            </vsa-item>
-            <vsa-item>
-              <vsa-heading>
-                Deposit limit
-              </vsa-heading>
-              <vsa-content>
-                Lorem ipsum dolor sit amet
-              </vsa-content>
-            </vsa-item>
-            <vsa-item>
-              <vsa-heading>
-                Start / stop trading
-              </vsa-heading>
-              <vsa-content>
-                Lorem ipsum dolor sit amet
-              </vsa-content>
-            </vsa-item>
-          </vsa-list>
-        </div>
-      </div>
-    </section> -->
-<!-- 
-    <section class="pb-16 bg-white">
-      <div class="px-4 max-w-7xl mx-auto">
-        <h1 class="h1-sans-serif py-6">
-          Balancer core tenants
-        </h1>
-        <div class="grid md:grid-cols-2 md:grid-rows-3 md:gap-4 ">
-          <Feature
-            title="Security"
-            description="Core smart contracts are formally verified and audited. Commited to safety by offering the largest bug bounty in DeFi history."
-            icon="icon-shield.svg"
-          />
-          <Feature
-            title="Flexibility"
-            description="Developers can modify protocol parameters or customize the code to build new types of financial applications."
-            icon="icon-filter.svg"
-          />
-          <Feature
-            title="Capital efficiency"
-            description="Optimized dynamic swap fees and Asset Managers put idle pool assets to work to maximize returns for investors."
-            icon="icon-lightning.svg"
-          />
-          <Feature
-            title="Gas efficiency"
-            description="The cheapest gas fees in all of DeFi. Achieved by using internal balances of the V2 protocol vault. "
-            icon="icon-dashboard.svg"
-          />
-        </div>
-      </div>
-    </section> -->
   </div>
 </template>
 
 <script>
-
-import ProtocolHero from "@/components/pages/protocol/ProtocolHero.vue";
+import InvestHero from "@/components/pages/invest/InvestHero.vue";
 import {
   VsaList,
   VsaItem,
@@ -274,6 +135,12 @@ import {
   VsaIcon
 } from "vue-simple-accordion";
 import "vue-simple-accordion/dist/vue-simple-accordion.css";
+import IconLego from "@/components/icons/IconLego.vue";
+import IconFilter from "@/components/icons/IconFilter.vue";
+import IconFees from "@/components/icons/IconFees.vue";
+import IconShield from "@/components/icons/IconShield.vue";
+import IconKey from "@/components/icons/IconKey.vue";
+import IconSparkles from "@/components/icons/IconSparkles.vue";
 
 export default {
   transition: "slideup",
@@ -282,18 +149,19 @@ export default {
     VsaItem,
     VsaHeading,
     VsaContent,
-    VsaIcon, 
-    ProtocolHero
+    VsaIcon,
+    InvestHero,
+    IconLego,
+    IconFilter,
+    IconFees,
+    IconShield,
+    IconKey,
+    IconSparkles
   }
 };
-
-
 </script>
 
-<style scoped>
-
-
-
+IconSparkles<style scoped>
 .messari-logo {
   @apply py-4;
   width: 100%;
