@@ -7,49 +7,53 @@
         <div class="md:mx-auto max-w-lg pr-4">
           <p class="eyebrow gradient-text pb-2 font-medium">For investors</p>
           <h1 class="h1-sans-serif">
-            <!-- Continuous self-balancing&nbsp;portfolios -->
             Portfolios that generate yield and rebalance automatically
           </h1>
           <p class="pb-4">
-            <!-- Balancer turns the concept of an index fund on its head: instead of
-            paying fees to portfolio managers to rebalance your portfolio, you
-            collect fees from traders who rebalance your portfolio by following
-            arbitrage opportunities. -->
-
             Balancer turns the concept of an index fund on its head: instead of
             paying fees to portfolio managers to rebalance your portfolio, you
             collect fees from traders who rebalance your portfolio by following
             arbitrage opportunities.
           </p>
           <div class="grid grid-cols-1 pb-5">
-            <!-- <div class="flex pb-5">
-              <img class="mr-3" src="~/assets/svg/icon-moon.svg" alt="" />
-              <p class="font-medium">High risk-adjusted returns</p>
-            </div> -->
-            <div class="flex pb-5">
-              <img class="mr-3" src="~/assets/svg/icon-shield.svg" alt="" />
-              <p class="font-medium">Battle tested and secure</p>
+            <div class="pb-1">
+              <div class="flex pb-5">
+                <img class="mr-3" src="~/assets/svg/icon-shield.svg" alt="" />
+                <p class="font-medium">Battle tested and secure</p>
+              </div>
+              <div class="flex pb-5">
+                <img
+                  class="mr-3"
+                  src="~/assets/svg/icon-lightning.svg"
+                  alt=""
+                />
+                <p class="font-medium">Capital and gas efficient</p>
+              </div>
+              <div class="flex pb-5">
+                <img class="mr-3" src="~/assets/svg/icon-sparkles.svg" alt="" />
+                <p class="font-medium">Earn $BAL token incentives</p>
+              </div>
             </div>
-            <div class="flex pb-5">
-              <img class="mr-3" src="~/assets/svg/icon-lightning.svg" alt="" />
-              <p class="font-medium">Capital and gas efficient</p>
+            <div class="flex pb-4 md:pb-0">
+              <a
+                class="btn btn-primary btn-hero mr-3"
+                href="https://app.balancer.fi/#/"
+                >Start investing</a
+              >
+              <NuxtLink class="btn btn-tertiary btn-hero" to="invest"
+                >Learn more</NuxtLink
+              >
             </div>
-            <div class="flex pb-5">
-              <img class="mr-3" src="~/assets/svg/icon-sparkles.svg" alt="" />
-              <p class="font-medium">Earn $BAL token incentives</p>
-            </div>
-
-            <!-- <FeaturedBenefit benefit="Designed to earn you more"  iconPath="icon-moon.svg" /> -->
           </div>
         </div>
         <div>
           <div>
-            <div class="grid grid-cols-2 gap-4 max-w-lg">
+            <div class="grid grid-cols-2 gap-4 max-w-xl">
               <a
                 href="https://app.balancer.fi/#/pool/0x0297e37f1873d2dab4487aa67cd56b58e2f27875000200000000000000000003"
               >
                 <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
+                  <div class="image-container">
                     <img
                       class="cover-img"
                       src="~assets/images/featured-pools/pool-weth-wbtc.jpg"
@@ -58,7 +62,7 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">50 WETH 50 WBTC</p>
+                      <p class="text-label">50 WETH 50 WBTC</p>
                     </div>
                   </div>
                 </div>
@@ -67,7 +71,7 @@
                 href="https://app.balancer.fi/#/pool/0x647c1fd457b95b75d0972ff08fe01d7d7bda05df000200000000000000000002"
               >
                 <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
+                  <div class="image-container">
                     <img
                       class="cover-img"
                       src="~assets/images/featured-pools/pool-bal-weth.jpg"
@@ -76,7 +80,7 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">80 BAL 20 WETH</p>
+                      <p class="text-label">80 BAL 20 WETH</p>
                     </div>
                   </div>
                 </div>
@@ -85,7 +89,7 @@
                 href="https://app.balancer.fi/#/pool/0x61d5dc44849c9c87b0856a2a311536205c96c7fd000100000000000000000001"
               >
                 <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
+                  <div class="image-container">
                     <img
                       class="cover-img"
                       src="~assets/images/featured-pools/pool-dpi-weth-wbtc.jpg"
@@ -94,7 +98,7 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">
+                      <p class="text-label">
                         33 DPI 33 WETH 33&nbsp;WBTC
                       </p>
                     </div>
@@ -105,7 +109,7 @@
                 href="https://app.balancer.fi/#/pool/0x571046eae58c783f29f95adba17dd561af8a871200020000000000000000000c"
               >
                 <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
+                  <div class="image-container">
                     <img
                       class="cover-img"
                       src="~assets/images/featured-pools/pool-weth-dai.jpg"
@@ -114,7 +118,7 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">50 WETH 50 DAI</p>
+                      <p class="text-label">50 WETH 50 DAI</p>
                     </div>
                   </div>
                 </div>
@@ -138,8 +142,26 @@ export default {};
   max-width: 300px;
   box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
 }
+
+.image-container {
+  @apply relative flex justify-center items-center overflow-hidden;
+}
+
 .cover-img {
-  border-radius: 10px 10px 0 0;
+  transition: 0.2s all ease-in-out;
+}
+.pool:hover .cover-img {
+  transform: scale(1.1);
+  transition: 0.2s all ease-in-out;
+}
+
+.text-label {
+  @apply text-sm truncate;
+  transition: 0.2s all ease-out;
+}
+
+.pool:hover .text-label {
+  @apply text-defaultBlue;
 }
 
 .superscript {

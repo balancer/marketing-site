@@ -1,22 +1,23 @@
 <template>
   <header class="header">
     <nav class="flex">
-      <NuxtLink class="link" to="/">
-        <img class="logo" src="~assets/svg/logo-balancer.svg" alt="" /><span
+      <NuxtLink class="mr-8" to="/">
+        <!-- <img class="logo" src="~assets/svg/logo-balancer.svg" alt="" /><span
           class="logotype"
-          >Balancer</span
-        >
+          >Balancer</span -->
+          <logotype-balancer />
+        
       </NuxtLink>
 
 
-      <div class="mobile-hide">
-        <NuxtLink class="nav-link" data-hover="Invest" to="invest"
+      <div class="mobile-hide mr-4">
+        <NuxtLink class="nav-link nav-link--red" data-hover="Invest" to="invest"
           >Invest</NuxtLink
         >
-        <NuxtLink class="nav-link" data-hover="Trade" to="trade"
+        <NuxtLink class="nav-link nav-link--blue" data-hover="Trade" to="trade"
           >Trade</NuxtLink
         >                
-        <NuxtLink class="nav-link" data-hover="Build" to="build"
+        <NuxtLink class="nav-link nav-link--pink" data-hover="Build" to="build"
           >Build</NuxtLink
         >
         <!-- <NuxtLink class="link" to="balancer-V2">V2</NuxtLink> -->
@@ -59,12 +60,14 @@
 import Burger from "@/components/menu/Burger.vue";
 import IconBase from "@/components/icons/IconBase.vue";
 import IconExternalLink from "@/components/icons/IconExternalLink.vue";
+import LogotypeBalancer from '@/components/icons/LogotypeBalancer.vue';
 
 export default {
   components: {
     Burger,
     IconBase,
-    IconExternalLink
+    IconExternalLink, 
+    LogotypeBalancer
   }
 };
 </script>
@@ -87,9 +90,9 @@ export default {
 .link {
   @apply mr-4 flex hover:text-accent;
 }
-.logotype {
+/* .logotype {
   @apply px-3 pr-6 md:pr-2 font-semibold;
-}
+} */
 
 /* .fade-enter-from {
   opacity: 0;
@@ -146,13 +149,23 @@ export default {
   left: 0;
   overflow: hidden;
   max-width: 0;
-  border-bottom: 2px solid purple;
-  color: purple;
+  border-bottom: 2px solid #0000ff;
+  color: #0000ff;
   content: attr(data-hover);
   -webkit-transition: max-width 0.2s ease-out;
   -moz-transition: max-width 0.2s ease-out;
   transition: max-width 0.2s ease-out;
 }
+
+/* .nav-link--pink::before {
+  border-bottom: 2px solid #FF00FF;
+}
+.nav-link--red::before {
+  border-bottom: 2px solid #F12954;
+}
+.nav-link--blue::before {
+  border-bottom: 2px solid #0055FF;
+} */
 
 .nav-link:hover::before,
 .nav-link:focus::before {
@@ -160,15 +173,15 @@ export default {
 }
 
 .btn-header {
-  @apply px-4 mr-2 py-2 rounded-lg border font-medium;
+  @apply px-4 mr-2 py-2 rounded-lg font-medium border border-solid border-gray-200 ;
   background-size: 300% 100%;
-
-  transition: all 0.1s ease-out;
-  background-image: linear-gradient(to right, #fff, #fff, #0000ff, #ff00ff);
+  transition: all 0.2s ease-out;
+  background-image: linear-gradient(to right, #fff, #fff, #0000ff, #ff00ff);    
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.10);
 }
 .btn-header:hover {
   background-position: 100% 0;
-  box-shadow: 0 4px 15px 0 rgba(300, 100, 50, 0.1);
+  box-shadow: 0 4px 15px 0 rgba(300, 100, 50, 0);
   transition: all 0.2s ease-out;
   color: white;
   border: 1px solid transparent;

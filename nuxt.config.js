@@ -23,6 +23,9 @@ export default {
     link: [      
       { rel: 'icon', href: '/favicon.svg' }
     ],
+    link: [      
+      { rel: 'mask-icon', href: '/favicon.svg', color: '#000000' }
+    ],    
     script: [
       { src: 'https://chipmunk.balancer.fi/script.js', site: process.env.FATHOM_SITE_ID || 'xxx', defer: true, 'data-spa': 'auto' }
     ]

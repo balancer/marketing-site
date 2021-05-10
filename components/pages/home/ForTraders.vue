@@ -19,7 +19,7 @@
             traders the best available price. Exchange any combination of ERC-20
             tokens permissionlessly, with ease.
           </p>
-          <div class="grid grid-cols-1 pb-4">
+          <div class="grid grid-cols-1 pb-2">
             <div class="flex pb-5">
               <img
                 class="mr-3"
@@ -29,16 +29,8 @@
               <p class="font-medium">Intelligent pricing</p>
             </div>
             <div class="flex pb-5">
-              <img
-                class="mr-3"
-                src="~/assets/svg/icon-crystal-ball.svg"
-                alt=""
-              />
+              <img class="mr-3" src="~/assets/svg/icon-umbrella.svg" alt="" />
               <p class="font-medium">MEV protection</p>
-            </div>
-            <div class="flex pb-5">
-              <img class="mr-3" src="~/assets/svg/icon-key.svg" alt="" />
-              <p class="font-medium">No counter party risk</p>
             </div>
             <div class="flex pb-5">
               <img class="mr-3" src="~/assets/svg/icon-sparkles.svg" alt="" />
@@ -46,18 +38,26 @@
                 Gas optimizations and subsidies
               </p>
             </div>
-
-            <!-- <FeaturedBenefit benefit="Designed to earn you more"  iconPath="icon-moon.svg" /> -->
+          </div>
+          <div class="flex pb-4 md:pb-0">
+            <a
+              class="btn btn-primary btn-hero mr-3"
+              href="https://app.balancer.fi/#/trade"
+              >Start trading</a
+            >
+            <NuxtLink class="btn btn-tertiary btn-hero" to="trade"
+              >Learn more</NuxtLink
+            >            
           </div>
         </div>
         <div>
           <div>
-            <div class="grid grid-cols-2 gap-4 max-w-lg">
+            <div class="grid grid-cols-2 gap-4 max-w-xl">
               <a
                 href="https://app.balancer.fi/#/trade/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/0x6B175474E89094C44Da98b954EedeAC495271d0F/"
               >
                 <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
+                  <div class="image-container">
                     <img
                       class="cover-img"
                       src="~assets/images/tokens/dai-cover.jpg"
@@ -67,7 +67,7 @@
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
                       <!-- <p class="text-sm truncate">DAI: <span>$1.00</span></p> -->
-                      <p class="text-sm truncate">DAI</p>
+                      <p class="text-label">DAI</p>
                     </div>
                   </div>
                 </div>
@@ -77,7 +77,7 @@
                 href="https://app.balancer.fi/#/trade/0x6B175474E89094C44Da98b954EedeAC495271d0F/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/"
               >
                 <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
+                  <div class="image-container">
                     <img
                       class="cover-img"
                       src="~assets/images/tokens/weth-cover.jpg"
@@ -86,8 +86,8 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <!-- <p class="text-sm truncate">WETH: <span>$2,394</span></p> -->
-                      <p class="text-sm truncate">WETH</p>
+                      <!-- <p class="text-label">WETH: <span>$2,394</span></p> -->
+                      <p class="text-label">WETH</p>
                     </div>
                   </div>
                 </div>
@@ -97,7 +97,7 @@
                 href="https://app.balancer.fi/#/trade/0x6B175474E89094C44Da98b954EedeAC495271d0F/0xba100000625a3754423978a60c9317c58a424e3D/"
               >
                 <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
+                  <div class="image-container">
                     <img
                       class="cover-img"
                       src="~assets/images/tokens/bal-cover.jpg"
@@ -106,7 +106,7 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">BAL</p>
+                      <p class="text-label">BAL</p>
                     </div>
                   </div>
                 </div>
@@ -116,7 +116,7 @@
                 href="https://app.balancer.fi/#/trade/0x6B175474E89094C44Da98b954EedeAC495271d0F/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599/"
               >
                 <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
+                  <div class="image-container">
                     <img
                       class="cover-img"
                       src="~assets/images/tokens/wbtc-cover.jpg"
@@ -125,7 +125,7 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-sm truncate">WBTC</p>
+                      <p class="text-label">WBTC</p>
                     </div>
                   </div>
                 </div>
@@ -147,11 +147,30 @@ export default {};
 
 <style scoped>
 .pool {
-  @apply rounded-lg;
+  @apply rounded-lg overflow-hidden;
   max-width: 300px;
   box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
 }
+
+.image-container {
+  @apply relative flex justify-center items-center overflow-hidden;
+}
+
+.pool:hover .cover-img {
+  transform: scale(1.1);
+  transition: 0.2s all ease-in-out;
+}
+
+.text-label {
+  @apply text-sm truncate;
+  transition: 0.2s all ease-out;
+}
+
+.pool:hover .text-label {
+  @apply text-defaultBlue;
+}
+
 .cover-img {
-  border-radius: 10px 10px 0 0;
+  transition: 0.2s all ease-in-out;
 }
 </style>

@@ -59,7 +59,7 @@ svg {
 }
 
 .nav-link:hover .icon-group {
-  fill: purple;
+  fill: #0000ff;
 }
 
 .icon-group {

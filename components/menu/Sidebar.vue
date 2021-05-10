@@ -26,7 +26,7 @@
               class="link text-lg leading-8"
               to="trade"
               >Trade</NuxtLink
-            >            
+            >
             <NuxtLink
               @click.native="toggleSidebar"
               class="link text-lg leading-8"
@@ -46,16 +46,16 @@
               <a
                 class="link"
                 @click="toggleSidebar"
-                href="https://balancer.fi/invest"
-                >Invest</a
+                href="https://app.balancer.fi/#/"
+                >Invest app</a
               >
             </p>
             <p>
               <a
                 class="link"
                 @click="toggleSidebar"
-                href="https://balancer.fi/trade"
-                >Trade</a
+                href="https://app.balancer.fi/#/trade"
+                >Trade app</a
               >
             </p>
           </div>
@@ -78,10 +78,7 @@
               >
             </p>
             <p class="pb-1">
-              <a
-                class="link"
-                @click="toggleSidebar"
-                href="https://balancer.finance/whitepaper/"
+              <a class="link" @click="toggleSidebar" href="whitepaper.pdf"
                 >Whitepaper</a
               >
             </p>
@@ -124,27 +121,30 @@
           </div>
 
           <div class="pb-4 pt-4">
-                      <div class="flex">
-            <a class="mr-2" href="https://twitter.com/BalancerLabs"
-              >
-              <icon-twitter />
+            <div class="flex">
+              <a class="mr-2" href="https://twitter.com/BalancerLabs">
+                <icon-twitter />
               </a>
 
-            <a class="mr-2" href="https://discord.com/invite/ARJWaeF"
-              ><icon-discord /></a>
+              <a class="mr-2" href="https://discord.com/invite/ARJWaeF"
+                ><icon-discord
+              /></a>
 
-            <a class="mr-2" href="https://medium.com/balancer-protocol"
-              ><icon-medium /></a>
+              <a class="mr-2" href="https://medium.com/balancer-protocol"
+                ><icon-medium
+              /></a>
 
-            <a class="mr-2" href="https://github.com/balancer-labs/"
-              ><icon-github /></a>
+              <a class="mr-2" href="https://github.com/balancer-labs/"
+                ><icon-github
+              /></a>
 
-            <a class="mr-2" href="mailto:contact@balancer.finance"
-              ><icon-mail /></a>
-
-            <a href="https://www.linkedin.com/company/balancer-labs/"
-              ><icon-linkedin /></a>              
-          </div>
+              <a class="mr-2" href="https://www.linkedin.com/company/balancer-labs/"
+                ><icon-linkedin
+              /></a>
+              <a class="mr-2" href="mailto:contact@balancer.finance"
+                ><icon-mail
+              /></a>
+            </div>
           </div>
         </slot>
       </div>
@@ -162,7 +162,7 @@ import IconMail from "@/components/icons/IconMail.vue";
 import IconLinkedin from "@/components/icons/IconLinkedin.vue";
 
 export default {
-    components: {
+  components: {
     IconTwitter,
     IconDiscord,
     IconMedium,

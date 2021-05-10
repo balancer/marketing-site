@@ -18,7 +18,7 @@
             <h1 class="h1-sans-serif">Make your crypto work for you</h1>
               </transition>
               <transition name="p" appear>
-            <p class="pb-4 font-medium text-lg text-black">
+            <p class="pb-4 font-medium text-black">
               Invest and manage your portfolio like the pros, without the hard work or the price tag.
             </p>
               </transition>

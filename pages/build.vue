@@ -388,7 +388,7 @@ export default {
 }
 
 .featured-stat.lbp-stat {
-  font-size: 22vw;
+  font-size: 21vw;
 }
 
 .featured-stat.lbp-stat-label {
@@ -409,18 +409,18 @@ export default {
     font-size: 7vw;
   }
   .featured-stat.lbp-stat {
-    font-size: 12vw;
+    font-size: 80px;
   }
 }
 
 @media (min-width: 1024px) {
   .featured-stat.lbp-stat {
-    font-size: 140px;
+    font-size: 100px;
   }
 }
 @media (min-width: 1280px) {
   .featured-stat.lbp-stat {
-    font-size: 170px;
+    font-size: 120px;
   }
 }
 </style>

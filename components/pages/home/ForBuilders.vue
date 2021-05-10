@@ -23,22 +23,37 @@
             Automated Market Maker, giving developers unprecedented
             customizability.
           </p>
-          <div class="flex pb-5">
-            <img class="mr-3" src="~/assets/svg/icon-sliders.svg" alt="" />
-            <p class="font-medium">Custom token weights & swap fees</p>
+          <div class="pb-1">
+            <div class="flex pb-5">
+              <img class="mr-3" src="~/assets/svg/icon-sliders.svg" alt="" />
+              <p class="font-medium">Custom token weights & swap fees</p>
+            </div>
+            <div class="flex pb-5">
+              <img class="mr-3" src="~/assets/svg/icon-curve.svg" alt="" />
+              <p class="font-medium">
+                Liquidity pools can operate on any price curve
+              </p>
+            </div>
+            <div class="flex pb-5">
+              <img
+                class="mr-3"
+                src="~/assets/svg/icon-asset-manager.svg"
+                alt=""
+              />
+              <p class="font-medium">
+                Asset managers re-utilize dormant liquidity (coming soon)
+              </p>
+            </div>
           </div>
-          <div class="flex pb-5">
-            <img class="mr-3" src="~/assets/svg/icon-curve.svg" alt="" />
-            <p class="font-medium">Liquidity pools can operate on any price curve</p>
-          </div>
-          <div class="flex pb-5">
-            <img class="mr-3" src="~/assets/svg/icon-asset-manager.svg" alt="" />
-            <p class="font-medium">Asset managers re-utilize dormant liquidity (coming soon)</p>
+          <div class="flex pb-4 md:pb-0">
+            <NuxtLink class="btn btn-tertiary btn-hero" to="build"
+              >Learn more</NuxtLink
+            >
           </div>
         </div>
         <div>
           <img
-            class="w-full max-w-lg"
+            class="w-full max-w-xl"
             src="~assets/images/home-builders.jpg"
             alt=""
           />

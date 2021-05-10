@@ -9,7 +9,7 @@
         </transition>
         <div class="pb-4">
           <transition name="p" appear>
-            <p class="p-hero transition-standard font-medium max-w-sm mx-auto">
+            <p class="p-hero transition-standard">
               Put your cryptoassets to work and get the best prices for trades
             </p>
           </transition>
@@ -18,7 +18,7 @@
           <div class="flex justify-center pb-2 md:pb-0">
             <a
               onclick="fathom.trackGoal('YZKHSNU0', 0);"
-              class="btn btn-secondary btn-hero"
+              class="btn btn-secondary btn-hero mr-3"
               href="https://app.balancer.fi/#/"
               >Invest</a
             >
@@ -63,9 +63,14 @@ export default {};
 .h1-hero {
   @apply font-extrabold pb-4 md:text-6xl text-white;
   font-family: "Tiempos Headline Medium";
-  font-size: 32px;
+  font-size: 36px;
   line-height: 1.1;
   letter-spacing: -0.5px;
+}
+
+.p-hero {
+  @apply font-medium mx-auto pb-2;
+  max-width: 280px;
 }
 
 @media (min-width: 768px) {
@@ -75,6 +80,9 @@ export default {};
   .p-hero,
   .btn-hero {
     font-size: 18px;
+  }
+  .p-hero {
+      max-width: 320px;
   }
 }
 

@@ -7,8 +7,8 @@
             <img
               width="1000"
               height="618"
-              class="pt-1 pb-10"
-              src="@/assets/images/ui-in-device.jpg"
+              class="pt-1 pb-10 md:pb-1" 
+              src="@/assets/images/trade-ui.jpg"
               alt=""
             />
           </transition>
@@ -20,7 +20,7 @@
             </h1>
           </transition>
           <transition name="p" appear>
-            <p class="pb-4 font-medium text-lg text-black">
+            <p class="pb-4 font-medium text-black">
               Trade thousands of tokens with instantaneous speed at optimal
               rates.
             </p>
@@ -30,7 +30,7 @@
               <a
                 onclick="fathom.trackGoal('NDN2AJWP', 0);"
                 class="btn btn-primary btn-hero"
-                href="https://app.balancer.fi/invest"
+                href="https://app.balancer.fi/#/trade"
                 >Start trading</a
               >
             </div>

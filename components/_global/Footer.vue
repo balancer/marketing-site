@@ -20,7 +20,7 @@
             class="link text-lg md:text-base pb-1 leading-8 text-white"
             to="trade"
             >Trade</NuxtLink
-          >          
+          >
           <NuxtLink
             class="link text-lg md:text-base pb-1 leading-8 text-white"
             to="build"
@@ -34,8 +34,12 @@
         </div>
         <div class="pb-8 md:pb-16  lg:pb-0">
           <p class="text-gray-400 pb-1">Products</p>
-          <p class="pb-1"><a class="link" href="https://app.balancer.fi/#/">Invest</a></p>
-          <p><a class="link" href="https://app.balancer.fi/#/trade">Trade</a></p>
+          <p class="pb-1">
+            <a class="link" href="https://app.balancer.fi/#/">Invest app</a>
+          </p>
+          <p>
+            <a class="link" href="https://app.balancer.fi/#/trade">Trade app</a>
+          </p>
         </div>
         <div class="pb-8 md:pb-0">
           <p class="text-gray-400 pb-1">Learn</p>
@@ -43,26 +47,37 @@
             <a class="link" href="https://medium.com/balancer-protocol">Blog</a>
           </p>
           <p class="pb-1">
-            <a class="link" href="https://docs.balancer.finance/">Documentation</a>
+            <a class="link" href="https://docs.balancer.finance/"
+              >Documentation</a
+            >
           </p>
           <p class="pb-1">
-            <a class="link" href="https://balancer.finance/whitepaper/">Whitepaper</a>
+            <a class="link" href="whitepaper.pdf">Whitepaper</a>
           </p>
-          <p><a class="link" href="https://github.com/balancer-labs/">Github code</a></p>
+          <p>
+            <a class="link" href="https://github.com/balancer-labs/"
+              >Github code</a
+            >
+          </p>
         </div>
         <div class="pb-8 md:pb-16  lg:pb-0">
           <p class="text-gray-400 pb-1">Ecosystem</p>
           <p class="pb-1">
-            <a class="link" href="https://vote.balancer.finance/">Snapshot governance</a>
+            <a class="link" href="https://vote.balancer.finance/"
+              >Snapshot governance</a
+            >
           </p>
           <p class="pb-1">
-            <a class="link" href="https://duneanalytics.com/projects/balancer">Dune analytics</a>
+            <a class="link" href="https://duneanalytics.com/projects/balancer"
+              >Dune analytics</a
+            >
           </p>
           <p class="pb-1">
             <a class="link" href="https://forum.balancer.finance/">Forum</a>
           </p>
           <p>
-            <a class="link"
+            <a
+              class="link"
               href="https://forum.balancer.finance/t/ecosystem-fund-grant-process/166"
               >Grants</a
             >
@@ -71,26 +86,33 @@
 
         <div class="">
           <p class="text-gray-400 pb-2">Community</p>
-          <div class="flex">
-            <a class="mr-2" href="https://twitter.com/BalancerLabs"
-              >
-              <icon-twitter />
+          <div class="flex flex-col">
+            <div class="flex pb-3">
+              <a class="mr-3" href="https://twitter.com/BalancerLabs">
+                <icon-twitter />
               </a>
 
-            <a class="mr-2" href="https://discord.com/invite/ARJWaeF"
-              ><icon-discord /></a>
+              <a class="mr-3" href="https://discord.com/invite/ARJWaeF"
+                ><icon-discord
+              /></a>
 
-            <a class="mr-2" href="https://medium.com/balancer-protocol"
-              ><icon-medium /></a>
+              <a class="" href="https://medium.com/balancer-protocol"
+                ><icon-medium
+              /></a>
+            </div>
+            <div class="flex">
+              <a class="mr-3" href="https://github.com/balancer-labs/"
+                ><icon-github
+              /></a>
 
-            <a class="mr-2" href="https://github.com/balancer-labs/"
-              ><icon-github /></a>
+              <a class="mr-3" href="https://www.linkedin.com/company/balancer-labs/"
+                ><icon-linkedin
+              /></a>
 
-            <a class="mr-2" href="mailto:contact@balancer.finance"
-              ><icon-mail /></a>
-
-            <a href="https://www.linkedin.com/company/balancer-labs/"
-              ><icon-linkedin /></a>              
+              <a class="" href="mailto:contact@balancer.finance"
+                ><icon-mail
+              /></a>
+            </div>
           </div>
         </div>
 
@@ -121,25 +143,26 @@ import IconMail from "@/components/icons/IconMail.vue";
 import IconLinkedin from "@/components/icons/IconLinkedin.vue";
 
 export default {
-  components: {  
-    IconExternalLink, 
-    IconTwitter, 
-    IconDiscord, 
-    IconMedium, 
+  components: {
+    IconExternalLink,
+    IconTwitter,
+    IconDiscord,
+    IconMedium,
     IconGithub,
-    IconMail, 
+    IconMail,
     IconLinkedin
   }
 };
 </script>
 
 <style scoped>
-
 .link {
+  @apply text-base;
   transition: all 0.2s ease-out;
 }
 
-.link:hover, .link:focus-visible {
+.link:hover,
+.link:focus-visible {
   @apply text-defaultRed;
 }
 

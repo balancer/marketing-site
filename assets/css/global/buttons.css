@@ -1,5 +1,5 @@
 .btn {
-    @apply h-12 flex items-center justify-center bg-blue-900 rounded-lg text-white font-semibold shadow-lg mr-3 transition duration-200 ease-in-out;      
+    @apply h-12 flex items-center justify-center bg-blue-900 rounded-lg text-white font-semibold shadow-lg transition duration-200 ease-in-out;      
 } 
 
 .btn:focus {
@@ -9,7 +9,7 @@
 
 .btn-primary {
     background-size: 200% 100%;
-    transition: all .1s ease-out;    
+    transition: all 0.2s ease-out;    
     background-image: linear-gradient(to right, #0000ff, #FF00FF, #0000ff);
     /* background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673); */
     box-shadow: 0 4px 15px 0 rgba(224, 100, 61, 0.20);   
@@ -17,7 +17,7 @@
 .btn-primary:hover {
     background-position: 100% 0;
     box-shadow: 0 4px 15px 0 rgba(300, 100, 50, 0);   
-    transition: all .2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 
@@ -61,37 +61,41 @@
 .btn-secondary {
     @apply bg-white text-black hover:shadow-lg hover:text-white;    
     background-size: 300% 100%;
-    transition: all .1s ease-out;       
+    transition: all .2s ease-out;       
     background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1), #0000ff, #FF00FF);
 }       
 
 .btn-secondary:hover {    
     background-position: 100% 0;
     box-shadow: 0 4px 15px 0 rgba(300, 100, 50, 0);   
-    transition: all .1s ease-out;
+    transition: all .2s ease-out;
 }
 
 
 .btn-skeleton-white {
     @apply border border-solid border-white text-white bg-transparent;  
     background-size: 300% 100%;
-    transition: all .1s ease-out;       
+    transition: all .2s ease-out;       
     background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0), #FCA54F, #FF00FF);
-
-    /* background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
-
-
-    /* background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673); */
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.20);       
 }
-
 .btn-skeleton-white:hover {
     @apply border-transparent;
     background-position: 100% 0;
     box-shadow: 0 4px 15px 0 rgba(300, 100, 50, 0);   
     transition: all .2s ease-out;
+}
+
+.btn-tertiary {
+    @apply border border-solid border-gray-200 text-greyDark bg-white;  
+    background-size: 300% 100%;
+    transition: all .2s ease-out;       
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.10);       
+}
+
+.btn-tertiary:hover {
+    @apply border-black text-black;
+    box-shadow: 0 4px 15px 0 rgba(300, 100, 50, 0);   
 }
 
 .btn-hero {
@@ -101,7 +105,6 @@
 .eyebrow {
     @apply pb-3 font-medium;
     font-size: 15px;
-
 }
 
 .btn-inline {

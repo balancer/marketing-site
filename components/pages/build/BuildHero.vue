@@ -20,9 +20,8 @@
         </transition>
         <transition name="p" appear>
           <p class="p-hero">
-            Balancer is reliable, open-source, permissionless protocol. Build on
-            Balancer to create new innovative types of financial dapps and
-            treasury management systems.
+            A reliable, open-source, permissionless protocol. Build on
+            Balancer to create new innovative types of financial dapps.
           </p>
         </transition>
         <!-- <div class="pb-2">
@@ -38,7 +37,7 @@
         <transition name="buttons" appear>
           <div class="flex pb-4 md:pb-0">
             <a
-              class="btn btn-primary btn-hero"
+              class="btn btn-primary btn-hero mr-3"
               href="https://docs.balancer.finance/"
               >Developer docs</a
             >
@@ -90,7 +89,7 @@ export default {};
 .p-hero {
   @apply pb-6 font-medium;
 
-  line-height: 1.3;
+  /* line-height: 1.3; */
 }
 
 @media (min-width: 768px) {

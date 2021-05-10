@@ -1,9 +1,10 @@
 <template>
   <div>
     <TradeHero />
+    <TradeProduct />
 
     <section class="bg-white">
-      <div class="px-4 xl:px-0 max-w-7xl mx-auto pt-16 md:pt-32 pb-16 md:pb-32">
+      <div class="px-4 xl:px-0 max-w-7xl mx-auto pb-16 md:pb-32">
         <div
           class="grid md:grid-cols-2 md:grid-rows-3 md:gap-8 lg:grid-cols-3 lg:grid-rows-2 lg:gap-12 xl:gap-16"
         >
@@ -22,7 +23,7 @@
             <div class="mb-4">
               <icon-liquidity />
             </div>
-            <h2>Over $2.9b in liquidity</h2>
+            <h2>Over $3.09b in liquidity</h2>
             <p>
               Balancer’s liquid market ensures that traders get the best
               possible prices for trades, large or small.
@@ -81,6 +82,7 @@
 
 <script>
 import TradeHero from "@/components/pages/trade/TradeHero.vue";
+import TradeProduct from "@/components/pages/trade/TradeProduct.vue";
 import IconSparkles from "@/components/icons/IconSparkles.vue";
 import IconLiquidity from "@/components/icons/IconLiquidity.vue";
 import IconProtection from '@/components/icons/IconProtection.vue';
@@ -92,6 +94,7 @@ export default {
   transition: "slideup",
   components: {
     TradeHero,
+    TradeProduct,
     IconSparkles, 
     IconLiquidity,
     IconProtection, 

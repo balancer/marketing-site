@@ -10,7 +10,7 @@
           <h1 class="h1-sans-serif">
             A generalized Automated Market Maker (AMM)
           </h1>
-          <p class="pb-4">
+          <!-- <p class="pb-4">
             Balancer enables anyone to create a pool with it’s own custom AMM
             logic. Nearly unlimited options for choosing the number of tokens,
             their weights, and fees.
@@ -21,6 +21,17 @@
             a stable soft pegged pool like Curve. But that’s just the start.
             Dream big with smart pools to create almost any kind of asset
             management system.
+          </p> -->
+
+          <p class="pb-4">
+            Balancer is a set-and-forget protocol for investors, which
+            algorithmically manages assets by rapidly rebalancing positions and
+            earning trading fees to increase portfolio size over time.
+          </p>
+
+          <p class="pb-4">
+            Over 25,000 investors use Balancer’s flexible pool structures to
+            choose the ideal configuration for their investment goals.
           </p>
         </div>
 
@@ -58,7 +69,7 @@
                   </p>
                 </div>
               </div>
-            </div>            
+            </div>
             <div class="pool relative">
               <div class="relative flex justify-center items-center">
                 <img
@@ -74,7 +85,7 @@
                   </p>
                 </div>
               </div>
-            </div>      
+            </div>
             <div class="pool relative">
               <div class="relative flex justify-center items-center">
                 <img
@@ -91,8 +102,8 @@
                 </div>
               </div>
             </div>
-          </div>      
-          </div>        
+          </div>
+        </div>
       </div>
     </div>
   </section>
