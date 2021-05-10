@@ -54,7 +54,7 @@
           <div>
             <div class="grid grid-cols-2 gap-4 max-w-xl">
               <a
-                href="https://app.balancer.fi/#/trade/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/0x6B175474E89094C44Da98b954EedeAC495271d0F/"
+                href="https://app.balancer.fi/#/trade/ether/0x6B175474E89094C44Da98b954EedeAC495271d0F/"
               >
                 <div class="pool relative">
                   <div class="image-container">
@@ -74,7 +74,7 @@
               </a>
 
               <a
-                href="https://app.balancer.fi/#/trade/0x6B175474E89094C44Da98b954EedeAC495271d0F/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/"
+                href="https://app.balancer.fi/#/trade/0x6B175474E89094C44Da98b954EedeAC495271d0F/ether/"
               >
                 <div class="pool relative">
                   <div class="image-container">
@@ -86,15 +86,15 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <!-- <p class="text-label">WETH: <span>$2,394</span></p> -->
-                      <p class="text-label">WETH</p>
+                      <!-- <p class="text-label">ETH: <span>$2,394</span></p> -->
+                      <p class="text-label">ETH</p>
                     </div>
                   </div>
                 </div>
               </a>
 
               <a
-                href="https://app.balancer.fi/#/trade/0x6B175474E89094C44Da98b954EedeAC495271d0F/0xba100000625a3754423978a60c9317c58a424e3D/"
+                href="https://app.balancer.fi/#/trade/ether/0xba100000625a3754423978a60c9317c58a424e3D/"
               >
                 <div class="pool relative">
                   <div class="image-container">
@@ -113,7 +113,7 @@
               </a>
 
               <a
-                href="https://app.balancer.fi/#/trade/0x6B175474E89094C44Da98b954EedeAC495271d0F/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599/"
+                href="https://app.balancer.fi/#/trade/ether/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599/"
               >
                 <div class="pool relative">
                   <div class="image-container">
