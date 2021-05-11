@@ -22,6 +22,8 @@
             <div class="pool relative">
               <div class="relative flex justify-center items-center">
                 <img
+                  width="244"
+                  height="244"
                   class="cover-img"
                   src="@/assets/images/start-building/smart.jpg"
                   alt=""
@@ -43,6 +45,8 @@
             <div class="pool relative">
               <div class="relative flex justify-center items-center">
                 <img
+                  width="244"
+                  height="244"                
                   class="cover-img"
                   src="@/assets/images/start-building/launch-token.jpg"
                   alt=""
@@ -65,6 +69,8 @@
             <div class="pool relative">
               <div class="relative flex justify-center items-center">
                 <img
+                  width="244"
+                  height="244"                
                   class="cover-img"
                   src="@/assets/images/start-building/data.jpg"
                   alt=""
@@ -86,6 +92,8 @@
             <div class="pool relative">
               <div class="relative flex justify-center items-center">
                 <img
+                  width="244"
+                  height="244"                
                   class="cover-img"
                   src="@/assets/images/start-building/oracle.jpg"
                   alt=""
@@ -112,6 +120,8 @@
             <v-popover offset="16" placement="top">
               <button class="tooltip-target b3">
                 <img
+                  width="120"
+                  height="120"
                   class="integrations-logo"
                   src="@/assets/svg/tokens/gno.svg"
                   alt="Gnosis logo"
@@ -130,6 +140,8 @@
             <v-popover offset="16" placement="top">
               <button class="tooltip-target b3">
                 <img
+                  width="120"
+                  height="120"                
                   class="integrations-logo"
                   src="@/assets/svg/tokens/aave.svg"
                   alt="Aave logo"
@@ -148,8 +160,10 @@
             <v-popover offset="16" placement="top">
               <button class="tooltip-target b3">
                 <img
+                  width="120"
+                  height="120"                
                   class="integrations-logo"
-                  src="@/assets/svg/tokens/elementfi.svg"
+                  src="@/assets/images/tokens/element.png"
                   alt="Element logo"
                 />
               </button>
@@ -173,6 +187,8 @@
             <v-popover offset="16" placement="top">
               <button class="tooltip-target b3">
                 <img
+                  width="120"
+                  height="120"                
                   class="integrations-logo"
                   src="@/assets/svg/tokens/ocean.svg"
                   alt="Ocean logo"
@@ -191,6 +207,8 @@
             <v-popover offset="16" placement="top">
               <button class="tooltip-target b3">
                 <img
+                  width="120"
+                  height="120"                
                   class="integrations-logo"
                   src="@/assets/images/tokens/gyroscope.png"
                   alt="Gyroscope logo"
@@ -209,6 +227,8 @@
             <v-popover offset="16" placement="top">
               <button class="tooltip-target b3">
                 <img
+                  width="120"
+                  height="120"                
                   class="integrations-logo"
                   src="@/assets/svg/tokens/powerpool.svg"
                   alt="PowerPool logo"
