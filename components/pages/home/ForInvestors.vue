@@ -106,7 +106,7 @@
                 </div>
               </a>
               <a
-                href="https://app.balancer.fi/#/pool/0x571046eae58c783f29f95adba17dd561af8a871200020000000000000000000c"
+                href="https://app.balancer.fi/#/pool/0x0b09dea16768f0799065c475be02919503cb2a3500020000000000000000001a"
               >
                 <div class="pool relative">
                   <div class="image-container">
@@ -118,7 +118,7 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-label">50 WETH 50 DAI</p>
+                      <p class="text-label">60 WETH 40 DAI</p>
                     </div>
                   </div>
                 </div>
