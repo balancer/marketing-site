@@ -21,7 +21,7 @@
           </transition>
           <transition name="p" appear>
             <p class="pb-4 font-medium text-black">
-              Trade thousands of tokens with instantaneous speed at optimal
+              Trade thousands of token pairs with instantaneous speed at optimal
               rates.
             </p>
           </transition>

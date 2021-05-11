@@ -5,6 +5,7 @@
         class="grid grid-cols-1 md:grid-cols-2 px-4 xl:px-0 pb-32 xl:pb-32 items-center bg-white"
       >
         <div class="md:mx-auto max-w-lg pr-4">
+          <p class="eyebrow gradient-text pb-2 font-medium">HODL For traders</p>
           <h1 class="h1-sans-serif">
             Trade at the best price with low gas costs
           </h1>

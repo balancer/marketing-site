@@ -5,28 +5,15 @@
         class="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 lg:px-0 pt-8 md:pt-16 pb-16 lg:pb-32 items-center bg-white"
       >
         <div class="md:mx-auto max-w-lg pr-4">
-          <p class="eyebrow gradient-text pb-2 font-medium">SMARTER POOLS</p>
+          <p class="eyebrow gradient-text pb-2 font-medium">HODL Smarter</p>
 
           <h1 class="h1-sans-serif">
-            A generalized Automated Market Maker (AMM)
+            Sophisticated investing, simplified
           </h1>
-          <!-- <p class="pb-4">
-            Balancer enables anyone to create a pool with it’s own custom AMM
-            logic. Nearly unlimited options for choosing the number of tokens,
-            their weights, and fees.
-          </p>
-
-          <p class="pb-4">
-            For example, you can create an equally weighted 50/50 Uniswap style pool, or
-            a stable soft pegged pool like Curve. But that’s just the start.
-            Dream big with smart pools to create almost any kind of asset
-            management system.
-          </p> -->
-
           <p class="pb-4">
             Balancer is a set-and-forget protocol for investors, which
             algorithmically manages assets by rapidly rebalancing positions and
-            earning trading fees to increase portfolio size over time.
+            earning trading fees over time.
           </p>
 
           <p class="pb-4">

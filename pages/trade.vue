@@ -15,7 +15,7 @@
             <h2>Earn $BAL with every trade</h2>
             <p>
               Balance out your gas costs by getting up to 90% of your gas fees
-              paid back in $BAL—a helping hand from Balancer.
+              paid back in $BAL—a helping hand from the Balancer DAO.
             </p>
           </div>
 
