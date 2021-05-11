@@ -15,22 +15,17 @@
             Typically, the weight of assets in an LBP are programmed to
             continually change during the token sale.
           </p>
-          <div class="grid grid-cols-1 pb-4">
-            <Feature
-              title="Free & permissionless"
-              description="No middle-man or monopoly resulting in unnecessarily high listing fees"
-              icon="icon-ticket.svg"
-            />
-            <Feature
-              title="Capital efficient"
-              description="Distribute more of your tokens with less initial capital investment"
-              icon="icon-lightning.svg"
-            />
-            <Feature
-              title="Fair distribution"
-              description="Front-running and large whale buys can be disincentivized, giving everyone an opportunity to participate at a fair price."
-              icon="icon-scale.svg"
-            />
+          <div class="grid grid-cols-1 pb-2">
+            <Feature title="Free & permissionless" icon="icon-ticket.svg" />
+            <Feature title="Capital efficient" icon="icon-lightning.svg" />
+            <Feature title="Fair distribution" icon="icon-scale.svg" />
+          </div>
+          <div>
+            <a
+              class="btn btn-tertiary btn-hero btn-inline mb-8 md:mb-4"
+              href="https://docs.balancer.fi/getting-started/faqs/pools-and-lbps"
+              >View LBP docs</a
+            >
           </div>
         </div>
         <div class="overflow-hidden">
@@ -123,43 +118,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="w-full mx-auto max-w-7xl">
-        <div class="max-w-xl">
-          <h2 class="pb-4">Customize LBPs to match your project's needs</h2>
-          <p class="pb-6">
-            Instead of a permanent 50%&nbsp;/&nbsp;50% or 90%&nbsp;/&nbsp;10%
-            weighting, LBP weightings can be programmed to continually change to
-            match a project's needs.
-          </p>
-        </div>
-        <div class="md:flex md:pb-12">
-          <div class="md:pr-2 lg:pr-4 pb-4">
-            <div>
-              <img
-                class="pb-4"
-                src="@/assets/images/lbp-90-10-10-90.png"
-                alt=""
-              />
-              <p class="pb-4 text-greyDark text-sm">
-                Example token sale 1: An LBP starting at 90% / 10% weighting which
-                continually changes in one direction to 10% / 90% over 3 days.
-              </p>
-            </div>
-          </div>
-          <div class="md:pl-2 lg:pl-4 pb-8">
-            <img
-              class="pb-4"
-              src="@/assets/images/lbp-90-10-50-50.png"
-              alt=""
-            />
-            <p class="pb-4 text-greyDark text-sm">
-              Example token sale 2: This LBP moves from 90%&nbsp;/&nbsp;10% to
-              50%&nbsp;/&nbsp;50%. After the sale, the pool continues unpaused
-              to serve as a classic 50%&nbsp;/&nbsp;50% AMM.
-            </p>
-          </div>
-        </div>
-      </div> -->
     </div>
   </section>
 </template>
