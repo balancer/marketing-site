@@ -17,7 +17,7 @@
           class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-screen-lg mx-auto"
         >
           <a
-            href="https://docs.balancer.fi/guides/smart-pool-templates-gui"
+            href="https://docs.balancer.fi/v/v1/guides/creating-a-smart-pool"
           >
             <div class="pool relative">
               <div class="relative flex justify-center items-center">
