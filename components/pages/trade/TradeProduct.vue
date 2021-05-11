@@ -33,7 +33,7 @@ export default {};
 <style scoped>
 .pool {
   @apply border border-gray-200 rounded-3xl shadow;
-  max-width: 240px;
+  max-width: 248px;
 }
 .case-study {
   @apply mx-auto;
