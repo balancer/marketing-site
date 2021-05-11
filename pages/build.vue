@@ -38,7 +38,7 @@
             </div>
           </a>
           <a
-            href="https://docs.balancer.fi/smart-contracts/smart-pools/liquidity-bootstrapping-faq"
+            href="https://docs.balancer.fi/getting-started/faqs/pools-and-lbps"
           >
             <div class="pool relative">
               <div class="relative flex justify-center items-center">
