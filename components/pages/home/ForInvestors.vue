@@ -50,7 +50,7 @@
           <div>
             <div class="grid grid-cols-2 gap-4 max-w-xl">
               <a
-                href="https://app.balancer.fi/#/pool/0x0297e37f1873d2dab4487aa67cd56b58e2f27875000200000000000000000003"
+                href="https://app.balancer.fi/#/pool/0xa6f548df93de924d73be7d25dc02554c6bd66db500020000000000000000000e"
               >
                 <div class="pool relative">
                   <div class="image-container">
@@ -68,7 +68,7 @@
                 </div>
               </a>
               <a
-                href="https://app.balancer.fi/#/pool/0x647c1fd457b95b75d0972ff08fe01d7d7bda05df000200000000000000000002"
+                href="https://app.balancer.fi/#/pool/0x5c6ee304399dbdb9c8ef030ab642b10820db8f56000200000000000000000014"
               >
                 <div class="pool relative">
                   <div class="image-container">
