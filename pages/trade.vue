@@ -15,7 +15,7 @@
             <h2>Earn $BAL with every trade</h2>
             <p>
               Balance out your gas costs by getting up to 90% of your gas fees
-              paid back in $BAL—a helping hand from the Balancer DAO. <a class="text-link" href="https://claim.balancer.finance/#/">Claim $BAL</a> weekly on Wednesdays.
+              paid back in $BAL—a helping hand from the Balancer DAO. <a class="text-link" href="https://claim.balancer.finance/#/">Claim $BAL</a> weekly on Tuesdays.
             </p>
           </div>
 

@@ -62,7 +62,7 @@
             <p>
               Investors on Balancer receive $BAL token liquidity mining
               distributions for depositing assets into incentivized liquidity
-              pools. <a class="text-link" href="https://claim.balancer.finance/#/">Claim $BAL</a> weekly on Wednesdays.
+              pools. <a class="text-link" href="https://claim.balancer.finance/#/">Claim $BAL</a> weekly on Tuesdays.
             </p>
           </div>
 
