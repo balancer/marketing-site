@@ -1,6 +1,6 @@
 <template>
   <section class="bg-white">
-    <div class="max-w-screen-2xl mx-auto">
+    <div class="max-w-screen-2xl mx-auto py-16 lg:py-32">
       <div
         class="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 xl:px-0 py-8 md:py-16 mb-8 items-center bg-white"
       >

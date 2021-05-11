@@ -46,7 +46,7 @@ module.exports = {
         defaultRed: '#F12954',
         defaultBlue: '#0055FF',
         defaultPurple: '#8000FF',
-        defaultPink: 'FF00FF',
+        defaultPink: '#FF00FF',
 
 
         gray: {

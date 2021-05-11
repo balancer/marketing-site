@@ -1,142 +1,166 @@
 <template>
   <div>
-  
     <BuildHero />
     <section class="bg-white">
       <div class="max-w-7xl md:mx-auto px-4 pt-16 lg:pt-40 pb-32 lg:pb-40">
         <div class="md:text-center pb-4">
-        <h1 class="h1-sans-serif pb-4">
-          Start building
-        </h1>
-        <p class="pb-4">Focus on new AMM logic rather than low-level accounting.</p>
+          <h1 class="h1-sans-serif pb-4">
+            Start building
+          </h1>
+          <p class="pb-4">
+            Focus on new AMM logic rather than low-level accounting.
+          </p>
         </div>
         <!-- <div class="md:flex"> -->
 
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-screen-lg mx-auto">
-
-              <a href="https://docs.balancer.finance/guides/smart-pool-templates-gui">
-                <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
-                    <img
-                      class="cover-img"
-                      src="@/assets/images/start-building/smart.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <div class="p-2 md:p-3 text-center">
-                      <p class="font-semibold">Create a Smart Pool</p>
-                      <p class="hidden">
-                        A quick code walkthrough
-                      </p>
-                    </div>
-                  </div>
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-screen-lg mx-auto"
+        >
+          <a
+            href="https://docs.balancer.finance/guides/smart-pool-templates-gui"
+          >
+            <div class="pool relative">
+              <div class="relative flex justify-center items-center">
+                <img
+                  class="cover-img"
+                  src="@/assets/images/start-building/smart.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div class="p-2 md:p-3 text-center">
+                  <p class="font-semibold">Create a Smart Pool</p>
+                  <p class="hidden">
+                    A quick code walkthrough
+                  </p>
                 </div>
-              </a>              
-              <a href="https://docs.balancer.finance/smart-contracts/smart-pools/liquidity-bootstrapping-faq">
-                <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
-                    <img
-                      class="cover-img"
-                      src="@/assets/images/start-building/launch-token.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <div class="p-2 md:p-3 text-center">
-                      <p class="font-semibold">Launch a token</p>
-                      <p class="hidden">
-                        Via a Liquidity Bootstrapping Pool (LBP)
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-
-              <a href="https://thegraph.com/explorer/subgraph/balancer-labs/balancer">
-                <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
-                    <img
-                      class="cover-img"
-                      src="@/assets/images/start-building/data.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <div class="p-2 md:p-3 text-center">
-                      <p class="font-semibold">Get Balancer data</p>
-                      <p class="hidden">
-                        Via the Balancer subgraph
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://docs-v2.balancer.finance/getting-started/faqs/trading#what-are-balancer-price-oracles-coming-soon">
-                <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
-                    <img
-                      class="cover-img"
-                      src="@/assets/images/start-building/oracle.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <div class="p-2 md:p-3 text-center">
-                      <p class="font-semibold">Use price oracles</p>
-                      <p class="hidden">
-                        Via the 'Instant' or 'Resilient' oracles
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </a>                                          
+              </div>
             </div>
+          </a>
+          <a
+            href="https://docs.balancer.finance/smart-contracts/smart-pools/liquidity-bootstrapping-faq"
+          >
+            <div class="pool relative">
+              <div class="relative flex justify-center items-center">
+                <img
+                  class="cover-img"
+                  src="@/assets/images/start-building/launch-token.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div class="p-2 md:p-3 text-center">
+                  <p class="font-semibold">Launch a token</p>
+                  <p class="hidden">
+                    Via a Liquidity Bootstrapping Pool (LBP)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
 
-          <!-- <LinkCard
-            title="Create a smart pool"
-            description="A quick code walkthrough"
-            url="https://stackoverflow.com/questions/64858782/how-can-i-pass-props-through-an-anchor-tag"
-          />
-          <LinkCard
-            title="Make a Liquidity Bootstrapping Pool"
-            description="Tips on how to successfully launch"
-          />
-          <LinkCard
-            title="Get Balancer data"
-            description="Via the Balancer subgraph"
-          />
-          <LinkCard
-            title="Get Balancer pool pricing data"
-            description="Via the 'Instant' or 'Resilient' oracles"
-          /> -->
-        <!-- </div> -->
+          <a
+            href="https://thegraph.com/explorer/subgraph/balancer-labs/balancer"
+          >
+            <div class="pool relative">
+              <div class="relative flex justify-center items-center">
+                <img
+                  class="cover-img"
+                  src="@/assets/images/start-building/data.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div class="p-2 md:p-3 text-center">
+                  <p class="font-semibold">Get Balancer data</p>
+                  <p class="hidden">
+                    Via the Balancer subgraph
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://docs-v2.balancer.finance/getting-started/faqs/trading#what-are-balancer-price-oracles-coming-soon"
+          >
+            <div class="pool relative">
+              <div class="relative flex justify-center items-center">
+                <img
+                  class="cover-img"
+                  src="@/assets/images/start-building/oracle.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <div class="p-2 md:p-3 text-center">
+                  <p class="font-semibold">Use price oracles</p>
+                  <p class="hidden">
+                    Via the 'Instant' or 'Resilient' oracles
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="bg-white">
-      <div class="flex flex-col justify-center px-4 pb-4 lg:pb-32">
+    <section class="bg-gray-50">
+      <div class="flex flex-col justify-center px-4 pb-4 py-16 lg:py-32">
         <div class="flex justify-between w-full max-w-6xl mx-auto pb-16">
           <div class="h-40 md:h-80 flex items-end">
-            <img
-              class="integrations-logo"
-              src="@/assets/svg/tokens/gno.svg"
-              alt=""
-            />
+            <v-popover offset="16" placement="top">
+              <button class="tooltip-target b3">
+                <img
+                  class="integrations-logo"
+                  src="@/assets/svg/tokens/gno.svg"
+                  alt="Gnosis logo"
+                />
+              </button>
+              <template slot="popover">
+                <CaseStudy
+                  title="Gnosis"
+                  description="Gnosis Protocol V2 leverages the gas efficiency of Balancer V2 multihop swaps with MEV protection to give users the best price and execution possible. The unique architecture of using the vault to store all assets supplied on Balancer V2 leads to swaps that can use multiple pools for a minimal amount of gas."
+                  url="https://gnosis.io/"
+                />
+              </template>
+            </v-popover>
           </div>
           <div class="h-40 md:h-80 flex items-start">
-            <img
-              class="integrations-logo"
-              src="@/assets/svg/tokens/aave.svg"
-              alt=""
-            />
+            <v-popover offset="16" placement="top">
+              <button class="tooltip-target b3">
+                <img
+                  class="integrations-logo"
+                  src="@/assets/svg/tokens/aave.svg"
+                  alt="Aave logo"
+                />
+              </button>
+              <template slot="popover">
+                <CaseStudy
+                  title="Aave"
+                  description="With over $10 billion of assets supplied, Aave has become the cornerstone of DeFi lending and borrowing. As the first asset manager built for Balancer V2, liquidity providers on V2 will be able to lend a portion of their supplied liquidity on Aave to earn increased yield and in turn have improved capital efficiency."
+                  url="https://aave.com/"
+                />
+              </template>
+            </v-popover>
           </div>
           <div class="h-40 md:h-80 flex items-end">
-            <img
-              class="integrations-logo"
-              src="@/assets/svg/tokens/elementfi.svg"
-              alt=""
-            />
+            <v-popover offset="16" placement="top">
+              <button class="tooltip-target b3">
+                <img
+                  class="integrations-logo"
+                  src="@/assets/svg/tokens/elementfi.svg"
+                  alt="Element logo"
+                />
+              </button>
+              <template slot="popover">
+                <CaseStudy
+                  title="Element"
+                  description="Element Finance uses Balancer V2’s custom AMM functionality to enable markets for assets that converge in value over time. Plugging into the V2 ecosystem allows users to swap fixed yield assets from any other major asset in the V2 vault with the gas efficiency of multihop order routing."
+                  url="https://element.fi/"
+                />
+              </template>
+            </v-popover>
           </div>
         </div>
         <div class="flex justify-center items-center pb-16">
@@ -146,150 +170,62 @@
         </div>
         <div class="flex justify-between w-full max-w-6xl mx-auto pb-16">
           <div class="h-40 md:h-80 flex items-start">
-            <img
-              class="integrations-logo"
-              src="@/assets/svg/tokens/ocean.svg"
-              alt=""
-            />
+            <v-popover offset="16" placement="top">
+              <button class="tooltip-target b3">
+                <img
+                  class="integrations-logo"
+                  src="@/assets/svg/tokens/ocean.svg"
+                  alt="Ocean logo"
+                />
+              </button>
+              <template slot="popover">
+                <CaseStudy
+                  title="Ocean"
+                  description="Ocean Protocol will use Balancer V2 to enable automatic price discovery for data and staking on data assets which is critical for an open data economy. By leveraging the flexible AMM’s available in V2, Ocean can reduce impermanent loss and improve upon Initial Data Offerings."
+                  url="https://oceanprotocol.com/"
+                />
+              </template>
+            </v-popover>
           </div>
           <div class="h-40 md:h-80 flex items-end">
-            <img
-              class="integrations-logo"
-              src="@/assets/svg/tokens/enzyme.svg"
-              alt=""
-            />
+            <v-popover offset="16" placement="top">
+              <button class="tooltip-target b3">
+                <img
+                  class="integrations-logo"
+                  src="@/assets/images/tokens/gyroscope.png"
+                  alt="Gyroscope logo"
+                />
+              </button>
+              <template slot="popover">
+                <CaseStudy
+                  title="Gyroscope"
+                  description="Gyroscope has designed a brand new AMM to power their all-weather stablecoin which is made possible by the customizable AMM logic system in Balancer V2. The incentive system which pegs the stablecoin to $1 using Gyroscope’s S-AMM and P-AMM leads to unparalleled liquidity boosting and greater liquidity within Balancer’s trading ecosystem."
+                  url="https://gyro.finance/"
+                />
+              </template>
+            </v-popover>
           </div>
           <div class="h-40 md:h-80 flex items-start">
-            <img
-              class="integrations-logo"
-              src="@/assets/svg/tokens/powerpool.svg"
-              alt=""
-            />
+            <v-popover offset="16" placement="top">
+              <button class="tooltip-target b3">
+                <img
+                  class="integrations-logo"
+                  src="@/assets/svg/tokens/powerpool.svg"
+                  alt="PowerPool logo"
+                />
+              </button>
+              <template slot="popover">
+                <CaseStudy
+                  title="PowerPool"
+                  description="PowerPool leverages the vault architecture and increased gas efficiency of Balancer V2 for next generation crypto indexes using dynamic AMM pools. The ability to create a variety of customizable AMM’s that get the benefits of smart order routing, the gas efficiency of the vault, and the increased capital efficiency of asset managers will be a game changer for crypto indexes."
+                  url="https://powerpool.finance/"
+                />
+              </template>
+            </v-popover>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- <section class="px-4 pb-16">
-      <div>
-        <img
-          width="1000"
-          height="618"
-          class="pt-1 pb-8"
-          src="~assets/images/hero-protocol.png"
-          alt=""
-        />
-      </div>
-      <div>
-        <h1>A core building block of DeFi</h1>
-        <p>
-          Balancer is reliable, open-source, permissionless protocol. Build on
-          Balancer to create new innovative types of financial dapps and
-          treasury management systems.
-        </p>
-        <div class="flex py-3 md:pb-0">
-          <a
-            class="btn btn-primary btn-hero"
-            href="https://docs.balancer.finance/"
-            >Developer docs</a
-          >
-          <a
-            class="btn btn-secondary btn-hero"
-            href="https://github.com/balancer-labs/"
-            >Github code</a
-          >
-        </div>
-      </div>
-    </section> -->
-    <!-- <section>
-      <div class="grid grid-cols-2 pt-8 md:pt-0 my-8 md:my-2 px-4">
-        <Stat label="Global liquidity" stat="$2.3B+" />
-        <Stat label="DeFi integrations" stat="50+" />
-      </div>
-    </section> -->
-
-    <!-- <section class="bg-white">
-      <div class="md:mx-auto max-w-7xl px-4 pb-16">
-        <div>
-          <p class="eyebrow gradient-text">
-            Developer-friendly
-          </p>
-          <h1 class="h1-sans-serif">
-            Quickly set up liquidity management systems
-          </h1>
-          <p class="pb-4">
-            Balancer is a launchpad for developers building use-case specific
-            AMMs with different trade-offs optimizing for different goals and
-            communities.
-          </p>
-        </div>
-        <div class="pb-4">
-          <h3 class="text-xl pb-4 font-bold">
-            Focus on new AMM logic rather than low-level accounting
-          </h3>
-          <p>
-            Innovate with different AMM strategies without having to worry about
-            low-level token transfers, balance accounting, security checks and
-            smart order routing. With Balancer V2, this all comes out of the
-            box.
-          </p>
-        </div>
-        <div class="pb-4">
-          <Feature
-            title="The Balancer Protocol"
-            description="The Protocol vault handles token management and accounting, security checks and smart order routing."
-            icon="icon-balancer-protocol.svg"
-          />
-          <Feature
-            title="Developers & Entrepreneurs"
-            description="Configure pools with custom AMM logic to build use-case specific apps for your community's needs."
-            icon="icon-developer.svg"
-          />
-        </div>
-      </div>
-    </section> -->
-
-    <!-- <section class="bg-white">
-      <div class="max-w-7xl md:mx-auto px-4 pb-12">
-        <h1 class="h1-sans-serif">Projects building on Balancer</h1>
-        <div class="flex py-3 items-center">
-          <div class="mr-3">
-            <img src="@/assets/svg/tokens/aave.svg" alt="" />
-          </div>
-          <div>
-            <h4 class="font-semibold">Aave</h4>
-            <p>Asset Manager &amp; 80/20 Safety Pool</p>
-          </div>
-        </div>
-        <div class="flex py-3 items-center">
-          <div class="mr-3">
-            <img src="@/assets/svg/tokens/gno.svg" alt="" />
-          </div>
-          <div>
-            <h4 class="font-semibold">Gnosis</h4>
-            <p>Asset Manager &amp; 80/20 Safety Pool</p>
-          </div>
-        </div>
-        <div class="flex py-3 items-center">
-          <div class="mr-3">
-            <img src="@/assets/images/tokens/element.png" alt="" />
-          </div>
-          <div>
-            <h4 class="font-semibold">Element</h4>
-            <p>Asset Manager &amp; 80/20 Safety Pool</p>
-          </div>
-        </div>
-        <div class="flex py-3 items-center">
-          <div class="mr-3">
-            <img src="@/assets/images/tokens/element.png" alt="" />
-          </div>
-          <div>
-            <h4 class="font-semibold">Powerpool</h4>
-            <p>Asset Manager &amp; 80/20 Safety Pool</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <SmartPools />
     <LBPs />
@@ -300,29 +236,38 @@
 import BuildHero from "@/components/pages/build/BuildHero.vue";
 import SmartPools from "@/components/pages/build/SmartPools.vue";
 import LBPs from "@/components/pages/build/LBPs.vue";
+import Element from "@/components/case-studies/Element.vue";
+import CaseStudy from "@/components/case-studies/CaseStudy.vue";
+
 import { headMeta } from "@/lib/meta";
+import Vue from "vue";
+import { VTooltip, VPopover, VClosePopover } from "v-tooltip";
+
+Vue.directive("tooltip", VTooltip);
+Vue.directive("close-popover", VClosePopover);
+Vue.component("v-popover", VPopover);
 
 export default {
   transition: "slideup",
   components: {
-    BuildHero, 
+    BuildHero,
     SmartPools,
+    Element,
+    CaseStudy,
     LBPs
   },
   head() {
     return {
-      title: 'Build on Balancer – a core building block of DeFi ', 
-      description: 'yolo',
+      title: "Build on Balancer – a core building block of DeFi ",
       ...headMeta({
-        description: 'description lorem',
+        description: "description lorem"
       })
-    }
+    };
   }
 };
 </script>
 
 <style>
-
 .card {
   @apply rounded-lg p-4 md:p-6 lg:p-8;
   box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
@@ -335,10 +280,10 @@ export default {
   box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
   transition: box-shadow 0.2s ease-out;
 }
-.card:hover, .pool:hover {
+.card:hover,
+.pool:hover {
   box-shadow: 8px 8px 30px #e6e6e6, -8px -8px 30px #ffffff;
 }
-
 
 .cover-img {
   border-radius: 10px 10px 0 0;
@@ -348,9 +293,15 @@ export default {
   height: 72px;
   width: 72px;
   transition: 0.2s all ease-in-out;
+  cursor: pointer;
 }
 .integrations-logo:hover,
 .integrations-logo:focus {
+  transform: scale(1.1);
+  /* box-shadow: 0 0 4px 0 rgba(0,0,0,0.10), 0 0 40px 0 rgba(0,0,0,0.20); */
+}
+
+.v-popover.open .integrations-logo {
   transform: scale(1.1);
 }
 
@@ -385,6 +336,7 @@ export default {
   background-attachment: fixed;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .featured-stat.lbp-stat {
@@ -422,5 +374,100 @@ export default {
   .featured-stat.lbp-stat {
     font-size: 120px;
   }
+}
+
+.tooltip {
+  display: block !important;
+  z-index: 10000;
+}
+
+.tooltip .tooltip-inner {
+  @apply text-black;
+  max-width: 348px;
+  margin: 0 16px;
+  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 10px 20px 0 rgba(0, 0, 0, 0.05); */
+  transition: all 0.2s ease-out;
+  outline: none;
+}
+
+.tooltip .tooltip-arrow {
+  @apply border-gray-50;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  position: absolute;
+  margin: 5px;
+}
+
+.tooltip[x-placement^="top"] {
+  margin-bottom: 5px;
+}
+
+.tooltip[x-placement^="top"] .tooltip-arrow {
+  border-width: 5px 5px 0 5px;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tooltip[x-placement^="bottom"] {
+  margin-top: 5px;
+}
+
+.tooltip[x-placement^="bottom"] .tooltip-arrow {
+  border-width: 0 5px 5px 5px;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-top-color: transparent !important;
+  top: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tooltip[x-placement^="right"] {
+  margin-left: 5px;
+}
+
+.tooltip[x-placement^="right"] .tooltip-arrow {
+  border-width: 5px 5px 5px 0;
+  border-left-color: transparent !important;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  left: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.tooltip[x-placement^="left"] {
+  margin-right: 5px;
+}
+
+.tooltip[x-placement^="left"] .tooltip-arrow {
+  border-width: 5px 0 5px 5px;
+  border-top-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+  right: -5px;
+  top: calc(50% - 5px);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.tooltip[aria-hidden="true"] {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.15s, visibility 0.15s;
+}
+
+.tooltip[aria-hidden="false"] {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.15s;
 }
 </style>
