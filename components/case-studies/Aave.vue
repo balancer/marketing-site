@@ -2,7 +2,7 @@
   <section>
     <div class="case-study max-w-7xl mx-auto">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 items-center mb-0 lg:mb-32 py-16 md:py-16 text-white bg-aave px-4"
+        class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-0 lg:mb-32 py-16 md:py-16 text-white bg-aave px-4"
       >
         <div class="md:mx-auto max-w-md">
           <p class="py-4 uppercase tracking-widest">Case Study</p>

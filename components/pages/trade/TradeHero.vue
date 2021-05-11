@@ -16,7 +16,7 @@
         <div class="protocol-hero-content">
           <transition name="h1" appear>
             <h1 class="h1-sans-serif">
-              Decentralized liquid crypto market
+              Decentralized liquid crypto&nbsp;market
             </h1>
           </transition>
           <transition name="p" appear>

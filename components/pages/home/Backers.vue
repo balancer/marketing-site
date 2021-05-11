@@ -1,9 +1,9 @@
 <template>
-  <div class="px-4 xl:px-0 w-full max-w-7xl mx-auto pb-20 lg:pb-40 pt-16 lg:pt-0">
+  <div class="px-4 xl:px-0 w-full max-w-7xl mx-auto pb-32 lg:pb-40 pt-16 lg:pt-0">
     <div class="grid md:grid-cols-3 gap-4 xl:gap-8">
       <div class="order-1 md:order-2 card flex flex-col justify-between w-full">
         <div class="pb-6">
-          <div class="lg:mb-6">
+          <div class="md:mb-4 lg:mb-6">
             <icon-quotemark />
           </div>
           <p>
@@ -30,7 +30,7 @@
         class="order-2 md:order-1 md:relative md:top-12  card flex flex-col justify-between w-full"
       >
         <div class="pb-6">
-          <div class="lg:mb-6">
+          <div class="md:mb-4 lg:mb-6">
             <icon-quotemark />
           </div>
           <p>
@@ -57,7 +57,7 @@
         class="order-3 md:relative md:top-12 card flex flex-col justify-between w-full"
       >
         <div class="pb-6">
-          <div class="lg:mb-6">
+          <div class="md:mb-4 lg:mb-6">
             <icon-quotemark />
           </div>
           <p>

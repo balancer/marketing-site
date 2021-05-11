@@ -6,7 +6,7 @@
       >
         <div class="md:mx-auto max-w-lg pr-4 pb-8 md:pb-0">          
           <h1 class="h1-sans-serif">
-            Trade now without barriers
+            Trade now without&nbsp;barriers
           </h1>
           <p class="pb-4">
             The Balancer Protocol is an open financial marketplace that enables

@@ -1,41 +1,30 @@
 <template>
   <header class="header">
     <nav class="flex">
-      <NuxtLink class="mr-8" to="/">
-        <!-- <img class="logo" src="~assets/svg/logo-balancer.svg" alt="" /><span
-          class="logotype"
-          >Balancer</span -->
-          <logotype-balancer />
-        
+      <NuxtLink class="logotype mr-4 lg:mr-8" to="/">
+        <logotype-balancer />
       </NuxtLink>
-
-
       <div class="mobile-hide mr-4">
         <NuxtLink class="nav-link nav-link--red" data-hover="Invest" to="invest"
           >Invest</NuxtLink
         >
         <NuxtLink class="nav-link nav-link--blue" data-hover="Trade" to="trade"
           >Trade</NuxtLink
-        >                
+        >
         <NuxtLink class="nav-link nav-link--pink" data-hover="Build" to="build"
           >Build</NuxtLink
         >
-        <!-- <NuxtLink class="link" to="balancer-V2">V2</NuxtLink> -->
       </div>
     </nav>
     <div class="flex items-center">
       <div class="mobile-hide">
         <div class="flex items-center nav-utility-link">
-          <a
-            class="nav-link"
-            data-hover="Docs"
-            href="https://docs.balancer.fi"
+          <a class="nav-link" data-hover="Docs" href="https://docs.balancer.fi"
             >Docs
             <icon-base width="14" height="14" icon-name="external link"
               ><icon-external-link /></icon-base
           ></a>
         </div>
-        <!-- <NuxtLink class="link hover:text-accent transition-standard" to="whitepaper">Whitepaper</NuxtLink> -->
         <div class="flex items-center nav-utility-link">
           <a
             class="nav-link"
@@ -48,7 +37,10 @@
           </a>
         </div>
       </div>
-      <a onclick="fathom.trackGoal('OMNVISTW', 0);" class="btn-header" href="https://app.balancer.fi/invest"
+      <a
+        onclick="fathom.trackGoal('OMNVISTW', 0);"
+        class="btn-header"
+        href="https://app.balancer.fi/invest"
         >Launch&nbsp;app</a
       >
       <Burger />
@@ -60,13 +52,13 @@
 import Burger from "@/components/menu/Burger.vue";
 import IconBase from "@/components/icons/IconBase.vue";
 import IconExternalLink from "@/components/icons/IconExternalLink.vue";
-import LogotypeBalancer from '@/components/icons/LogotypeBalancer.vue';
+import LogotypeBalancer from "@/components/icons/LogotypeBalancer.vue";
 
 export default {
   components: {
     Burger,
     IconBase,
-    IconExternalLink, 
+    IconExternalLink,
     LogotypeBalancer
   }
 };
@@ -90,9 +82,10 @@ export default {
 .link {
   @apply mr-4 flex hover:text-accent;
 }
-/* .logotype {
-  @apply px-3 pr-6 md:pr-2 font-semibold;
-} */
+.logotype {
+  position: relative;
+  top: 1px;
+}
 
 /* .fade-enter-from {
   opacity: 0;
@@ -127,15 +120,24 @@ export default {
   color: #0000ff;
   text-decoration: none;
   color: #000;
-  margin-right: 1rem;
+  margin-right: 0.75rem;
 }
 
 .nav-utility-link {
-  @apply mr-4;
+  @apply mr-3;
+}
+
+@media (min-width: 1024px) {
+  .nav-link {
+    margin-right: 1rem;
+  }
+  .nav-utility-link {
+    @apply mr-4;
+  }
 }
 
 .nav-utility-link .nav-link {
-  margin-right: 5px;
+  margin-right: 4px;
 }
 
 .nav-link:hover,
@@ -173,11 +175,11 @@ export default {
 }
 
 .btn-header {
-  @apply px-4 mr-2 py-2 rounded-lg font-medium border border-solid border-gray-200 ;
+  @apply px-4 mr-2 py-2 rounded-lg font-medium border border-solid border-gray-200;
   background-size: 300% 100%;
   transition: all 0.2s ease-out;
-  background-image: linear-gradient(to right, #fff, #fff, #0000ff, #ff00ff);    
-  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.10);
+  background-image: linear-gradient(to right, #fff, #fff, #0000ff, #ff00ff);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
 }
 .btn-header:hover {
   background-position: 100% 0;

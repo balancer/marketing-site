@@ -339,13 +339,22 @@ export default {
   background-clip: text;
 }
 
+/* Remove background-attachment: fixed interaction from Firefox */
+@-moz-document url-prefix() { 
+  .featured-stat {
+     background-attachment: scroll;
+  }
+}
+
 .featured-stat.lbp-stat {
   font-size: 21vw;
+  background-attachment: scroll;
 }
 
 .featured-stat.lbp-stat-label {
   font-size: 32px;
   letter-spacing: -0.5px;
+  background-attachment: scroll;
 }
 
 .featured-stat-label {

@@ -15,7 +15,7 @@
           </div>
           <div class="protocol-hero-content">
               <transition name="h1" appear>
-            <h1 class="h1-sans-serif">Make your crypto work for you</h1>
+            <h1 class="h1-sans-serif">Make your crypto work for&nbsp;you</h1>
               </transition>
               <transition name="p" appear>
             <p class="pb-4 font-medium text-black">
