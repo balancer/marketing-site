@@ -50,12 +50,20 @@
                 >Invest app</a
               >
             </p>
-            <p>
+            <p class="pb-1">
               <a
                 class="link"
                 @click="toggleSidebar"
                 href="https://app.balancer.fi/#/trade"
                 >Trade app</a
+              >
+            </p>
+            <p>
+              <a
+                class="link"
+                @click="toggleSidebar"
+                href="https://claim.balancer.finance/#/"
+                >Claim $BAL</a
               >
             </p>
           </div>
@@ -73,7 +81,7 @@
               <a
                 class="link"
                 @click="toggleSidebar"
-                href="https://docs.balancer.finance/"
+                href="https://docs.balancer.fi"
                 >Documentation</a
               >
             </p>
@@ -138,7 +146,9 @@
                 ><icon-github
               /></a>
 
-              <a class="mr-2" href="https://www.linkedin.com/company/balancer-labs/"
+              <a
+                class="mr-2"
+                href="https://www.linkedin.com/company/balancer-labs/"
                 ><icon-linkedin
               /></a>
               <a class="mr-2" href="mailto:contact@balancer.finance"

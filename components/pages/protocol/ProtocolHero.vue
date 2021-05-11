@@ -31,7 +31,7 @@
               >
               <a
                 class="btn btn-skeleton-white btn-hero"
-                href="https://docs.balancer.finance/"
+                href="https://docs.balancer.fi"
                 >View docs</a
               >
             </div>

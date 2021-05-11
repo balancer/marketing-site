@@ -17,8 +17,8 @@
 
           <p class="pb-4 italic">New Balancer V2 Smart Pools are coming soon.</p>
             <a
-              class="btn btn-secondary btn-inline mb-8 md:mb-4"
-              href="https://docs.balancer.finance/guides/creating-a-smart-pool"
+              class="btn btn-tertiary btn-hero btn-inline mb-8 md:mb-4"
+              href="https://docs.balancer.fi/guides/creating-a-smart-pool"
               >V1 Smart Pool docs</a
             >
 
@@ -54,7 +54,7 @@
         <div>
           <div>
             <div class="grid grid-cols-2 gap-4 max-w-lg">
-              <a href="https://docs.balancer.finance/guides/smart-pool-templates-gui/liquidity-bootstrapping-pool">
+              <a href="https://docs.balancer.fi/guides/smart-pool-templates-gui/liquidity-bootstrapping-pool">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -74,7 +74,7 @@
                 </div>
               </a>
 
-              <a href="https://docs.balancer.finance/guides/smart-pool-templates-gui/swing-trading-pool">
+              <a href="https://docs.balancer.fi/guides/smart-pool-templates-gui/swing-trading-pool">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -92,7 +92,7 @@
                 </div>
               </a>
 
-              <a href="https://docs.balancer.finance/guides/smart-pool-templates-gui/smart-treasury">
+              <a href="https://docs.balancer.fi/guides/smart-pool-templates-gui/smart-treasury">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img
@@ -110,7 +110,7 @@
                 </div>
               </a>
 
-              <a href="https://docs.balancer.finance/guides/smart-pool-templates-gui/investors-club">
+              <a href="https://docs.balancer.fi/guides/smart-pool-templates-gui/investors-club">
                 <div class="pool relative">
                   <div class="relative flex justify-center items-center">
                     <img

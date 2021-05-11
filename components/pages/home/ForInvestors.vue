@@ -2,9 +2,9 @@
   <section>
     <div class="max-w-screen-2xl mx-auto">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 px-4 xl:px-0 pb-16 lg:pb-32 mb-8 items-center bg-white"
+        class="grid grid-cols-1 md:grid-cols-2 px-4 xl:px-0 pb-16 lg:pb-32 mb-8 items-center gap-4 bg-white"
       >
-        <div class="md:mx-auto max-w-lg pr-4">
+        <div class="md:mx-auto max-w-lg pr-4 pb-8 md:pb-0">
           <p class="eyebrow gradient-text pb-2 font-medium">For investors</p>
           <h1 class="h1-sans-serif">
             Portfolios that generate yield and rebalance automatically
@@ -48,13 +48,15 @@
         </div>
         <div>
           <div>
-            <div class="grid grid-cols-2 gap-4 max-w-xl">
+            <div class="card-grid grid grid-cols-2 gap-4 max-w-xl">
               <a
                 href="https://app.balancer.fi/#/pool/0xa6f548df93de924d73be7d25dc02554c6bd66db500020000000000000000000e"
               >
                 <div class="pool relative">
                   <div class="image-container">
                     <img
+                      width="300"
+                      height="300"
                       class="cover-img"
                       src="~assets/images/featured-pools/pool-weth-wbtc.jpg"
                       alt=""
@@ -73,6 +75,8 @@
                 <div class="pool relative">
                   <div class="image-container">
                     <img
+                      width="300"
+                      height="300"                    
                       class="cover-img"
                       src="~assets/images/featured-pools/pool-bal-weth.jpg"
                       alt=""
@@ -91,6 +95,8 @@
                 <div class="pool relative">
                   <div class="image-container">
                     <img
+                      width="300"
+                      height="300"                    
                       class="cover-img"
                       src="~assets/images/featured-pools/pool-dpi-weth-wbtc.jpg"
                       alt=""
@@ -111,6 +117,8 @@
                 <div class="pool relative">
                   <div class="image-container">
                     <img
+                      width="300"
+                      height="300"                    
                       class="cover-img"
                       src="~assets/images/featured-pools/pool-weth-dai.jpg"
                       alt=""
@@ -137,10 +145,15 @@ export default {};
 </script>
 
 <style scoped>
+.card-grid {
+  max-width: 38rem;
+}
+
 .pool {
   @apply rounded-lg;
   max-width: 300px;
   box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
+  overflow: hidden;
 }
 
 .image-container {

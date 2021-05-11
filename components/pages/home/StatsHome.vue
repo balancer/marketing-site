@@ -2,7 +2,7 @@
   <section class="p-4 bg-white">
     <div class="content-container">
       <transition name="stats" appear>
-      <div class="grid grid-cols-2 md:grid-cols-4 pt-8 pb-8 md:pb-16 md:pt-2">        
+      <div class="grid grid-cols-2 md:grid-cols-4 pt-8 pb-8 md:pb-16 md:pt-2 lg:px-8">        
         <!-- https://duneanalytics.com/balancerlabs/balancer-exchange -->
         <Stat label="Trade vol (7d)" stat="$728.8m" />
         <Stat label="Fees earned" stat="$326.4m" />

@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 xl:px-0 w-full max-w-7xl mx-auto pb-20  lg:pb-40">
+  <div class="px-4 xl:px-0 w-full max-w-7xl mx-auto pb-20 lg:pb-40 pt-16 lg:pt-0">
     <div class="grid md:grid-cols-3 gap-4 xl:gap-8">
       <div class="order-1 md:order-2 card flex flex-col justify-between w-full">
         <div class="pb-6">

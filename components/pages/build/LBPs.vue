@@ -2,7 +2,7 @@
   <section class="bg-white">
     <div class="max-w-screen-2xl mx-auto">
       <div
-        class="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 xl:px-0 py-8 md:py-16 mb-8 items-center bg-white"
+        class="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 xl:px-0 pb-16 md:pb-32 mb-8 items-center bg-white"
       >
         <div class="md:mx-auto max-w-lg pr-4">
           <p class="eyebrow gradient-text pb-2 font-medium">Launch a token</p>

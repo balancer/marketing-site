@@ -83,3 +83,8 @@ p {
     background-position: 100% 50%;
   }
 }
+
+.text-link {
+  @apply text-defaultBlue hover:text-defaultPink font-medium;
+  transition: all 0.2s ease-out;
+}

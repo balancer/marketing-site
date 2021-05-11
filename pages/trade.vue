@@ -6,7 +6,7 @@
     <section class="bg-white">
       <div class="px-4 xl:px-0 max-w-7xl mx-auto pb-16 md:pb-32">
         <div
-          class="grid md:grid-cols-2 md:grid-rows-3 md:gap-8 lg:grid-cols-3 lg:grid-rows-2 lg:gap-12 xl:gap-16"
+          class="grid md:grid-cols-2 md:grid-rows-3 gap-4 lg:grid-cols-3 lg:grid-rows-2 lg:gap-12 xl:gap-16"
         >
           <div class="card pb-12 max-w-lg">
             <div class="mb-4">
@@ -15,7 +15,7 @@
             <h2>Earn $BAL with every trade</h2>
             <p>
               Balance out your gas costs by getting up to 90% of your gas fees
-              paid back in $BAL—a helping hand from the Balancer DAO.
+              paid back in $BAL—a helping hand from the Balancer DAO. <a class="text-link" href="https://claim.balancer.finance/#/">Claim $BAL</a> weekly on Wednesdays.
             </p>
           </div>
 

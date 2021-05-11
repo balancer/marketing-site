@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>icon-curve</title>
-    <g id="icon-curve" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-        <line x1="1.5" y1="1.5" x2="1.5" y2="22.5" id="Line" stroke="#000000" stroke-width="1.25"></line>
-        <line x1="22" y1="22.5" x2="1.5" y2="22.5" id="Line" stroke="#000000" stroke-width="1.25"></line>
-        <path d="M5.34314575,3 L5.34314575,4 C5.34314575,12.2842712 12.0588745,19 20.3431458,19 L20.3431458,19 L20.3431458,19" id="Path-2" stroke="#000000" stroke-width="1.25"></path>
+    <defs>
+        <circle id="path-1" cx="6.5" cy="16.5" r="3.5"></circle>
+    </defs>
+    <g id="icon-curve" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M1,1 C1,2.33333333 1,3.66666667 1,5 C1,14.9411255 9.0588745,23 19,23 C20.3333333,23 21.6666667,23 23,23" id="Path-2" stroke="#000000" stroke-width="1.25" stroke-linecap="round"></path>
+        <g id="Oval">
+            <circle stroke="#000000" stroke-width="1.25" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" cx="6.5" cy="16.5" r="2.875"></circle>
+            <circle stroke="#FFFFFF" stroke-width="2" cx="6.5" cy="16.5" r="4.5"></circle>
+        </g>
     </g>
 </svg>

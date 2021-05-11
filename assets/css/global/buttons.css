@@ -12,15 +12,13 @@
     transition: all 0.2s ease-out;    
     background-image: linear-gradient(to right, #0000ff, #FF00FF, #0000ff);
     /* background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673); */
-    box-shadow: 0 4px 15px 0 rgba(224, 100, 61, 0.20);   
+    box-shadow: 0 4px 15px 0 rgba(224, 100, 61, 0.08);   
 }
 .btn-primary:hover {
     background-position: 100% 0;
     box-shadow: 0 4px 15px 0 rgba(300, 100, 50, 0);   
     transition: all 0.2s ease-out;
 }
-
-
 
 /* .btn-primary {    
     background-size: 100%;

@@ -2,7 +2,7 @@
   <div>
     <BuildHero />
     <section class="bg-white">
-      <div class="max-w-7xl md:mx-auto px-4 pt-16 lg:pt-40 pb-32 lg:pb-40">
+      <div class="max-w-7xl md:mx-auto px-4 pt-16 lg:pt-40 pb-16 lg:pb-32">
         <div class="md:text-center pb-4">
           <h1 class="h1-sans-serif pb-4">
             Start building
@@ -17,7 +17,7 @@
           class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-screen-lg mx-auto"
         >
           <a
-            href="https://docs.balancer.finance/guides/smart-pool-templates-gui"
+            href="https://docs.balancer.fi/guides/smart-pool-templates-gui"
           >
             <div class="pool relative">
               <div class="relative flex justify-center items-center">
@@ -29,7 +29,7 @@
               </div>
               <div>
                 <div class="p-2 md:p-3 text-center">
-                  <p class="font-semibold">Create a Smart Pool</p>
+                  <p class="font-medium">Create a Smart Pool</p>
                   <p class="hidden">
                     A quick code walkthrough
                   </p>
@@ -38,7 +38,7 @@
             </div>
           </a>
           <a
-            href="https://docs.balancer.finance/smart-contracts/smart-pools/liquidity-bootstrapping-faq"
+            href="https://docs.balancer.fi/smart-contracts/smart-pools/liquidity-bootstrapping-faq"
           >
             <div class="pool relative">
               <div class="relative flex justify-center items-center">
@@ -50,7 +50,7 @@
               </div>
               <div>
                 <div class="p-2 md:p-3 text-center">
-                  <p class="font-semibold">Launch a token</p>
+                  <p class="font-medium">Launch a token</p>
                   <p class="hidden">
                     Via a Liquidity Bootstrapping Pool (LBP)
                   </p>
@@ -72,7 +72,7 @@
               </div>
               <div>
                 <div class="p-2 md:p-3 text-center">
-                  <p class="font-semibold">Get Balancer data</p>
+                  <p class="font-medium">Get Balancer data</p>
                   <p class="hidden">
                     Via the Balancer subgraph
                   </p>
@@ -93,7 +93,7 @@
               </div>
               <div>
                 <div class="p-2 md:p-3 text-center">
-                  <p class="font-semibold">Use price oracles</p>
+                  <p class="font-medium">Use price oracles</p>
                   <p class="hidden">
                     Via the 'Instant' or 'Resilient' oracles
                   </p>

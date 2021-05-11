@@ -25,7 +25,7 @@
             >
             <a
               class="btn btn-secondary btn-hero"
-              href="https://docs.balancer.finance/"
+              href="https://docs.balancer.fi"
               >View docs</a
             >
           </div>

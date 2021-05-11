@@ -6,7 +6,7 @@
     <section class="bg-white">
       <div class="px-4 xl:px-0 max-w-7xl mx-auto pb-16 md:pb-32">
         <div
-          class="grid md:grid-cols-2 md:grid-rows-3 md:gap-8 lg:grid-cols-3 lg:grid-rows-2 lg:gap-12 xl:gap-16"
+          class="grid md:grid-cols-2 md:grid-rows-3 gap-4 lg:grid-cols-3 lg:grid-rows-2 lg:gap-12 xl:gap-16"
         >
           <div class="card pb-12 max-w-lg">
             <div class="mb-4">
@@ -62,7 +62,7 @@
             <p>
               Investors on Balancer receive $BAL token liquidity mining
               distributions for depositing assets into incentivized liquidity
-              pools.
+              pools. <a class="text-link" href="https://claim.balancer.finance/#/">Claim $BAL</a> weekly on Wednesdays.
             </p>
           </div>
 

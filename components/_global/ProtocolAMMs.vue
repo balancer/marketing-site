@@ -2,7 +2,7 @@
   <section class="pb-12 bg-white">
     <div class="max-w-screen-2xl mx-auto">
       <div
-        class="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 lg:px-0 pt-8 md:pt-16 pb-16 lg:pb-32 items-center bg-white"
+        class="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 lg:px-0 pt-8 pt-16 pb-16 lg:pb-32 items-center bg-white"
       >
         <div class="md:mx-auto max-w-lg pr-4">
           <p class="eyebrow gradient-text pb-2 font-medium">HODL Smarter</p>

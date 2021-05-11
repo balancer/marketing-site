@@ -21,7 +21,7 @@
         <a
           class="nav-link"
           data-hover="Docs"
-          href="https://docs.balancer.finance"
+          href="https://docs.balancer.fi"
           >Docs</a
         >
         <!-- <NuxtLink class="link hover:text-accent transition-standard" to="whitepaper">Whitepaper</NuxtLink> -->

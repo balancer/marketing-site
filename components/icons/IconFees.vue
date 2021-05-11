@@ -11,7 +11,6 @@ export default {};
 <style scoped>
 .icon {
   fill: #000;
-  transform: scale(0.6);
   transition: fill 0.2s ease-out;
 }
 

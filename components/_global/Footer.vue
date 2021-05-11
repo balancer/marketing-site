@@ -37,9 +37,13 @@
           <p class="pb-1">
             <a class="link" href="https://app.balancer.fi/#/">Invest app</a>
           </p>
-          <p>
+          <p class="pb-1">
             <a class="link" href="https://app.balancer.fi/#/trade">Trade app</a>
           </p>
+          <p>
+            <a class="link" href="https://claim.balancer.finance/#/">Claim $BAL</a>
+          </p>          
+          
         </div>
         <div class="pb-8 md:pb-0">
           <p class="text-gray-400 pb-1">Learn</p>
@@ -47,7 +51,7 @@
             <a class="link" href="https://medium.com/balancer-protocol">Blog</a>
           </p>
           <p class="pb-1">
-            <a class="link" href="https://docs.balancer.finance/"
+            <a class="link" href="https://docs.balancer.fi"
               >Documentation</a
             >
           </p>
@@ -86,8 +90,8 @@
 
         <div class="">
           <p class="text-gray-400 pb-2">Community</p>
-          <div class="flex flex-col">
-            <div class="flex pb-3">
+          <div class="flex lg:flex-col">
+            <div class="flex pb-3 mr-3 lg:mr-0">
               <a class="mr-3" href="https://twitter.com/BalancerLabs">
                 <icon-twitter />
               </a>

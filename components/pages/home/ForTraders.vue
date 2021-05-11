@@ -4,7 +4,7 @@
       <div
         class="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 xl:px-0 pb-16 lg:pb-32 mb-8 items-center bg-white"
       >
-        <div class="md:mx-auto max-w-lg pr-4">
+        <div class="md:mx-auto max-w-lg pr-4 pb-8 md:pb-0">
           <p class="eyebrow gradient-text pb-2 font-medium">For traders</p>
           <h1 class="h1-sans-serif">
             Decentralized trades at optimal prices
@@ -52,13 +52,15 @@
         </div>
         <div>
           <div>
-            <div class="grid grid-cols-2 gap-4 max-w-xl">
+            <div class="card-grid grid grid-cols-2 gap-4">
               <a
                 href="https://app.balancer.fi/#/trade/ether/0x6B175474E89094C44Da98b954EedeAC495271d0F/"
               >
                 <div class="pool relative">
                   <div class="image-container">
                     <img
+                      width="300"
+                      height="300"                    
                       class="cover-img"
                       src="~assets/images/tokens/dai-cover.jpg"
                       alt=""
@@ -79,6 +81,8 @@
                 <div class="pool relative">
                   <div class="image-container">
                     <img
+                      width="300"
+                      height="300"                    
                       class="cover-img"
                       src="~assets/images/tokens/weth-cover.jpg"
                       alt=""
@@ -99,6 +103,8 @@
                 <div class="pool relative">
                   <div class="image-container">
                     <img
+                      width="300"
+                      height="300"                    
                       class="cover-img"
                       src="~assets/images/tokens/bal-cover.jpg"
                       alt=""
@@ -118,6 +124,8 @@
                 <div class="pool relative">
                   <div class="image-container">
                     <img
+                      width="300"
+                      height="300"                    
                       class="cover-img"
                       src="~assets/images/tokens/wbtc-cover.jpg"
                       alt=""
@@ -146,6 +154,10 @@ export default {};
 </script>
 
 <style scoped>
+
+.card-grid {
+  max-width: 38rem;
+}
 .pool {
   @apply rounded-lg overflow-hidden;
   max-width: 300px;

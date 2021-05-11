@@ -29,7 +29,7 @@
           <a
             class="nav-link"
             data-hover="Docs"
-            href="https://docs.balancer.finance"
+            href="https://docs.balancer.fi"
             >Docs
             <icon-base width="14" height="14" icon-name="external link"
               ><icon-external-link /></icon-base

@@ -11,7 +11,7 @@
         <a href="https://medium.com/balancer-protocol">Blog</a>
       </p>
       <p class="pb-1">
-        <a href="https://docs.balancer.finance/">Documentation</a>
+        <a href="https://docs.balancer.fi/">Documentation</a>
       </p>
       <p class="pb-1">
         <a href="https://balancer.finance/whitepaper/">Whitepaper</a>

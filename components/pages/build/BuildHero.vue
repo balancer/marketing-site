@@ -38,7 +38,7 @@
           <div class="flex pb-4 md:pb-0">
             <a
               class="btn btn-primary btn-hero mr-3"
-              href="https://docs.balancer.finance/"
+              href="https://docs.balancer.fi"
               >Developer docs</a
             >
             <a
