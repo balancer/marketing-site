@@ -11,8 +11,6 @@
             Focus on new AMM logic rather than low-level accounting.
           </p>
         </div>
-        <!-- <div class="md:flex"> -->
-
         <div
           class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-screen-lg mx-auto"
         >
@@ -180,7 +178,6 @@ export default {
 .integrations-logo:hover,
 .integrations-logo:focus {
   transform: scale(1.1);
-  /* box-shadow: 0 0 4px 0 rgba(0,0,0,0.10), 0 0 40px 0 rgba(0,0,0,0.20); */
 }
 
 .v-popover.open .integrations-logo {

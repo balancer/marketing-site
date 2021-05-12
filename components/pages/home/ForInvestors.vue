@@ -135,7 +135,6 @@
                 </div>
               </a>
             </div>
-            <!-- <p class="pt-4 text-gray-400">Featured investment pools</p> -->
           </div>
         </div>
       </div>

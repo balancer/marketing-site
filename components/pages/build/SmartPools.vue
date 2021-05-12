@@ -21,35 +21,6 @@
               href="https://docs.balancer.fi/v/v1/smart-contracts/smart-pools"
               >V1 Smart Pool docs</a
             >
-
-          <!-- <div class="grid grid-cols-1 pb-4">
-            <div class="flex pb-5">
-              <img
-                class="mr-3"
-                src="~/assets/svg/icon-smart-routing.svg"
-                alt=""
-              />
-              <p class="font-medium">Best prices via Smart Order Routing</p>
-            </div>
-            <div class="flex pb-5">
-              <img
-                class="mr-3"
-                src="~/assets/svg/icon-crystal-ball.svg"
-                alt=""
-              />
-              <p class="font-medium">Simulate amounts to optimize trades</p>
-            </div>
-            <div class="flex pb-5">
-              <img class="mr-3" src="~/assets/svg/icon-key.svg" alt="" />
-              <p class="font-medium">Trade with no counter party risk</p>
-            </div>
-            <div class="flex pb-5">
-              <img class="mr-3" src="~/assets/svg/icon-sparkles.svg" alt="" />
-              <p class="font-medium">
-                Gas subsidies to lower trading costs
-              </p>
-            </div>
-          </div> -->
         </div>
         <div>
           <div>
@@ -128,9 +99,6 @@
                 </div>
               </a>
             </div>
-            <!-- <p class="pt-4 text-gray-400">
-              Example use cases
-            </p> -->
           </div>
         </div>
       </div>

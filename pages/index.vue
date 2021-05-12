@@ -36,10 +36,4 @@ export default {
 
 <style>
 
-/* h1 {
-    @apply font-extrabold text-3xl pb-4;
-    font-family:"Tiempos Headline Medium";
-    line-height: 34px;
-} */
-
 </style>
