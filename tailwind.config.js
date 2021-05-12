@@ -42,7 +42,7 @@ module.exports = {
       
       colors: {
         accent: '#0000ff',
-        greyDark: '#718B98',
+        greyDark: '#607985',
         defaultRed: '#F12954',
         defaultBlue: '#0055FF',
         defaultPurple: '#8000FF',

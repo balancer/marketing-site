@@ -128,9 +128,9 @@
                 </div>
               </a>
             </div>
-            <p class="pt-4 text-gray-400">
+            <!-- <p class="pt-4 text-gray-400">
               Example use cases
-            </p>
+            </p> -->
           </div>
         </div>
       </div>

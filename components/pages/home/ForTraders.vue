@@ -147,9 +147,9 @@
                 </div>
               </a>
             </div>
-            <p class="pt-4 text-gray-400">
+            <!-- <p class="pt-4 text-gray-400">
               Featured tokens
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
