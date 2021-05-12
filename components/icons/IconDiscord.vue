@@ -1,10 +1,14 @@
 <template>
   <svg
+    id="discord"
     class="logo-group"
     width="32"
     height="32"
     xmlns="http://www.w3.org/2000/svg"
+    aria-labelledby="discordTitle"
+    role="img"
   >
+    <title id="discordTitle">Link to Balancer's Discord</title>
     <g fill="none" fill-rule="evenodd">
       <path
         class="bg"

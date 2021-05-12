@@ -7,37 +7,32 @@
         <div class="flex flex-col mb-8 sidebar">
           <p class="text-gray-400 pb-1">Balancer.fi</p>
           <NuxtLink
-            class="link text-lg md:text-base pb-1 leading-8 text-white"
+            class="link-featured"
             to="/"
             >Home</NuxtLink
           >
           <NuxtLink
-            class="link text-lg md:text-base pb-1 leading-8 text-white"
+            class="link-featured"
             to="invest"
             >Invest</NuxtLink
           >
           <NuxtLink
-            class="link text-lg md:text-base pb-1 leading-8 text-white"
+            class="link-featured"
             to="trade"
             >Trade</NuxtLink
           >
           <NuxtLink
-            class="link text-lg md:text-base pb-1 leading-8 text-white"
+            class="link-featured"
             to="build"
             >Build</NuxtLink
           >
-          <!-- <NuxtLink
-            class="link text-lg md:text-base pb-1 leading-8 text-white"
-            to="balancer-V2"
-            >V2</NuxtLink
-          > -->
         </div>
         <div class="pb-8 md:pb-16  lg:pb-0">
-          <p class="text-gray-400 pb-1">Products</p>
-          <p class="pb-1">
+          <p class="text-gray-400 pb-2">Products</p>
+          <p class="pb-2">
             <a class="link" href="https://app.balancer.fi/#/">Invest app</a>
           </p>
-          <p class="pb-1">
+          <p class="pb-2">
             <a class="link" href="https://app.balancer.fi/#/trade">Trade app</a>
           </p>
           <p>
@@ -46,16 +41,16 @@
           
         </div>
         <div class="pb-8 md:pb-0">
-          <p class="text-gray-400 pb-1">Learn</p>
-          <p class="pb-1">
+          <p class="text-gray-400 pb-2">Learn</p>
+          <p class="pb-2">
             <a class="link" href="https://medium.com/balancer-protocol">Blog</a>
           </p>
-          <p class="pb-1">
+          <p class="pb-2">
             <a class="link" href="https://docs.balancer.fi"
               >Documentation</a
             >
           </p>
-          <p class="pb-1">
+          <p class="pb-2">
             <a class="link" href="whitepaper.pdf">Whitepaper</a>
           </p>
           <p>
@@ -65,18 +60,18 @@
           </p>
         </div>
         <div class="pb-8 md:pb-16  lg:pb-0">
-          <p class="text-gray-400 pb-1">Ecosystem</p>
-          <p class="pb-1">
+          <p class="text-gray-400 pb-2">Ecosystem</p>
+          <p class="pb-2">
             <a class="link" href="https://vote.balancer.finance/"
               >Snapshot governance</a
             >
           </p>
-          <p class="pb-1">
+          <p class="pb-2">
             <a class="link" href="https://duneanalytics.com/projects/balancer"
               >Dune analytics</a
             >
           </p>
-          <p class="pb-1">
+          <p class="pb-2">
             <a class="link" href="https://forum.balancer.finance/">Forum</a>
           </p>
           <p>
@@ -161,8 +156,12 @@ export default {
 
 <style scoped>
 .link {
-  @apply text-base;
-  transition: all 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.link-featured {
+  @apply  text-lg md:text-base pb-1 leading-8 text-white;
+  transition: color 0.2s ease-out;
 }
 
 .link:hover,

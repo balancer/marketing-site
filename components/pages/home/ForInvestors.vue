@@ -30,7 +30,10 @@
                 <p class="font-medium">Capital and gas efficient</p>
               </div>
               <div class="flex pb-5">
-                <img class="mr-3" src="~/assets/svg/icon-sparkles.svg" alt="" />
+                <img 
+                width="26"
+                height="25"
+                class="mr-3" src="~/assets/svg/icon-sparkles.svg" alt="" />
                 <p class="font-medium">Earn $BAL token incentives</p>
               </div>
             </div>
@@ -41,7 +44,7 @@
                 >Start investing</a
               >
               <NuxtLink class="btn btn-tertiary btn-hero" to="invest"
-                >Learn more</NuxtLink
+                >Invest features</NuxtLink
               >
             </div>
           </div>

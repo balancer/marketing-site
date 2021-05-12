@@ -17,7 +17,10 @@
         <a href="https://twitter.com/cburniske">
           <div class="flex items-center">
             <div class="w-20 rounded-full overflow-hidden">
-              <img src="@/assets/images/people/cb.png" alt="" />
+              <img 
+              width="80"
+              height="80"              
+              src="@/assets/images/people/cb.png" alt="" />
             </div>
             <div class="pl-4">
               <p class="font-medium">Chris Burniske</p>
@@ -44,7 +47,10 @@
         <a href="https://twitter.com/Arthur_0x">
           <div class="flex items-center">
             <div class="w-20 rounded-full overflow-hidden">
-              <img src="@/assets/images/people/ax.png" alt="" />
+              <img 
+              width="80"
+              height="80"              
+              src="@/assets/images/people/ax.png" alt="" />
             </div>
             <div class="pl-4">
               <p class="font-medium">Arthur_0x</p>
@@ -70,7 +76,10 @@
         <a href="https://twitter.com/zhusu">
           <div class="flex items-center">
             <div class="w-20 rounded-full overflow-hidden">
-              <img src="@/assets/images/people/sz.png" alt="" />
+              <img 
+              width="80"
+              height="80"
+              src="@/assets/images/people/sz.png" alt="" />
             </div>
             <div class="pl-4">
               <p class="font-medium">Su Zhu</p>

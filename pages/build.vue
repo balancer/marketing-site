@@ -262,10 +262,13 @@ export default {
   @apply text-black;
   max-width: 348px;
   margin: 0 16px;
-  /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 10px 20px 0 rgba(0, 0, 0, 0.05); */
   transition: all 0.2s ease-out;
+}
+
+.tooltip:focus:not(:focus-visible), .wrapper:focus:not(:focus-visible), .tooltip-inner:focus:not(:focus-visible) {
   outline: none;
 }
+
 
 .tooltip .tooltip-arrow {
   @apply border-gray-50;

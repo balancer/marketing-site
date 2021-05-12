@@ -22,6 +22,8 @@
           <div class="grid grid-cols-1 pb-2">
             <div class="flex pb-5">
               <img
+                width="24"
+                height="22"
                 class="mr-3"
                 src="~/assets/svg/icon-smart-routing.svg"
                 alt=""
@@ -33,7 +35,13 @@
               <p class="font-medium">MEV protection</p>
             </div>
             <div class="flex pb-5">
-              <img class="mr-3" src="~/assets/svg/icon-sparkles.svg" alt="" />
+              <img
+                width="26"
+                height="25"
+                class="mr-3"
+                src="~/assets/svg/icon-sparkles.svg"
+                alt=""
+              />
               <p class="font-medium">
                 Gas optimizations and subsidies
               </p>
@@ -46,8 +54,8 @@
               >Start trading</a
             >
             <NuxtLink class="btn btn-tertiary btn-hero" to="trade"
-              >Learn more</NuxtLink
-            >            
+              >Trade features</NuxtLink
+            >
           </div>
         </div>
         <div>
@@ -60,7 +68,7 @@
                   <div class="image-container">
                     <img
                       width="300"
-                      height="300"                    
+                      height="300"
                       class="cover-img"
                       src="~assets/images/tokens/dai-cover.jpg"
                       alt=""
@@ -82,7 +90,7 @@
                   <div class="image-container">
                     <img
                       width="300"
-                      height="300"                    
+                      height="300"
                       class="cover-img"
                       src="~assets/images/tokens/weth-cover.jpg"
                       alt=""
@@ -104,7 +112,7 @@
                   <div class="image-container">
                     <img
                       width="300"
-                      height="300"                    
+                      height="300"
                       class="cover-img"
                       src="~assets/images/tokens/bal-cover.jpg"
                       alt=""
@@ -125,7 +133,7 @@
                   <div class="image-container">
                     <img
                       width="300"
-                      height="300"                    
+                      height="300"
                       class="cover-img"
                       src="~assets/images/tokens/wbtc-cover.jpg"
                       alt=""
@@ -154,7 +162,6 @@ export default {};
 </script>
 
 <style scoped>
-
 .card-grid {
   max-width: 38rem;
 }

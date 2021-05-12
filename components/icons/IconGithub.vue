@@ -1,10 +1,14 @@
 <template>
   <svg
+    id="github"
     class="logo-group"
     width="32"
     height="32"
     xmlns="http://www.w3.org/2000/svg"
+    aria-labelledby="githubTitle"
+    role="img"
   >
+    <title id="githubTitle">Link to Balancer Lab's Github</title>
     <g fill="none">
       <path
         class="bg"

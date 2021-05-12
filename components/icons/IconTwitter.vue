@@ -1,10 +1,14 @@
 <template>
   <svg
+    id="twitter"
     class="logo-group"
     width="32"
     height="32"
     xmlns="http://www.w3.org/2000/svg"
+    aria-labelledby="logoTitle"
+    role="img"
   >
+    <title id="twitterTitle">Link to Balancer's Twitter</title>
     <g fill-rule="nonzero" fill="none">
       <path
         class="bg"

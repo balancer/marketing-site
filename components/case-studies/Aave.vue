@@ -6,7 +6,10 @@
       >
         <div class="md:mx-auto max-w-md">
           <p class="py-4 uppercase tracking-widest">Case Study</p>
-          <img class="py-4" src="~assets/svg/logo-aave.svg" alt="" />
+          <img 
+          width="120"
+          height="33"
+          class="py-4" src="~assets/svg/logo-aave.svg" alt="" />
           <ol class="font-medium pb-12 md:pb-0">
             <li class="py-4 ">
               Aave launched their 80/20 AAVE/ETH Safety Incentive pool on
@@ -22,7 +25,13 @@
           </ol>
         </div>
         <div class="md:mx-auto max-w-md">
-          <img class="md:py-4" src="~assets/images/people/stani.png" alt="" />
+          <img
+            class="md:py-4"
+            width="60"
+            height="60"
+            src="~assets/images/people/stani.png"
+            alt=""
+          />
           <p class="py-4 italic font-medium">
             “Part of what makes DeFi so exciting is its composability, and with
             Balancer this has resulted in a partnership that optimises the

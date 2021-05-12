@@ -1,10 +1,14 @@
 <template>
   <svg
+    id="medium"
     class="logo-group"
     width="32"
     height="32"
     xmlns="http://www.w3.org/2000/svg"
+    aria-labelledby="mediumTitle"
+    role="img"
   >
+    <title id="mediumTitle">Link to Balancer's blog on Medium</title>
     <g fill="none" fill-rule="evenodd">
       <g fill-rule="nonzero">
         <path

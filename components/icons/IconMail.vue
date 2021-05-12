@@ -1,10 +1,14 @@
 <template>
   <svg
+    id="mail"
     class="logo-group"
     width="32"
     height="32"
     xmlns="http://www.w3.org/2000/svg"
+    aria-labelledby="mailTitle"
+    role="img"
   >
+    <title id="mailTitle">Link to Balancer Lab's contact email address</title>
     <g fill-rule="nonzero" fill="none">
       <path
         class="bg"
@@ -34,7 +38,7 @@ export default {};
 }
 
 .logo-group:hover .bg {
-  fill: #FFC017;
+  fill: #ffc017;
 }
 
 .logo-group:hover .logo {

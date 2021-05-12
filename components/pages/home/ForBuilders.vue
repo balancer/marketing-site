@@ -7,7 +7,7 @@
         <div class="md:mx-auto max-w-lg pr-4 pb-12 md:pb-0">
           <p class="eyebrow gradient-text pb-2 font-medium">For builders</p>
           <h1 class="h1-sans-serif">
-            A protocol for programmable&nbsp;liquidity
+            A protocol for programmable liquidity
           </h1>
           <p class="pb-4">
             The Balancer Protocol is a core building block of DeFi
@@ -18,7 +18,10 @@
           </p>
           <div class="pb-1">
             <div class="flex pb-5">
-              <img class="mr-3" src="~/assets/svg/icon-sliders.svg" alt="" />
+              <img 
+              width="24"
+              height="24"
+              class="mr-3" src="~/assets/svg/icon-sliders.svg" alt="" />
               <p class="font-medium">Custom token weights & swap fees</p>
             </div>
             <div class="flex pb-5">
@@ -29,6 +32,8 @@
             </div>
             <div class="flex pb-5">
               <img
+                width="24"
+                height="24"
                 class="mr-3"
                 src="~/assets/svg/icon-asset-manager.svg"
                 alt=""
@@ -40,7 +45,7 @@
           </div>
           <div class="flex pb-4 md:pb-0">
             <NuxtLink class="btn btn-tertiary btn-hero" to="build"
-              >Learn more</NuxtLink
+              >Start building</NuxtLink
             >
           </div>
         </div>
