@@ -36,7 +36,7 @@
             <a class="link" href="https://app.balancer.fi/#/trade">Trade app</a>
           </p>
           <p>
-            <a class="link" href="https://claim.balancer.finance/#/">Claim $BAL</a>
+            <a class="link" href="https://claim.balancer.fi">Claim $BAL</a>
           </p>          
           
         </div>
