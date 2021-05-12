@@ -62,7 +62,7 @@
               <a
                 class="link"
                 @click="toggleSidebar"
-                href="https://claim.balancer.finance/#/"
+                href="https://claim.balancer.fi"
                 >Claim $BAL</a
               >
             </p>
