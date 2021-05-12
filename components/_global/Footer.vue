@@ -114,19 +114,6 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="">
-          <p class="text-gray-400 pb-1">Stay in touch</p>
-          <div class="flex relative items-center">
-          <input
-            class="my-2 px-3 py-4 w-full rounded-2xl focus:outline-none focus:border-yellow-400 text-black"
-            type="email"
-            placeholder="Your email address"
-            name="email"
-          />
-          <button class="btn-email btn-primary">-></button>
-          </div>
-        </div> -->
       </div>
     </div>
   </footer>

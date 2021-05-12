@@ -10,10 +10,6 @@
             Decentralized trades at optimal prices
           </h1>
           <p class="pb-4">
-            <!-- Balancer facilitates cheap trades by utilizing the crowd-sourced
-            liquidity pools from investor’s self-balancing portfolios. Balancer
-            looks across all these different liquidity pools and smartly routes
-            the exchange to give the trader the best available price. -->
             Balancer enables efficient trading by pooling crowdsourced liquidity
             from investor portfolios and using its Smart Order Router to find
             traders the best available price. Exchange any combination of ERC-20
@@ -76,7 +72,6 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <!-- <p class="text-sm truncate">DAI: <span>$1.00</span></p> -->
                       <p class="text-label">DAI</p>
                     </div>
                   </div>
@@ -98,7 +93,6 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <!-- <p class="text-label">ETH: <span>$2,394</span></p> -->
                       <p class="text-label">ETH</p>
                     </div>
                   </div>

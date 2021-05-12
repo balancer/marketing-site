@@ -24,16 +24,6 @@
             Balancer to create new innovative types of financial dapps.
           </p>
         </transition>
-        <!-- <div class="pb-2">
-            <Feature
-              description="The Balancer Protocol vault handles token management and accounting, security checks and smart order routing."
-              icon="icon-balancer-protocol.svg"
-            />
-            <Feature
-              description="You configure liquidity pools with custom AMM logic to build use-case specific apps for your community's needs."
-              icon="icon-developer.svg"
-            />
-          </div> -->
         <transition name="buttons" appear>
           <div class="flex pb-4 md:pb-0">
             <a
@@ -65,11 +55,6 @@ export default {};
   background-image: linear-gradient(227deg, #353646 0%, #21222b 100%);
 }
 
-/* .hero-build-content {
-  @apply md:flex md:items-center mx-auto max-w-screen-2xl;
-  min-height: 640px;
-} */
-
 @media (orientation: landscape) {
   .hero-build {
     @apply flex items-center;
@@ -88,8 +73,6 @@ export default {};
 
 .p-hero {
   @apply pb-6 font-medium;
-
-  /* line-height: 1.3; */
 }
 
 @media (min-width: 768px) {

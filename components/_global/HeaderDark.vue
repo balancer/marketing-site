@@ -17,14 +17,12 @@
         <NuxtLink class="nav-link" data-hover="Build" to="build"
           >Build</NuxtLink
         >
-        <!-- <NuxtLink class="link" to="balancer-V2">V2</NuxtLink> -->
         <a
           class="nav-link"
           data-hover="Docs"
           href="https://docs.balancer.fi"
           >Docs</a
         >
-        <!-- <NuxtLink class="link hover:text-accent transition-standard" to="whitepaper">Whitepaper</NuxtLink> -->
         <a
           class="nav-link"
           data-hover="Blog"
@@ -55,7 +53,6 @@ export default {
 </script>
 
 <style scoped>
-/* #TODO" remove overflow:auto once a js mobile nav is implmemented */
 .mobile-hide {
   display: none;
 }
@@ -75,19 +72,6 @@ export default {
 .logotype {
   @apply px-3 pr-6 md:pr-2 font-semibold;
 }
-
-/* .fade-enter-from {
-  opacity: 0;
-  transform: translateY(-10px);
-  
-}
-.fade-enter-to {
-  opacity: 1;
-  transform: translateY(0px);
-}
-.fade-enter-active {
-  transition: 1s all ease-in-out 0.3s;
-} */
 
 .fade-enter-from,
 .fade-leave-to {
@@ -110,11 +94,6 @@ export default {
   text-decoration: none;
   color: #ccc;
   margin-right: 1rem;
-  /* text-transform: uppercase; */
-  /* letter-spacing: 1px; */
-  /* font-weight: 400; */
-  /* text-shadow: 0 0 1px rgba(255,255,255,0.3); */
-  /* font-size: 1.35em; */
 }
 
 .nav-link:hover,
