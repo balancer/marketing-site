@@ -29,7 +29,7 @@
             <div class="flex md:pb-0">
               <a
                 class="btn btn-primary btn-hero"
-                href="https://app.balancer.fi/invest"
+                href="https://app.balancer.fi/"
                 >Launch app</a
               >
               <a

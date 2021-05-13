@@ -34,7 +34,7 @@
     <div class="flex items-center">
       <a
         class="px-4 mr-2 py-2 rounded-3xl border border-grey text-white"
-        href="https://app.balancer.fi/invest"
+        href="https://app.balancer.fi/"
         >Launch&nbsp;app</a
       >
       <Burger />

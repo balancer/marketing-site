@@ -2,7 +2,7 @@
   <div>
     <div class="pb-8 md:pb-0">
       <p class="text-gray-400 pb-1">Products</p>
-      <p class="pb-1"><a href="https://balancer.fi/invest">Invest</a></p>
+      <p class="pb-1"><a href="https://balancer.fi/">Invest</a></p>
       <p><a href="https://balancer.fi/trade">Trade</a></p>
     </div>
     <div class="pb-8 md:pb-0">

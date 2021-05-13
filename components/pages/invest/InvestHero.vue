@@ -28,8 +28,8 @@
               <a
                 onclick="fathom.trackGoal('EIRJSJHP', 0);"
                 class="btn btn-primary btn-hero"
-                href="https://app.balancer.fi/invest"
-                >Start investing</a
+                href="https://app.balancer.fi/"
+                >Launch Invest app</a
               >
             </div>
           </transition>

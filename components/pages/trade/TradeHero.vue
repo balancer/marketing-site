@@ -31,7 +31,7 @@
                 onclick="fathom.trackGoal('NDN2AJWP', 0);"
                 class="btn btn-primary btn-hero"
                 href="https://app.balancer.fi/#/trade"
-                >Start trading</a
+                >Launch Trade app</a
               >
             </div>
           </transition>
