@@ -33,12 +33,6 @@
               to="build"
               >Build</NuxtLink
             >
-            <!-- <NuxtLink
-              @click.native="toggleSidebar"
-              class="link text-lg leading-8"
-              to="balancer-V2"
-              >V2</NuxtLink
-            > -->
           </div>
           <div class="pb-4">
             <p class="text-gray-400 pb-1">Products</p>

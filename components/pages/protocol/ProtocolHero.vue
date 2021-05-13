@@ -50,8 +50,7 @@
 
 <style scoped>
 .protocol-hero {
-  @apply  px-4 pb-16 md:pb-0 md:flex;
-  /* max-height: calc(100vh - 200px); */
+  @apply px-4 pb-16 md:pb-0 md:flex;
   min-height: 600px;
   background-image: linear-gradient(227deg, #353646 0%, #21222b 100%);
 }

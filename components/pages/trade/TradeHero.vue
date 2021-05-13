@@ -48,10 +48,8 @@ export default {};
 <style scoped>
 .protocol-hero {
   @apply px-4 pb-16 md:pb-0 md:flex;
-  /* max-height: calc(100vh - 200px); */
   min-height: 600px;
   background-color: #f8f8f8;
-  /* background-image: linear-gradient(227deg, #353646 0%, #21222b 100%); */
 }
 
 .protocol-hero-content {
