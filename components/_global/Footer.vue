@@ -5,13 +5,25 @@
         class="px-4 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-white"
       >
         <div class="flex flex-col mb-8 sidebar">
-          <p class="text-gray-400 pb-1">Balancer.fi</p>
-          <NuxtLink class="link link-featured" to="/">Home</NuxtLink>
-          <NuxtLink class="link link-featured" to="invest">Invest</NuxtLink>
-          <NuxtLink class="link link-featured" to="trade">Trade</NuxtLink>
-          <NuxtLink class="link link-featured" to="build">Build</NuxtLink>
+          <p class="text-gray-400 pb-2">Balancer.fi</p>
+          <p class="pb-2">
+            <NuxtLink class="link-featured" to="/">Home</NuxtLink>
+          </p>
+          <p></p>
+          <p class="pb-2">
+            <NuxtLink class="link-featured" to="invest">Invest</NuxtLink>
+          </p>
+          <p></p>
+          <p class="pb-2">
+            <NuxtLink class="link-featured" to="trade">Trade</NuxtLink>
+          </p>
+          <p></p>
+          <p class="pb-2">
+            <NuxtLink class="link-featured" to="build">Build</NuxtLink>
+          </p>          
         </div>
-        <div class="pb-8 md:pb-16  lg:pb-0">
+
+        <div class="pb-8 md:pb-16 lg:pb-0">
           <p class="text-gray-400 pb-2">Products</p>
           <p class="pb-2">
             <a class="link" href="https://app.balancer.fi/#/">Invest app</a>
@@ -131,11 +143,13 @@ export default {
 
 .link-featured {
   transition: color 0.2s ease-out;
-  @apply text-lg md:text-base pb-1 leading-8 text-white;
+  @apply pb-1 md:pb-0 text-white;
 }
 
-.link:hover, 
-.link:focus-visible {
+.link:hover,
+.link:focus-visible,
+.link-featured:hover,
+.link-featured:focus-visible {
   @apply text-defaultRed;
 }
 
