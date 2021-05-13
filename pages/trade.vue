@@ -15,7 +15,11 @@
             <h2>Earn $BAL with every trade</h2>
             <p>
               Balance out your gas costs by getting up to 90% of your gas fees
-              paid back in $BAL—a helping hand from the Balancer DAO. <a class="text-link" href="https://claim.balancer.fi">Claim $BAL</a> weekly on Tuesdays.
+              paid back in $BAL—a helping hand from the Balancer DAO.
+              <a class="text-link" href="https://claim.balancer.fi"
+                >Claim $BAL</a
+              >
+              weekly on Tuesdays.
             </p>
           </div>
 
@@ -85,30 +89,31 @@ import TradeHero from "@/components/pages/trade/TradeHero.vue";
 import TradeProduct from "@/components/pages/trade/TradeProduct.vue";
 import IconSparkles from "@/components/icons/IconSparkles.vue";
 import IconLiquidity from "@/components/icons/IconLiquidity.vue";
-import IconProtection from '@/components/icons/IconProtection.vue';
-import IconKey from '@/components/icons/IconKey.vue';
-import IconArbitrage from '@/components/icons/IconArbitrage.vue';
-import IconEfficiency from '@/components/icons/IconEfficiency.vue';
+import IconProtection from "@/components/icons/IconProtection.vue";
+import IconKey from "@/components/icons/IconKey.vue";
+import IconArbitrage from "@/components/icons/IconArbitrage.vue";
+import IconEfficiency from "@/components/icons/IconEfficiency.vue";
 
 export default {
   head: {
-    title: 'Balancer Trade AMM – best prices for crypto asset swaps',
+    title: "Balancer | DeFi Trading Platform on Ethereum",
     meta: [
       {
-        hid: 'description',
-        name: 'description',
-        content: 'Trade page description'
+        hid: "description",
+        name: "description",
+        content:
+          "Trade on the decentralized Balancer exchange for the best prices for crypto asset swaps"
       }
-    ],
+    ]
   },
   transition: "slideup",
   components: {
     TradeHero,
     TradeProduct,
-    IconSparkles, 
+    IconSparkles,
     IconLiquidity,
-    IconProtection, 
-    IconKey, 
+    IconProtection,
+    IconKey,
     IconArbitrage,
     IconEfficiency
   }

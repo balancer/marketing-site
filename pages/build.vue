@@ -135,7 +135,15 @@ export default {
   },
   head() {
     return {
-      title: "Build on Balancer – a core building block of DeFi ",
+      title: "Balancer | Build on a protocol for programmable liquidity",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Balancer is the most flexible and versatile AMM, giving developers unprecedented customizability."
+        }
+      ],
       ...headMeta({
         description: "description lorem"
       })
@@ -222,7 +230,7 @@ export default {
 .featured-stat-label {
   letter-spacing: -1.5px;
   font-size: 10.5vw;
-  line-height: 1.2;  
+  line-height: 1.2;
   @apply block md:inline font-black;
 }
 
