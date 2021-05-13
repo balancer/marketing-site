@@ -21,6 +21,9 @@ import Aave from "@/components/case-studies/Aave.vue";
 import Backers from "@/components/pages/home/Backers.vue";
 
 export default {
+  head: {
+    link: [{ rel: 'preload', as:'image', href: '@/assets/svg/hero-home.svg' }]
+  },
   transition: 'slideup', 
   components: {
     HeroHome, 
