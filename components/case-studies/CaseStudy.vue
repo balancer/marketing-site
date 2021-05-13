@@ -18,9 +18,9 @@
         {{ description }}
       </p>
       <p>
-        <a class="case-study-link" :href=url
+        <a class="case-study-link" :href="url"
           >Visit {{ title }}
-          <icon-base width="14" height="14" icon-name="external link"
+          <icon-base width="14" height="14" icon-name="external-link"
             ><icon-external-link
           /></icon-base>
         </a>
@@ -56,8 +56,8 @@ export default {
 
 <style scoped>
 .case-study-link {
-  @apply text-defaultBlue hover:text-defaultPink fill-current;
   transition: 0.2s all ease-out;
+  @apply text-defaultBlue hover:text-defaultPink fill-current;
 }
 .popover-container {
   background: #ffffff;

@@ -7,7 +7,7 @@
             <img
               width="1000"
               height="618"
-              class="pt-1 pb-10 md:pb-1" 
+              class="pt-1 pb-10 md:pb-1"
               src="@/assets/images/trade-ui.jpg"
               alt=""
             />
@@ -47,9 +47,9 @@ export default {};
 
 <style scoped>
 .protocol-hero {
-  @apply px-4 pb-16 md:pb-0 md:flex;
   min-height: 600px;
   background-color: #f8f8f8;
+  @apply px-4 pb-16 md:pb-0 md:flex;
 }
 
 .protocol-hero-content {
@@ -62,8 +62,8 @@ export default {};
 
 @media (orientation: landscape) {
   .protocol-hero {
-    @apply flex items-center;
     min-height: calc(100vh - 100px);
+    @apply flex items-center;
   }
   .protocol-hero-content {
     max-width: 400px;

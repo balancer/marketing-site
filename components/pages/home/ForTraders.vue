@@ -157,9 +157,9 @@ export default {};
   max-width: 38rem;
 }
 .pool {
-  @apply rounded-lg overflow-hidden;
   max-width: 300px;
   box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
+  @apply rounded-lg overflow-hidden;
 }
 
 .image-container {
@@ -172,8 +172,8 @@ export default {};
 }
 
 .text-label {
+  transition: 0.2s all ease-out;  
   @apply text-sm truncate;
-  transition: 0.2s all ease-out;
 }
 
 .pool:hover .text-label {

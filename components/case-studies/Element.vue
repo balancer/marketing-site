@@ -22,7 +22,7 @@
       <p>
         <a class="case-study-link" href="https://element.fi/"
           >Visit Element
-          <icon-base width="14" height="14" icon-name="external link"
+          <icon-base width="14" height="14" icon-name="external-link"
             ><icon-external-link
           /></icon-base>
         </a>
@@ -48,8 +48,8 @@ export default {
 <style scoped>
 
 .case-study-link {
+    transition: 0.2s all ease-out;  
     @apply text-defaultBlue hover:text-defaultPink fill-current;    
-    transition: 0.2s all ease-out;
 }
 .popover-container {
     background: #FFFFFF;

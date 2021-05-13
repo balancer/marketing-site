@@ -6,26 +6,10 @@
       >
         <div class="flex flex-col mb-8 sidebar">
           <p class="text-gray-400 pb-1">Balancer.fi</p>
-          <NuxtLink
-            class="link-featured"
-            to="/"
-            >Home</NuxtLink
-          >
-          <NuxtLink
-            class="link-featured"
-            to="invest"
-            >Invest</NuxtLink
-          >
-          <NuxtLink
-            class="link-featured"
-            to="trade"
-            >Trade</NuxtLink
-          >
-          <NuxtLink
-            class="link-featured"
-            to="build"
-            >Build</NuxtLink
-          >
+          <NuxtLink class="link-featured" to="/">Home</NuxtLink>
+          <NuxtLink class="link-featured" to="invest">Invest</NuxtLink>
+          <NuxtLink class="link-featured" to="trade">Trade</NuxtLink>
+          <NuxtLink class="link-featured" to="build">Build</NuxtLink>
         </div>
         <div class="pb-8 md:pb-16  lg:pb-0">
           <p class="text-gray-400 pb-2">Products</p>
@@ -37,8 +21,7 @@
           </p>
           <p>
             <a class="link" href="https://claim.balancer.fi">Claim $BAL</a>
-          </p>          
-          
+          </p>
         </div>
         <div class="pb-8 md:pb-0">
           <p class="text-gray-400 pb-2">Learn</p>
@@ -46,9 +29,7 @@
             <a class="link" href="https://medium.com/balancer-protocol">Blog</a>
           </p>
           <p class="pb-2">
-            <a class="link" href="https://docs.balancer.fi"
-              >Documentation</a
-            >
+            <a class="link" href="https://docs.balancer.fi">Documentation</a>
           </p>
           <p class="pb-2">
             <a class="link" href="whitepaper.pdf">Whitepaper</a>
@@ -104,7 +85,9 @@
                 ><icon-github
               /></a>
 
-              <a class="mr-3" href="https://www.linkedin.com/company/balancer-labs/"
+              <a
+                class="mr-3"
+                href="https://www.linkedin.com/company/balancer-labs/"
                 ><icon-linkedin
               /></a>
 
@@ -147,8 +130,8 @@ export default {
 }
 
 .link-featured {
-  @apply  text-lg md:text-base pb-1 leading-8 text-white;
   transition: color 0.2s ease-out;
+  @apply text-lg md:text-base pb-1 leading-8 text-white;
 }
 
 .link:hover,
@@ -164,11 +147,11 @@ footer {
   @apply bg-black;
 }
 .btn-email {
-  @apply p-2 flex justify-center items-center absolute right-2;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   font-family: Inter, sans-serif;
   font-feature-settings: "calt";
+  @apply p-2 flex justify-center items-center absolute right-2;
 }
 </style>

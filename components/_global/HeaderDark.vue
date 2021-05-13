@@ -64,7 +64,6 @@ export default {
 }
 .header {
   @apply h-16 md:h-20 px-4 flex justify-between items-center bg-black;
-  overflow: auto;
 }
 .link {
   @apply mr-4 flex hover:text-accent;

@@ -21,7 +21,7 @@
         <div class="flex items-center nav-utility-link">
           <a class="nav-link" data-hover="Docs" href="https://docs.balancer.fi"
             >Docs
-            <icon-base width="14" height="14" icon-name="external link"
+            <icon-base width="14" height="14" icon-name="external-link"
               ><icon-external-link /></icon-base
           ></a>
         </div>
@@ -31,7 +31,7 @@
             data-hover="Blog"
             href="https://medium.com/balancer-protocol"
             >Blog
-            <icon-base width="14" height="14" icon-name="external link"
+            <icon-base width="14" height="14" icon-name="external-link"
               ><icon-external-link
             /></icon-base>
           </a>
@@ -65,7 +65,6 @@ export default {
 </script>
 
 <style scoped>
-/* #TODO" remove overflow:auto once a js mobile nav is implmemented */
 .mobile-hide {
   display: none;
 }
@@ -77,7 +76,6 @@ export default {
 }
 .header {
   @apply h-16 md:h-20 px-3 flex justify-between items-center;
-  overflow: auto;
 }
 .link {
   @apply mr-4 flex hover:text-accent;
@@ -86,19 +84,6 @@ export default {
   position: relative;
   top: 1px;
 }
-
-/* .fade-enter-from {
-  opacity: 0;
-  transform: translateY(-10px);
-  
-}
-.fade-enter-to {
-  opacity: 1;
-  transform: translateY(0px);
-}
-.fade-enter-active {
-  transition: 1s all ease-in-out 0.3s;
-} */
 
 .fade-enter-from,
 .fade-leave-to {
@@ -175,11 +160,11 @@ export default {
 }
 
 .btn-header {
-  @apply px-4 mr-2 py-2 rounded-lg font-medium border border-solid border-gray-200;
   background-size: 300% 100%;
   transition: all 0.2s ease-out;
   background-image: linear-gradient(to right, #fff, #fff, #0000ff, #ff00ff);
-  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);  
+  @apply px-4 mr-2 py-2 rounded-lg font-medium border border-solid border-gray-200;
 }
 .btn-header:hover {
   background-position: 100% 0;

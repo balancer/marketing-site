@@ -41,10 +41,10 @@ export default {};
 
 <style scoped>
 .hero {
-  @apply min-h-screen flex justify-center items-end items-center bg-cover bg-no-repeat bg-center;
   background-color: #21222c;
   background-image: url(~assets/svg/hero-home.svg);
   min-height: 640px;
+  @apply min-h-screen flex justify-center items-center bg-cover bg-no-repeat bg-center;
 }
 @media (min-height: 768px) {
   .hero {
@@ -52,25 +52,22 @@ export default {};
   }
 }
 
-.btn-hero {
-}
-
 .hero-content {
-  @apply p-4 md:p-8 md:rounded-3xl text-center text-white;
   max-width: 1000px;
+  @apply p-4 md:p-8 md:rounded-3xl text-center text-white;
 }
 
 .h1-hero {
-  @apply font-extrabold pb-4 md:text-6xl text-white;
   font-family: "Tiempos Headline Medium";
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: -0.5px;
+  @apply font-extrabold pb-4 md:text-6xl text-white;
 }
 
 .p-hero {
-  @apply font-medium mx-auto pb-2;
   max-width: 280px;
+  @apply font-medium mx-auto pb-2;
 }
 
 @media (min-width: 768px) {
@@ -82,7 +79,7 @@ export default {};
     font-size: 18px;
   }
   .p-hero {
-      max-width: 320px;
+    max-width: 320px;
   }
 }
 

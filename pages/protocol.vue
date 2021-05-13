@@ -164,6 +164,7 @@ export default {
   --vsa-highlight-color: #0000ff;
   --vsa-border-style: none;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-tap-highlight-color: transparent;
   border-top: 1px solid #eee;
 }

@@ -91,6 +91,16 @@ import IconArbitrage from '@/components/icons/IconArbitrage.vue';
 import IconEfficiency from '@/components/icons/IconEfficiency.vue';
 
 export default {
+  head: {
+    title: 'Balancer Trade AMM – best prices for crypto asset swaps',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Trade page description'
+      }
+    ],
+  },
   transition: "slideup",
   components: {
     TradeHero,
@@ -126,7 +136,9 @@ export default {
   --vsa-content-padding: 1rem 0;
   --vsa-highlight-color: #0000ff;
   --vsa-border-style: none;
+
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-tap-highlight-color: transparent;
   border-top: 1px solid #eee;
 }

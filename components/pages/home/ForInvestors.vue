@@ -171,8 +171,8 @@ export default {};
 }
 
 .text-label {
+  transition: 0.2s all ease-out;  
   @apply text-sm truncate;
-  transition: 0.2s all ease-out;
 }
 
 .pool:hover .text-label {

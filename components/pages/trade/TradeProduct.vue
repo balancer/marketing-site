@@ -32,8 +32,8 @@ export default {};
 
 <style scoped>
 .pool {
+  max-width: 248px;  
   @apply border border-gray-200 rounded-3xl shadow;
-  max-width: 248px;
 }
 .case-study {
   @apply mx-auto;

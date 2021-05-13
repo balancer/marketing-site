@@ -14,9 +14,7 @@
         <div
           class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-screen-lg mx-auto"
         >
-          <a
-            href="https://docs.balancer.fi/v/v1/guides/creating-a-smart-pool"
-          >
+          <a href="https://docs.balancer.fi/v/v1/guides/creating-a-smart-pool">
             <div class="pool relative">
               <div class="relative flex justify-center items-center">
                 <img
@@ -44,7 +42,7 @@
               <div class="relative flex justify-center items-center">
                 <img
                   width="244"
-                  height="244"                
+                  height="244"
                   class="cover-img"
                   src="@/assets/images/start-building/launch-token.jpg"
                   alt=""
@@ -68,7 +66,7 @@
               <div class="relative flex justify-center items-center">
                 <img
                   width="244"
-                  height="244"                
+                  height="244"
                   class="cover-img"
                   src="@/assets/images/start-building/data.jpg"
                   alt=""
@@ -91,7 +89,7 @@
               <div class="relative flex justify-center items-center">
                 <img
                   width="244"
-                  height="244"                
+                  height="244"
                   class="cover-img"
                   src="@/assets/images/start-building/oracle.jpg"
                   alt=""
@@ -148,16 +146,16 @@ export default {
 
 <style>
 .card {
-  @apply rounded-lg p-4 md:p-6 lg:p-8;
   box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
   transition: box-shadow 0.2s ease-out;
+  @apply rounded-lg p-4 md:p-6 lg:p-8;
 }
 
 .pool {
-  @apply rounded-lg;
   max-width: 300px;
   box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
   transition: box-shadow 0.2s ease-out;
+  @apply rounded-lg;
 }
 .card:hover,
 .pool:hover {
@@ -169,7 +167,6 @@ export default {
 }
 
 .integrations-logo {
-  
   width: 80px;
   height: auto;
   transition: 0.2s all ease-in-out;
@@ -205,9 +202,9 @@ export default {
 }
 
 /* Remove background-attachment: fixed interaction from Firefox */
-@-moz-document url-prefix() { 
+@-moz-document url-prefix() {
   .featured-stat {
-     background-attachment: scroll;
+    background-attachment: scroll;
   }
 }
 
@@ -223,10 +220,10 @@ export default {
 }
 
 .featured-stat-label {
-  @apply block md:inline font-black;
   letter-spacing: -1.5px;
   font-size: 10.5vw;
-  line-height: 1.2;
+  line-height: 1.2;  
+  @apply block md:inline font-black;
 }
 
 @media (min-width: 768px) {
@@ -262,10 +259,11 @@ export default {
   transition: all 0.2s ease-out;
 }
 
-.tooltip:focus:not(:focus-visible), .wrapper:focus:not(:focus-visible), .tooltip-inner:focus:not(:focus-visible) {
+.tooltip:focus:not(:focus-visible),
+.wrapper:focus:not(:focus-visible),
+.tooltip-inner:focus:not(:focus-visible) {
   outline: none;
 }
-
 
 .tooltip .tooltip-arrow {
   @apply border-gray-50;
