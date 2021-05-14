@@ -4,7 +4,7 @@
       <transition name="stats" appear>
       <div class="grid grid-cols-2 md:grid-cols-4 pt-8 pb-8 md:pb-16 md:pt-2 lg:px-8">        
         <Stat label="Trade vol (7d)" stat="$1.05b" />
-        <Stat label="Fees earned" stat="$326.4m" />
+        <Stat label="Total fees earned" stat="$63.6m" />
         <Stat label="Total liquidity" stat="$3.0b" />
         <Stat label="Liquidity Providers" stat="27.9k" />        
       </div>

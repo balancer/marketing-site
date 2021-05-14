@@ -61,10 +61,10 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      src="~assets/images/featured-pools/pool-weth-wbtc.jpg"
+                      src="@/assets/images/featured-pools/pool-weth-wbtc.jpg"
                       alt=""
                     />
-                  </div>
+                  </div>https://www.balancer.community/
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
                       <p class="text-label">50 WETH 50 WBTC</p>
@@ -81,7 +81,7 @@
                       width="300"
                       height="300"                    
                       class="cover-img"
-                      src="~assets/images/featured-pools/pool-bal-weth.jpg"
+                      src="@/assets/images/featured-pools/pool-bal-weth.jpg"
                       alt=""
                     />
                   </div>
@@ -101,7 +101,7 @@
                       width="300"
                       height="300"                    
                       class="cover-img"
-                      src="~assets/images/featured-pools/pool-dpi-weth-wbtc.jpg"
+                      src="@/assets/images/featured-pools/pool-dpi-weth-wbtc.jpg"
                       alt=""
                     />
                   </div>
@@ -123,7 +123,7 @@
                       width="300"
                       height="300"                    
                       class="cover-img"
-                      src="~assets/images/featured-pools/pool-weth-dai.jpg"
+                      src="@/assets/images/featured-pools/pool-weth-dai.jpg"
                       alt=""
                     />
                   </div>

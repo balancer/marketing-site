@@ -66,7 +66,7 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      src="~assets/images/tokens/dai-cover.jpg"
+                      src="@/assets/images/tokens/dai-cover.jpg"
                       alt=""
                     />
                   </div>
@@ -87,7 +87,7 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      src="~assets/images/tokens/weth-cover.jpg"
+                      src="@/assets/images/tokens/weth-cover.jpg"
                       alt=""
                     />
                   </div>
@@ -108,7 +108,7 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      src="~assets/images/tokens/bal-cover.jpg"
+                      src="@/assets/images/tokens/bal-cover.jpg"
                       alt=""
                     />
                   </div>
@@ -129,7 +129,7 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      src="~assets/images/tokens/wbtc-cover.jpg"
+                      src="@/assets/images/tokens/wbtc-cover.jpg"
                       alt=""
                     />
                   </div>
