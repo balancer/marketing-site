@@ -27,7 +27,7 @@
             <div class="mb-4">
               <icon-liquidity />
             </div>
-            <h2>Over $3.09b in liquidity</h2>
+            <h2>Over $3.0b in liquidity</h2>
             <p>
               Balancer’s liquid market ensures that traders get the best
               possible prices for trades, large or small.
@@ -95,17 +95,10 @@ import IconArbitrage from "@/components/icons/IconArbitrage.vue";
 import IconEfficiency from "@/components/icons/IconEfficiency.vue";
 
 export default {
-  head: {
-    title: "Balancer | DeFi Trading Platform on Ethereum",
-    meta: [
-      {
-        hid: "description",
-        name: "description",
-        content:
-          "Trade on the decentralized Balancer exchange for the best prices for crypto asset swaps"
-      }
-    ]
-  },
+  
+  
+
+
   transition: "slideup",
   components: {
     TradeHero,

@@ -202,7 +202,7 @@ export default {
   letter-spacing: -5px;
   line-height: 1;
 
-  background: url("~assets/svg/hero-home3.svg");
+  background: url("/images/hero-home.svg");
   background-attachment: fixed;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;

@@ -72,7 +72,7 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-label">DAI</p>
+                      <p class="text-label">Trade DAI</p>
                     </div>
                   </div>
                 </div>
@@ -93,7 +93,7 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-label">ETH</p>
+                      <p class="text-label">Trade ETH</p>
                     </div>
                   </div>
                 </div>
@@ -114,7 +114,7 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-label">BAL</p>
+                      <p class="text-label">Trade BAL</p>
                     </div>
                   </div>
                 </div>
@@ -135,7 +135,7 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-label">WBTC</p>
+                      <p class="text-label">Trade WBTC</p>
                     </div>
                   </div>
                 </div>
