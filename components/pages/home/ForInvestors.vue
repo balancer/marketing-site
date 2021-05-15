@@ -64,7 +64,7 @@
                       src="@/assets/images/featured-pools/pool-weth-wbtc.jpg"
                       alt=""
                     />
-                  </div>https://www.balancer.community/
+                  </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
                       <p class="text-label">50 WETH 50 WBTC</p>
