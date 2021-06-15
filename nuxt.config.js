@@ -56,9 +56,14 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/sentry'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  sentry: {
+    dsn: 'https://991f8a3901034e0db96f0ff7bf10d24e@o574636.ingest.sentry.io/5818459'
   }
 }
