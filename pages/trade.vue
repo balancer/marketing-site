@@ -27,7 +27,7 @@
             <div class="mb-4">
               <icon-liquidity />
             </div>
-            <h2>Over $3.0b in liquidity</h2>
+            <h2>Over $1.7b in liquidity</h2>
             <p>
               Balancer’s liquid market ensures that traders get the best
               possible prices for trades, large or small.
