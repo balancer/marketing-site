@@ -5,13 +5,13 @@
         <logotype-balancer />
       </NuxtLink>
       <div class="mobile-hide mr-4">
-        <NuxtLink class="nav-link nav-link--red" data-hover="Invest" to="invest"
+        <NuxtLink class="nav-link nav-link--red" data-hover="Invest" to="/invest"
           >Invest</NuxtLink
         >
-        <NuxtLink class="nav-link nav-link--blue" data-hover="Trade" to="trade"
+        <NuxtLink class="nav-link nav-link--blue" data-hover="Trade" to="/trade"
           >Trade</NuxtLink
         >
-        <NuxtLink class="nav-link nav-link--pink" data-hover="Build" to="build"
+        <NuxtLink class="nav-link nav-link--pink" data-hover="Build" to="/build"
           >Build</NuxtLink
         >
       </div>
