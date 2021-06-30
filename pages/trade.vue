@@ -119,9 +119,6 @@ export default {
   width: 100%;
   max-width: 180px;
 }
-</style>
-
-<style>
 /* #TODO: how can i keep this global? */
 
 .vsa-list {
