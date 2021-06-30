@@ -25,7 +25,6 @@ export default {
 </script>
 
 <style scoped>
-
 .icon {
   @apply mb-4;
   width: 44px;

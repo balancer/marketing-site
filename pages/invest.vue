@@ -119,15 +119,12 @@ export default {
 };
 </script>
 
-IconSparkles<style scoped>
+<style scoped>
 .messari-logo {
   @apply py-4;
   width: 100%;
   max-width: 180px;
 }
-</style>
-
-<style>
 /* #TODO: how can i keep this global? */
 
 .vsa-list {

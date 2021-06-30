@@ -1,9 +1,7 @@
 <template>
   <div>
-
     <ProtocolHero />
 
-    
     <section class="pt-16 lg:pt-32 pb-12 lg:pb-32 bg-white">
       <div class="px-4 md:flex mx-auto max-w-screen-xl">
         <div class="md:pr-8 lg:pr-12">
@@ -114,7 +112,6 @@
 </template>
 
 <script>
-
 import ProtocolHero from "@/components/pages/protocol/ProtocolHero.vue";
 import {
   VsaList,
@@ -136,22 +133,14 @@ export default {
     ProtocolHero
   }
 };
-
-
 </script>
 
 <style scoped>
-
-
-
 .messari-logo {
   @apply py-4;
   width: 100%;
   max-width: 180px;
 }
-</style>
-
-<style>
 
 .vsa-list {
   --vsa-max-width: 100%;
