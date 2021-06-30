@@ -9,7 +9,7 @@
           <img 
           width="120"
           height="33"
-          class="py-4" src="~assets/svg/logo-aave.svg" alt="" />
+          class="py-4" :src="require('~/assets/svg/logo-aave.svg')" alt="" />
           <ol class="font-medium pb-12 md:pb-0">
             <li class="py-4 ">
               Aave launched their 80/20 AAVE/ETH Safety Incentive pool on
@@ -29,7 +29,7 @@
             class="md:py-4"
             width="60"
             height="60"
-            src="~assets/images/people/stani.png"
+            :src="require('~/assets/images/people/stani.png')"
             alt=""
           />
           <p class="py-4 italic font-medium">

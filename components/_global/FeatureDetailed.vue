@@ -1,6 +1,6 @@
 <template>
   <div class="pb-12 max-w-lg">
-    <img class="icon" :src="require('assets/svg/' + icon)" alt="" />
+    <img class="icon" :src="require('~/assets/svg/' + icon)" alt="" />
     <h2>{{title}}</h2>
     <p v-if="description">
       {{description}}

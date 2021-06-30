@@ -28,7 +28,7 @@
               <div class="relative flex justify-center items-center">
                 <img
                   class="cover-img"
-                  src="~assets/images/pool-types/classic.jpg"
+                  :src="require('~/assets/images/pool-types/classic.jpg')"
                   alt=""
                 />
               </div>
@@ -45,7 +45,7 @@
               <div class="relative flex justify-center items-center">
                 <img
                   class="cover-img"
-                  src="~assets/images/pool-types/weighted.jpg"
+                  :src="require('~/assets/images/pool-types/weighted.jpg')"
                   alt=""
                 />
               </div>
@@ -61,7 +61,7 @@
               <div class="relative flex justify-center items-center">
                 <img
                   class="cover-img"
-                  src="~assets/images/pool-types/stable.jpg"
+                  :src="require('~/assets/images/pool-types/stable.jpg')"
                   alt=""
                 />
               </div>
@@ -77,7 +77,7 @@
               <div class="relative flex justify-center items-center">
                 <img
                   class="cover-img"
-                  src="~assets/images/pool-types/smart.jpg"
+                  :src="require('~/assets/images/pool-types/smart.jpg')"
                   alt=""
                 />
               </div>

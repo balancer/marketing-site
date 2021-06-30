@@ -9,7 +9,7 @@
         <div class="md:pr-8 lg:pr-12">
           <img
             class="py-12 md:py-0"
-            src="~assets/images/ui-in-device.jpg"
+            :src="require('~/assets/images/ui-in-device.jpg')"
             alt=""
           />
         </div>
@@ -24,7 +24,7 @@
             NASDAQ’s exchange, and then distributing NASDAQ’s trading profits to
             Fidelity’s asset holders.”
           </p>
-          <img class="messari-logo" src="~assets/images/messari.png" alt="" />
+          <img class="messari-logo" :src="require('~/assets/images/messari.png')" alt="" />
         </div>
       </div>
     </section>
@@ -76,7 +76,7 @@
         >
           <div class="md:mx-auto max-w-md">
             <p class="py-4 uppercase tracking-widest">Case Study</p>
-            <img class="py-4" src="~assets/svg/logo-aave.svg" alt="" />
+            <img class="py-4" :src="require('~/assets/svg/logo-aave.svg')" alt="" />
             <ol class="font-medium pb-12 md:pb-0">
               <li class="py-4 ">
                 Aave launched their 80/20 AAVE/ETH Safety Incentive pool on
@@ -93,7 +93,7 @@
             </ol>
           </div>
           <div class="md:mx-auto max-w-md">
-            <img class="md:py-4" src="~assets/images/people/stani.png" alt="" />
+            <img class="md:py-4" :src="require('~/assets/images/people/stani.png')" alt="" />
             <p class="py-4 italic font-medium">
               “Part of what makes DeFi so exciting is its composability, and
               with Balancer this has resulted in a partnership that optimises

@@ -17,7 +17,7 @@
         <div>
           <img
             class="w-full max-w-2xl"
-            src="~assets/images/hero-protocol.png"
+            :src="require('~/assets/images/hero-protocol.png')"
             alt=""
           />
         </div>

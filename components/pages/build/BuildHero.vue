@@ -7,7 +7,7 @@
             width="1000"
             height="618"
             class="pt-1 pb-10 px-4 md:px-12 lg:px-16 xl:px-20 mx-auto"
-            src="@/assets/svg/hero-developers2.svg"
+            :src="require('~/assets/svg/hero-developers2.svg')"
             alt=""
           />
         </transition>

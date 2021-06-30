@@ -30,7 +30,7 @@
                   <div class="relative flex justify-center items-center">
                     <img
                       class="cover-img"
-                      src="@/assets/images/smart-pools/fair-launch.jpg"
+                      :src="require('~/assets/images/smart-pools/fair-launch.jpg')"
                       alt=""
                     />
                   </div>
@@ -50,7 +50,7 @@
                   <div class="relative flex justify-center items-center">
                     <img
                       class="cover-img"
-                      src="@/assets/images/smart-pools/index-fund.jpg"
+                      :src="require('~/assets/images/smart-pools/index-fund.jpg')"
                       alt=""
                     />
                   </div>
@@ -68,7 +68,7 @@
                   <div class="relative flex justify-center items-center">
                     <img
                       class="cover-img"
-                      src="@/assets/images/smart-pools/smart-treasury.jpg"
+                      :src="require('~/assets/images/smart-pools/smart-treasury.jpg')"
                       alt=""
                     />
                   </div>
@@ -86,7 +86,7 @@
                   <div class="relative flex justify-center items-center">
                     <img
                       class="cover-img"
-                      src="@/assets/images/smart-pools/investor-clubs.jpg"
+                      :src="require('~/assets/images/smart-pools/investor-clubs.jpg')"
                       alt=""
                     />
                   </div>

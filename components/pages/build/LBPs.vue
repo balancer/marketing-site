@@ -55,7 +55,7 @@
             </div>
             <div class="flex justify-center">
               <div class="w-20">
-                <img class="pb-2" src="@/assets/svg/tokens/hydra.svg" alt="" />
+                <img class="pb-2" :src="require('~/assets/svg/tokens/hydra.svg')" alt="" />
                 <p class="font-medium">Hydra</p>
               </div>
             </div>
@@ -73,7 +73,7 @@
               <div class="w-20">
                 <img
                   class="pb-2"
-                  src="@/assets/svg/tokens/radicle.svg"
+                  :src="require('~/assets/svg/tokens/radicle.svg')"
                   alt=""
                 />
                 <p class="font-medium">Radicle</p>
@@ -93,7 +93,7 @@
               <div class="w-20">
                 <img
                   class="pb-2"
-                  src="@/assets/images/tokens/illuvium.png"
+                  :src="require('~/assets/images/tokens/illuvium.png')"
                   alt=""
                 />
                 <p class="font-medium">Illuvium</p>
@@ -111,7 +111,7 @@
             </div>
             <div class="flex justify-center">
               <div class="w-20">
-                <img class="pb-2" src="@/assets/svg/tokens/mask.svg" alt="" />
+                <img class="pb-2" :src="require('~/assets/svg/tokens/mask.svg')" alt="" />
                 <p class="font-medium">Mask</p>
               </div>
             </div>

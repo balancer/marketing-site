@@ -6,7 +6,7 @@
           <h4 class="font-semibold leading-5 pb-1">{{ title }}</h4>
           <p class="leading-5">{{ description }}</p>
         </div>
-        <div class="chevron"><img src="@/assets/svg/chevron-right.svg" alt="" /></div>
+        <div class="chevron"><img :src="require('~/assets/svg/chevron-right.svg')" alt="" /></div>
       </div>
     </a>
   </div>

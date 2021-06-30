@@ -8,7 +8,7 @@
               width="1000"
               height="618"
               class="pt-1 pb-10 md:pb-1"
-              src="@/assets/images/trade-ui.jpg"
+              :src="require('~/assets/images/trade-ui.jpg')"
               alt=""
             />
           </transition>

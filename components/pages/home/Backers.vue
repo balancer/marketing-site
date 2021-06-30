@@ -20,7 +20,7 @@
               <img 
               width="80"
               height="80"              
-              src="@/assets/images/people/cb.png" alt="" />
+              :src="require('~/assets/images/people/cb.png')" alt="" />
             </div>
             <div class="pl-4">
               <p class="font-medium">Chris Burniske</p>
@@ -50,7 +50,7 @@
               <img 
               width="80"
               height="80"              
-              src="@/assets/images/people/ax.png" alt="" />
+              :src="require('~/assets/images/people/ax.png')" alt="" />
             </div>
             <div class="pl-4">
               <p class="font-medium">Arthur_0x</p>
@@ -79,7 +79,7 @@
               <img 
               width="80"
               height="80"
-              src="@/assets/images/people/sz.png" alt="" />
+              :src="require('~/assets/images/people/sz.png')" alt="" />
             </div>
             <div class="pl-4">
               <p class="font-medium">Su Zhu</p>

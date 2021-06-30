@@ -18,13 +18,13 @@
           <div class="grid grid-cols-1 pb-5">
             <div class="pb-1">
               <div class="flex pb-5">
-                <img class="mr-3" src="~/assets/svg/icon-shield.svg" alt="" />
+                <img class="mr-3" :src="require('~/assets/svg/icon-shield.svg')" alt="" />
                 <p class="font-medium">Battle tested and secure</p>
               </div>
               <div class="flex pb-5">
                 <img
                   class="mr-3"
-                  src="~/assets/svg/icon-lightning.svg"
+                  :src="require('~/assets/svg/icon-lightning.svg')"
                   alt=""
                 />
                 <p class="font-medium">Capital and gas efficient</p>
@@ -33,7 +33,7 @@
                 <img 
                 width="26"
                 height="25"
-                class="mr-3" src="~/assets/svg/icon-sparkles.svg" alt="" />
+                class="mr-3" :src="require('~/assets/svg/icon-sparkles.svg')" alt="" />
                 <p class="font-medium">Earn $BAL token incentives</p>
               </div>
             </div>
@@ -61,7 +61,7 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      src="@/assets/images/featured-pools/pool-weth-wbtc.jpg"
+                      :src="require('~/assets/images/featured-pools/pool-weth-wbtc.jpg')"
                       alt=""
                     />
                   </div>
@@ -81,7 +81,7 @@
                       width="300"
                       height="300"                    
                       class="cover-img"
-                      src="@/assets/images/featured-pools/pool-bal-weth.jpg"
+                      :src="require('~/assets/images/featured-pools/pool-bal-weth.jpg')"
                       alt=""
                     />
                   </div>
@@ -101,7 +101,7 @@
                       width="300"
                       height="300"                    
                       class="cover-img"
-                      src="@/assets/images/featured-pools/pool-dpi-weth-wbtc.jpg"
+                      :src="require('~/assets/images/featured-pools/pool-dpi-weth-wbtc.jpg')"
                       alt=""
                     />
                   </div>
@@ -123,7 +123,7 @@
                       width="300"
                       height="300"                    
                       class="cover-img"
-                      src="@/assets/images/featured-pools/pool-weth-dai.jpg"
+                      :src="require('~/assets/images/featured-pools/pool-weth-dai.jpg')"
                       alt=""
                     />
                   </div>

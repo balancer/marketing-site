@@ -2,7 +2,7 @@
   <header class="header">
     <nav class="flex">
       <NuxtLink class="link" to="/">
-        <img class="logo" src="~assets/svg/logo-balancer.svg" alt="" /><span
+        <img class="logo" :src="require('~/assets/svg/logo-balancer.svg')" alt="" /><span
           class="logotype"
           >Balancer</span
         >

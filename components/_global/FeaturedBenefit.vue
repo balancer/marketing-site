@@ -2,10 +2,10 @@
   <div class="flex pb-5">
     <div class="mr-3">
       <div v-if="description" class="mt-2">        
-        <img class="mr-3" :src="require('assets/svg/' + icon)" alt="" />
+        <img class="mr-3" :src="require('~/assets/svg/' + icon)" alt="" />
       </div>
       <div v-else>        
-        <img class="mr-3" :src="require('assets/svg/' + icon)" alt="" />
+        <img class="mr-3" :src="require('~/assets/svg/' + icon)" alt="" />
       </div>
     </div>
     <div>

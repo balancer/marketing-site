@@ -21,11 +21,11 @@
               <img 
               width="24"
               height="24"
-              class="mr-3" src="~/assets/svg/icon-sliders.svg" alt="" />
+              class="mr-3" :src="require('~/assets/svg/icon-sliders.svg')" alt="" />
               <p class="font-medium">Custom token weights & swap fees</p>
             </div>
             <div class="flex pb-5">
-              <img class="mr-3" src="~/assets/svg/icon-curve.svg" alt="" />
+              <img class="mr-3" :src="require('~/assets/svg/icon-curve.svg')" alt="" />
               <p class="font-medium">
                 Liquidity pools can operate on any price curve
               </p>
@@ -35,7 +35,7 @@
                 width="24"
                 height="24"
                 class="mr-3"
-                src="~/assets/svg/icon-asset-manager.svg"
+                :src="require('~/assets/svg/icon-asset-manager.svg')"
                 alt=""
               />
               <p class="font-medium">
@@ -59,7 +59,7 @@
                   width="120"
                   height="120"
                   class="integrations-logo"
-                  src="@/assets/svg/tokens/gno.svg"
+                  :src="require('~/assets/svg/tokens/gno.svg')"
                   alt="Gnosis logo"
                 />
               </button>
@@ -78,7 +78,7 @@
                   width="120"
                   height="120"                
                   class="integrations-logo"
-                  src="@/assets/svg/tokens/aave.svg"
+                  :src="require('~/assets/svg/tokens/aave.svg')"
                   alt="Aave logo"
                 />
               </button>
@@ -97,7 +97,7 @@
                   width="120"
                   height="120"                
                   class="integrations-logo"
-                  src="@/assets/svg/tokens/elementfi.svg"
+                  :src="require('~/assets/svg/tokens/elementfi.svg')"
                   alt="Element logo"
                 />
               </button>
@@ -115,7 +115,7 @@
                   width="120"
                   height="120"                
                   class="integrations-logo"
-                  src="@/assets/svg/tokens/ocean.svg"
+                  :src="require('~/assets/svg/tokens/ocean.svg')"
                   alt="Ocean logo"
                 />
               </button>
@@ -133,7 +133,7 @@
                   width="120"
                   height="120"                
                   class="integrations-logo"
-                  src="@/assets/images/tokens/gyroscope.png"
+                  :src="require('~/assets/images/tokens/gyroscope.png')"
                   alt="Gyroscope logo"
                 />
               </button>
@@ -151,7 +151,7 @@
                   width="120"
                   height="120"                
                   class="integrations-logo"
-                  src="@/assets/svg/tokens/powerpool.svg"
+                  :src="require('~/assets/svg/tokens/powerpool.svg')"
                   alt="PowerPool logo"
                 />
               </button>

@@ -21,13 +21,13 @@
                 width="24"
                 height="22"
                 class="mr-3"
-                src="~/assets/svg/icon-smart-routing.svg"
+                :src="require('~/assets/svg/icon-smart-routing.svg')"
                 alt=""
               />
               <p class="font-medium">Intelligent pricing</p>
             </div>
             <div class="flex pb-5">
-              <img class="mr-3" src="~/assets/svg/icon-umbrella.svg" alt="" />
+              <img class="mr-3" :src="require('~/assets/svg/icon-umbrella.svg')" alt="" />
               <p class="font-medium">MEV protection</p>
             </div>
             <div class="flex pb-5">
@@ -35,7 +35,7 @@
                 width="26"
                 height="25"
                 class="mr-3"
-                src="~/assets/svg/icon-sparkles.svg"
+                :src="require('~/assets/svg/icon-sparkles.svg')"
                 alt=""
               />
               <p class="font-medium">
@@ -66,7 +66,7 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      src="@/assets/images/tokens/dai-cover.jpg"
+                      :src="require('~/assets/images/tokens/dai-cover.jpg')"
                       alt=""
                     />
                   </div>
@@ -87,7 +87,7 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      src="@/assets/images/tokens/weth-cover.jpg"
+                      :src="require('~/assets/images/tokens/weth-cover.jpg')"
                       alt=""
                     />
                   </div>
@@ -108,7 +108,7 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      src="@/assets/images/tokens/bal-cover.jpg"
+                      :src="require('~/assets/images/tokens/bal-cover.jpg')"
                       alt=""
                     />
                   </div>
@@ -129,7 +129,7 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      src="@/assets/images/tokens/wbtc-cover.jpg"
+                      :src="require('~/assets/images/tokens/wbtc-cover.jpg')"
                       alt=""
                     />
                   </div>

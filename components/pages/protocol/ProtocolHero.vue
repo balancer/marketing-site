@@ -8,7 +8,7 @@
               width="1000"
               height="618"
               class="pt-1 pb-10"
-              src="@/assets/images/hero-protocol.png"
+              :src="require('~/assets/images/hero-protocol.png')"
               alt=""
             />
           </transition>

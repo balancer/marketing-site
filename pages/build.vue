@@ -21,7 +21,7 @@
                   width="244"
                   height="244"
                   class="cover-img"
-                  src="@/assets/images/start-building/smart.jpg"
+                  :src="require('~/assets/images/start-building/smart.jpg')"
                   alt=""
                 />
               </div>
@@ -44,7 +44,7 @@
                   width="244"
                   height="244"
                   class="cover-img"
-                  src="@/assets/images/start-building/launch-token.jpg"
+                  :src="require('~/assets/images/start-building/launch-token.jpg')"
                   alt=""
                 />
               </div>
@@ -68,7 +68,7 @@
                   width="244"
                   height="244"
                   class="cover-img"
-                  src="@/assets/images/start-building/data.jpg"
+                  :src="require('~/assets/images/start-building/data.jpg')"
                   alt=""
                 />
               </div>
@@ -91,7 +91,7 @@
                   width="244"
                   height="244"
                   class="cover-img"
-                  src="@/assets/images/start-building/oracle.jpg"
+                  :src="require('~/assets/images/start-building/oracle.jpg')"
                   alt=""
                 />
               </div>

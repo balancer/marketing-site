@@ -8,7 +8,7 @@
               width="1000"
               height="618"
               class="pt-1 pb-10"
-              src="@/assets/images/ui-in-device.jpg"
+              :src="require('~/assets/images/ui-in-device.jpg')"
               alt=""
             />
           </transition>

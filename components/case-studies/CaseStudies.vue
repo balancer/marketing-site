@@ -9,7 +9,7 @@
                 width="120"
                 height="120"
                 class="integrations-logo"
-                src="@/assets/svg/tokens/gno.svg"
+                :src="require('~/assets/svg/tokens/gno.svg')"
                 alt="Gnosis logo"
               />
             </button>
@@ -29,7 +29,7 @@
                 width="120"
                 height="120"
                 class="integrations-logo"
-                src="@/assets/svg/tokens/aave.svg"
+                :src="require('~/assets/svg/tokens/aave.svg')"
                 alt="Aave logo"
               />
             </button>
@@ -49,7 +49,7 @@
                 width="120"
                 height="120"
                 class="integrations-logo"
-                src="@/assets/images/tokens/element.png"
+                :src="require('~/assets/images/tokens/element.png')"
                 alt="Element logo"
               />
             </button>
@@ -76,7 +76,7 @@
                 width="120"
                 height="120"
                 class="integrations-logo"
-                src="@/assets/svg/tokens/ocean.svg"
+                :src="require('~/assets/svg/tokens/ocean.svg')"
                 alt="Ocean logo"
               />
             </button>
@@ -96,7 +96,7 @@
                 width="120"
                 height="120"
                 class="integrations-logo"
-                src="@/assets/images/tokens/gyroscope.png"
+                :src="require('~/assets/images/tokens/gyroscope.png')"
                 alt="Gyroscope logo"
               />
             </button>
@@ -116,7 +116,7 @@
                 width="120"
                 height="120"
                 class="integrations-logo"
-                src="@/assets/svg/tokens/powerpool.svg"
+                :src="require('~/assets/svg/tokens/powerpool.svg')"
                 alt="PowerPool logo"
               />
             </button>
