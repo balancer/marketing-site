@@ -3,6 +3,7 @@ import { TITLE, headMeta } from './lib/meta'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  ssr: false,
 
   server: {
     host: '0.0.0.0'
@@ -39,6 +40,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/vue-tooltip.client.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
