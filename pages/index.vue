@@ -20,8 +20,10 @@ import Aave from "@/components/case-studies/Aave.vue";
 import Backers from "@/components/pages/home/Backers.vue";
 
 export default {
-  head: {
-    link: [{ rel: 'preload', as:'image', href: '/images/hero-home.svg' }]
+  head() {
+    return {
+      link: [{ rel: 'preload', as:'image', href: '/images/hero-home.svg' }]
+    }
   },
   transition: 'slideup', 
   components: {
