@@ -176,7 +176,7 @@ export default {};
 }
 
 .pool:hover .text-label {
-  @apply text-blue-500;
+  @apply text-defaultBlue;
 }
 
 .superscript {

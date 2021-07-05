@@ -44,9 +44,9 @@
             </div>
           </div>
           <div class="flex pb-4 md:pb-0">
-            <NuxtLink class="btn btn-tertiary btn-hero" to="build"
-              >Start building</NuxtLink
-            >
+            <NuxtLink class="btn btn-tertiary btn-hero" to="build">
+              Start building
+            </NuxtLink>
           </div>
         </div>
         <div>
