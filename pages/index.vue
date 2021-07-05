@@ -1,17 +1,16 @@
 <template>
-<div>
-  <HeroHome />
-  <StatsHome />
-  <ForInvestors />
-  <ForTraders />
-  <ForBuilders />
-  <Aave />
-  <Backers />
+  <div>
+    <HeroHome />
+    <StatsHome />
+    <ForInvestors />
+    <ForTraders />
+    <ForBuilders />
+    <Aave />
+    <Backers />
   </div>
 </template>
 
 <script>
-
 import HeroHome from "@/components/pages/home/HeroHome.vue";
 import StatsHome from "@/components/pages/home/StatsHome.vue";
 import ForInvestors from "@/components/pages/home/ForInvestors.vue";
