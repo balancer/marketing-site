@@ -87,7 +87,7 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      :src="require('~/assets/images/tokens/weth-cover.jpg')"
+                      :src="require('~/assets/images/tokens/wethcover.jpg')"
                       alt=""
                     />
                   </div>
