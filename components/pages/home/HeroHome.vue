@@ -42,7 +42,7 @@ export default {};
 <style scoped>
 .hero {
   background-color: #21222c;
-  background-image: url(/images/hero-home.svg);
+  background-image: url('/images/hero-home.svg');
   min-height: 640px;
   @apply min-h-screen flex justify-center items-center bg-cover bg-no-repeat bg-center;
 }
