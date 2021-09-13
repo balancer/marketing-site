@@ -80,7 +80,7 @@ export default {
 
 <style scoped>
 .partners {
-  @apply grid grid-cols-3 text-center h-32 md:h-72 xl:h-80;
+  @apply grid grid-cols-3 justify-items-center text-center h-32 md:h-72 xl:h-80;
 }
 
 .partner--bottom {
