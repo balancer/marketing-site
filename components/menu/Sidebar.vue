@@ -84,6 +84,11 @@
                 >Whitepaper</a
               >
             </p>
+            <p class="pb-1">
+              <a class="link" @click="toggleSidebar" href="https://angel.co/company/balancer-labs-1"
+                >Careers</a
+              >
+            </p>            
           </div>
           <div class="pb-4">
             <p class="text-gray-400 pb-1">Ecosystem</p>

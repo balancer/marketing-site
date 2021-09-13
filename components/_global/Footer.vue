@@ -20,7 +20,7 @@
           <p></p>
           <p class="pb-2">
             <NuxtLink class="link-featured" to="build">Build</NuxtLink>
-          </p>          
+          </p>
         </div>
 
         <div class="pb-8 md:pb-16 lg:pb-0">
@@ -46,11 +46,16 @@
           <p class="pb-2">
             <a class="link" href="whitepaper.pdf">Whitepaper</a>
           </p>
-          <p>
+          <p class="pb-2">
             <a class="link" href="https://github.com/balancer-labs/"
               >Github code</a
             >
           </p>
+          <p>
+            <a class="link" href="https://angel.co/company/balancer-labs-1"
+              >Careers</a
+            >
+          </p>          
         </div>
         <div class="pb-8 md:pb-16  lg:pb-0">
           <p class="text-gray-400 pb-2">Ecosystem</p>
@@ -67,7 +72,7 @@
           <p class="pb-2">
             <a class="link" href="https://forum.balancer.finance/">Forum</a>
           </p>
-          <p>
+          <p class="pb-2">
             <a
               class="link"
               href="https://forum.balancer.finance/t/ecosystem-fund-grant-process/166"
