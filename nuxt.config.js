@@ -54,7 +54,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/sentry'
+    '@nuxtjs/sentry',
+    '@nuxtjs/sitemap'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -63,5 +64,9 @@ export default {
 
   sentry: {
     dsn: 'https://991f8a3901034e0db96f0ff7bf10d24e@o574636.ingest.sentry.io/5818459'
+  },
+
+  sitemap: {
+    hostname: 'https://balancer.fi',
   }
 }
