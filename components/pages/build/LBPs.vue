@@ -30,12 +30,12 @@
         </div>
         <div class="overflow-hidden">
           <div class="pb-12">
-            <p class="featured-stat lbp-stat pb-4">20+</p>
+            <p class="featured-stat lbp-stat pb-4">45+</p>
             <p class="featured-stat lbp-stat-label">Token launches</p>
           </div>
 
           <div>
-            <p class="featured-stat lbp-stat pb-4">$200m+</p>
+            <p class="featured-stat lbp-stat pb-4">$500m+</p>
             <p class="featured-stat lbp-stat-label">Raised</p>
           </div>
         </div>

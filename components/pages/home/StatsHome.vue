@@ -3,10 +3,10 @@
     <div class="content-container">
       <transition name="stats" appear>
         <div class="grid grid-cols-2 md:grid-cols-4 pt-8 pb-8 md:pb-16 md:pt-2 lg:px-8">        
-          <Stat label="Trade vol (7d)" stat="$628m" />
+          <Stat label="Trade vol (7d)" stat="$716m" />
           <Stat label="Total fees earned" stat="$72.3m" />
-          <Stat label="Total liquidity" stat="$2.58b" />
-          <Stat label="Liquidity Providers" stat="10.8k" />        
+          <Stat label="Total liquidity" stat="$3.7b" />
+          <Stat label="Liquidity Providers" stat="17.1k" />        
         </div>
       </transition>
     </div>

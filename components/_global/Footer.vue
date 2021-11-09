@@ -75,7 +75,7 @@
           <p class="pb-2">
             <a
               class="link"
-              href="https://forum.balancer.finance/t/ecosystem-fund-grant-process/166"
+              href="https://balancer.community/balancer-community-grants"
               >Grants</a
             >
           </p>
