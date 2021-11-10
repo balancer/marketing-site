@@ -89,7 +89,7 @@
                 <icon-twitter />
               </a>
 
-              <a class="mr-3" href="https://discord.com/invite/ARJWaeF"
+              <a class="mr-3" href="https://discord.balancer.fi"
                 ><icon-discord
               /></a>
 
