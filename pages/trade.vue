@@ -12,14 +12,9 @@
             <div class="mb-4">
               <icon-sparkles />
             </div>
-            <h2>Earn $BAL with every trade</h2>
+            <h2>Save ETH. Trade gasless.</h2>
             <p>
-              Balance out your gas costs by getting up to 90% of your gas fees
-              paid back in $BAL—a helping hand from the Balancer DAO.
-              <a class="text-link" href="https://claim.balancer.fi"
-                >Claim $BAL</a
-              >
-              weekly on Tuesdays.
+              Get free signature trades (no gas required), MEV protection, and the best prices across DeFi exchanges on our new Balancer-Gnosis-Protocol (CowSwap) trading interface.
             </p>
           </div>
 
@@ -27,10 +22,10 @@
             <div class="mb-4">
               <icon-liquidity />
             </div>
-            <h2>Over $1.7b in liquidity</h2>
+            <h2>Over $3.4b in liquidity</h2>
             <p>
               Balancer’s liquid market ensures that traders get the best
-              possible prices for trades, large or small.
+              possible prices for trades, large or small. On Ethereum mainnet, Arbitrum and Polygon.
             </p>
           </div>
           <div class="card pb-12 max-w-lg">
