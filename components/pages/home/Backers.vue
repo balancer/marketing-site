@@ -38,7 +38,7 @@
           </div>
           <p>
             Balancer is the epitome of technical excellence and innovation in
-            the DeFi space. The soon to be released Balancer V2 is another
+            the DeFi space. Balancer V2 is another
             testimony of continued effort to innovate through clever design.
             DeFiance Capital is proud to support Balancer in this
             exciting&nbsp;journey.
