@@ -1,8 +1,8 @@
 <template>
   <div>
-    <a class="announcement" href="https://medium.com/balancer-protocol">
+    <a class="announcement" href="https://app.balancer.fi/#/pool/0x7b50775383d3d6f0215a8f290f2c9e2eebbeceb20000000000000000000000fe/?utm_source=website&utm_medium=banner&utm_campaign=aaveboostedpools">
       <span class="announcement-text">
-        Balancer V2 is live! Learn&nbsp;more&nbsp;-></span
+        Increased yields, greater capital efficiency, deeper liquidity. Try Balancer Boosted Pools&nbsp;now -></span
       >
     </a>
   </div>
@@ -19,32 +19,24 @@ export default {};
 /* #TODO: change into Tailwind */
 
 .announcement {
- @apply bg-yellow-300;   
+ @apply bg-yellow-300 hover:bg-yellow-400;   
   
   text-decoration: none;
   color: #000;
   display: flex;
   margin: 0;
-  padding: 10px 16px;
-  height: 40px;
+  padding: 12px 16px;
   align-items: center;
   justify-content: center;
   font-family: Lato, sans-serif;
   text-align: center;
-  line-height: 1.2;
-  transition: 0.2s color ease-in-out;
+  line-height: 1.3;
+  transition: 0.3s all ease-out;
   outline: none;
 
   font-family: Inter, sans-serif;
   font-feature-settings: "calt";
 }
 
-.announcement:hover,
-.announcement:focus {
-  color: #0000ff;
-}
 
-.announcement-link {
-  color: #0000ff;
-}
 </style>
