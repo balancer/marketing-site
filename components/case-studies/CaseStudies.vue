@@ -15,7 +15,7 @@
             </button>
             <template slot="popover">
               <CaseStudy
-                title="Gnosis"
+                title="Balancer CoW Protocol"
                 description="The Balancer CoW Protocol leverages the gas efficiency of Balancer V2 multihop swaps to give users the best price and execution possible along with with MEV protection."
                 url="https://cowswap.exchange/#/swap"
               />
