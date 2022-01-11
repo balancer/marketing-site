@@ -14,7 +14,7 @@
             </div>
             <h2>Save ETH. Trade gasless.</h2>
             <p>
-              Get free signature trades (no gas required), MEV protection, and the best prices across DeFi exchanges on our new Balancer-Gnosis-Protocol (CowSwap) trading interface.
+              Get free signature trades (no gas required), MEV protection, and the best prices across DeFi exchanges on our new Balancer CoW Protocol trading interface.
             </p>
           </div>
 
