@@ -85,10 +85,13 @@
               >
             </p>
             <p class="pb-1">
-              <a class="link" @click="toggleSidebar" href="https://angel.co/company/balancer-labs-1"
+              <a
+                class="link"
+                @click="toggleSidebar"
+                href="https://angel.co/company/balancer-labs-1"
                 >Careers</a
               >
-            </p>            
+            </p>
           </div>
           <div class="pb-4">
             <p class="text-gray-400 pb-1">Ecosystem</p>
@@ -141,6 +144,12 @@
                 ><icon-medium
               /></a>
 
+              <a
+                class="mr-2"
+                href="https://www.youtube.com/channel/UCBRHug6Hu3nmbxwVMt8x_Ow"
+                ><icon-youtube
+              /></a>
+
               <a class="mr-2" href="https://github.com/balancer-labs/"
                 ><icon-github
               /></a>
@@ -166,6 +175,7 @@ import MenuLinks from "@/components/menu/MenuLinks.vue";
 import IconTwitter from "@/components/icons/IconTwitter.vue";
 import IconDiscord from "@/components/icons/IconDiscord.vue";
 import IconMedium from "@/components/icons/IconMedium.vue";
+import IconYoutube from "@/components/icons/IconYoutube.vue";
 import IconGithub from "@/components/icons/IconGithub.vue";
 import IconMail from "@/components/icons/IconMail.vue";
 import IconLinkedin from "@/components/icons/IconLinkedin.vue";
@@ -175,20 +185,21 @@ export default {
     IconTwitter,
     IconDiscord,
     IconMedium,
+    IconYoutube,
     IconGithub,
     IconMail,
-    IconLinkedin
+    IconLinkedin,
   },
   computed: {
     ...mapState({
-      sidebarOpen: state => state.sidebar
-    })
+      sidebarOpen: (state) => state.sidebar,
+    }),
   },
   methods: {
     ...mapMutations({
-      toggleSidebar: "toggleSidebar"
-    })
-  }
+      toggleSidebar: "toggleSidebar",
+    }),
+  },
 };
 </script>
 <style>

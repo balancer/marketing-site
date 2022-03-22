@@ -2,7 +2,14 @@
   <footer>
     <div class="content-container">
       <div
-        class="px-4 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-white"
+        class="
+          px-4
+          py-16
+          grid grid-cols-1
+          md:grid-cols-2
+          lg:grid-cols-5
+          text-white
+        "
       >
         <div class="flex flex-col mb-8 sidebar">
           <p class="text-gray-400 pb-2">Balancer.fi</p>
@@ -55,9 +62,9 @@
             <a class="link" href="https://angel.co/company/balancer-labs-1"
               >Careers</a
             >
-          </p>          
+          </p>
         </div>
-        <div class="pb-8 md:pb-16  lg:pb-0">
+        <div class="pb-8 md:pb-16 lg:pb-0">
           <p class="text-gray-400 pb-2">Ecosystem</p>
           <p class="pb-2">
             <a class="link" href="https://vote.balancer.finance/"
@@ -93,8 +100,14 @@
                 ><icon-discord
               /></a>
 
-              <a class="" href="https://medium.com/balancer-protocol"
+              <a class="mr-3" href="https://medium.com/balancer-protocol"
                 ><icon-medium
+              /></a>
+
+              <a
+                class=""
+                href="https://www.youtube.com/channel/UCBRHug6Hu3nmbxwVMt8x_Ow"
+                ><icon-youtube
               /></a>
             </div>
             <div class="flex">
@@ -107,7 +120,6 @@
                 href="https://www.linkedin.com/company/balancer-labs/"
                 ><icon-linkedin
               /></a>
-
               <a class="" href="mailto:contact@balancer.finance"
                 ><icon-mail
               /></a>
@@ -124,6 +136,7 @@ import IconExternalLink from "@/components/icons/IconExternalLink.vue";
 import IconTwitter from "@/components/icons/IconTwitter.vue";
 import IconDiscord from "@/components/icons/IconDiscord.vue";
 import IconMedium from "@/components/icons/IconMedium.vue";
+import IconYoutube from "@/components/icons/IconYoutube.vue";
 import IconGithub from "@/components/icons/IconGithub.vue";
 import IconMail from "@/components/icons/IconMail.vue";
 import IconLinkedin from "@/components/icons/IconLinkedin.vue";
@@ -134,10 +147,11 @@ export default {
     IconTwitter,
     IconDiscord,
     IconMedium,
+    IconYoutube,
     IconGithub,
     IconMail,
-    IconLinkedin
-  }
+    IconLinkedin,
+  },
 };
 </script>
 
