@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="main">
-      <AnnouncementBar />
       <Header />
       <Sidebar />
       <Nuxt />

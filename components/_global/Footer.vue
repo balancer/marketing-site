@@ -65,7 +65,7 @@
             >
           </p>
           <p class="pb-2">
-            <a class="link" href="https://duneanalytics.com/projects/balancer"
+            <a class="link" href="https://dune.xyz/balancerlabs"
               >Dune analytics</a
             >
           </p>
