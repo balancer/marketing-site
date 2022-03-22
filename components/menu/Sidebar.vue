@@ -104,7 +104,7 @@
               <a
                 class="link"
                 @click="toggleSidebar"
-                href="https://duneanalytics.com/projects/balancer"
+                href="https://dune.xyz/balancerlabs"
                 >Dune analytics</a
               >
             </p>
