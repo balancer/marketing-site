@@ -1,8 +1,8 @@
 <template>
   <div>
-    <a class="announcement" href="https://app.balancer.fi/#/pool/0x7b50775383d3d6f0215a8f290f2c9e2eebbeceb20000000000000000000000fe/?utm_source=website&utm_medium=banner&utm_campaign=aaveboostedpools">
+    <a class="announcement" href="https://app.balancer.fi/#/vebal">
       <span class="announcement-text">
-        Increased yields, greater capital efficiency, deeper liquidity. Try Balancer Boosted Pools&nbsp;now -></span
+        veBAL is now live! Lock your BAL to receive veBAL &amp; receive a host of&nbsp;benefits -></span
       >
     </a>
   </div>
