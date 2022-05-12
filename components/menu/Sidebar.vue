@@ -107,6 +107,14 @@
               <a
                 class="link"
                 @click="toggleSidebar"
+                href="https://immunefi.com/bounty/balancer/"
+                >Immunefi bug bounty</a
+              >
+            </p>            
+            <p class="pb-1">
+              <a
+                class="link"
+                @click="toggleSidebar"
                 href="https://dune.xyz/balancerlabs"
                 >Dune analytics</a
               >

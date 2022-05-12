@@ -72,6 +72,11 @@
             >
           </p>
           <p class="pb-2">
+            <a class="link" href="https://immunefi.com/bounty/balancer/"
+              >Immunefi bug bounty</a
+            >
+          </p>          
+          <p class="pb-2">
             <a class="link" href="https://dune.xyz/balancerlabs"
               >Dune analytics</a
             >
