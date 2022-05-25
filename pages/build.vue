@@ -83,7 +83,7 @@
             </div>
           </a>
           <a
-            href="https://docs-v2.balancer.finance/getting-started/faqs/trading#what-are-balancer-price-oracles-coming-soon"
+            href="https://docs.balancer.fi/products/oracles"
           >
             <div class="pool relative">
               <div class="relative flex justify-center items-center">
