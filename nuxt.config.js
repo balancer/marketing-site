@@ -55,9 +55,12 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/sentry',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxt/content'
   ],
-
+  content: {
+    // Options
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
