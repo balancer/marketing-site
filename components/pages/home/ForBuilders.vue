@@ -2,32 +2,44 @@
   <section>
     <div class="max-w-screen-2xl mx-auto">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 px-4 xl:px-0 pb-16 lg:pb-20 items-center bg-white"
+        class="
+          grid grid-cols-1
+          md:grid-cols-2
+          px-4
+          xl:px-0
+          pb-16
+          lg:pb-20
+          items-center
+          bg-white
+        "
       >
         <div class="md:mx-auto max-w-lg pr-4 pb-12 md:pb-0">
-          <p class="eyebrow gradient-text pb-2 font-medium">For builders</p>
-          <h1 class="h1-sans-serif">
-            A protocol for programmable liquidity
-          </h1>
+          <p class="eyebrow gradient-text pb-2 font-medium">
+            {{ content.eyebrow }}
+          </p>
+          <h1 class="h1-sans-serif">{{ content.title }}</h1>
           <p class="pb-4">
-            The Balancer Protocol is a core building block of DeFi
-            infrastructure—a unique financial primitive and permissionless
-            development platform. Balancer is the most flexible and versatile
-            Automated Market Maker, giving developers unprecedented
-            customizability.
+            {{ content.description }}
           </p>
           <div class="pb-1">
             <div class="flex pb-5">
-              <img 
-              width="24"
-              height="24"
-              class="mr-3" :src="require('~/assets/svg/icon-sliders.svg')" alt="" />
-              <p class="font-medium">Custom token weights & swap fees</p>
+              <img
+                width="24"
+                height="24"
+                class="mr-3"
+                :src="require('~/assets/svg/icon-sliders.svg')"
+                alt=""
+              />
+              <p class="font-medium">{{ content.feature1 }}</p>
             </div>
             <div class="flex pb-5">
-              <img class="mr-3" :src="require('~/assets/svg/icon-curve.svg')" alt="" />
+              <img
+                class="mr-3"
+                :src="require('~/assets/svg/icon-curve.svg')"
+                alt=""
+              />
               <p class="font-medium">
-                Liquidity pools can operate on any price curve
+                {{ content.feature2 }}
               </p>
             </div>
             <div class="flex pb-5">
@@ -39,21 +51,28 @@
                 alt=""
               />
               <p class="font-medium">
-                Asset managers re-utilize dormant liquidity (coming soon)
+                {{ content.feature3 }}
               </p>
             </div>
           </div>
           <div class="flex pb-4 md:pb-0">
             <NuxtLink class="btn btn-tertiary btn-hero" to="build">
-              Start building
+              {{ content.buttonSecondary }}
             </NuxtLink>
           </div>
         </div>
         <div>
           <div
-            class="grid grid-cols-2 lg:grid-cols-3 gap-y-8 lg:gap-y-16 text-center max-w-2xl"
+            class="
+              grid grid-cols-2
+              lg:grid-cols-3
+              gap-y-8
+              lg:gap-y-16
+              text-center
+              max-w-2xl
+            "
           >
-                       <v-popover offset="16" placement="top">
+            <v-popover offset="16" placement="top">
               <button class="tooltip-target b3">
                 <img
                   width="120"
@@ -76,7 +95,7 @@
               <button class="tooltip-target b3">
                 <img
                   width="120"
-                  height="120"                
+                  height="120"
                   class="integrations-logo"
                   :src="require('~/assets/svg/tokens/aave.svg')"
                   alt="Aave logo"
@@ -95,7 +114,7 @@
               <button class="tooltip-target b3">
                 <img
                   width="120"
-                  height="120"                
+                  height="120"
                   class="integrations-logo"
                   :src="require('~/assets/svg/tokens/elementfi.svg')"
                   alt="Element logo"
@@ -113,7 +132,7 @@
               <button class="tooltip-target b3">
                 <img
                   width="120"
-                  height="120"                
+                  height="120"
                   class="integrations-logo"
                   :src="require('~/assets/svg/tokens/ocean.svg')"
                   alt="Ocean logo"
@@ -131,7 +150,7 @@
               <button class="tooltip-target b3">
                 <img
                   width="120"
-                  height="120"                
+                  height="120"
                   class="integrations-logo"
                   :src="require('~/assets/images/tokens/gyroscope.png')"
                   alt="Gyroscope logo"
@@ -149,7 +168,7 @@
               <button class="tooltip-target b3">
                 <img
                   width="120"
-                  height="120"                
+                  height="120"
                   class="integrations-logo"
                   :src="require('~/assets/svg/tokens/powerpool.svg')"
                   alt="PowerPool logo"
@@ -181,14 +200,20 @@ Vue.component("v-popover", VPopover);
 
 export default {
   components: {
-    CaseStudy
-  }
+    CaseStudy,
+  },
+  props: {
+    content: {
+      type: Object,
+      required: true,
+    },
+  },
 };
 </script>
 
 <style scoped>
 .pool {
-  max-width: 240px;  
+  max-width: 240px;
   @apply border border-gray-200 rounded-3xl shadow;
 }
 .case-study {

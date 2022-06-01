@@ -2,18 +2,24 @@
   <section class="bg-white">
     <div class="max-w-screen-2xl mx-auto">
       <div
-        class="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 xl:px-0 pb-16 lg:pb-32 mb-8 items-center bg-white"
+        class="
+          grid grid-cols-1
+          gap-4
+          md:grid-cols-2
+          px-4
+          xl:px-0
+          pb-16
+          lg:pb-32
+          mb-8
+          items-center
+          bg-white
+        "
       >
         <div class="md:mx-auto max-w-lg pr-4 pb-8 md:pb-0">
-          <p class="eyebrow gradient-text pb-2 font-medium">For traders</p>
-          <h1 class="h1-sans-serif">
-            Decentralized trades at optimal prices
-          </h1>
+          <p class="eyebrow gradient-text pb-2 font-medium">{{eyebrow}}</p>
+          <h1 class="h1-sans-serif">{{title}}</h1>
           <p class="pb-4">
-            Balancer enables efficient trading by pooling crowdsourced liquidity
-            from investor portfolios and using its Smart Order Router to find
-            traders the best available price. Exchange any combination of ERC-20
-            tokens permissionlessly, with ease.
+            {{description}}
           </p>
           <div class="grid grid-cols-1 pb-2">
             <div class="flex pb-5">
@@ -24,11 +30,15 @@
                 :src="require('~/assets/svg/icon-smart-routing.svg')"
                 alt=""
               />
-              <p class="font-medium">Intelligent pricing</p>
+              <p class="font-medium">{{feature1}}</p>
             </div>
             <div class="flex pb-5">
-              <img class="mr-3" :src="require('~/assets/svg/icon-umbrella.svg')" alt="" />
-              <p class="font-medium">MEV protection</p>
+              <img
+                class="mr-3"
+                :src="require('~/assets/svg/icon-umbrella.svg')"
+                alt=""
+              />
+              <p class="font-medium">{{feature2}}</p>
             </div>
             <div class="flex pb-5">
               <img
@@ -38,19 +48,17 @@
                 :src="require('~/assets/svg/icon-sparkles.svg')"
                 alt=""
               />
-              <p class="font-medium">
-                Gas optimizations and subsidies
-              </p>
+              <p class="font-medium">{{feature3}}</p>
             </div>
           </div>
           <div class="flex pb-4 md:pb-0">
             <a
               class="btn btn-primary btn-hero mr-3"
               href="https://app.balancer.fi/#/trade"
-              >Start trading</a
+              >{{buttonPrimary}}</a
             >
             <NuxtLink class="btn btn-tertiary btn-hero" to="trade"
-              >Trade features</NuxtLink
+              >{{buttonSecondary}}</NuxtLink
             >
           </div>
         </div>
@@ -149,7 +157,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    eyebrow: String,
+    title: String,
+    description: String,
+    feature1: String,
+    feature2: String,
+    feature3: String,
+    buttonPrimary: String,
+    buttonSecondary: String,
+  },
+};
 </script>
 
 <style scoped>
@@ -172,7 +191,7 @@ export default {};
 }
 
 .text-label {
-  transition: 0.2s all ease-out;  
+  transition: 0.2s all ease-out;
   @apply text-sm truncate;
 }
 

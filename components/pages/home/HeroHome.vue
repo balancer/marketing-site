@@ -4,13 +4,15 @@
       <div class="hero-content">
         <transition name="h1" appear>
           <h1 class="h1-hero transition-standard">
-            Automated portfolio manager and trading&nbsp;platform
+            {{ title }}
           </h1>
         </transition>
         <div class="pb-4">
           <transition name="p" appear>
             <p class="p-hero transition-standard">
-              Put your cryptoassets to work and get the best prices for trades
+              {{ description }}
+
+              
             </p>
           </transition>
         </div>
@@ -20,13 +22,13 @@
               onclick="fathom.trackGoal('YZKHSNU0', 0);"
               class="btn btn-secondary btn-hero mr-3"
               href="https://app.balancer.fi/#/"
-              >Invest</a
+              >{{buttonPrimary }}</a
             >
             <a
               onclick="fathom.trackGoal('OUY5RF8L', 0);"
               class="btn btn-skeleton-white btn-hero"
               href="https://app.balancer.fi/#/trade"
-              >Trade</a
+              >{{ buttonSecondary }}</a
             >
           </div>
         </transition>
@@ -36,13 +38,20 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    title: String,
+    description: String,
+    buttonPrimary: String,
+    buttonSecondary: String
+  },
+};
 </script>
 
 <style scoped>
 .hero {
   background-color: #21222c;
-  background-image: url('/images/hero-home.svg');
+  background-image: url("/images/hero-home.svg");
   min-height: 640px;
   @apply min-h-screen flex justify-center items-center bg-cover bg-no-repeat bg-center;
 }

@@ -2,24 +2,36 @@
   <section>
     <div class="max-w-screen-2xl mx-auto">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 px-4 xl:px-0 pb-16 lg:pb-32 mb-8 items-center gap-4 bg-white"
+        class="
+          grid grid-cols-1
+          md:grid-cols-2
+          px-4
+          xl:px-0
+          pb-16
+          lg:pb-32
+          mb-8
+          items-center
+          gap-4
+          bg-white
+        "
       >
         <div class="md:mx-auto max-w-lg pr-4 pb-8 md:pb-0">
-          <p class="eyebrow gradient-text pb-2 font-medium">For investors</p>
+          <p class="eyebrow gradient-text pb-2 font-medium">{{ eyebrow }}</p>
           <h1 class="h1-sans-serif">
-            Portfolios that generate yield and rebalance automatically
+            {{ title }}
           </h1>
           <p class="pb-4">
-            Balancer turns the concept of an index fund on its head: instead of
-            paying fees to portfolio managers to rebalance your portfolio, you
-            collect fees from traders who rebalance your portfolio by following
-            arbitrage opportunities.
+            {{ description }}
           </p>
           <div class="grid grid-cols-1 pb-5">
             <div class="pb-1">
               <div class="flex pb-5">
-                <img class="mr-3" :src="require('~/assets/svg/icon-shield.svg')" alt="" />
-                <p class="font-medium">Battle tested and secure</p>
+                <img
+                  class="mr-3"
+                  :src="require('~/assets/svg/icon-shield.svg')"
+                  alt=""
+                />
+                <p class="font-medium">{{feature1}}</p>
               </div>
               <div class="flex pb-5">
                 <img
@@ -27,24 +39,27 @@
                   :src="require('~/assets/svg/icon-lightning.svg')"
                   alt=""
                 />
-                <p class="font-medium">Capital and gas efficient</p>
+                <p class="font-medium">{{feature2}}</p>
               </div>
               <div class="flex pb-5">
-                <img 
-                width="26"
-                height="25"
-                class="mr-3" :src="require('~/assets/svg/icon-sparkles.svg')" alt="" />
-                <p class="font-medium">Earn $BAL token incentives</p>
+                <img
+                  width="26"
+                  height="25"
+                  class="mr-3"
+                  :src="require('~/assets/svg/icon-sparkles.svg')"
+                  alt=""
+                />
+                <p class="font-medium">{{feature3}}</p>
               </div>
             </div>
             <div class="flex pb-4 md:pb-0">
               <a
                 class="btn btn-primary btn-hero mr-3"
                 href="https://app.balancer.fi/#/"
-                >Start investing</a
+                >{{buttonPrimary}}</a
               >
               <NuxtLink class="btn btn-tertiary btn-hero" to="invest"
-                >Invest features</NuxtLink
+                >{{buttonSecondary}}</NuxtLink
               >
             </div>
           </div>
@@ -61,7 +76,9 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      :src="require('~/assets/images/featured-pools/pool-weth-wbtc.jpg')"
+                      :src="
+                        require('~/assets/images/featured-pools/pool-weth-wbtc.jpg')
+                      "
                       alt=""
                     />
                   </div>
@@ -79,9 +96,11 @@
                   <div class="image-container">
                     <img
                       width="300"
-                      height="300"                    
+                      height="300"
                       class="cover-img"
-                      :src="require('~/assets/images/featured-pools/pool-bal-weth.jpg')"
+                      :src="
+                        require('~/assets/images/featured-pools/pool-bal-weth.jpg')
+                      "
                       alt=""
                     />
                   </div>
@@ -99,17 +118,17 @@
                   <div class="image-container">
                     <img
                       width="300"
-                      height="300"                    
+                      height="300"
                       class="cover-img"
-                      :src="require('~/assets/images/featured-pools/pool-dpi-weth-wbtc.jpg')"
+                      :src="
+                        require('~/assets/images/featured-pools/pool-dpi-weth-wbtc.jpg')
+                      "
                       alt=""
                     />
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center font-medium">
-                      <p class="text-label">
-                        33 DPI 33 WETH 33&nbsp;WBTC
-                      </p>
+                      <p class="text-label">33 DPI 33 WETH 33&nbsp;WBTC</p>
                     </div>
                   </div>
                 </div>
@@ -121,9 +140,11 @@
                   <div class="image-container">
                     <img
                       width="300"
-                      height="300"                    
+                      height="300"
                       class="cover-img"
-                      :src="require('~/assets/images/featured-pools/pool-weth-dai.jpg')"
+                      :src="
+                        require('~/assets/images/featured-pools/pool-weth-dai.jpg')
+                      "
                       alt=""
                     />
                   </div>
@@ -143,7 +164,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    eyebrow: String,
+    title: String,
+    description: String,
+    feature1: String,
+    feature2: String,
+    feature3: String,
+    buttonPrimary: String,
+    buttonSecondary: String,
+  },
+};
 </script>
 
 <style scoped>
@@ -171,7 +203,7 @@ export default {};
 }
 
 .text-label {
-  transition: 0.2s all ease-out;  
+  transition: 0.2s all ease-out;
   @apply text-sm truncate;
 }
 
