@@ -4,13 +4,13 @@
       <div class="hero-content">
         <transition name="h1" appear>
           <h1 class="h1-hero transition-standard">
-            {{ title }}
+            {{ content.title }}
           </h1>
         </transition>
         <div class="pb-4">
           <transition name="p" appear>
             <p class="p-hero transition-standard">
-              {{ description }}
+              {{ content.description }}
 
               
             </p>
@@ -22,13 +22,13 @@
               onclick="fathom.trackGoal('YZKHSNU0', 0);"
               class="btn btn-secondary btn-hero mr-3"
               href="https://app.balancer.fi/#/"
-              >{{buttonPrimary }}</a
+              >{{ content.buttonPrimary }}</a
             >
             <a
               onclick="fathom.trackGoal('OUY5RF8L', 0);"
               class="btn btn-skeleton-white btn-hero"
               href="https://app.balancer.fi/#/trade"
-              >{{ buttonSecondary }}</a
+              >{{ content.buttonSecondary }}</a
             >
           </div>
         </transition>
@@ -39,11 +39,11 @@
 
 <script>
 export default {
-  props: {
-    title: String,
-    description: String,
-    buttonPrimary: String,
-    buttonSecondary: String
+    props: {
+    content: {
+      type: Object,
+      required: true,
+    },
   },
 };
 </script>

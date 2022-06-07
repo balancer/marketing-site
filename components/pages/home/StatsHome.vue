@@ -2,11 +2,20 @@
   <section class="p-4 bg-white">
     <div class="content-container">
       <transition name="stats" appear>
-        <div class="grid grid-cols-2 md:grid-cols-4 pt-8 pb-8 md:pb-16 md:pt-2 lg:px-8">        
-          <Stat label="Trade vol (7d)" stat="$716m" />
-          <Stat label="Total fees earned" stat="$72.3m" />
-          <Stat label="Total liquidity" stat="$3.4b" />
-          <Stat label="Liquidity Providers" stat="17.5k" />        
+        <div
+          class="
+            grid grid-cols-2
+            md:grid-cols-4
+            pt-8
+            pb-8
+            md:pb-16 md:pt-2
+            lg:px-8
+          "
+        >
+          <Stat :label="content.volumeLabel" :stat="content.volumeAmount" />
+          <Stat :label="content.feesLabel" :stat="content.feesAmount" />
+          <Stat :label="content.liquidityLabel" :stat="content.liquidityAmount" />
+          <Stat :label="content.lpLabel" :stat="content.lpAmount" />
         </div>
       </transition>
     </div>
@@ -14,7 +23,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    content: {
+      type: Object,
+      required: true,
+    },
+  },
+};
 </script>
 
 <style scoped>

@@ -16,10 +16,12 @@
         "
       >
         <div class="md:mx-auto max-w-lg pr-4 pb-8 md:pb-0">
-          <p class="eyebrow gradient-text pb-2 font-medium">{{eyebrow}}</p>
-          <h1 class="h1-sans-serif">{{title}}</h1>
+          <p class="eyebrow gradient-text pb-2 font-medium">
+            {{ content.eyebrow }}
+          </p>
+          <h1 class="h1-sans-serif">{{ content.title }}</h1>
           <p class="pb-4">
-            {{description}}
+            {{ content.description }}
           </p>
           <div class="grid grid-cols-1 pb-2">
             <div class="flex pb-5">
@@ -30,7 +32,7 @@
                 :src="require('~/assets/svg/icon-smart-routing.svg')"
                 alt=""
               />
-              <p class="font-medium">{{feature1}}</p>
+              <p class="font-medium">{{ content.feature1 }}</p>
             </div>
             <div class="flex pb-5">
               <img
@@ -38,7 +40,7 @@
                 :src="require('~/assets/svg/icon-umbrella.svg')"
                 alt=""
               />
-              <p class="font-medium">{{feature2}}</p>
+              <p class="font-medium">{{ content.feature2 }}</p>
             </div>
             <div class="flex pb-5">
               <img
@@ -48,18 +50,18 @@
                 :src="require('~/assets/svg/icon-sparkles.svg')"
                 alt=""
               />
-              <p class="font-medium">{{feature3}}</p>
+              <p class="font-medium">{{ content.feature3 }}</p>
             </div>
           </div>
           <div class="flex pb-4 md:pb-0">
             <a
               class="btn btn-primary btn-hero mr-3"
               href="https://app.balancer.fi/#/trade"
-              >{{buttonPrimary}}</a
+              >{{ content.buttonPrimary }}</a
             >
-            <NuxtLink class="btn btn-tertiary btn-hero" to="trade"
-              >{{buttonSecondary}}</NuxtLink
-            >
+            <NuxtLink class="btn btn-tertiary btn-hero" to="trade">{{
+              content.buttonSecondary
+            }}</NuxtLink>
           </div>
         </div>
         <div>
@@ -159,14 +161,10 @@
 <script>
 export default {
   props: {
-    eyebrow: String,
-    title: String,
-    description: String,
-    feature1: String,
-    feature2: String,
-    feature3: String,
-    buttonPrimary: String,
-    buttonSecondary: String,
+    content: {
+      type: Object,
+      required: true,
+    },
   },
 };
 </script>
