@@ -132,7 +132,7 @@
               <a
                 class="link"
                 @click="toggleSidebar"
-                href="https://balancer.community/balancer-community-grants"
+                href="https://docs.balancer.fi/ecosystem/community/grants"
                 >Grants</a
               >
             </p>
