@@ -87,7 +87,7 @@
           <p class="pb-2">
             <a
               class="link"
-              href="https://balancer.community/balancer-community-grants"
+              href="https://docs.balancer.fi/ecosystem/community/grants"
               >Grants</a
             >
           </p>
