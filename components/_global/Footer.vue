@@ -45,18 +45,16 @@
         <div class="pb-8 md:pb-0">
           <p class="text-gray-400 pb-2">Learn</p>
           <p class="pb-2">
-            <a class="link" href="https://medium.com/balancer-protocol">Blog</a>
-          </p>
-          <p class="pb-2">
             <a class="link" href="https://docs.balancer.fi">Documentation</a>
           </p>
           <p class="pb-2">
-            <a class="link" href="whitepaper.pdf">Whitepaper</a>
+            <a class="link" href="https://quark-ceres-740.notion.site/09da662a80ab44ed8c2f25e89d4d5c67?v=621e7fb70f374b1dbc74e12079d321e7">Knowledge Center</a>
           </p>
           <p class="pb-2">
-            <a class="link" href="https://github.com/balancer-labs/"
-              >Github code</a
-            >
+            <a class="link" href="https://quark-ceres-740.notion.site/Question-Center-2e37a8cdf46c4663b86e916f21afaaf8">Question Center</a>
+          </p>                    
+          <p class="pb-2">
+            <a class="link" href="whitepaper.pdf">Whitepaper</a>
           </p>
           <p>
             <a class="link" href="https://angel.co/company/balancer-labs-1"
