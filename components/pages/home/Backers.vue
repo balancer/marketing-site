@@ -67,7 +67,7 @@
             <icon-quotemark />
           </div>
           <p>Balancer's thoughtful architecture enables a wide range of innovative liquidity strategies. No other exchange or asset management
-              protocol provides as much flexibility for builders or investors. Balancer has pioneered a great deal of innovation in the DeFi space and is one of the most widely used liquidity protocols. We are excited to help them expand&nbsp;further.
+              protocol provides as much flexibility for builders or investors. 
           </p>
         </div>
 
