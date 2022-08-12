@@ -66,24 +66,22 @@
           <div class="md:mb-4 lg:mb-6">
             <icon-quotemark />
           </div>
-          <p>
-            Balancer has pioneered a great deal of innovation in the DeFi space
-            and is one of the most widely used liquidity protocols. We are
-            excited to help them expand&nbsp;further.
+          <p>Balancer's thoughtful architecture enables a wide range of innovative liquidity strategies. No other exchange or asset management
+              protocol provides as much flexibility for builders or investors. Balancer has pioneered a great deal of innovation in the DeFi space and is one of the most widely used liquidity protocols. We are excited to help them expand&nbsp;further.
           </p>
         </div>
 
-        <a href="https://twitter.com/zhusu">
+        <a href="https://twitter.com/delitzer">
           <div class="flex items-center">
             <div class="w-20 rounded-full overflow-hidden">
               <img 
               width="80"
               height="80"
-              :src="require('~/assets/images/people/sz.png')" alt="" />
+              :src="require('~/assets/images/people/dl.png')" alt="" />
             </div>
             <div class="pl-4">
-              <p class="font-medium">Su Zhu</p>
-              <p class="font-medium">Three Arrows Capital</p>
+              <p class="font-medium">Dan Elitzer</p>
+              <p class="font-medium">Nascent</p>
             </div>
           </div>
         </a>
