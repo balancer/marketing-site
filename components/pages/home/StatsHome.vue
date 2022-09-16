@@ -9,7 +9,7 @@
           <Stat label="Total pools*" stat="3,621" />          
         </div>        
       </transition>
-      <p class="md:text-center pt-6 md:pt-8 text-gray-500 text-sm">* Ethereum mainnet stats as at 16 September 2022</p>
+      <p class="md:text-center pt-6 md:pt-8 text-gray-500 text-sm">* Stats from Ethereum mainnet as at 16 September 2022</p>
     </div>
   </section>
 </template>
