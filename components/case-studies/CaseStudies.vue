@@ -103,7 +103,7 @@
             <template slot="popover">
               <CaseStudy
                 title="Gyroscope"
-                description="Gyroscope has designed a brand new AMM to power their all-weather stablecoin which is made possible by the customizable AMM logic system in Balancer V2. The incentive system which pegs the stablecoin to $1 using Gyroscope’s S-AMM and P-AMM leads to unparalleled liquidity boosting and greater liquidity within Balancer’s trading ecosystem."
+                description="Gyroscope is a new stablecoin that, like a physical gyroscope, remains stable as the surrounding environment changes. It is a revolution in stablecoin architecture, risk control and AMM design. Gyroscope is fully-backed, automates monetary policy, and features new AMMs designed for resilient liquidity. Gyroscope AMMs -- Concentrated Liquidity Pools (CLPs) -- leverage Balancer V2's customizable AMM logic."
                 url="https://gyro.finance/"
               />
             </template>
