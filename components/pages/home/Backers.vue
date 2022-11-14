@@ -104,7 +104,7 @@ export default {
 
 <style scoped>
 .card {
-  box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff;
+  /* box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff; */
   transition: 0.2s all ease-out;  
   @apply rounded-lg p-4 md:p-6 lg:p-8;
 }

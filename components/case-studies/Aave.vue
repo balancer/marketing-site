@@ -2,34 +2,48 @@
   <section>
     <div class="case-study max-w-7xl mx-auto">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-0 lg:mb-32 py-16 md:py-16 text-white bg-aave px-4"
+        class="
+          grid grid-cols-1
+          md:grid-cols-2
+          gap-8
+          items-center
+          mb-0
+          lg:mb-32
+          py-16
+          md:py-16
+          text-white
+          bg-aave
+          px-4
+        "
       >
         <div class="md:mx-auto max-w-md">
           <p class="py-4 uppercase tracking-widest">Case Study</p>
-          <img 
-          width="120"
-          height="33"
-          class="py-4" :src="require('~/assets/svg/logo-aave.svg')" alt="" />
+          <img
+            width="120"
+            height="33"
+            class="py-4"
+            :src="require('~/assets/svg/logo-aave.svg')"
+            alt=""
+          />
           <ol class="font-medium pb-12 md:pb-0">
-            <li class="py-4 ">
-              Aave launched their 80/20 AAVE/ETH Safety Incentive pool on
-              Balancer, allowing LPs to help secure their protocol while earning
-              rewards in both AAVE and BAL.
+            <li class="py-4">
+              Aave and Balancer have a long history of working together to bring
+              capital efficiency and value to both communities. This includes
+              Aave launching their 80/20 AAVE/ETH Safety Incentive pool on
+              Balancer and the recent Boosted Pool integration.
             </li>
             <li>
-              Aave is also building the first Balancer V2 Asset Manager—allowing
-              idle assets in Balancer V2 pools to earn yield on Aave. This
-              partnership brings more capital efficiency to LPs who earn
-              additional fees on top of swap fees and BAL from liquidity mining.
+              The DAOs recently completed a token swap to further align the
+              interests of both communities.
             </li>
           </ol>
         </div>
         <div class="md:mx-auto max-w-md">
           <img
-            class="md:py-4"
-            width="60"
-            height="60"
-            :src="require('~/assets/images/people/stani.png')"
+            class="profile-pic"
+            width="80"
+            height="80"
+            :src="require('~/assets/images/people/stani.jpg')"
             alt=""
           />
           <p class="py-4 italic font-medium">
@@ -53,3 +67,10 @@
 <script>
 export default {};
 </script>
+
+<style scoped>
+.profile-pic {
+  border-radius: 50%;
+  @apply md:py-4;
+}
+</style>

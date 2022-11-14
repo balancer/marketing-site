@@ -91,7 +91,7 @@
             </ol>
           </div>
           <div class="md:mx-auto max-w-md">
-            <img class="md:py-4" :src="require('~/assets/images/people/stani.png')" alt="" />
+            <img class="md:py-4" :src="require('~/assets/images/people/stani.jpg')" alt="" />
             <p class="py-4 italic font-medium">
               “Part of what makes DeFi so exciting is its composability, and
               with Balancer this has resulted in a partnership that optimises
