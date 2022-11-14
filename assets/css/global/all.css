@@ -2,4 +2,6 @@
 @import "./typography.css";
 @import "./buttons.css";
 
-
+.trigger {
+    width: 100%;
+}

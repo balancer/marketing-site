@@ -32,6 +32,18 @@
     transition: all .2s ease-out;
 }
 
+.btn-skeleton-black {
+    @apply border border-solid border-black bg-white text-black;  
+    transition: all .1s ease-out;       
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 05, 0.1);       
+}
+
+.btn-skeleton-black:hover, .btn-skeleton-black:focus  {
+    @apply border-defaultBlue text-defaultBlue;  
+    transition: all .2s ease-out;       
+    box-shadow: 0 3px 6px 0 rgba(0, 85, 255, 0.2);       
+}
+
 
 .btn-skeleton-white {
     @apply border border-solid border-white text-white bg-transparent;  

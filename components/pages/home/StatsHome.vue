@@ -1,15 +1,25 @@
 <template>
   <section class="p-4 bg-white">
     <div class="content-container pt-8 pb-8 md:pb-20 md:pt-2 lg:px-8">
+      <div class="pb-8 text-center">
+        <h2>Ethereum Mainnet stats</h2>
+        <p class="text-gray-500">As at 11 November 2022</p>
+      </div>
       <transition name="stats" appear>
-        <div class="grid grid-cols-2 md:grid-cols-4">                  
-          <Stat label="Trade vol (7d)*" stat="$462m" />          
-          <Stat label="Total liquidity*" stat="$1.05b" />
-          <Stat label="Liquidity Providers*" stat="21.7k" />        
-          <Stat label="Total pools*" stat="3,621" />          
-        </div>        
+        <div class="grid grid-cols-2 md:grid-cols-4">
+          <!-- Volume from https://dune.com/balancerlabs/balancer-exchange -->
+          <Stat label="Trade vol (7d)*" stat="$963m" /> 
+          
+          <!-- TVL from https://dune.com/balancerlabs/balancer-pools -->
+          <Stat label="Total liquidity*" stat="$1.20b" />
+
+          <!-- LPs from https://dune.com/balancerlabs/balancer-pools -->
+          <Stat label="Liquidity Providers*" stat="21.7k" />
+
+          <!-- Pools from https://dune.com/balancerlabs/balancer-pools -->
+          <Stat label="Total pools*" stat="3,663" />
+        </div>
       </transition>
-      <p class="md:text-center pt-6 md:pt-8 text-gray-500 text-sm">* Stats from Ethereum mainnet as at 16 September 2022</p>
     </div>
   </section>
 </template>
