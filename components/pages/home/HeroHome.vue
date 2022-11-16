@@ -110,15 +110,7 @@ export default {
           easing: "easeOutExpo",
           duration: 800,
           delay: this.$anime.stagger(30),
-        }, '+=300')
-        .add({
-          targets: ".btn-hero",
-          opacity: [0, 1],
-          translateY: [5, 0],
-          easing: "easeOutExpo",
-          duration: 800,
-          delay: this.$anime.stagger(100),
-        }, '-=600')        
+        }, '+=300')      
         .add({
           targets: ".word1 .letter",
           opacity: 0,
@@ -233,7 +225,15 @@ export default {
     },
     partnerAnimation() {
       this.$anime
-        .timeline({ loop: false })        
+        .timeline({ loop: false })       
+        .add({
+          targets: ".btn-hero",
+          opacity: [0, 1],
+          translateY: [5, 0],
+          easing: "easeOutExpo",
+          duration: 800,
+          delay: this.$anime.stagger(100),
+        }, '+=900')   
         .add({
           targets: ".partner",
           scale: [0.8, 1],
@@ -243,7 +243,7 @@ export default {
           easing: "easeOutExpo",
           duration: 1000,
           delay: this.$anime.stagger(30),
-        }, '+=1000');        
+        },'-=700');        
     },    
   },
   components: {
