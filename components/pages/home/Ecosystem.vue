@@ -56,15 +56,14 @@
                   linkLabel="element.fi"
                   logo="element.svg"
                   url="https://element.fi"
-                  description="Pool explorer and infrastructure for Balancer ecosystem. The original proof-of-concept. Pool and
-                  swap tokens. Get veBAL to vote for and claim liquidity mining incentives."
+                  description="Element Finance uses Balancer V2’s custom AMM functionality to enable markets for assets that converge in value over time. Plugging into the V2 ecosystem allows users to swap fixed yield assets from any other major asset in the V2 vault with the gas efficiency of multihop order routing."
                 />
               </button>
 
               <template slot="popover">
                 <CaseStudy
                   title="Element Finance"
-                  description="An open source protocol for fixed & variable yield markets, Element enables efficient swaps with a Balancer Pool that minimizes slippage and impermanent loss."
+                  description="Element Finance uses Balancer V2’s custom AMM functionality to enable markets for assets that converge in value over time. Plugging into the V2 ecosystem allows users to swap fixed yield assets from any other major asset in the V2 vault with the gas efficiency of multihop order routing."
                   url="https://element.fi"
                 />
               </template>
@@ -122,14 +121,14 @@
                   linkLabel="gyro.finance"
                   logo="gyroscope.svg"
                   url="https://gyro.finance/"
-                  description="Gyroscope is a fully-backed stablecoin with new AMMs designed for resilient liquidity. Gyroscope’s Concentrated Liquidity Pools (CLPs) leverage Balancer V2's customizable AMM logic."
+                  description="Gyroscope is a new stablecoin that, like a physical gyroscope, remains stable as the surrounding environment changes. It is a revolution in stablecoin architecture, risk control and AMM design. Gyroscope is fully-backed, automates monetary policy, and features new AMMs designed for resilient liquidity. Gyroscope AMMs -- Concentrated Liquidity Pools (CLPs) -- leverage Balancer V2's customizable AMM logic."
                 />
               </button>
 
               <template slot="popover">
                 <CaseStudy
                   title="Gyroscope"
-                  description="Gyroscope is a fully-backed stablecoin with new AMMs designed for resilient liquidity. Gyroscope’s Concentrated Liquidity Pools (CLPs) leverage Balancer V2's customizable AMM logic."
+                  description="Gyroscope is a new stablecoin that, like a physical gyroscope, remains stable as the surrounding environment changes. It is a revolution in stablecoin architecture, risk control and AMM design. Gyroscope is fully-backed, automates monetary policy, and features new AMMs designed for resilient liquidity. Gyroscope AMMs -- Concentrated Liquidity Pools (CLPs) -- leverage Balancer V2's customizable AMM logic."
                   :comingSoon="true"
                   url="https://gyro.finance/"
                 />
