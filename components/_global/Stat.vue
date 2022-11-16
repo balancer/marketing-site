@@ -1,5 +1,5 @@
 <template>
-  <div class="stat-group pb-6 md:pb-8">
+  <div class="stat-group pb-8 md:pb-0">
     <p class="label">{{label}}</p>
     <p class="stat">{{stat}}</p>
   </div>

@@ -145,13 +145,13 @@ export default {
 
 .vsa-item__trigger:focus,
 .vsa-item__trigger:hover {
-  @apply text-blue-500;
+  @apply text-defaultBlue;
   background-color: #fff;
 }
 
 .vsa-item__trigger:hover .vsa-item__trigger__icon--is-default:before,
 .vsa-item__trigger:hover .vsa-item__trigger__icon--is-default:after {
-  @apply bg-blue-500;
+  @apply bg-defaultBlue;
 }
 
 .vsa-item__trigger {

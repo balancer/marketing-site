@@ -78,7 +78,7 @@ export default {
   @apply h-16 md:h-20 px-3 flex justify-between items-center;
 }
 .link {
-  @apply mr-4 flex hover:text-accent;
+  @apply mr-4 flex hover:text-defaultBlue;
 }
 .logotype {
   position: relative;
@@ -102,7 +102,7 @@ export default {
 .nav-link {
   position: relative;
   outline: none;
-  color: #0000ff;
+  color: theme('colors.defaultBlue');
   text-decoration: none;
   color: #000;
   margin-right: 0.75rem;
@@ -136,12 +136,12 @@ export default {
   left: 0;
   overflow: hidden;
   max-width: 0;
-  border-bottom: 2px solid #0000ff;
-  color: #0000ff;
+  border-bottom: 2px solid theme('colors.defaultBlue');
   content: attr(data-hover);
   -webkit-transition: max-width 0.2s ease-out;
   -moz-transition: max-width 0.2s ease-out;
   transition: max-width 0.2s ease-out;
+  @apply text-defaultBlue;
 }
 
 /* .nav-link--pink::before {
@@ -160,18 +160,23 @@ export default {
 }
 
 .btn-header {
-  background-size: 300% 100%;
-  transition: all 0.2s ease-out;
-  background-image: linear-gradient(to right, #fff, #fff, #0000ff, #ff00ff);
-  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);  
-  @apply px-4 mr-2 py-2 rounded-lg font-medium border border-solid border-gray-200;
+  
+
+  
+    transition: all .2s ease-out;       
+    box-shadow: 0 3px 6px 0 rgba(0, 85, 255, 0.2);    
+  
+
+  
+  
+  @apply px-4 mr-2 py-2 rounded-lg font-medium border border-solid border-gray-200 hidden md:block;
 }
 .btn-header:hover {
-  background-position: 100% 0;
-  box-shadow: 0 4px 15px 0 rgba(300, 100, 50, 0);
+  
+  box-shadow: 0 3px 6px 0 rgba(0, 85, 255, 0.2);
   transition: all 0.2s ease-out;
-  color: white;
-  border: 1px solid transparent;
+
+  @apply border-defaultBlue text-defaultBlue;  
 }
 
 .btn-header:focus {

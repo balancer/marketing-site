@@ -32,6 +32,6 @@ export default {};
 }
 
 .logotype:hover .logotype-path {
-  fill: #0000ff;
+  fill: theme('colors.defaultBlue');
 }
 </style>

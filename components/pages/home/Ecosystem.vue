@@ -1,10 +1,10 @@
 <template>
   <section class="p-4 bg-white">
-    <div class="pt-8 pb-8 md:pb-20 md:pt-2 lg:px-8">
+    <div class="pt-0 pb-8 md:pb-20 md:pt-2 lg:px-8">
       <transition name="ecosystem" appear>
         <section>
           <!-- <div class="text-center pb-6">
-            <h2 class="text-3xl pb-0">Apps & Integrations</h2>
+            <h2 class="title">Apps & Integrations</h2>
           </div> -->
 
           <div class="partners">
@@ -293,6 +293,10 @@ export default {
 </script>
   
   <style scoped>
+
+  h2.title {
+    @apply text-2xl pb-8 font-normal text-gray-600;
+  }
 .partners {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

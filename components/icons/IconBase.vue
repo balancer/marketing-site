@@ -59,7 +59,7 @@ svg {
 }
 
 .nav-link:hover .icon-group {
-  fill: #0000ff;
+  fill: theme('colors.defaultBlue');
 }
 
 .icon-group {

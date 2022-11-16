@@ -2,45 +2,43 @@
   <section class="hero bg-white">
     <div>
       <div class="title-container">
+        <transition name="buttons" appear>
         <h1 class="title">
           Build DeFi liquidity
           <span class="title-rotator relative">
             <span class="word word1 text-yellow-500">applications</span>
             <span class="word word2">integrations</span>
-            <span class="word word3">ve-tokenomics</span>
-            <span class="word word4">pricing curves</span>
+            <span class="word word3">tokenomics</span>
+            <span class="word word4">price curves</span>
             <span class="word word5">front-ends</span>
             <span class="word word6">fair launches</span>
           </span>
         </h1>
-        <p class="text-xl max-w-md text-center">
+        <!-- <p class="text-xl max-w-md text-center">
           An open-source, battle-tested, permissionless protocol for
           programmable liquidity.
-        </p>
+        </p> -->
+      </transition>
       </div>
 
       <transition name="buttons" appear>
-        <div class="flex justify-center pb-4">
+        <div class="btn-animation flex justify-center pb-4">
           <a
             onclick="fathom.trackGoal('YZKHSNU0', 0);"
             class="btn btn-skeleton-black btn-hero mr-3"
-            href="https://app.balancer.fi/#/"
+            href="https://app.balancer.fi"
             >
             <span>
             Explore pools
-          </span>
-            <!-- <icon-base width="14" height="14" icon-name="docs-external-link"
-              ><icon-external-link /></icon-base
-          > -->
-            
+          </span>            
             </a
           >
 
           <a
             onclick="fathom.trackGoal('OUY5RF8L', 0);"
             class="btn btn-tertiary btn-hero"
-            href="https://docs.balancer.fi/"
-            >View docs</a
+            href="/build"
+            >Start building</a
           >
         </div>
       </transition>
@@ -57,6 +55,7 @@ export default {
   mounted() {
     this.wrapLetters();
     this.setAnimation();
+    this.partnerAnimation();
   },
 
   methods: {
@@ -109,9 +108,17 @@ export default {
           translateZ: 0,
           translateY: [50, 0],
           easing: "easeOutExpo",
-          duration: 1000,
+          duration: 800,
           delay: this.$anime.stagger(30),
-        })
+        }, '+=300')
+        .add({
+          targets: ".btn-hero",
+          opacity: [0, 1],
+          translateY: [5, 0],
+          easing: "easeOutExpo",
+          duration: 800,
+          delay: this.$anime.stagger(100),
+        }, '-=600')        
         .add({
           targets: ".word1 .letter",
           opacity: 0,
@@ -120,7 +127,7 @@ export default {
           scale: [1, 0.8],
           duration: 200,
           easing: "easeInExpo",
-          delay: this.$anime.stagger(5, { start: 5000 }),
+          delay: this.$anime.stagger(5, { start: 3000 }),
         })
         .add({
           targets: ".word2 .letter",
@@ -129,7 +136,7 @@ export default {
           translateZ: 0,
           translateY: [50, 0],
           easing: "easeOutExpo",
-          duration: 1000,
+          duration: 800,
           delay: this.$anime.stagger(30),
         })
         .add({
@@ -140,7 +147,7 @@ export default {
           scale: [1, 0.8],
           duration: 200,
           easing: "easeInExpo",
-          delay: this.$anime.stagger(5, { start: 5000 }),
+          delay: this.$anime.stagger(5, { start: 3000 }),
         })
         .add({
           targets: ".word3 .letter",
@@ -149,7 +156,7 @@ export default {
           translateZ: 0,
           translateY: [50, 0],
           easing: "easeOutExpo",
-          duration: 1000,
+          duration: 800,
           delay: this.$anime.stagger(30),
         })
         .add({
@@ -160,7 +167,7 @@ export default {
           translateY: [0, 50],
           duration: 200,
           easing: "easeInExpo",
-          delay: this.$anime.stagger(5, { start: 5000 }),
+          delay: this.$anime.stagger(5, { start: 3000 }),
         })
         .add({
           targets: ".word4 .letter",
@@ -169,7 +176,7 @@ export default {
           translateZ: 0,
           translateY: [50, 0],
           easing: "easeOutExpo",
-          duration: 1000,
+          duration: 800,
           delay: this.$anime.stagger(30),
         })
         .add({
@@ -180,7 +187,7 @@ export default {
           translateY: [0, 50],
           duration: 200,
           easing: "easeInExpo",
-          delay: this.$anime.stagger(5, { start: 5000 }),
+          delay: this.$anime.stagger(5, { start: 3000 }),
         })
         .add({
           targets: ".word5 .letter",
@@ -189,7 +196,7 @@ export default {
           translateZ: 0,
           translateY: [50, 0],
           easing: "easeOutExpo",
-          duration: 1000,
+          duration: 800,
           delay: this.$anime.stagger(30),
         })
         .add({
@@ -200,7 +207,7 @@ export default {
           translateY: [0, 50],
           duration: 200,
           easing: "easeInExpo",
-          delay: this.$anime.stagger(5, { start: 5000 }),
+          delay: this.$anime.stagger(5, { start: 3000 }),
         })
         .add({
           targets: ".word6 .letter",
@@ -209,7 +216,7 @@ export default {
           translateZ: 0,
           translateY: [50, 0],
           easing: "easeOutExpo",
-          duration: 1000,
+          duration: 800,
           delay: this.$anime.stagger(30),
         })
         .add({
@@ -220,10 +227,24 @@ export default {
           translateY: [0, 50],
           duration: 200,
           easing: "easeInExpo",
-          delay: this.$anime.stagger(5, { start: 5000 }),
+          delay: this.$anime.stagger(5, { start: 3000 }),
         });
         
     },
+    partnerAnimation() {
+      this.$anime
+        .timeline({ loop: false })        
+        .add({
+          targets: ".partner",
+          scale: [0.8, 1],
+          opacity: [0, 1],
+          translateZ: 0,
+          translateY: [20, 0],
+          easing: "easeOutExpo",
+          duration: 1000,
+          delay: this.$anime.stagger(30),
+        }, '+=1000');        
+    },    
   },
   components: {
     IconBase,
@@ -233,8 +254,7 @@ export default {
 </script>
 
 <style scoped>
-.title,
-.word1 {
+.title, .word1 {
   position: relative;
 }
 
@@ -285,15 +305,12 @@ export default {
 }
 
 .title-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
+  @apply mb-7 md:mb-10 flex flex-col items-center;
 }
 .title {
-  font-size: min(9.5vw, 90px);
+  font-size: min(9vw, 90px);
   line-height: 1.1;
-  @apply text-center pb-5;
+  @apply text-center pb-0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -304,7 +321,7 @@ export default {
 }
 
 .hero {
-  padding: 5rem 0;
+  @apply pt-12 pb-8 md:py-20;
 }
 
 .hero-content {

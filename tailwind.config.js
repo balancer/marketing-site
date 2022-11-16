@@ -21,6 +21,7 @@ module.exports = {
       ],
       display: [
         'Tiempos Headline Medium',
+        'Times New Roman',
         'serif',
         '"Apple Color Emoji"',
         '"Segoe UI Emoji"'

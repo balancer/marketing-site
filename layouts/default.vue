@@ -74,7 +74,7 @@ html {
 }
 
 .mobile-hide .nuxt-link-exact-active {
-  @apply text-blue-500;
+  @apply text-defaultBlue;
 }
 
 .sidebar-panel .nuxt-link-exact-active, footer .link-featured.nuxt-link-exact-active {
