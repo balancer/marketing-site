@@ -1,47 +1,52 @@
 <template>
   <transition name="fade" appear>
-  <header class="header">
-    
-    <nav class="flex">
-      <NuxtLink class="logotype mr-4 lg:mr-8" to="/">
-        <logotype-balancer />
-      </NuxtLink>
-      <div class="mobile-hide mr-4">
-        <NuxtLink class="nav-link nav-link--pink" data-hover="Build" to="/build"
-          >Build</NuxtLink
+    <header class="header">
+      <nav class="flex">
+        <NuxtLink class="logotype mr-4 lg:mr-8" to="/">
+          <logotype-balancer />
+        </NuxtLink>
+        <div class="mobile-hide mr-4">
+          <NuxtLink
+            class="nav-link nav-link--pink"
+            data-hover="Build"
+            to="/build"
+            >Build</NuxtLink
+          >
+        </div>
+      </nav>
+      <div class="flex items-center">
+        <div class="mobile-hide">
+          <div class="flex items-center nav-utility-link">
+            <a
+              class="nav-link"
+              data-hover="Docs"
+              href="https://docs.balancer.fi"
+              >Docs
+              <icon-base width="14" height="14" icon-name="docs-external-link"
+                ><icon-external-link /></icon-base
+            ></a>
+          </div>
+          <div class="flex items-center nav-utility-link">
+            <a
+              class="nav-link"
+              data-hover="Blog"
+              href="https://medium.com/balancer-protocol"
+              >Blog
+              <icon-base width="14" height="14" icon-name="blog-external-link"
+                ><icon-external-link
+              /></icon-base>
+            </a>
+          </div>
+        </div>
+        <a
+          onclick="fathom.trackGoal('OMNVISTW', 0);"
+          class="btn-header"
+          href="https://app.balancer.fi/"
+          >Explore&nbsp;pools</a
         >
+        <Burger />
       </div>
-    </nav>
-    <div class="flex items-center">
-      <div class="mobile-hide">
-        <div class="flex items-center nav-utility-link">
-          <a class="nav-link" data-hover="Docs" href="https://docs.balancer.fi"
-            >Docs
-            <icon-base width="14" height="14" icon-name="docs-external-link"
-              ><icon-external-link /></icon-base
-          ></a>
-        </div>
-        <div class="flex items-center nav-utility-link">
-          <a
-            class="nav-link"
-            data-hover="Blog"
-            href="https://medium.com/balancer-protocol"
-            >Blog
-            <icon-base width="14" height="14" icon-name="blog-external-link"
-              ><icon-external-link
-            /></icon-base>
-          </a>
-        </div>
-      </div>
-      <a
-        onclick="fathom.trackGoal('OMNVISTW', 0);"
-        class="btn-header"
-        href="https://app.balancer.fi/"
-        >Explore&nbsp;pools</a
-      >
-      <Burger />
-    </div>
-  </header>
+    </header>
   </transition>
 </template>
 

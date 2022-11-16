@@ -44,7 +44,7 @@ export default {
   mounted() {
     this.wrapLetters();
     this.setAnimation();
-    this.partnerAnimation();
+    this.buttonAnimation();
   },
 
   methods: {
@@ -214,33 +214,18 @@ export default {
           delay: this.$anime.stagger(5, { start: 3000 }),
         });
     },
-    partnerAnimation() {
-      this.$anime
-        .timeline({ loop: false })
-        .add(
-          {
-            targets: ".btn-hero",
-            opacity: [0, 1],
-            translateY: [5, 0],
-            easing: "easeOutExpo",
-            duration: 800,
-            delay: this.$anime.stagger(100),
-          },
-          "+=900"
-        )
-        .add(
-          {
-            targets: ".partner",
-            scale: [0.8, 1],
-            opacity: [0, 1],
-            translateZ: 0,
-            translateY: [20, 0],
-            easing: "easeOutExpo",
-            duration: 1000,
-            delay: this.$anime.stagger(30),
-          },
-          "-=700"
-        );
+    buttonAnimation() {
+      this.$anime.timeline({ loop: false }).add(
+        {
+          targets: ".btn-hero",
+          opacity: [0, 1],
+          translateY: [5, 0],
+          easing: "easeOutExpo",
+          duration: 800,
+          delay: this.$anime.stagger(100),
+        },
+        "+=900"
+      );
     },
   },
   components: {
@@ -318,5 +303,4 @@ export default {
 .hero {
   @apply pt-12 pb-8 md:py-20;
 }
-
 </style>

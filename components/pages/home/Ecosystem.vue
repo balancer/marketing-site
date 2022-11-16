@@ -279,6 +279,29 @@ Vue.directive("close-popover", VClosePopover);
 Vue.component("v-popover", VPopover);
 
 export default {
+  mounted() {
+    this.partnerAnimation();
+  },
+
+  methods: {
+    partnerAnimation() {
+      this.$anime
+        .timeline({ loop: false })
+        .add(
+          {
+            targets: ".partner",
+            scale: [0.8, 1],
+            opacity: [0, 1],
+            translateZ: 0,
+            translateY: [20, 0],
+            easing: "easeOutExpo",
+            duration: 1000,
+            delay: this.$anime.stagger(30),
+          },
+          "+=1200"
+        );
+    },
+  },
   components: {
     CaseStudy,
   },
