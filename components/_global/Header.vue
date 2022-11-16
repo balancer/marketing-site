@@ -97,12 +97,8 @@ export default {
 }
 
 .nav-link {
-  position: relative;
   outline: none;
-  color: theme("colors.defaultBlue");
-  text-decoration: none;
-  color: #000;
-  margin-right: 0.75rem;
+  @apply text-black relative mr-3 no-underline outline-none;
 }
 
 .nav-utility-link {

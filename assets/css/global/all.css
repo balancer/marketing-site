@@ -1,7 +1,3 @@
 @import "./custom-utilities.css";
 @import "./typography.css";
 @import "./buttons.css";
-
-.trigger {
-    width: 100%;
-}
