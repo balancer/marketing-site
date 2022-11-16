@@ -1,16 +1,12 @@
 <template>
+  <transition name="fade" appear>
   <header class="header">
+    
     <nav class="flex">
       <NuxtLink class="logotype mr-4 lg:mr-8" to="/">
         <logotype-balancer />
       </NuxtLink>
       <div class="mobile-hide mr-4">
-        <!-- <NuxtLink class="nav-link nav-link--red" data-hover="Invest" to="/invest"
-          >Invest</NuxtLink
-        >
-        <NuxtLink class="nav-link nav-link--blue" data-hover="Trade" to="/trade"
-          >Trade</NuxtLink
-        > -->
         <NuxtLink class="nav-link nav-link--pink" data-hover="Build" to="/build"
           >Build</NuxtLink
         >
@@ -46,6 +42,7 @@
       <Burger />
     </div>
   </header>
+  </transition>
 </template>
 
 <script>
@@ -59,8 +56,8 @@ export default {
     Burger,
     IconBase,
     IconExternalLink,
-    LogotypeBalancer
-  }
+    LogotypeBalancer,
+  },
 };
 </script>
 
@@ -102,7 +99,7 @@ export default {
 .nav-link {
   position: relative;
   outline: none;
-  color: theme('colors.defaultBlue');
+  color: theme("colors.defaultBlue");
   text-decoration: none;
   color: #000;
   margin-right: 0.75rem;
@@ -136,7 +133,7 @@ export default {
   left: 0;
   overflow: hidden;
   max-width: 0;
-  border-bottom: 2px solid theme('colors.defaultBlue');
+  border-bottom: 2px solid theme("colors.defaultBlue");
   content: attr(data-hover);
   -webkit-transition: max-width 0.2s ease-out;
   -moz-transition: max-width 0.2s ease-out;
@@ -144,39 +141,20 @@ export default {
   @apply text-defaultBlue;
 }
 
-/* .nav-link--pink::before {
-  border-bottom: 2px solid #FF00FF;
-}
-.nav-link--red::before {
-  border-bottom: 2px solid #F12954;
-}
-.nav-link--blue::before {
-  border-bottom: 2px solid #0055FF;
-} */
-
 .nav-link:hover::before,
 .nav-link:focus::before {
   max-width: 100%;
 }
 
 .btn-header {
-  
-
-  
-    transition: all .2s ease-out;       
-    box-shadow: 0 3px 6px 0 rgba(0, 85, 255, 0.2);    
-  
-
-  
-  
+  transition: all 0.2s ease-out;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.06);
   @apply px-4 mr-2 py-2 rounded-lg font-medium border border-solid border-gray-200 hidden md:block;
 }
 .btn-header:hover {
-  
   box-shadow: 0 3px 6px 0 rgba(0, 85, 255, 0.2);
   transition: all 0.2s ease-out;
-
-  @apply border-defaultBlue text-defaultBlue;  
+  @apply border-defaultBlue text-defaultBlue;
 }
 
 .btn-header:focus {

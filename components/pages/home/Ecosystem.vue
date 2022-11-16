@@ -3,10 +3,6 @@
     <div class="pt-0 pb-8 md:pb-20 md:pt-2 lg:px-8">
       <transition name="ecosystem" appear>
         <section>
-          <!-- <div class="text-center pb-6">
-            <h2 class="title">Apps & Integrations</h2>
-          </div> -->
-
           <div class="partners">
             <v-popover offset="16" placement="top">
               <button class="tooltip-target w-full">
@@ -338,7 +334,7 @@ export default {
 
 .ecosystem-enter-active,
 .ecosystem-leave-active {
-  transition: all 0.5s ease-out 0.3s;
+  transition: all 0.5s ease-out;
 }
 </style>
   

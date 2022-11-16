@@ -86,17 +86,10 @@ export default {
 }
 
 .partner__graphic {
-  width: 100%;
   aspect-ratio: 1 / 1;
-  border-radius: 20px;
   @apply mb-4 flex items-center justify-center;
-  background-size: cover;
-  border-radius: 50%;
-  height: 100%;
-  position: relative;
-  z-index: 0;
   transition: all 0.2s ease-out;
-  @apply border border-white border-2;
+  @apply w-full h-full relative z-0 rounded-full bg-cover border border-white border-2;
 }
 
 .partner__graphic::before {
@@ -108,87 +101,80 @@ export default {
 
 .partner__graphic::after {
   content: "";
-  display: inline-block;
-  position: absolute;
   z-index: -1;
-  opacity: 0;
   transition: all 0.4s ease-in-out;
-  border-radius: 50%;
+  @apply inline-block absolute opacity-0 rounded-full;
 }
 
 .partner:hover .partner__graphic::after {
-  opacity: 1;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
   transition: all 0.4s ease-in-out;
+  @apply opacity-100 inline-block w-full h-full;
 }
 
 .partner:hover .partner__graphic::before {
-  opacity: 0;
   transition: all 0.4s ease-in-out;
+  @apply opacity-0;
 }
 
 /* Specific partner colors sets the initial colored box-shadow the flash on hover exit */
 .partner__graphic--balancer {
   background: hsla(240, 91%, 12%, 0.6);
-  box-shadow: 0 50px 100px 0 hsla(240, 91%, 12%, 0.2);
+  box-shadow: 0 50px 100px 0 hsla(240, 91%, 12%, 0.15);
 }
 
 .partner__graphic--aura {
   background: hsla(240, 91%, 12%, 0.6);
-  box-shadow: 0 50px 100px 0 rgba(174, 80, 255, 0.2);
+  box-shadow: 0 50px 100px 0 rgba(174, 80, 255, 0.15);
 }
-
 
 .partner__graphic--element {
   background: hsla(190, 64%, 73%, 0.6);
-  box-shadow: 0 50px 100px 0 hsla(190, 64%, 73%, 0.2);
+  box-shadow: 0 50px 100px 0 hsla(190, 64%, 73%, 0.15);
 }
 
 .partner__graphic--fjord {
   background: hsla(243, 89%, 67%, 0.6);
-  box-shadow: 0 50px 100px 0 hsla(243, 89%, 67%, 0.2);
+  box-shadow: 0 50px 100px 0 hsla(243, 89%, 67%, 0.15);
 }
 
 .partner__graphic--aave {
   background: hsla(185, 58%, 48%, 0.6);
-  box-shadow: 0 50px 100px 0 hsla(185, 58%, 48%, 0.2);
+  box-shadow: 0 50px 100px 0 hsla(185, 58%, 48%, 0.15);
 }
 
 .partner__graphic--gyro {
   background: hsla(313, 97%, 86%, 0.6);
-  box-shadow: 0 50px 100px 0 hsla(313, 97%, 86%, 0.2);
+  box-shadow: 0 50px 100px 0 hsla(313, 97%, 86%, 0.15);
 }
 
 .partner__graphic--cow {
   background: hsla(226, 71%, 44%, 0.6);
-  box-shadow: 0 50px 100px 0 hsla(226, 71%, 44%, 0.2);
+  box-shadow: 0 50px 100px 0 hsla(226, 71%, 44%, 0.15);
 }
 
 .partner__graphic--mycelium {
   background: hsla(163, 42%, 53%, 0.6);
-  box-shadow: 0 50px 100px 0 hsla(163, 42%, 53%, 0.2);
+  box-shadow: 0 50px 100px 0 hsla(163, 42%, 53%, 0.15);
 }
 
 .partner__graphic--1inch {
   background: hsla(352, 71%, 60%, 0.6);
-  box-shadow: 0 50px 100px 0 hsla(352, 71%, 60%, 0.2);
+  box-shadow: 0 50px 100px 0 hsla(352, 71%, 60%, 0.15);
 }
 
 .partner__graphic--coop {
   background: hsla(149, 37%, 48%, 0.6);
-  box-shadow: 0 50px 100px 0 hsla(149, 37%, 48%, 0.2);
+  box-shadow: 0 50px 100px 0 hsla(149, 37%, 48%, 0.15);
 }
 
 .partner__graphic--cron {
   background: rgba(251, 191, 36, 0.6);
-  box-shadow: 0 50px 100px 0 rgba(251, 191, 36, 0.2);
+  box-shadow: 0 50px 100px 0 rgba(251, 191, 36, 0.15);
 }
 
 .partner__graphic--sense {
   background: hsla(205, 73%, 59%, 0.6);
-  box-shadow: 0 50px 100px 0 hsla(205, 73%, 59%, 0.2);
+  box-shadow: 0 50px 100px 0 hsla(205, 73%, 59%, 0.15);
 }
 
 /* Background animation solid color before */
@@ -243,7 +229,6 @@ export default {
 
 .partner__graphic--balancer::after {
   background-color: hsla(240, 91%, 12%, 1);
-  box-shadow: 0 5px 10px 0 hsla(240, 91%, 12%, 0.2);
   background-image: radial-gradient(
       at 85% 27%,
       hsla(222, 85%, 61%, 1) 0px,
@@ -257,8 +242,11 @@ export default {
     radial-gradient(at 39% 13%, hsla(258, 96%, 19%, 1) 0px, transparent 50%);
 }
 
+.partner:hover .partner__graphic--balancer {
+  box-shadow: 0 5px 10px 0 hsla(240, 91%, 12%, 0.2);
+}
+
 .partner__graphic--element::after {
-  box-shadow: 0 5px 10px 0 hsla(190, 64%, 73%, 0.4);
   background-color: hsla(190, 64%, 73%, 1);
   background-image: radial-gradient(
       at 0% 97%,
@@ -270,8 +258,11 @@ export default {
     radial-gradient(at 98% 98%, hsla(212, 100%, 32%, 1) 0px, transparent 50%);
 }
 
+.partner:hover .partner__graphic--element {
+  box-shadow: 0 5px 10px 0 hsla(190, 64%, 73%, 0.4);
+}
+
 .partner__graphic--fjord::after {
-  box-shadow: 0 5px 10px 0 hsla(243, 89%, 67%, 0.4);
   background-color: hsla(243, 89%, 67%, 1);
   background-image: radial-gradient(
       at 36% 95%,
@@ -285,8 +276,11 @@ export default {
     radial-gradient(at 75% 52%, hsla(240, 100%, 53%, 1) 0px, transparent 50%);
 }
 
+.partner:hover .partner__graphic--fjord {
+  box-shadow: 0 5px 10px 0 hsla(243, 89%, 67%, 0.4);
+}
+
 .partner__graphic--aave::after {
-  box-shadow: 0 5px 10px 0 hsla(185, 58%, 48%, 0.4);
   background-color: hsla(185, 58%, 48%, 1);
   background-image: radial-gradient(
       at 46% 31%,
@@ -301,62 +295,91 @@ export default {
     radial-gradient(at 59% 24%, hsla(214, 63%, 71%, 1) 0px, transparent 50%);
 }
 
-.partner__graphic--gyro::after {
-  box-shadow: 0 5px 10px 0 hsla(313, 97%, 86%, 0.4);
-  background: hsla(313, 97%, 86%, 1);
-
-  background-image:
-radial-gradient(at 54% 29%, hsla(67,98%,80%,1) 0px, transparent 50%),
-radial-gradient(at 0% 66%, hsla(181,85%,76%,1) 0px, transparent 50%),
-radial-gradient(at 14% 8%, hsla(181,85%,76%,1) 0px, transparent 50%),
-radial-gradient(at 1% 31%, hsla(181,85%,76%,1) 0px, transparent 50%),
-radial-gradient(at 96% 4%, hsla(68,98%,80%,1) 0px, transparent 50%);
+.partner:hover .partner__graphic--aave {
+  box-shadow: 0 5px 10px 0 hsla(185, 58%, 48%, 0.4);
 }
 
+.partner__graphic--gyro::after {
+  background: hsla(313, 97%, 86%, 1);
+  background-image: radial-gradient(
+      at 54% 29%,
+      hsla(67, 98%, 80%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 66%, hsla(181, 85%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 14% 8%, hsla(181, 85%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 1% 31%, hsla(181, 85%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 96% 4%, hsla(68, 98%, 80%, 1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--gyro {
+  box-shadow: 0 5px 10px 0 hsla(313, 97%, 86%, 0.4);
+}
 
 .partner__graphic--cow::after {
-  box-shadow: 0 5px 10px 0 hsla(226, 71%, 44%, 0.4);
   background: hsla(226, 71%, 44%, 1);
-  background-image:
-radial-gradient(at 0% 83%, hsla(204,90%,74%,1) 0px, transparent 50%),
-radial-gradient(at 0% 31%, hsla(201,100%,54%,1) 0px, transparent 50%),
-radial-gradient(at 54% 44%, hsla(300,48%,68%,1) 0px, transparent 50%),
-radial-gradient(at 89% 8%, hsla(300,66%,84%,1) 0px, transparent 50%);
+  background-image: radial-gradient(
+      at 0% 83%,
+      hsla(204, 90%, 74%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 31%, hsla(201, 100%, 54%, 1) 0px, transparent 50%),
+    radial-gradient(at 54% 44%, hsla(300, 48%, 68%, 1) 0px, transparent 50%),
+    radial-gradient(at 89% 8%, hsla(300, 66%, 84%, 1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--cow {
+  box-shadow: 0 5px 10px 0 hsla(226, 71%, 44%, 0.4);
 }
 
 .partner__graphic--mycelium::after {
-  box-shadow: 0 5px 10px 0 hsla(163, 42%, 53%, 0.4);
   background: hsla(163, 42%, 53%, 1);
-  background-image:
-radial-gradient(at 58% 25%, hsla(306,100%,80%,1) 0px, transparent 50%),
-radial-gradient(at 0% 66%, hsla(195,100%,50%,1) 0px, transparent 50%),
-radial-gradient(at 2% 2%, hsla(195,100%,50%,1) 0px, transparent 50%),
-radial-gradient(at 1% 31%, hsla(195,100%,50%,1) 0px, transparent 50%),
-radial-gradient(at 96% 4%, hsla(306,100%,80%,1) 0px, transparent 50%);
+  background-image: radial-gradient(
+      at 58% 25%,
+      hsla(306, 100%, 80%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 66%, hsla(195, 100%, 50%, 1) 0px, transparent 50%),
+    radial-gradient(at 2% 2%, hsla(195, 100%, 50%, 1) 0px, transparent 50%),
+    radial-gradient(at 1% 31%, hsla(195, 100%, 50%, 1) 0px, transparent 50%),
+    radial-gradient(at 96% 4%, hsla(306, 100%, 80%, 1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--mycelium {
+  box-shadow: 0 5px 10px 0 hsla(163, 42%, 53%, 0.4);
 }
 
 .partner__graphic--1inch::after {
-  box-shadow: 0 5px 10px 0 hsla(352, 71%, 60%, 0.4);
   background: hsla(352, 71%, 60%, 1);
-  background-image:
-radial-gradient(at 0% 64%, hsla(237,100%,50%,1) 0px, transparent 50%),
-radial-gradient(at 20% 22%, hsla(237,100%,50%,1) 0px, transparent 50%),
-radial-gradient(at 93% 1%, hsla(279,100%,50%,1) 0px, transparent 50%);
+  background-image: radial-gradient(
+      at 0% 64%,
+      hsla(237, 100%, 50%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 20% 22%, hsla(237, 100%, 50%, 1) 0px, transparent 50%),
+    radial-gradient(at 93% 1%, hsla(279, 100%, 50%, 1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--1inch {
+  box-shadow: 0 5px 10px 0 hsla(352, 71%, 60%, 0.4);
 }
 
 .partner__graphic--coop::after {
-  box-shadow: 0 5px 10px 0 hsla(149, 37%, 48%, 0.4);
   background: hsla(149, 37%, 48%, 1);
-  background-image:
-radial-gradient(at 29% 88%, hsla(181,85%,76%,1) 0px, transparent 50%),
-radial-gradient(at 1% 5%, hsla(181,85%,76%,1) 0px, transparent 50%),
-radial-gradient(at 82% 16%, hsla(68,98%,80%,1) 0px, transparent 50%);
+  background-image: radial-gradient(
+      at 29% 88%,
+      hsla(181, 85%, 76%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 1% 5%, hsla(181, 85%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 82% 16%, hsla(68, 98%, 80%, 1) 0px, transparent 50%);
 }
 
-
+.partner:hover .partner__graphic--coop {
+  box-shadow: 0 5px 10px 0 hsla(149, 37%, 48%, 0.4);
+}
 
 .partner__graphic--sense::after {
-  box-shadow: 0 5px 10px 0 hsla(205, 73%, 59%, 0.4);
   background-color: hsla(205, 73%, 59%, 1);
   background-image: radial-gradient(
       at 52% 76%,
@@ -371,9 +394,12 @@ radial-gradient(at 82% 16%, hsla(68,98%,80%,1) 0px, transparent 50%);
     radial-gradient(at 39% 22%, hsla(234, 73%, 75%, 1) 0px, transparent 50%);
 }
 
+.partner:hover .partner__graphic--sense {
+  box-shadow: 0 5px 10px 0 hsla(205, 73%, 59%, 0.4);
+}
+
 .partner:hover .partner__graphic--cron::after {
   background: rgba(251, 191, 36, 1);
-  box-shadow: 0 5px 10px 0 rgba(251, 191, 36, 0.4);
   background-image: radial-gradient(
       at 40% 20%,
       hsla(28, 100%, 74%, 1) 0px,
@@ -387,9 +413,12 @@ radial-gradient(at 82% 16%, hsla(68,98%,80%,1) 0px, transparent 50%);
     radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%);
 }
 
+.partner:hover .partner__graphic--cron {
+  box-shadow: 0 5px 10px 0 rgba(251, 191, 36, 0.4);
+}
+
 .partner:hover .partner__graphic--aura {
   background: #ae50ff;
-  box-shadow: 0 5px 10px 0 rgba(174, 80, 255, 0.2);
   background-image: radial-gradient(
       at 40% 20%,
       hsla(254, 100%, 74%, 1) 0px,
@@ -401,6 +430,10 @@ radial-gradient(at 82% 16%, hsla(68,98%,80%,1) 0px, transparent 50%);
     radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
     radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
     radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--aura {
+  box-shadow: 0 5px 10px 0 rgba(174, 80, 255, 0.2);
 }
 </style>
   

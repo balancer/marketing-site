@@ -1,5 +1,5 @@
 .btn {
-    @apply h-12 flex items-center justify-center bg-blue-900 rounded-lg text-white font-semibold shadow-lg transition duration-200 ease-in-out;      
+    @apply h-10 md:h-12 flex items-center justify-center bg-blue-900 rounded-lg text-white font-semibold shadow-lg transition duration-200 ease-in-out;      
 } 
 
 .btn:focus {
@@ -35,7 +35,7 @@
 .btn-skeleton-black {
     @apply border border-solid border-black bg-white text-black;  
     transition: all .1s ease-out;       
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 05, 0.1);       
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 05, 0.06);       
 }
 
 .btn-skeleton-black:hover, .btn-skeleton-black:focus  {
@@ -63,7 +63,7 @@
     @apply border border-solid border-gray-200 text-greyDark bg-white;  
     background-size: 300% 100%;
     transition: all .2s ease-out;       
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.10);       
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.06);       
 }
 
 .btn-tertiary:hover, .btn-tertiary:focus {

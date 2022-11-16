@@ -67,7 +67,7 @@
             <icon-quotemark />
           </div>
           <p>Balancer's thoughtful architecture enables a wide range of innovative liquidity strategies. No other exchange or asset management
-              protocol provides as much flexibility for builders or investors. 
+              protocol provides as much flexibility for builders. 
           </p>
         </div>
 
@@ -104,7 +104,6 @@ export default {
 
 <style scoped>
 .card {
-  /* box-shadow: 4px 4px 15px #e6e6e6, -4px -4px 15px #ffffff; */
   transition: 0.2s all ease-out;  
   @apply rounded-xl p-4 md:p-6 lg:p-8 shadow-none;
 }
