@@ -47,14 +47,14 @@
 
 .btn-skeleton-white {
     @apply border border-solid border-white text-white bg-transparent;  
-    background-size: 300% 100%;
+    /* background-size: 300% 100%; */
     transition: all .2s ease-out;       
-    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0), #FCA54F, #FF00FF);
+    /* background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0), #FCA54F, #FF00FF); */
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.20);       
 }
 .btn-skeleton-white:hover, .btn-skeleton-white:focus {
-    @apply border-transparent;
-    background-position: 100% 0;
+    @apply border-yellow-500 text-yellow-500;
+    /* background-position: 100% 0; */
     box-shadow: 0 4px 15px 0 rgba(300, 100, 50, 0);   
     transition: all .2s ease-out;
 }

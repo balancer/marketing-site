@@ -14,7 +14,7 @@
             more & more pivotal liquidity&nbsp;experiments.
           </p>
         </div>
-        <a href="https://twitter.com/cburniske">
+        <a href="https://twitter.com/cburniske" class="group">
           <div class="flex items-center">
             <div class="w-20 rounded-full overflow-hidden">
               <img 
@@ -23,8 +23,8 @@
               :src="require('~/assets/images/people/cb.png')" alt="" />
             </div>
             <div class="pl-4">
-              <p class="font-medium">Chris Burniske</p>
-              <p class="font-medium">Placeholder VC</p>
+              <p class="font-medium group-hover:text-defaultBlue transition-colors">Chris Burniske</p>
+              <p class="font-medium group-hover:text-defaultBlue transition-colors">Placeholder VC</p>
             </div>
           </div>
         </a>
@@ -44,7 +44,7 @@
             exciting&nbsp;journey.
           </p>
         </div>
-        <a href="https://twitter.com/Arthur_0x">
+        <a href="https://twitter.com/Arthur_0x" class="group">
           <div class="flex items-center">
             <div class="w-20 rounded-full overflow-hidden">
               <img 
@@ -53,8 +53,8 @@
               :src="require('~/assets/images/people/ax.png')" alt="" />
             </div>
             <div class="pl-4">
-              <p class="font-medium">Arthur_0x</p>
-              <p class="font-medium">DeFiance Capital</p>
+              <p class="font-medium group-hover:text-defaultBlue transition-colors">Arthur_0x</p>
+              <p class="font-medium group-hover:text-defaultBlue transition-colors">DeFiance Capital</p>
             </div>
           </div>
         </a>
@@ -67,11 +67,11 @@
             <icon-quotemark />
           </div>
           <p>Balancer's thoughtful architecture enables a wide range of innovative liquidity strategies. No other exchange or asset management
-              protocol provides as much flexibility for builders. 
+              protocol provides as much flexibility for&nbsp;builders. 
           </p>
         </div>
 
-        <a href="https://twitter.com/delitzer">
+        <a href="https://twitter.com/delitzer" class="group">
           <div class="flex items-center">
             <div class="w-20 rounded-full overflow-hidden">
               <img 
@@ -79,9 +79,9 @@
               height="80"
               :src="require('~/assets/images/people/dl.png')" alt="" />
             </div>
-            <div class="pl-4">
-              <p class="font-medium">Dan Elitzer</p>
-              <p class="font-medium">Nascent</p>
+            <div class="pl-4 group">
+              <p class="font-medium group-hover:text-defaultBlue transition-colors">Dan Elitzer</p>
+              <p class="font-medium group-hover:text-defaultBlue transition-colors">Nascent</p>
             </div>
           </div>
         </a>
