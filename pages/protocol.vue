@@ -91,7 +91,7 @@
             </ol>
           </div>
           <div class="md:mx-auto max-w-md">
-            <img class="md:py-4" :src="require('~/assets/images/people/stani.png')" alt="" />
+            <img class="md:py-4" :src="require('~/assets/images/people/stani.jpg')" alt="" />
             <p class="py-4 italic font-medium">
               “Part of what makes DeFi so exciting is its composability, and
               with Balancer this has resulted in a partnership that optimises
@@ -160,13 +160,13 @@ export default {
 
 .vsa-item__trigger:focus,
 .vsa-item__trigger:hover {
-  @apply text-blue-500;
+  @apply text-defaultBlue;
   background-color: #fff;
 }
 
 .vsa-item__trigger:hover .vsa-item__trigger__icon--is-default:before,
 .vsa-item__trigger:hover .vsa-item__trigger__icon--is-default:after {
-  @apply bg-blue-500;
+  @apply bg-defaultBlue;
 }
 
 .vsa-item__trigger {

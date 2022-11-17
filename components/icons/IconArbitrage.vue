@@ -21,6 +21,6 @@ export default {};
 }
 
 .card:hover .icon {
-  fill: #0000ff;
+  fill: theme('colors.defaultBlue');
 }
 </style>

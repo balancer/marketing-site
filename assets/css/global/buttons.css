@@ -1,5 +1,5 @@
 .btn {
-    @apply h-12 flex items-center justify-center bg-blue-900 rounded-lg text-white font-semibold shadow-lg transition duration-200 ease-in-out;      
+    @apply h-10 md:h-12 flex items-center justify-center bg-blue-900 rounded-lg text-white font-semibold shadow-lg transition duration-200 ease-in-out;      
 } 
 
 .btn:focus {
@@ -10,7 +10,6 @@
     background-size: 200% 100%;
     transition: all 0.2s ease-out;    
     background-image: linear-gradient(to right, #0000ff, #FF00FF, #0000ff);
-    /* background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673); */
     box-shadow: 0 4px 15px 0 rgba(224, 100, 61, 0.08);   
 }
 .btn-primary:hover {
@@ -32,17 +31,26 @@
     transition: all .2s ease-out;
 }
 
+.btn-skeleton-black {
+    @apply border border-solid border-black bg-white text-black;  
+    transition: all .1s ease-out;       
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 05, 0.06);       
+}
+
+.btn-skeleton-black:hover, .btn-skeleton-black:focus  {
+    @apply border-defaultBlue text-defaultBlue;  
+    transition: all .2s ease-out;       
+    box-shadow: 0 3px 6px 0 rgba(0, 85, 255, 0.2);       
+}
+
 
 .btn-skeleton-white {
     @apply border border-solid border-white text-white bg-transparent;  
-    background-size: 300% 100%;
     transition: all .2s ease-out;       
-    background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0), #FCA54F, #FF00FF);
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.20);       
 }
-.btn-skeleton-white:hover {
-    @apply border-transparent;
-    background-position: 100% 0;
+.btn-skeleton-white:hover, .btn-skeleton-white:focus {
+    @apply border-yellow-500 text-yellow-500;
     box-shadow: 0 4px 15px 0 rgba(300, 100, 50, 0);   
     transition: all .2s ease-out;
 }
@@ -51,17 +59,17 @@
     @apply border border-solid border-gray-200 text-greyDark bg-white;  
     background-size: 300% 100%;
     transition: all .2s ease-out;       
-    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.10);       
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.06);       
 }
 
-.btn-tertiary:hover {
-    @apply border-black text-black;
-    box-shadow: 0 4px 15px 0 rgba(300, 100, 50, 0);   
+.btn-tertiary:hover, .btn-tertiary:focus {
+    @apply border-defaultPurple text-defaultPurple;
+    box-shadow: 0 3px 6px 0 rgba(128, 0, 255, 0.2);
 }
 
 .btn-hero {
     min-width: 135px;
-    @apply px-3;
+    @apply px-2 md:px-3;
 }
 
 .eyebrow {

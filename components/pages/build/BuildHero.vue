@@ -5,9 +5,9 @@
         <transition name="img" appear>
           <img
             width="1000"
-            height="618"
-            class="pt-1 pb-10 px-4 md:px-12 lg:px-16 xl:px-20 mx-auto"
-            :src="require('~/assets/svg/hero-developers2.svg')"
+            height="1000"
+            class="pt-1 pb-10 px-4 md:px-12 lg:px-16 xl:px-20 mx-auto w-full max-w-3xl"
+            :src="require('~/assets/images/hero-build.png')"
             alt=""
           />
         </transition>
@@ -21,7 +21,7 @@
         <transition name="p" appear>
           <p class="p-hero">
             A reliable, open-source, permissionless protocol. Build on
-            Balancer to create new innovative types of financial dapps.
+            Balancer to create new innovative types of pools and financial dApps.
           </p>
         </transition>
         <transition name="buttons" appear>
@@ -52,7 +52,7 @@ export default {};
   @apply px-4 py-8 bg-white;
 
   overflow: hidden;
-  background-image: linear-gradient(227deg, #353646 0%, #21222b 100%);
+  background-color: #01203D;
 }
 
 @media (orientation: landscape) {
@@ -61,13 +61,6 @@ export default {};
   }
   .hero-build-content {
     @apply flex items-center justify-center mx-auto max-w-screen-2xl;
-  }
-}
-
-@media (orientation: landscape) and (min-height: 768px) {
-  .hero-build {
-    min-height: calc(100vh - 180px);
-    height: 92vh;
   }
 }
 

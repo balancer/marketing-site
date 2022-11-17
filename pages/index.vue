@@ -1,39 +1,33 @@
 <template>
   <div>
     <HeroHome />
-    <StatsHome />
-    <ForInvestors />
-    <ForTraders />
-    <ForBuilders />
+    <Ecosystem />
     <Aave />
     <Backers />
+    <StatsHome />
   </div>
 </template>
 
 <script>
 import HeroHome from "@/components/pages/home/HeroHome.vue";
-import StatsHome from "@/components/pages/home/StatsHome.vue";
-import ForInvestors from "@/components/pages/home/ForInvestors.vue";
-import ForTraders from "@/components/pages/home/ForTraders.vue";
-import ForBuilders from "@/components/pages/home/ForBuilders.vue";
+import Ecosystem from "@/components/pages/home/Ecosystem.vue";
 import Aave from "@/components/case-studies/Aave.vue";
 import Backers from "@/components/pages/home/Backers.vue";
+import StatsHome from "@/components/pages/home/StatsHome.vue";
 
 export default {
   head() {
-    return {
-      link: [{ rel: 'preload', as:'image', href: '/images/hero-home.svg' }]
-    }
+    // return {
+    //   link: [{ rel: 'preload', as:'image', href: '/images/hero-home.svg' }]
+    // }
   },
   transition: 'slideup', 
   components: {
     HeroHome, 
-    StatsHome, 
-    ForInvestors, 
-    ForTraders, 
-    ForBuilders,
+    Ecosystem,
     Aave,
-    Backers
+    Backers,
+    StatsHome
   }
 }
 </script>

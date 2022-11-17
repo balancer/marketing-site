@@ -1,12 +1,11 @@
 module.exports = {
-  purge: [
+  content: [
     './components/**/*.{vue,js}',
     './layouts/**/*.vue',
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
     './nuxt.config.{js,ts}',
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
       body: [
@@ -22,6 +21,7 @@ module.exports = {
       ],
       display: [
         'Tiempos Headline Medium',
+        'Times New Roman',
         'serif',
         '"Apple Color Emoji"',
         '"Segoe UI Emoji"'
@@ -73,6 +73,30 @@ module.exports = {
           800: '#0000e1',
           900: '#0000d7'
         },
+        purple: {
+          50: '#faf5ff',
+          100: '#faf5ff',
+          200: '#e9d5ff',
+          300: '#d8b4fe',
+          400: '#c084fc',
+          500: '#a855f7',
+          600: '#9333ea',
+          700: '#7e22ce',
+          800: '#6b21a8',
+          900: '#581c87',
+        },
+        yellow: {
+          50: '#FFFBEA',
+          100: '#FFF6D5',
+          200: '#FFEEAD',
+          300: '#FEE684',
+          400: '#FEDD5C',
+          500: '#FED533',
+          600: '#F8C601',
+          700: '#C09901',
+          800: '#886D01',
+          900: '#504000',
+        },        
         pink: {
           50: '#ff32ff',
           100: '#ff28ff',
@@ -102,9 +126,6 @@ module.exports = {
         '9xl': ['8rem', { lineHeight: '1' }],
       },      
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 }

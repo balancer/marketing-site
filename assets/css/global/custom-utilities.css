@@ -1,3 +1,7 @@
 .transition-standard {
   transition: 0.2s all ease-in-out;    
 }
+
+.trigger {
+  @apply w-full;
+}

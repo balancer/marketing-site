@@ -1,51 +1,53 @@
 <template>
-  <header class="header">
-    <nav class="flex">
-      <NuxtLink class="logotype mr-4 lg:mr-8" to="/">
-        <logotype-balancer />
-      </NuxtLink>
-      <div class="mobile-hide mr-4">
-        <NuxtLink class="nav-link nav-link--red" data-hover="Invest" to="/invest"
-          >Invest</NuxtLink
-        >
-        <NuxtLink class="nav-link nav-link--blue" data-hover="Trade" to="/trade"
-          >Trade</NuxtLink
-        >
-        <NuxtLink class="nav-link nav-link--pink" data-hover="Build" to="/build"
-          >Build</NuxtLink
-        >
-      </div>
-    </nav>
-    <div class="flex items-center">
-      <div class="mobile-hide">
-        <div class="flex items-center nav-utility-link">
-          <a class="nav-link" data-hover="Docs" href="https://docs.balancer.fi"
-            >Docs
-            <icon-base width="14" height="14" icon-name="docs-external-link"
-              ><icon-external-link /></icon-base
-          ></a>
+  <transition name="fade" appear>
+    <header class="header">
+      <nav class="flex">
+        <NuxtLink class="logotype mr-4 lg:mr-8" to="/">
+          <logotype-balancer />
+        </NuxtLink>
+        <div class="mobile-hide mr-4">
+          <NuxtLink
+            class="nav-link nav-link--pink"
+            data-hover="Build"
+            to="/build"
+            >Build</NuxtLink
+          >
         </div>
-        <div class="flex items-center nav-utility-link">
-          <a
-            class="nav-link"
-            data-hover="Blog"
-            href="https://medium.com/balancer-protocol"
-            >Blog
-            <icon-base width="14" height="14" icon-name="blog-external-link"
-              ><icon-external-link
-            /></icon-base>
-          </a>
+      </nav>
+      <div class="flex items-center">
+        <div class="mobile-hide">
+          <div class="flex items-center nav-utility-link">
+            <a
+              class="nav-link"
+              data-hover="Docs"
+              href="https://docs.balancer.fi"
+              >Docs
+              <icon-base width="14" height="14" icon-name="docs-external-link"
+                ><icon-external-link /></icon-base
+            ></a>
+          </div>
+          <div class="flex items-center nav-utility-link">
+            <a
+              class="nav-link"
+              data-hover="Blog"
+              href="https://medium.com/balancer-protocol"
+              >Blog
+              <icon-base width="14" height="14" icon-name="blog-external-link"
+                ><icon-external-link
+              /></icon-base>
+            </a>
+          </div>
         </div>
+        <a
+          onclick="fathom.trackGoal('OMNVISTW', 0);"
+          class="btn-header"
+          href="https://app.balancer.fi/"
+          >Explore&nbsp;pools</a
+        >
+        <Burger />
       </div>
-      <a
-        onclick="fathom.trackGoal('OMNVISTW', 0);"
-        class="btn-header"
-        href="https://app.balancer.fi/"
-        >Launch&nbsp;app</a
-      >
-      <Burger />
-    </div>
-  </header>
+    </header>
+  </transition>
 </template>
 
 <script>
@@ -59,8 +61,8 @@ export default {
     Burger,
     IconBase,
     IconExternalLink,
-    LogotypeBalancer
-  }
+    LogotypeBalancer,
+  },
 };
 </script>
 
@@ -78,7 +80,7 @@ export default {
   @apply h-16 md:h-20 px-3 flex justify-between items-center;
 }
 .link {
-  @apply mr-4 flex hover:text-accent;
+  @apply mr-4 flex hover:text-defaultBlue;
 }
 .logotype {
   position: relative;
@@ -100,12 +102,8 @@ export default {
 }
 
 .nav-link {
-  position: relative;
   outline: none;
-  color: #0000ff;
-  text-decoration: none;
-  color: #000;
-  margin-right: 0.75rem;
+  @apply text-black relative mr-3 no-underline outline-none;
 }
 
 .nav-utility-link {
@@ -136,23 +134,13 @@ export default {
   left: 0;
   overflow: hidden;
   max-width: 0;
-  border-bottom: 2px solid #0000ff;
-  color: #0000ff;
+  border-bottom: 2px solid theme("colors.defaultBlue");
   content: attr(data-hover);
   -webkit-transition: max-width 0.2s ease-out;
   -moz-transition: max-width 0.2s ease-out;
   transition: max-width 0.2s ease-out;
+  @apply text-defaultBlue;
 }
-
-/* .nav-link--pink::before {
-  border-bottom: 2px solid #FF00FF;
-}
-.nav-link--red::before {
-  border-bottom: 2px solid #F12954;
-}
-.nav-link--blue::before {
-  border-bottom: 2px solid #0055FF;
-} */
 
 .nav-link:hover::before,
 .nav-link:focus::before {
@@ -160,18 +148,14 @@ export default {
 }
 
 .btn-header {
-  background-size: 300% 100%;
   transition: all 0.2s ease-out;
-  background-image: linear-gradient(to right, #fff, #fff, #0000ff, #ff00ff);
-  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);  
-  @apply px-4 mr-2 py-2 rounded-lg font-medium border border-solid border-gray-200;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.06);
+  @apply px-4 mr-2 py-2 rounded-lg font-medium border border-solid border-gray-200 hidden md:block;
 }
 .btn-header:hover {
-  background-position: 100% 0;
-  box-shadow: 0 4px 15px 0 rgba(300, 100, 50, 0);
+  box-shadow: 0 3px 6px 0 rgba(0, 85, 255, 0.2);
   transition: all 0.2s ease-out;
-  color: white;
-  border: 1px solid transparent;
+  @apply border-defaultBlue text-defaultBlue;
 }
 
 .btn-header:focus {

@@ -66,7 +66,7 @@ export default {
   @apply h-16 md:h-20 px-4 flex justify-between items-center bg-black;
 }
 .link {
-  @apply mr-4 flex hover:text-accent;
+  @apply mr-4 flex hover:text-defaultBlue;
 }
 .logotype {
   @apply px-3 pr-6 md:pr-2 font-semibold;
@@ -106,7 +106,7 @@ export default {
   left: 0;
   overflow: hidden;
   max-width: 0;
-  border-bottom: 2px solid #0000ff;
+  border-bottom: 2px solid theme('colors.defaultBlue');
   color: #fff;
   content: attr(data-hover);
   -webkit-transition: max-width 0.2s ease-in-out;

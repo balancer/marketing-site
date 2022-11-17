@@ -18,46 +18,34 @@
             <NuxtLink
               @click.native="toggleSidebar"
               class="link text-lg leading-8"
-              to="invest"
-              >Invest</NuxtLink
-            >
-            <NuxtLink
-              @click.native="toggleSidebar"
-              class="link text-lg leading-8"
-              to="trade"
-              >Trade</NuxtLink
-            >
-            <NuxtLink
-              @click.native="toggleSidebar"
-              class="link text-lg leading-8"
               to="build"
               >Build</NuxtLink
             >
           </div>
           <div class="pb-4">
-            <p class="text-gray-400 pb-1">Products</p>
+            <p class="text-gray-400 pb-1">Infrastructure</p>
             <p class="pb-1">
               <a
                 class="link"
                 @click="toggleSidebar"
                 href="https://app.balancer.fi/#/"
-                >Invest app</a
+                >Explore pools</a
               >
             </p>
             <p class="pb-1">
               <a
                 class="link"
                 @click="toggleSidebar"
-                href="https://app.balancer.fi/#/trade"
-                >Trade app</a
+                href="https://app.balancer.fi/#/vebal"
+                >Vote with veBAL</a
               >
             </p>
             <p>
               <a
                 class="link"
                 @click="toggleSidebar"
-                href="https://claim.balancer.fi"
-                >Claim $BAL</a
+                href="https://app.balancer.fi/#/claim"
+                >Claim incentives</a
               >
             </p>
           </div>
@@ -156,7 +144,7 @@
 
           <div class="pb-4 pt-4">
             <div class="flex">
-              <a class="mr-2" href="https://twitter.com/BalancerLabs">
+              <a class="mr-2" href="https://twitter.com/Balancer">
                 <icon-twitter />
               </a>
 

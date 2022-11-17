@@ -56,7 +56,7 @@
                   </div>
                   <div>
                     <div class="p-2 md:p-3 text-center">
-                      <p class="font-semibold">Index funds</p>
+                      <p class="font-semibold">Indices</p>
                       <p class="hidden">Via a Swing Trading Pool</p>
                     </div>
                   </div>

@@ -1,9 +1,9 @@
 @import url('https://rsms.me/inter/inter.css');
 @import "./global/all.css";
 
-html { font-family: 'Inter', system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif }
+body { font-family: 'Inter', system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif }
 @supports (font-variation-settings: normal) {
-  html { 
+  body { 
     font-family: 'Inter var', sans-serif; 
     font-feature-settings: "ss01";
   }
@@ -29,4 +29,33 @@ html { font-family: 'Inter', system, -apple-system, ".SFNSText-Regular", "San Fr
 
 :focus:not(:focus-visible) {
   outline: none;
+}
+
+.content-enter {
+  transform: translateY(20px) scale(0.95);
+  @apply opacity-0;
+}
+
+.content-enter-to {
+  transform: translateY(0px);
+  @apply opacity-100;
+}
+
+.content-enter-active,
+.content-leave-active {
+  transition: all 0.4s ease-out 0.2s;
+}
+
+.fade-enter {
+  @apply opacity-0;
+}
+
+.fade-enter-to {
+  transform: translateY(0px);
+  @apply opacity-100;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.4s ease-out 0.2s;
 }

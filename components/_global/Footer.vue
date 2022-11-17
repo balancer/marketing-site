@@ -16,30 +16,21 @@
           <p class="pb-2">
             <NuxtLink class="link-featured" to="/">Home</NuxtLink>
           </p>
-          <p></p>
-          <p class="pb-2">
-            <NuxtLink class="link-featured" to="invest">Invest</NuxtLink>
-          </p>
-          <p></p>
-          <p class="pb-2">
-            <NuxtLink class="link-featured" to="trade">Trade</NuxtLink>
-          </p>
-          <p></p>
           <p class="pb-2">
             <NuxtLink class="link-featured" to="build">Build</NuxtLink>
           </p>
         </div>
 
         <div class="pb-8 md:pb-16 lg:pb-0">
-          <p class="text-gray-400 pb-2">Products</p>
+          <p class="text-gray-400 pb-2">Infrastructure</p>
           <p class="pb-2">
-            <a class="link" href="https://app.balancer.fi/#/">Invest app</a>
+            <a class="link" href="https://app.balancer.fi/#/">Explore pools</a>
           </p>
           <p class="pb-2">
-            <a class="link" href="https://app.balancer.fi/#/trade">Trade app</a>
+            <a class="link" href="https://app.balancer.fi/#/vebal">Vote with veBAL</a>
           </p>
           <p>
-            <a class="link" href="https://claim.balancer.fi">Claim $BAL</a>
+            <a class="link" href="https://app.balancer.fi/#/claim">Claim incentives</a>
           </p>
         </div>
         <div class="pb-8 md:pb-0">
@@ -95,7 +86,7 @@
           <p class="text-gray-400 pb-2">Community</p>
           <div class="flex lg:flex-col">
             <div class="flex pb-3 mr-3 lg:mr-0">
-              <a class="mr-3" href="https://twitter.com/BalancerLabs">
+              <a class="mr-3" href="https://twitter.com/Balancer">
                 <icon-twitter />
               </a>
 
