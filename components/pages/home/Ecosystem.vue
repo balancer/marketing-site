@@ -305,7 +305,6 @@
 </template>
   
   <script>
-import Partner from "@/components/_global/Partner.vue";
 import LogoBalancer from "@/components/icons/LogoBalancer.vue";
 import LogoAura from "@/components/icons/LogoAura.vue";
 import LogoElement from "@/components/icons/LogoElement.vue";
