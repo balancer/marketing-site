@@ -1,11 +1,7 @@
 <template>
   <div class="partner group">
-    <div :class="'relative partner__graphic partner__graphic--' + bgImageStyle">
-      <img
-        class="partner-logo"
-        :src="require('~/assets/svg/partners/' + logo)"
-        alt=""
-      />
+    <div :class="'relative partner__graphic partner__graphic--' + bgImageStyle">       
+      <slot name="logo" />
     </div>
     <div class="partner__details">
       <div class="partner__summmary">
@@ -14,7 +10,9 @@
             <h2 class="title">
               {{ title }}
             </h2>
-            <a class="link" :href="url">{{ linkLabel }}</a>
+            <a 
+              @click="linkClickHandler"
+             class="link" :href="url">{{ linkLabel }}</a>
           </div>
         </div>
       </div>
@@ -23,6 +21,7 @@
 </template>
   
   <script>
+
 export default {
   props: {
     title: {
@@ -37,13 +36,13 @@ export default {
       type: String,
       required: true,
     },
-    logo: {
+    fathomCode: {
       type: String,
-      required: true,
+      required: false,
     },
     linkLabel: {
       type: String,
-      required: true,
+      required: false,
     },
     url: {
       type: String,
@@ -54,6 +53,11 @@ export default {
       required: true,
     },
   },
+  methods: {
+    linkClickHandler(){
+      fathom?.trackGoal(fathomCode || '', 0)
+    }
+  } 
 };
 </script>
   
@@ -74,15 +78,13 @@ export default {
 }
 
 .partner-logo {
-  width: 42px;
-  height: auto;
   transition: all 0.1s ease-out 0.05s;
-  transform: scale(1.5);
+  @apply scale-50 transform-gpu;
 }
 
 .partner:hover .partner-logo,
 .partner:focus .partner-logo {
-  transform: scale(2);
+  @apply scale-75 transform-gpu;
 }
 
 .partner__graphic {

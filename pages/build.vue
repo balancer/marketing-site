@@ -14,7 +14,7 @@
         <div
           class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-screen-lg mx-auto"
         >
-          <a href="https://docs.balancer.fi/v/v1/guides/creating-a-smart-pool">
+          <a href="https://docs.balancer.fi/products/balancer-pools/weighted-pools">
             <div class="pool relative">
               <div class="relative flex justify-center items-center">
                 <img
@@ -27,10 +27,7 @@
               </div>
               <div>
                 <div class="p-2 md:p-3 text-center">
-                  <p class="font-medium">Create a Smart Pool</p>
-                  <p class="hidden">
-                    A quick code walkthrough
-                  </p>
+                  <p class="font-medium">Create a weighted Pool</p>
                 </div>
               </div>
             </div>
@@ -51,9 +48,6 @@
               <div>
                 <div class="p-2 md:p-3 text-center">
                   <p class="font-medium">Launch a token</p>
-                  <p class="hidden">
-                    Via a Liquidity Bootstrapping Pool (LBP)
-                  </p>
                 </div>
               </div>
             </div>
@@ -75,9 +69,6 @@
               <div>
                 <div class="p-2 md:p-3 text-center">
                   <p class="font-medium">Get Balancer data</p>
-                  <p class="hidden">
-                    Via the Balancer subgraph
-                  </p>
                 </div>
               </div>
             </div>
@@ -98,9 +89,6 @@
               <div>
                 <div class="p-2 md:p-3 text-center">
                   <p class="font-medium">Use price oracles</p>
-                  <p class="hidden">
-                    Via the 'Instant' or 'Resilient' oracles
-                  </p>
                 </div>
               </div>
             </div>

@@ -105,7 +105,7 @@ export default {
 <style scoped>
 .card {
   transition: 0.2s all ease-out;  
-  @apply rounded-xl p-4 md:p-6 lg:p-8 shadow-none;
+  @apply rounded-2xl p-4 md:p-6 lg:p-8 shadow-none;
 }
 
 .card:hover {
