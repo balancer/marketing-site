@@ -20,7 +20,7 @@
               <img 
               width="80"
               height="80"              
-              :src="require('~/assets/images/people/cb.png')" alt="" />
+              :src="require('~/assets/images/people/cb.jpg')" alt="" />
             </div>
             <div class="pl-4">
               <p class="font-medium group-hover:text-defaultBlue transition-colors">Chris Burniske</p>
@@ -77,7 +77,7 @@
               <img 
               width="80"
               height="80"
-              :src="require('~/assets/images/people/dl.png')" alt="" />
+              :src="require('~/assets/images/people/de.jpg')" alt="" />
             </div>
             <div class="pl-4 group">
               <p class="font-medium group-hover:text-defaultBlue transition-colors">Dan Elitzer</p>

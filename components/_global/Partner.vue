@@ -539,4 +539,3 @@ export default {
   box-shadow: 0 5px 10px 0 rgba(174, 80, 255, 0.4);
 }
 </style>
-  
