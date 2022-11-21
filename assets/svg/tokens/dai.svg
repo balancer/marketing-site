@@ -11,7 +11,7 @@
                         <rect id="Rectangle-Copy-2" x="0.5" y="0.5" width="231.57732" height="229" rx="10"></rect>
                     </g>
                 </g>
-                <g id="Group-6" transform="translate(712.000000, 277.000000)" fill="#000000" font-family="Inter-Medium, Inter" font-size="15" font-weight="400" line-spacing="21">
+                <g id="Group-6" transform="translate(712.000000, 277.000000)" fill="#000000">
                     <g id="Group-11">
                         <text id="DAI-$1.00">
                             <tspan x="279.817116" y="15">DAI</tspan>

@@ -19,7 +19,7 @@ export default {
 
 <style scoped>
 .h1 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter var', sans-serif;
   font-size: 60px;
 }
 
@@ -27,7 +27,7 @@ export default {
   @apply font-extrabold pb-4 md:text-6xl text-white pt-4;
   font-size: 32px;
   line-height: 1.1;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter var', sans-serif;
   letter-spacing: -0.5px;
   display: block;
 }

@@ -180,7 +180,7 @@ export default {};
 }
 
 .superscript {
-  font-family: Inter, sans-serif;
+  font-family: 'Inter var', sans-serif;
   font-feature-settings: "kern" 1, "numr" 1;
   -webkit-font-feature-settings: "kern" 1, "numr" 1;
   -ms-font-feature-settings: "kern" 1, "numr" 1;
