@@ -2,6 +2,7 @@
   <section>
     <div class="case-study max-w-7xl mx-auto relative">
       <div
+        @mouseenter="startHoverAnimation"
         class="
           grid grid-cols-1
           md:grid-cols-2
@@ -65,7 +66,22 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    startHoverAnimation() {
+      this.$anime.timeline({}).add({
+        targets: ".bg-aave",
+        backgroundImage: [
+          "linear-gradient(223deg, #AF52A0 0%, #2FB6C6 100%)",
+          "linear-gradient(223deg, #AF52A0 0%, #2FB6C6 180%)",
+          "linear-gradient(223deg, #AF52A0 0%, #2FB6C6 100%)",
+        ],
+        easing: "linear",
+        duration: 3000,
+      });
+    },
+  },
+};
 </script>
 
 <style scoped>

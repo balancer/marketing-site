@@ -1,6 +1,6 @@
 <template>
   <section class="p-4 bg-white">
-    <div class="pt-0 pb-8 md:pb-20 md:pt-2 lg:px-8">
+    <div class="pt-0 pb-8 md:pb-20 lg:pb-32 md:pt-2 lg:px-8">
       <section>
         <div class="partners">
           <v-popover offset="16" placement="top">
@@ -26,6 +26,30 @@
                 description="Pool explorer and infrastructure for Balancer ecosystem. The original proof-of-concept. Pool and
                   swap tokens. Get veBAL to vote for and claim liquidity mining incentives."
                 url="https://app.balancer.fi"
+              />
+            </template>
+          </v-popover>
+
+          <v-popover offset="16" placement="top">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="Beethoven X"
+                bgImageStyle="beets"
+                linkLabel="op.beets.fi"
+                url="https://op.beets.fi/"
+                description="Official friendly fork of Balancer on Optimism and Fantom. Designed to evolve and adapt, Beethoven X provides all the tools necessary for anyone to participate in the future of finance."
+              >
+                <template #logo>
+                  <logo-beets />
+                </template>
+              </Partner>
+            </button>
+
+            <template slot="popover">
+              <CaseStudy
+                title="Beethoven X"
+                description="Official friendly fork of Balancer on Optimism and Fantom. Designed to evolve and adapt, Beethoven X provides all the tools necessary for anyone to participate in the future of finance."
+                url="https://op.beets.fi/"
               />
             </template>
           </v-popover>
@@ -258,7 +282,7 @@
                 linkLabel="Medium post"
                 url="https://medium.com/@BalancerGrants/cron-finance-is-developing-twamm-on-top-of-balancer-d5d6bc17919a"
                 description="A novel on-chain trade execution engine called TWAMM for permissionless, transparent & gas efficient large token swaps. Cron is building this TWAMM on Balancer."
-                >
+              >
                 <template #logo>
                   <logo-cron />
                 </template>
@@ -271,6 +295,78 @@
                 :comingSoon="true"
                 description="A novel on-chain trade execution engine called TWAMM for permissionless, transparent & gas efficient large token swaps. Cron is building this TWAMM on Balancer."
                 url="https://medium.com/@BalancerGrants/cron-finance-is-developing-twamm-on-top-of-balancer-d5d6bc17919a"
+              />
+            </template>
+          </v-popover>
+
+          <v-popover offset="16" placement="top">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="Tempus"
+                bgImageStyle="tempus"
+                linkLabel="tempus.finance"
+                url="https://tempus.finance/"
+                description="An innovative fixed income protocol allowing people to securely lock in a fixed rate on any lending or staking income."
+              >
+                <template #logo>
+                  <logo-tempus />
+                </template>
+              </Partner>
+            </button>
+
+            <template slot="popover">
+              <CaseStudy
+                title="Tempus"
+                description="An innovative fixed income protocol allowing people to securely lock in a fixed rate on any lending or staking income."
+                url="https://tempus.finance/"
+              />
+            </template>
+          </v-popover>
+
+          <v-popover offset="16" placement="top">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="PowerPool"
+                bgImageStyle="powerpool"
+                linkLabel="powerpool.finance"
+                url="https://powerpool.finance/"
+                description="PowerPool protocol offers automated DeFi products such as vaults and smart token baskets built on top of Power Agent automation network executing transactions according to defined strategies."
+              >
+                <template #logo>
+                  <logo-powerpool />
+                </template>
+              </Partner>
+            </button>
+
+            <template slot="popover">
+              <CaseStudy
+                title="PowerPool"
+                description="PowerPool protocol offers automated DeFi products such as vaults and smart token baskets built on top of Power Agent automation network executing transactions according to defined strategies."
+                url="https://powerpool.finance/"
+              />
+            </template>
+          </v-popover>
+
+          <v-popover offset="16" placement="top">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="PrimeDAO"
+                bgImageStyle="prime"
+                linkLabel="prime.xyz"
+                url="https://www.prime.xyz/"
+                description="DAOs are growing in power but remain isolated digital organisations. PrimeDAO creates next-generation coordination tools to connect them - built the DAO native way. PrimeDAO uses Balancer for Prime Launch and Prime Pools."
+              >
+                <template #logo>
+                  <logo-prime />
+                </template>
+              </Partner>
+            </button>
+
+            <template slot="popover">
+              <CaseStudy
+                title="PrimeDAO"
+                description="DAOs are growing in power but remain isolated digital organisations. PrimeDAO creates next-generation coordination tools to connect them - built the DAO native way. PrimeDAO uses Balancer for Prime Launch and Prime Pools."
+                url="https://www.prime.xyz/"
               />
             </template>
           </v-popover>
@@ -306,6 +402,7 @@
   
   <script>
 import LogoBalancer from "@/components/icons/LogoBalancer.vue";
+import LogoBeets from "@/components/icons/LogoBeets.vue";
 import LogoAura from "@/components/icons/LogoAura.vue";
 import LogoElement from "@/components/icons/LogoElement.vue";
 import LogoFjord from "@/components/icons/LogoFjord.vue";
@@ -317,6 +414,9 @@ import Logo1inch from "@/components/icons/Logo1inch.vue";
 import LogoIndexcoop from "@/components/icons/LogoIndexcoop.vue";
 import LogoCron from "@/components/icons/LogoCron.vue";
 import LogoSense from "@/components/icons/LogoSense.vue";
+import LogoPrime from "@/components/icons/LogoPrime.vue";
+import LogoPowerpool from "@/components/icons/LogoPowerpool.vue";
+import LogoTempus from "@/components/icons/LogoTempus.vue";
 
 import CaseStudy from "@/components/case-studies/CaseStudy.vue";
 
@@ -351,6 +451,7 @@ export default {
   components: {
     CaseStudy,
     LogoBalancer,
+    LogoBeets,
     LogoAura,
     LogoElement,
     LogoFjord,
@@ -362,6 +463,9 @@ export default {
     LogoIndexcoop,
     LogoCron,
     LogoSense,
+    LogoPrime,
+    LogoPowerpool,
+    LogoTempus,
   },
 };
 </script>
