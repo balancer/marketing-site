@@ -33,8 +33,7 @@ export default {};
   line-height: 1.3;
   transition: 0.3s all ease-out;
   outline: none;
-
-  font-family: Inter, sans-serif;
+  font-family: 'Inter var', sans-serif;
   font-feature-settings: "calt";
 }
 

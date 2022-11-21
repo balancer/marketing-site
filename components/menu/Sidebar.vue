@@ -212,6 +212,15 @@ export default {
       toggleSidebar: "toggleSidebar",
     }),
   },
+  watch: {
+    sidebarOpen(newValue) {
+      if (newValue) {
+        document.body.classList.add("sidebarOpen")
+      } else {
+        document.body.classList.remove("sidebarOpen")
+      }
+    } 
+  }
 };
 </script>
 <style>

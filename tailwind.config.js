@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     fontFamily: {
       body: [
-        'Inter-Variable',
+        'Inter var',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',

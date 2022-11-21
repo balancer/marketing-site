@@ -1,7 +1,11 @@
 .transition-standard {
   transition: 0.2s all ease-in-out;    
 }
-
 .trigger {
   @apply w-full;
+}
+
+body.sidebarOpen {
+ @apply overflow-hidden;
+ padding-right: 15px;
 }

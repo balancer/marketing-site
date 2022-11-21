@@ -1,9 +1,9 @@
 @import url('https://rsms.me/inter/inter.css');
 @import "./global/all.css";
 
-body { font-family: 'Inter', system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif }
+:root { font-family: 'Inter', system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif }
 @supports (font-variation-settings: normal) {
-  body { 
+  :root { 
     font-family: 'Inter var', sans-serif; 
     font-feature-settings: "ss01";
   }
@@ -25,6 +25,7 @@ body { font-family: 'Inter', system, -apple-system, ".SFNSText-Regular", "San Fr
 
 .bg-aave {
   background-image: linear-gradient(223deg, #AF52A0 0%, #2FB6C6 100%);
+  @apply rounded-3xl;
 }
 
 :focus:not(:focus-visible) {

@@ -1,11 +1,7 @@
 <template>
   <div class="partner group">
     <div :class="'relative partner__graphic partner__graphic--' + bgImageStyle">
-      <img
-        class="partner-logo"
-        :src="require('~/assets/svg/partners/' + logo)"
-        alt=""
-      />
+      <slot name="logo" />
     </div>
     <div class="partner__details">
       <div class="partner__summmary">
@@ -14,7 +10,9 @@
             <h2 class="title">
               {{ title }}
             </h2>
-            <a class="link" :href="url">{{ linkLabel }}</a>
+            <a @click="linkClickHandler" class="link" :href="url">{{
+              linkLabel
+            }}</a>
           </div>
         </div>
       </div>
@@ -37,13 +35,13 @@ export default {
       type: String,
       required: true,
     },
-    logo: {
+    fathomCode: {
       type: String,
-      required: true,
+      required: false,
     },
     linkLabel: {
       type: String,
-      required: true,
+      required: false,
     },
     url: {
       type: String,
@@ -52,6 +50,11 @@ export default {
     description: {
       type: String,
       required: true,
+    },
+  },
+  methods: {
+    linkClickHandler() {
+      fathom?.trackGoal(fathomCode || "", 0);
     },
   },
 };
@@ -71,18 +74,17 @@ export default {
 .partner {
   width: 100%;
   height: auto;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .partner-logo {
-  width: 42px;
-  height: auto;
   transition: all 0.1s ease-out 0.05s;
-  transform: scale(1.5);
+  @apply scale-50 transform-gpu;
 }
 
 .partner:hover .partner-logo,
 .partner:focus .partner-logo {
-  transform: scale(2);
+  @apply scale-75 transform-gpu;
 }
 
 .partner__graphic {
@@ -122,8 +124,13 @@ export default {
   box-shadow: 0 50px 100px 0 hsla(240, 91%, 12%, 0.15);
 }
 
+.partner__graphic--beets {
+  background: hsla(163, 68%, 54%, 0.6);
+  box-shadow: 0 50px 100px 0 hsla(163, 68%, 54%, 0.15);
+}
+
 .partner__graphic--aura {
-  background: hsla(240, 91%, 12%, 0.6);
+  background: hsla(269, 90%, 65%, 0.6);
   box-shadow: 0 50px 100px 0 rgba(174, 80, 255, 0.15);
 }
 
@@ -177,11 +184,31 @@ export default {
   box-shadow: 0 50px 100px 0 hsla(205, 73%, 59%, 0.15);
 }
 
+.partner__graphic--prime {
+  background: hsla(344, 77%, 58%, 0.6);
+  box-shadow: 0 50px 100px 0 hsla(344, 77%, 58%, 0.15);
+}
+
+.partner__graphic--powerpool {
+  background: hsla(107, 56%, 52%, 0.6);
+  box-shadow: 0 50px 100px 0 hsla(107, 56%, 52%, 0.15);
+}
+
+.partner__graphic--tempus {
+  background: hsla(25, 85%, 56%, 0.6);
+  box-shadow: 0 50px 100px 0 hsla(25, 85%, 56%, 0.15);
+}
+
 /* Background animation solid color before */
 
 .partner__graphic--balancer::before {
   background: #091f3b;
 }
+
+.partner__graphic--beets::before {
+  background: hsla(163, 100%, 43%, 1);
+}
+
 .partner__graphic--aura::before {
   background: hsla(269, 90%, 65%, 1);
 }
@@ -222,7 +249,19 @@ export default {
 }
 
 .partner__graphic--sense::before {
-  background-color: hsla(205, 73%, 59%, 1);
+  background: hsla(205, 73%, 59%, 1);
+}
+
+.partner__graphic--prime::before {
+  background: hsla(344, 77%, 58%, 1);
+}
+
+.partner__graphic--powerpool::before {
+  background: hsla(107, 56%, 52%, 1);
+}
+
+.partner__graphic--tempus::before {
+  background: hsla(25, 85%, 56%, 1);
 }
 
 /* Partner specific radial gradients on hover */
@@ -243,7 +282,26 @@ export default {
 }
 
 .partner:hover .partner__graphic--balancer {
-  box-shadow: 0 5px 10px 0 hsla(240, 91%, 12%, 0.2);
+  box-shadow: 0 5px 10px 0 hsla(240, 91%, 12%, 0.4);
+}
+
+.partner__graphic--beets::after {
+  background-color: hsla(153, 100%, 4%, 1);
+
+  background-image: radial-gradient(
+      at 35% 23%,
+      hsla(359, 100%, 65%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 10% 11%, hsla(359, 100%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 72% 28%, hsla(157, 81%, 45%, 1) 0px, transparent 50%),
+    radial-gradient(at 100% 3%, hsla(161, 98%, 46%, 1) 0px, transparent 50%),
+    radial-gradient(at 22% 100%, hsla(156, 100%, 60%, 1) 0px, transparent 50%),
+    radial-gradient(at 62% 0%, hsla(157, 100%, 48%, 1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--beets {
+  box-shadow: 0 5px 10px 0 hsla(163, 68%, 54%, 0.4);
 }
 
 .partner__graphic--element::after {
@@ -417,6 +475,51 @@ export default {
   box-shadow: 0 5px 10px 0 rgba(251, 191, 36, 0.4);
 }
 
+.partner__graphic--prime::after {
+  background: hsla(344, 77%, 58%, 1);
+  background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #43e 0%,
+    #f35 80%
+  );
+}
+
+.partner:hover .partner__graphic--prime {
+  box-shadow: 0 5px 10px 0 hsla(344, 77%, 58%, 0.4);
+}
+
+.partner__graphic--powerpool::after {
+  background: hsla(107, 56%, 52%, 1);
+  background-image: radial-gradient(
+      at 98% 55%,
+      hsla(102, 100%, 34%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 58% 34%, hsla(107, 67%, 66%, 1) 0px, transparent 50%),
+    radial-gradient(at 4% 34%, hsla(107, 83%, 29%, 1) 0px, transparent 50%),
+    radial-gradient(at 20% 54%, hsla(107, 100%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 25% 98%, hsla(107, 100%, 50%, 1) 0px, transparent 50%),
+    radial-gradient(at 39% 87%, hsla(107, 72%, 49%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 16%, hsla(107, 92%, 24%, 1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--powerpool {
+  box-shadow: 0 5px 10px 0 hsla(107, 56%, 52%, 0.4);
+}
+
+.partner__graphic--tempus::after {
+  background: hsla(25, 85%, 56%, 1);
+  background: linear-gradient(
+    45deg,
+    rgba(238, 127, 49, 1) 20%,
+    rgba(30, 9, 199, 1) 100%
+  );
+}
+
+.partner:hover .partner__graphic--tempus {
+  box-shadow: 0 5px 10px 0 hsla(25, 85%, 56%, 0.4);
+}
+
 .partner:hover .partner__graphic--aura {
   background: #ae50ff;
   background-image: radial-gradient(
@@ -433,7 +536,6 @@ export default {
 }
 
 .partner:hover .partner__graphic--aura {
-  box-shadow: 0 5px 10px 0 rgba(174, 80, 255, 0.2);
+  box-shadow: 0 5px 10px 0 rgba(174, 80, 255, 0.4);
 }
 </style>
-  

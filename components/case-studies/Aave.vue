@@ -1,7 +1,8 @@
 <template>
   <section>
-    <div class="case-study max-w-7xl mx-auto">
+    <div class="case-study max-w-7xl mx-auto relative">
       <div
+        @mouseenter="startHoverAnimation"
         class="
           grid grid-cols-1
           md:grid-cols-2
@@ -65,12 +66,59 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    startHoverAnimation() {
+      this.$anime.timeline({}).add({
+        targets: ".bg-aave",
+        backgroundImage: [
+          "linear-gradient(223deg, #AF52A0 0%, #2FB6C6 100%)",
+          "linear-gradient(223deg, #AF52A0 0%, #2FB6C6 180%)",
+          "linear-gradient(223deg, #AF52A0 0%, #2FB6C6 100%)",
+        ],
+        easing: "linear",
+        duration: 3000,
+      });
+    },
+  },
+};
 </script>
 
 <style scoped>
 .profile-pic {
   border-radius: 50%;
   @apply md:py-4;
+}
+
+.case-study:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #af52a0 0%, #2fb6c6 100%);
+  transform: translate3d(0px, 20px, 0) scale(0.95);
+  filter: blur(50px);
+  opacity: 0.6;
+  transition: all 0.2s ease-in-out;
+  border-radius: inherit;
+}
+
+.case-study::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+
+.case-study:hover::before {
+  filter: blur(8px);
 }
 </style>

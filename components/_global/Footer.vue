@@ -173,12 +173,4 @@ export default {
 footer {
   @apply bg-black;
 }
-.btn-email {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-family: Inter, sans-serif;
-  font-feature-settings: "calt";
-  @apply p-2 flex justify-center items-center absolute right-2;
-}
 </style>

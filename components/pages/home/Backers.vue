@@ -20,7 +20,7 @@
               <img 
               width="80"
               height="80"              
-              :src="require('~/assets/images/people/cb.png')" alt="" />
+              :src="require('~/assets/images/people/cb.jpg')" alt="" />
             </div>
             <div class="pl-4">
               <p class="font-medium group-hover:text-defaultBlue transition-colors">Chris Burniske</p>
@@ -77,7 +77,7 @@
               <img 
               width="80"
               height="80"
-              :src="require('~/assets/images/people/dl.png')" alt="" />
+              :src="require('~/assets/images/people/de.jpg')" alt="" />
             </div>
             <div class="pl-4 group">
               <p class="font-medium group-hover:text-defaultBlue transition-colors">Dan Elitzer</p>
@@ -105,7 +105,7 @@ export default {
 <style scoped>
 .card {
   transition: 0.2s all ease-out;  
-  @apply rounded-xl p-4 md:p-6 lg:p-8 shadow-none;
+  @apply rounded-2xl p-4 md:p-6 lg:p-8 shadow-none;
 }
 
 .card:hover {
