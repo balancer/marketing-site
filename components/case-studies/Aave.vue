@@ -50,10 +50,10 @@
           <p class="py-4 italic font-medium">
             “Part of what makes DeFi so exciting is its composability, and with
             Balancer this has resulted in a partnership that optimises the
-            experience for liquidity providers through the Aave-Balancer Asset
-            Manager and opens up new possibilities for Aave stakers with the
-            AAVE/ETH Safety Incentive pool. We look forward to exploring more
-            synergies with Balancer in the future.”
+            experience for liquidity providers through the use of Balancer Aave
+            Boosted Pools and opens up new possibilities for Aave stakers with
+            the AAVE/ETH Safety Incentive pool. We look forward to exploring
+            more synergies with Balancer in the future.”
           </p>
           <p class="font-medium">
             Stani Kulechov <br />
