@@ -419,6 +419,7 @@ import LogoPowerpool from "@/components/icons/LogoPowerpool.vue";
 import LogoTempus from "@/components/icons/LogoTempus.vue";
 
 import CaseStudy from "@/components/case-studies/CaseStudy.vue";
+import Partner from "@/components/_global/Partner.vue";
 
 import Vue from "vue";
 import { VTooltip, VPopover, VClosePopover } from "v-tooltip";
@@ -450,6 +451,7 @@ export default {
   },
   components: {
     CaseStudy,
+    Partner,
     LogoBalancer,
     LogoBeets,
     LogoAura,

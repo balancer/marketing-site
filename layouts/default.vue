@@ -11,10 +11,14 @@
 
 <script>
 import Sidebar from "@/components/menu/Sidebar.vue";
+import Header from "@/components/_global/Header.vue";
+import Footer from "@/components/_global/Footer.vue";
 
 export default {
   components: {
-    Sidebar
+    Header, 
+    Sidebar,
+    Footer
   }
 };
 </script>

@@ -25,7 +25,13 @@
 </template>
 
 <script>
-export default {};
+import Stat from "@/components/_global/Stat.vue";
+
+export default {
+  components: {
+    Stat
+  }
+}
 </script>
 
 <style scoped>
