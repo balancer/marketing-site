@@ -111,7 +111,7 @@ export default {
           scale: [1, 0.8],
           duration: 200,
           easing: "easeInExpo",
-          delay: this.$anime.stagger(5, { start: 3000 }),
+          delay: this.$anime.stagger(5, { start: 1000 }),
         })
         .add({
           targets: ".word2 .letter",
@@ -131,7 +131,7 @@ export default {
           scale: [1, 0.8],
           duration: 200,
           easing: "easeInExpo",
-          delay: this.$anime.stagger(5, { start: 3000 }),
+          delay: this.$anime.stagger(5, { start: 2000 }),
         })
         .add({
           targets: ".word3 .letter",
@@ -151,7 +151,7 @@ export default {
           translateY: [0, 50],
           duration: 200,
           easing: "easeInExpo",
-          delay: this.$anime.stagger(5, { start: 3000 }),
+          delay: this.$anime.stagger(5, { start: 2000 }),
         })
         .add({
           targets: ".word4 .letter",
@@ -171,7 +171,7 @@ export default {
           translateY: [0, 50],
           duration: 200,
           easing: "easeInExpo",
-          delay: this.$anime.stagger(5, { start: 3000 }),
+          delay: this.$anime.stagger(5, { start: 2000 }),
         })
         .add({
           targets: ".word5 .letter",
@@ -191,7 +191,7 @@ export default {
           translateY: [0, 50],
           duration: 200,
           easing: "easeInExpo",
-          delay: this.$anime.stagger(5, { start: 3000 }),
+          delay: this.$anime.stagger(5, { start: 2000 }),
         })
         .add({
           targets: ".word6 .letter",
@@ -211,7 +211,7 @@ export default {
           translateY: [0, 50],
           duration: 200,
           easing: "easeInExpo",
-          delay: this.$anime.stagger(5, { start: 3000 }),
+          delay: this.$anime.stagger(5, { start: 2000 }),
         });
     },
     buttonAnimation() {
