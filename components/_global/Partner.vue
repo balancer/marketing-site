@@ -199,6 +199,26 @@ export default {
   box-shadow: 0 50px 100px 0 hsla(25, 85%, 56%, 0.15);
 }
 
+.partner__graphic--tetu {
+  background: hsla(222, 79%, 57%, 0.6);
+  box-shadow: 0 50px 100px 0 hsla(222, 79%, 57%, 0.15);
+}
+
+.partner__graphic--xave {
+  background: hsla(209, 80%, 48%, 0.6);
+  box-shadow: 0 50px 100px 0 hsla(209, 80%, 48%, 0.15);
+}
+
+.partner__graphic--stakedao {
+  background: hsla(268, 74%, 55%, 0.6);
+  box-shadow: 0 50px 100px 0 hsla(268, 74%, 55%, 0.15);
+}
+
+.partner__graphic--qi {
+  background: hsla(4, 80%, 61%, 0.6);
+  box-shadow: 0 50px 100px 0 hsla(4, 80%, 61%, 0.15);
+}
+
 /* Background animation solid color before */
 
 .partner__graphic--balancer::before {
@@ -262,6 +282,18 @@ export default {
 
 .partner__graphic--tempus::before {
   background: hsla(25, 85%, 56%, 1);
+}
+.partner__graphic--tetu::before {
+  background: hsla(222, 79%, 57%, 1);
+}
+.partner__graphic--xave::before {
+  background: hsla(209, 80%, 48%, 1);
+}
+.partner__graphic--stakedao::before {
+  background: hsla(268, 74%, 55%, 1);
+}
+.partner__graphic--qi::before {
+  background: hsla(4, 80%, 61%, 1);
 }
 
 /* Partner specific radial gradients on hover */
@@ -518,6 +550,77 @@ export default {
 
 .partner:hover .partner__graphic--tempus {
   box-shadow: 0 5px 10px 0 hsla(25, 85%, 56%, 0.4);
+}
+
+.partner__graphic--tetu::after {
+  background-color: #99f0ff;
+  background-image: radial-gradient(
+      at 33% 16%,
+      hsla(50, 66%, 77%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 46% 40%, hsla(164, 75%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 8% 4%, hsla(22, 67%, 62%, 1) 0px, transparent 50%),
+    radial-gradient(at 19% 22%, hsla(192, 89%, 75%, 1) 0px, transparent 50%),
+    radial-gradient(at 83% 33%, hsla(215, 97%, 63%, 1) 0px, transparent 50%),
+    radial-gradient(at 48% 35%, hsla(200, 65%, 71%, 1) 0px, transparent 50%),
+    radial-gradient(at 28% 50%, hsla(220, 71%, 70%, 1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--tetu {
+  box-shadow: 0 5px 10px 0 hsla(222, 79%, 57%, 0.4);
+}
+
+.partner__graphic--xave::after {
+  background-color: #ffb699;
+  background-image: radial-gradient(
+      at 42% 28%,
+      hsla(167, 87%, 63%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 30% 84%, hsla(320, 78%, 79%, 1) 0px, transparent 50%),
+    radial-gradient(at 76% 25%, hsla(218, 89%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 34% 7%, hsla(55, 69%, 78%, 1) 0px, transparent 50%),
+    radial-gradient(at 92% 51%, hsla(295, 96%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 76% 57%, hsla(289, 79%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 46%, hsla(106, 60%, 73%, 1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--xave {
+  box-shadow: 0 5px 10px 0 hsla(209, 80%, 48%, 0.4);
+}
+
+.partner__graphic--stakedao::after {
+  background-color: #ff99da;
+  background-image: radial-gradient(
+      at 74% 19%,
+      hsla(350, 61%, 70%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 73% 52%, hsla(293, 95%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 73% 12%, hsla(268, 70%, 75%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 6%, hsla(156, 69%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 76% 40%, hsla(118, 84%, 79%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 67%, hsla(235, 96%, 64%, 1) 0px, transparent 50%),
+    radial-gradient(at 84% 92%, hsla(271, 64%, 63%, 1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--stakedao {
+  box-shadow: 0 5px 10px 0 hsla(268, 74%, 55%, 0.4);
+}
+
+.partner__graphic--qi::after {
+  background-color: hsla(4, 80%, 61%, 1);
+  background-image: radial-gradient(
+      at 65% 16%,
+      hsla(357, 100%, 85%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 100% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 54%, hsla(239, 70%, 67%, 0.6) 0px, transparent 50%);
+}
+.partner:hover .partner__graphic--qi {
+  box-shadow: 0 5px 10px 0 hsla(4, 80%, 61%, 0.4);
 }
 
 .partner:hover .partner__graphic--aura {

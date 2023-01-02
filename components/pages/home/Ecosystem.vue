@@ -204,30 +204,6 @@
           <v-popover offset="16" placement="top">
             <button class="tooltip-target w-full">
               <Partner
-                title="Mycelium"
-                bgImageStyle="mycelium"
-                linkLabel="mycelium.xyz"
-                url="https://mycelium.xyz/"
-                description="Mycelium (formerly TracerDAO), is an open-source protocol for derivative markets. It utilizes Balancer Protocol for aggregated liquidity and creating a market for leveraged tokens."
-              >
-                <template #logo>
-                  <logo-mycelium />
-                </template>
-              </Partner>
-            </button>
-
-            <template slot="popover">
-              <CaseStudy
-                title="Mycelium"
-                description="Mycelium (formerly TracerDAO), is an open-source protocol for derivative markets. It utilizes Balancer Protocol for aggregated liquidity and creating a market for leveraged tokens."
-                url="https://mycelium.xyz/"
-              />
-            </template>
-          </v-popover>
-
-          <v-popover offset="16" placement="top">
-            <button class="tooltip-target w-full">
-              <Partner
                 title="1inch"
                 bgImageStyle="1inch"
                 linkLabel="1inch.io"
@@ -253,23 +229,71 @@
           <v-popover offset="16" placement="top">
             <button class="tooltip-target w-full">
               <Partner
-                title="Index Coop"
-                bgImageStyle="coop"
-                linkLabel="indexcoop.com"
-                url="https://indexcoop.com/"
-                description="Index Coop builds decentralized structured products that make crypto simple, accessible, and secure. Index Coop is building the first Balancer Managed Pool."
+                title="Stake DAO"
+                bgImageStyle="stakedao"
+                linkLabel="stakedao.org"
+                url="https://stakedao.org/"
+                description="Stake DAO is a non-custodial platform where you can do more with your money. Easily grow, track, and control your assets right from your wallet."
               >
                 <template #logo>
-                  <logo-indexcoop />
+                  <logo-stakedao />
                 </template>
               </Partner>
             </button>
 
             <template slot="popover">
               <CaseStudy
-                title="Index Coop"
-                description="Index Coop builds decentralized structured products that make crypto simple, accessible, and secure. Index Coop is building the first Balancer Managed Pool."
-                url="https://indexcoop.com/"
+                title="Stake DAO"
+                description="Stake DAO is a non-custodial platform where you can do more with your money. Easily grow, track, and control your assets right from your wallet."
+                url="https://stakedao.org/"
+              />
+            </template>
+          </v-popover> 
+
+          <v-popover offset="16" placement="top">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="Tetu"
+                bgImageStyle="tetu"
+                linkLabel="tetu.io"
+                url="https://tetu.io/"
+                description="Tetu is the money lego asset management that provides automated DeFi solutions. "
+              >
+                <template #logo>
+                  <logo-tetu />
+                </template>
+              </Partner>
+            </button>
+
+            <template slot="popover">
+              <CaseStudy
+                title="Tetu"
+                description="Tetu is the money lego asset management that provides automated DeFi solutions. "
+                url="https://tetu.io/"
+              />
+            </template>
+          </v-popover>
+
+          <v-popover offset="16" placement="top">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="Mycelium"
+                bgImageStyle="mycelium"
+                linkLabel="mycelium.xyz"
+                url="https://mycelium.xyz/"
+                description="Mycelium (formerly TracerDAO), is an open-source protocol for derivative markets. It utilizes Balancer Protocol for aggregated liquidity and creating a market for leveraged tokens."
+              >
+                <template #logo>
+                  <logo-mycelium />
+                </template>
+              </Partner>
+            </button>
+
+            <template slot="popover">
+              <CaseStudy
+                title="Mycelium"
+                description="Mycelium (formerly TracerDAO), is an open-source protocol for derivative markets. It utilizes Balancer Protocol for aggregated liquidity and creating a market for leveraged tokens."
+                url="https://mycelium.xyz/"
               />
             </template>
           </v-popover>
@@ -394,6 +418,80 @@
               />
             </template>
           </v-popover>
+
+          <v-popover offset="16" placement="top">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="Index Coop"
+                bgImageStyle="coop"
+                linkLabel="indexcoop.com"
+                url="https://indexcoop.com/"
+                description="Index Coop builds decentralized structured products that make crypto simple, accessible, and secure. Index Coop is building the first Balancer Managed Pool."
+              >
+                <template #logo>
+                  <logo-indexcoop />
+                </template>
+              </Partner>
+            </button>
+
+            <template slot="popover">
+              <CaseStudy
+                title="Index Coop"
+                description="Index Coop builds decentralized structured products that make crypto simple, accessible, and secure. Index Coop is building the first Balancer Managed Pool."
+                url="https://indexcoop.com/"
+              />
+            </template>
+          </v-popover>          
+
+          <v-popover offset="16" placement="top">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="Xave Finance"
+                bgImageStyle="xave"
+                linkLabel="xave.co"
+                url="https://www.xave.co/"
+                description="Xave (pronounced “Save”) allows financial services companies (“fintechs”) to leverage next generation payments systems for real time remittance transfers and high yield consumer savings"
+              >
+                <template #logo>
+                  <logo-xave />
+                </template>
+              </Partner>
+            </button>
+
+            <template slot="popover">
+              <CaseStudy
+                title="Xave Finance"
+                description="Xave (pronounced “Save”) allows financial services companies (“fintechs”) to leverage next generation payments systems for real time remittance transfers and high yield consumer savings."
+                url="https://www.xave.co/"
+              />
+            </template>
+          </v-popover>
+          
+          <v-popover offset="16" placement="top">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="Qi DAO"
+                bgImageStyle="qi"
+                linkLabel="mai.finance"
+                url="https://www.mai.finance/"
+                description="Creators of $MAI (miMatic) Stablecoin. Mai Finance is an open source and non-custodial stable protocol for extracting value out of priced assets."
+              >
+                <template #logo>
+                  <logo-qi />
+                </template>
+              </Partner>
+            </button>
+
+            <template slot="popover">
+              <CaseStudy
+                title="Qi DAO"
+                description="Creators of $MAI (miMatic) Stablecoin. Mai Finance is an open source and non-custodial stable protocol for extracting value out of priced assets."
+                url="https://www.mai.finance/"
+              />
+            </template>
+          </v-popover>           
+
+
         </div>
       </section>
     </div>
@@ -417,6 +515,10 @@ import LogoSense from "@/components/icons/LogoSense.vue";
 import LogoPrime from "@/components/icons/LogoPrime.vue";
 import LogoPowerpool from "@/components/icons/LogoPowerpool.vue";
 import LogoTempus from "@/components/icons/LogoTempus.vue";
+import LogoTetu from "@/components/icons/LogoTetu.vue";
+import LogoXave from "@/components/icons/LogoXave.vue";
+import LogoStakedao from "@/components/icons/LogoStakedao.vue";
+import LogoQi from "@/components/icons/LogoQi.vue";
 
 import CaseStudy from "@/components/case-studies/CaseStudy.vue";
 import Partner from "@/components/_global/Partner.vue";
@@ -468,6 +570,10 @@ export default {
     LogoPrime,
     LogoPowerpool,
     LogoTempus,
+    LogoTetu,
+    LogoXave,
+    LogoStakedao,
+    LogoQi,
   },
 };
 </script>
