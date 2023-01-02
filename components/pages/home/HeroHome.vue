@@ -111,7 +111,7 @@ export default {
           scale: [1, 0.8],
           duration: 200,
           easing: "easeInExpo",
-          delay: this.$anime.stagger(5, { start: 1000 }),
+          delay: this.$anime.stagger(5, { start: 2000 }),
         })
         .add({
           targets: ".word2 .letter",

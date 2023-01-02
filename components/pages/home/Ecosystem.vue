@@ -1,6 +1,10 @@
 <template>
-  <section class="p-4 bg-white">
+  <section class="ecosystem divider">
     <div class="pt-0 pb-8 md:pb-20 lg:pb-32 md:pt-2 lg:px-8">
+      <div class="text-center pb-16 partner-title">
+        <h2 class="text-3xl pb-4">Partners & Integrations</h2>
+        <p class="pb-8 text-gray-500">Built on or with Balancer protocol</p>
+      </div>
       <section>
         <div class="partners">
           <v-popover offset="16" placement="top">
@@ -248,7 +252,7 @@
                 url="https://stakedao.org/"
               />
             </template>
-          </v-popover> 
+          </v-popover>
 
           <v-popover offset="16" placement="top">
             <button class="tooltip-target w-full">
@@ -441,7 +445,7 @@
                 url="https://indexcoop.com/"
               />
             </template>
-          </v-popover>          
+          </v-popover>
 
           <v-popover offset="16" placement="top">
             <button class="tooltip-target w-full">
@@ -466,7 +470,7 @@
               />
             </template>
           </v-popover>
-          
+
           <v-popover offset="16" placement="top">
             <button class="tooltip-target w-full">
               <Partner
@@ -489,9 +493,7 @@
                 url="https://www.mai.finance/"
               />
             </template>
-          </v-popover>           
-
-
+          </v-popover>
         </div>
       </section>
     </div>
@@ -538,6 +540,26 @@ export default {
     partnerAnimation() {
       this.$anime.timeline({ loop: false }).add(
         {
+          targets: ".ecosystem",
+          opacity: [0, 1],
+          easing: "easeOutBack",
+          duration: 800,
+        },
+        "+=1150"
+      ).add(
+        {
+          targets: ".partner-title",
+          scale: [0.9, 1],
+          opacity: [0, 1],
+          translateZ: 0,
+          translateY: [20, 0],
+          easing: "easeOutBack",
+          duration: 800,
+        },
+        "-=800"
+      )
+      .add(
+        {
           targets: ".partner",
           scale: [0.8, 1],
           opacity: [0, 1],
@@ -547,7 +569,7 @@ export default {
           duration: 800,
           delay: this.$anime.stagger(40),
         },
-        "+=1150"
+        "-=300"
       );
     },
   },
@@ -579,6 +601,10 @@ export default {
 </script>
   
   <style scoped>
+.ecosystem {
+  @apply pt-24 px-4 relative overflow-hidden;
+}
+
 h2.title {
   @apply text-2xl pb-8 font-normal text-gray-600;
 }
@@ -588,7 +614,7 @@ h2.title {
   grid-column-gap: 20px;
   grid-row-gap: 40px;
   width: 100%;
-  max-width: 1020px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -611,5 +637,14 @@ h2.title {
     grid-row-gap: 64px;
   }
 }
+
+@media (min-width: 1240px) {
+  .partners {
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 64px;
+  }
+}
+
 </style>
   

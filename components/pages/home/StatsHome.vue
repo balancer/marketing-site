@@ -1,5 +1,5 @@
 <template>
-  <section class="p-4 bg-gray-50">
+  <section class="relative p-4 divider overflow-hidden">
     <div class="content-container pt-16 pb-16 lg:px-8">
       <div class="pb-8 text-left md:text-center">
         <h2 class="title">Ethereum Mainnet stats</h2>
@@ -35,6 +35,10 @@ export default {
 </script>
 
 <style scoped>
+
+.divider::before {
+  @apply bg-pink-500/10;
+}
 
 h2.title {
   @apply text-2xl md:text-3xl;
