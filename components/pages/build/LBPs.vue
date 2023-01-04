@@ -56,7 +56,7 @@
             <div class="flex justify-center">
               <div class="w-20">
                 <img class="pb-2" :src="require('~/assets/svg/tokens/hydra.svg')" alt="" />
-                <p class="font-medium">Hydra</p>
+                <p class="font-medium">HydraDX</p>
               </div>
             </div>
           </div>
