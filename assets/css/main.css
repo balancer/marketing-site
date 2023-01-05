@@ -1,6 +1,18 @@
 @import url('https://rsms.me/inter/inter.css');
 @import "./global/all.css";
 
+
+html {
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+
 :root { font-family: 'Inter', system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif }
 @supports (font-variation-settings: normal) {
   :root { 
@@ -11,11 +23,10 @@
 
 @font-face {
   font-family: "Tiempos Headline Medium";
-  src: url("../fonts/tiemposDispMed.woff2") format("woff2"),
-    url("../fonts/tiemposDispMed.woff") format("woff"), format("opentype");
+  src: url("/fonts/tiemposDispMed.woff2") format("woff2"),
+    url("/fonts/tiemposDispMed.woff") format("woff");
   font-style: normal;
   font-weight: 400;
-
 }
 
 .content-container {
