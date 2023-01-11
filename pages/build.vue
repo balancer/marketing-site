@@ -12,7 +12,7 @@
           </p>
         </div>
         <div
-          class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-screen-lg mx-auto"
+          class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-screen-lg mx-auto"
         >
           <a href="https://docs.balancer.fi/products/balancer-pools/weighted-pools">
             <div class="pool relative">
@@ -69,26 +69,6 @@
               <div>
                 <div class="p-2 md:p-3 text-center">
                   <p class="font-medium">Get Balancer data</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://docs.balancer.fi/products/oracles"
-          >
-            <div class="pool relative">
-              <div class="relative flex justify-center items-center">
-                <img
-                  width="244"
-                  height="244"
-                  class="cover-img"
-                  :src="require('~/assets/images/start-building/oracle.jpg')"
-                  alt=""
-                />
-              </div>
-              <div>
-                <div class="p-2 md:p-3 text-center">
-                  <p class="font-medium">Use price oracles</p>
                 </div>
               </div>
             </div>
