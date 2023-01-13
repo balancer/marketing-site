@@ -51,6 +51,13 @@ onMounted(()=> {
   function setAnimation() {
     anime
       .timeline({ loop: true })
+      .add (
+        {
+          targets: ".title-rotator",
+          opacity: [0, 1],
+          duration: 300,
+        }
+      )
       .add(
         {
           targets: ".word1 .letter",
@@ -295,7 +302,7 @@ onMounted(()=> {
 
 .title-rotator {
   font-size: min(10vw, 100px);
-  @apply block;
+  @apply block opacity-0;
 }
 
 .hero {
