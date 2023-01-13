@@ -16,6 +16,10 @@ export default defineNuxtConfig({
           '~/components/menu',
         ]
     },
+    css: [
+        '~/assets/css/tailwind.css',
+        '~/assets/css/main.css'
+      ],
 })
 
 
