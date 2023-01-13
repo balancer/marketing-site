@@ -5,7 +5,7 @@ h1 {
 }
 
 h2 {
-    @apply font-bold text-xl md:text-2xl pb-2 text-black;
+    @apply font-display text-xl md:text-2xl pb-2 text-black;
 }
 
 p {

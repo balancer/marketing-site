@@ -86,7 +86,7 @@ defineProps({
 .title {
   text-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
   text-shadow: 0px 1.5px 0px rgba(255, 255, 255, 1);
-  @apply pb-0 text-lg group-hover:text-defaultBlue transition-all;
+  @apply pb-0 text-lg group-hover:text-defaultBlue transition-all font-body font-bold;
 }
 .link {
   text-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
