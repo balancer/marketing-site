@@ -1,23 +1,42 @@
 <template>
-  <section class="p-4 bg-gray-50">
-    <div class="content-container pt-16 pb-16 lg:px-8">
+  <section class="divider relative overflow-hidden p-4">
+    <div class="content-container py-16 lg:px-8">
       <div class="pb-8 text-left md:text-center">
-        <h2 class="title">Ethereum Mainnet stats</h2>
-        <p class="text-gray-500 pb-4">* As at 11 November 2022</p>
+        <h2 class="title">
+          Ethereum Mainnet stats
+        </h2>
+        <p class="pb-4 text-gray-500">
+          * As at 11 November 2022
+        </p>
       </div>
-      <transition name="stats" appear>
+      <transition
+        name="stats"
+        appear
+      >
         <div class="grid grid-cols-2 md:grid-cols-4">
           <!-- Volume from https://dune.com/balancerlabs/balancer-exchange -->
-          <Stat label="Trade vol (7d) *" stat="$963m" /> 
+          <Stat
+            label="Trade vol (7d) *"
+            stat="$963m"
+          /> 
           
           <!-- TVL from https://dune.com/balancerlabs/balancer-pools -->
-          <Stat label="Total liquidity *" stat="$1.20b" />
+          <Stat
+            label="Total liquidity *"
+            stat="$1.20b"
+          />
 
           <!-- LPs from https://dune.com/balancerlabs/balancer-pools -->
-          <Stat label="Liquidity Providers *" stat="21.7k" />
+          <Stat
+            label="Liquidity Providers *"
+            stat="21.7k"
+          />
 
           <!-- Pools from https://dune.com/balancerlabs/balancer-pools -->
-          <Stat label="Total pools *" stat="3,663" />
+          <Stat
+            label="Total pools *"
+            stat="3,663"
+          />
         </div>
       </transition>
     </div>
@@ -25,10 +44,20 @@
 </template>
 
 <script>
-export default {};
+import Stat from "@/components/_global/Stat.vue";
+
+export default {
+  components: {
+    Stat
+  }
+}
 </script>
 
 <style scoped>
+
+.divider::before {
+  @apply bg-pink-500/10;
+}
 
 h2.title {
   @apply text-2xl md:text-3xl;

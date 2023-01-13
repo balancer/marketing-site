@@ -1,171 +1,195 @@
+<script setup>
+const { sidebarOpen, toggleSidebar } = useSidebar();
+
+watch(sidebarOpen, (newValue) => {
+  if (newValue) {
+    document.body.classList.add("sidebarOpen");
+  } else {
+    document.body.classList.remove("sidebarOpen");
+  }
+});
+</script>
 <template>
   <div class="sidebar">
     <div
+      v-if="sidebarOpen"
       class="sidebar-backdrop"
       @click="toggleSidebar"
-      v-if="sidebarOpen"
-    ></div>
+    />
     <transition name="slide">
-      <div v-if="sidebarOpen" class="sidebar-panel">
+      <div
+        v-if="sidebarOpen"
+        class="sidebar-panel"
+      >
         <slot>
-          <div class="flex flex-col mb-8">
+          <div class="mb-8 flex flex-col">
             <NuxtLink
-              @click.native="toggleSidebar"
               class="link text-lg leading-8"
               to="/"
-              >Home</NuxtLink
+              @click="toggleSidebar"
             >
+              Home
+            </NuxtLink>
             <NuxtLink
-              @click.native="toggleSidebar"
               class="link text-lg leading-8"
               to="build"
-              >Build</NuxtLink
+              @click="toggleSidebar"
             >
+              Build
+            </NuxtLink>
           </div>
           <div class="pb-4">
-            <p class="text-gray-400 pb-1">Infrastructure</p>
+            <p class="pb-1 text-gray-400">
+              Infrastructure
+            </p>
             <p class="pb-1">
               <a
                 class="link"
-                @click="toggleSidebar"
                 href="https://app.balancer.fi/#/"
-                >Explore pools</a
-              >
+                @click="toggleSidebar"
+              >Explore pools</a>
             </p>
             <p class="pb-1">
               <a
                 class="link"
-                @click="toggleSidebar"
                 href="https://app.balancer.fi/#/vebal"
-                >Vote with veBAL</a
-              >
+                @click="toggleSidebar"
+              >Vote with veBAL</a>
             </p>
             <p>
               <a
                 class="link"
-                @click="toggleSidebar"
                 href="https://app.balancer.fi/#/claim"
-                >Claim incentives</a
-              >
+                @click="toggleSidebar"
+              >Claim incentives</a>
             </p>
           </div>
           <div class="pb-4">
-            <p class="text-gray-400 pb-1">Learn</p>
+            <p class="pb-1 text-gray-400">
+              Learn
+            </p>
             <p class="pb-1">
               <a
                 class="link"
-                @click="toggleSidebar"
                 href="https://medium.com/balancer-protocol"
-                >Blog</a
-              >
+                @click="toggleSidebar"
+              >Blog</a>
             </p>
             <p class="pb-1">
               <a
                 class="link"
-                @click="toggleSidebar"
                 href="https://docs.balancer.fi"
-                >Documentation</a
-              >
+                @click="toggleSidebar"
+              >Documentation</a>
             </p>
             <p class="pb-1">
               <a
                 class="link"
+                href="https://quark-ceres-740.notion.site/09da662a80ab44ed8c2f25e89d4d5c67?v=621e7fb70f374b1dbc74e12079d321e7"
                 @click="toggleSidebar"
+              >Knowledge Center</a>
+            </p>
+            <p class="pb-1">
+              <a
+                class="link"
                 href="https://quark-ceres-740.notion.site/Question-Center-2e37a8cdf46c4663b86e916f21afaaf8"
-                >Question Center</a
-              >
-            </p>                        
-            <p class="pb-1">
-              <a class="link" @click="toggleSidebar" href="whitepaper.pdf"
-                >Whitepaper</a
-              >
+                @click="toggleSidebar"
+              >Question Center</a>
             </p>
             <p class="pb-1">
               <a
                 class="link"
+                href="whitepaper.pdf"
                 @click="toggleSidebar"
+              >Whitepaper</a>
+            </p>
+            <p class="pb-1">
+              <a
+                class="link"
                 href="https://angel.co/company/balancer-labs-1"
-                >Careers</a
-              >
+                @click="toggleSidebar"
+              >Careers</a>
             </p>
           </div>
           <div class="pb-4">
-            <p class="text-gray-400 pb-1">Ecosystem</p>
-            <p class="pb-1">
-              <a
-                class="link"
-                @click="toggleSidebar"
-                href="https://vote.balancer.finance/"
-                >Snapshot governance</a
-              >
+            <p class="pb-1 text-gray-400">
+              Ecosystem
             </p>
             <p class="pb-1">
               <a
                 class="link"
+                href="https://vote.balancer.finance/"
                 @click="toggleSidebar"
-                href="https://immunefi.com/bounty/balancer/"
-                >Immunefi bug bounty</a
-              >
-            </p>            
+              >Snapshot governance</a>
+            </p>
             <p class="pb-1">
               <a
                 class="link"
+                href="https://immunefi.com/bounty/balancer/"
                 @click="toggleSidebar"
+              >Immunefi bug bounty</a>
+            </p>
+            <p class="pb-1">
+              <a
+                class="link"
                 href="https://dune.xyz/balancerlabs"
-                >Dune analytics</a
-              >
+                @click="toggleSidebar"
+              >Dune analytics</a>
             </p>
 
             <p class="pb-1">
               <a
                 class="link"
-                @click="toggleSidebar"
                 href="https://forum.balancer.finance/"
-                >Forum</a
-              >
+                @click="toggleSidebar"
+              >Forum</a>
             </p>
             <p>
               <a
                 class="link"
-                @click="toggleSidebar"
                 href="https://docs.balancer.fi/ecosystem/community/grants"
-                >Grants</a
-              >
+                @click="toggleSidebar"
+              >Grants</a>
             </p>
           </div>
 
-          <div class="pb-4 pt-4">
+          <div class="py-4">
             <div class="flex">
-              <a class="mr-2" href="https://twitter.com/Balancer">
+              <a
+                class="mr-2"
+                href="https://twitter.com/Balancer"
+              >
                 <icon-twitter />
               </a>
 
-              <a class="mr-2" href="https://discord.balancer.fi"
-                ><icon-discord
-              /></a>
+              <a
+                class="mr-2"
+                href="https://discord.balancer.fi"
+              ><icon-discord /></a>
 
-              <a class="mr-2" href="https://medium.com/balancer-protocol"
-                ><icon-medium
-              /></a>
+              <a
+                class="mr-2"
+                href="https://medium.com/balancer-protocol"
+              ><icon-medium /></a>
 
               <a
                 class="mr-2"
                 href="https://www.youtube.com/channel/UCBRHug6Hu3nmbxwVMt8x_Ow"
-                ><icon-youtube
-              /></a>
+              ><icon-youtube /></a>
 
-              <a class="mr-2" href="https://github.com/balancer-labs/"
-                ><icon-github
-              /></a>
+              <a
+                class="mr-2"
+                href="https://github.com/balancer-labs/"
+              ><icon-github /></a>
 
               <a
                 class="mr-2"
                 href="https://www.linkedin.com/company/balancer-labs/"
-                ><icon-linkedin
-              /></a>
-              <a class="mr-2" href="mailto:contact@balancer.finance"
-                ><icon-mail
-              /></a>
+              ><icon-linkedin /></a>
+              <a
+                class="mr-2"
+                href="mailto:contact@balancer.finance"
+              ><icon-mail /></a>
             </div>
           </div>
         </slot>
@@ -173,48 +197,7 @@
     </transition>
   </div>
 </template>
-<script>
-import { mapState, mapMutations } from "vuex";
-import MenuLinks from "@/components/menu/MenuLinks.vue";
-import IconTwitter from "@/components/icons/IconTwitter.vue";
-import IconDiscord from "@/components/icons/IconDiscord.vue";
-import IconMedium from "@/components/icons/IconMedium.vue";
-import IconYoutube from "@/components/icons/IconYoutube.vue";
-import IconGithub from "@/components/icons/IconGithub.vue";
-import IconMail from "@/components/icons/IconMail.vue";
-import IconLinkedin from "@/components/icons/IconLinkedin.vue";
 
-export default {
-  components: {
-    IconTwitter,
-    IconDiscord,
-    IconMedium,
-    IconYoutube,
-    IconGithub,
-    IconMail,
-    IconLinkedin,
-  },
-  computed: {
-    ...mapState({
-      sidebarOpen: (state) => state.sidebar,
-    }),
-  },
-  methods: {
-    ...mapMutations({
-      toggleSidebar: "toggleSidebar",
-    }),
-  },
-  watch: {
-    sidebarOpen(newValue) {
-      if (newValue) {
-        document.body.classList.add("sidebarOpen")
-      } else {
-        document.body.classList.remove("sidebarOpen")
-      }
-    } 
-  }
-};
-</script>
 <style>
 .link {
   transition: all 0.2s ease-out;

@@ -1,3 +1,12 @@
+<script setup>
+
+definePageMeta({
+  pageTransition: {
+    name: 'slideup'
+  }
+})
+
+</script>
 <template>
   <div>
     <HeroHome />
@@ -16,18 +25,20 @@ import Backers from "@/components/pages/home/Backers.vue";
 import StatsHome from "@/components/pages/home/StatsHome.vue";
 
 export default {
+  components: {
+    HeroHome,
+    Ecosystem,
+    Aave,
+    Backers,
+    StatsHome,
+  },
+  transition: 'slideup',
   head() {
     // return {
     //   link: [{ rel: 'preload', as:'image', href: '/images/hero-home.svg' }]
     // }
   },
-  transition: 'slideup', 
-  components: {
-    HeroHome, 
-    Ecosystem,
-    Aave,
-    Backers,
-    StatsHome
-  }
 }
 </script>
+
+

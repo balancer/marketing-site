@@ -1,21 +1,18 @@
 <template>
   <div class="popover-container">
     <div
-      class="
-        flex
-        justify-between
-        items-center
-        border-b border-gray-100
-        px-4
-        py-2
-        md:py-3
-      "
+      class="flex items-center justify-between border-b border-gray-100 px-4 py-2 md:py-3"
     >
       <div>
-        <h3 class="m-0 p-0 @apply text-xl font-bold">{{ title }}</h3>
+        <h3 class="@apply m-0 p-0 text-xl font-bold">
+          {{ title }}
+        </h3>
       </div>
       <div>
-        <a class="icon-link flex items-center justify-end" v-close-popover>
+        <a
+          v-close-popper
+          class="icon-link flex items-center justify-end"
+        >
           <icon-close />
         </a>
       </div>
@@ -23,17 +20,23 @@
 
     <div class="p-4">
       <div v-if="comingSoon">
-        <p class="launching-soon right-0 top-0">Launching soon</p>
+        <p class="launching-soon right-0 top-0">
+          Launching soon
+        </p>
       </div>
       <p class="pb-3 leading-6">
         {{ description }}
       </p>
       <p>
-        <a class="case-study-link" :href="url"
-          >Visit {{ title }}
-          <icon-base width="14" height="14" icon-name="external-link"
-            ><icon-external-link
-          /></icon-base>
+        <a
+          class="case-study-link"
+          :href="url"
+        >Visit {{ title }}
+          <icon-base
+            width="14"
+            height="14"
+            icon-name="external-link"
+          ><icon-external-link /></icon-base>
         </a>
       </p>
     </div>

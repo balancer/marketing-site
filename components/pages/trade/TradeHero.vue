@@ -1,38 +1,49 @@
 <template>
   <section class="protocol-hero">
     <div class="protocol-hero-container">
-      <div class="md:flex md:items items-center">
-        <div class="pt-12 md:pt-0 order-1 md:order-2 md:pl-8 xl:pl-16">
-          <transition name="img" appear>
+      <div class="md:items items-center md:flex">
+        <div class="order-1 pt-12 md:order-2 md:pt-0 md:pl-8 xl:pl-16">
+          <transition
+            name="img"
+            appear
+          >
             <img
               width="1000"
               height="618"
               class="pt-1 pb-10 md:pb-1"
-              :src="require('~/assets/images/trade-ui.jpg')"
+              src="~/assets/images/trade-ui.jpg"
               alt=""
-            />
+            >
           </transition>
         </div>
         <div class="protocol-hero-content">
-          <transition name="h1" appear>
+          <transition
+            name="h1"
+            appear
+          >
             <h1 class="h1-sans-serif">
               Decentralized liquid crypto&nbsp;market
             </h1>
           </transition>
-          <transition name="p" appear>
+          <transition
+            name="p"
+            appear
+          >
             <p class="pb-4 font-medium text-black">
               Trade thousands of token pairs with instantaneous speed at optimal
               rates.
             </p>
           </transition>
-          <transition name="buttons" appear>
+          <transition
+            name="buttons"
+            appear
+          >
             <div class="flex md:pb-0">
               <a
                 onclick="fathom.trackGoal('NDN2AJWP', 0);"
                 class="btn btn-primary btn-hero"
                 href="https://app.balancer.fi/#/trade"
-                >Launch Trade app</a
-              >
+              >Launch Trade app</a>
             </div>
           </transition>
         </div>

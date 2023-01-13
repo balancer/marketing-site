@@ -1,19 +1,32 @@
 <template>
   <div class="error-container">
     <div class="">
-      <h1 class="h1 text-white" v-if="error.statusCode === 404">
+      <h1
+        v-if="error.statusCode === 404"
+        class="h1 text-white"
+      >
         404<span class="h1-subtext">Page not found</span>
       </h1>
-      <h1 class="h1-subtext" v-else>An error occurred</h1>
-      <NuxtLink class="btn btn-secondary" to="/">Return Home</NuxtLink>
+      <h1
+        v-else
+        class="h1-subtext"
+      >
+        An error occurred
+      </h1>
+      <NuxtLink
+        class="btn btn-secondary"
+        to="/"
+      >
+        Return Home
+      </NuxtLink>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["error"],
-  layout: "error" // you can set a custom layout for the error page
+  layout: "error",
+  props: ["error"] // you can set a custom layout for the error page
 };
 </script>
 
@@ -35,7 +48,7 @@ export default {
 .error-container {
   @apply flex justify-center items-center bg-cover bg-no-repeat bg-center;
   background-color: #ccc;
-  background-image: url(~assets/svg/error-bg.svg);
+  background-image: url("/svg/error-bg.svg");
   min-height: 400px;
   height: calc(100vh - 200px);
   text-align: center;

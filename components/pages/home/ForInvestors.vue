@@ -1,11 +1,13 @@
 <template>
   <section>
-    <div class="max-w-screen-2xl mx-auto">
+    <div class="mx-auto max-w-screen-2xl">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 px-4 xl:px-0 pb-16 lg:pb-32 mb-8 items-center gap-4 bg-white"
+        class="mb-8 grid grid-cols-1 items-center gap-4 bg-white px-4 pb-16 md:grid-cols-2 lg:pb-32 xl:px-0"
       >
-        <div class="md:mx-auto max-w-lg pr-4 pb-8 md:pb-0">
-          <p class="eyebrow gradient-text pb-2 font-medium">For investors</p>
+        <div class="max-w-lg pr-4 pb-8 md:mx-auto md:pb-0">
+          <p class="eyebrow gradient-text pb-2 font-medium">
+            For investors
+          </p>
           <h1 class="h1-sans-serif">
             Portfolios that generate yield and rebalance automatically
           </h1>
@@ -18,40 +20,55 @@
           <div class="grid grid-cols-1 pb-5">
             <div class="pb-1">
               <div class="flex pb-5">
-                <img class="mr-3" :src="require('~/assets/svg/icon-shield.svg')" alt="" />
-                <p class="font-medium">Battle tested and secure</p>
+                <img
+                  class="mr-3"
+                  src="~/assets/svg/icon-shield.svg"
+                  alt=""
+                >
+                <p class="font-medium">
+                  Battle tested and secure
+                </p>
               </div>
               <div class="flex pb-5">
                 <img
                   class="mr-3"
-                  :src="require('~/assets/svg/icon-lightning.svg')"
+                  src="~/assets/svg/icon-lightning.svg"
                   alt=""
-                />
-                <p class="font-medium">Capital and gas efficient</p>
+                >
+                <p class="font-medium">
+                  Capital and gas efficient
+                </p>
               </div>
               <div class="flex pb-5">
-                <img 
-                width="26"
-                height="25"
-                class="mr-3" :src="require('~/assets/svg/icon-sparkles.svg')" alt="" />
-                <p class="font-medium">Earn $BAL token incentives</p>
+                <img
+                  width="26"
+                  height="25"
+                  class="mr-3"
+                  src="~/assets/svg/icon-sparkles.svg"
+                  alt=""
+                >
+                <p class="font-medium">
+                  Earn $BAL token incentives
+                </p>
               </div>
             </div>
             <div class="flex pb-4 md:pb-0">
               <a
                 class="btn btn-primary btn-hero mr-3"
                 href="https://app.balancer.fi/#/"
-                >Start investing</a
+              >Start investing</a>
+              <NuxtLink
+                class="btn btn-tertiary btn-hero"
+                to="invest"
               >
-              <NuxtLink class="btn btn-tertiary btn-hero" to="invest"
-                >Invest features</NuxtLink
-              >
+                Invest features
+              </NuxtLink>
             </div>
           </div>
         </div>
         <div>
           <div>
-            <div class="card-grid grid grid-cols-2 gap-4 max-w-xl">
+            <div class="card-grid grid max-w-xl grid-cols-2 gap-4">
               <a
                 href="https://app.balancer.fi/#/pool/0xa6f548df93de924d73be7d25dc02554c6bd66db500020000000000000000000e"
               >
@@ -61,12 +78,12 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      :src="require('~/assets/images/featured-pools/pool-weth-wbtc.jpg')"
+                      src="~/assets/images/featured-pools/pool-weth-wbtc.jpg"
                       alt=""
-                    />
+                    >
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
+                    <div class="p-2 text-center font-medium md:p-3">
                       <p class="text-label">50 WETH 50 WBTC</p>
                     </div>
                   </div>
@@ -79,14 +96,14 @@
                   <div class="image-container">
                     <img
                       width="300"
-                      height="300"                    
+                      height="300"
                       class="cover-img"
-                      :src="require('~/assets/images/featured-pools/pool-bal-weth.jpg')"
+                      src="~/assets/images/featured-pools/pool-bal-weth.jpg"
                       alt=""
-                    />
+                    >
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
+                    <div class="p-2 text-center font-medium md:p-3">
                       <p class="text-label">80 BAL 20 WETH</p>
                     </div>
                   </div>
@@ -99,14 +116,14 @@
                   <div class="image-container">
                     <img
                       width="300"
-                      height="300"                    
+                      height="300"
                       class="cover-img"
-                      :src="require('~/assets/images/featured-pools/pool-dpi-weth-wbtc.jpg')"
+                      src="~/assets/images/featured-pools/pool-dpi-weth-wbtc.jpg"
                       alt=""
-                    />
+                    >
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
+                    <div class="p-2 text-center font-medium md:p-3">
                       <p class="text-label">
                         33 DPI 33 WETH 33&nbsp;WBTC
                       </p>
@@ -121,14 +138,14 @@
                   <div class="image-container">
                     <img
                       width="300"
-                      height="300"                    
+                      height="300"
                       class="cover-img"
-                      :src="require('~/assets/images/featured-pools/pool-weth-dai.jpg')"
+                      src="~/assets/images/featured-pools/pool-weth-dai.jpg"
                       alt=""
-                    />
+                    >
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
+                    <div class="p-2 text-center font-medium md:p-3">
                       <p class="text-label">60 WETH 40 DAI</p>
                     </div>
                   </div>
@@ -171,7 +188,7 @@ export default {};
 }
 
 .text-label {
-  transition: 0.2s all ease-out;  
+  transition: 0.2s all ease-out;
   @apply text-sm truncate;
 }
 

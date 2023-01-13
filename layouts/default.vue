@@ -1,23 +1,16 @@
+<script setup>
+</script>
+
 <template>
   <div>
     <div class="main">
       <Header />
       <Sidebar />
-      <Nuxt />
+      <slot />
       <Footer />
     </div>
   </div>
 </template>
-
-<script>
-import Sidebar from "@/components/menu/Sidebar.vue";
-
-export default {
-  components: {
-    Sidebar
-  }
-};
-</script>
 
 <style>
 html {
@@ -45,7 +38,7 @@ html {
   background: white;
   position: relative;
   z-index: 1;
-  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.20);  
+  box-shadow: 0 20px 40px 0 rgba(0,0,0,0.20);
 }
 
 .drawer-footer {

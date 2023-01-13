@@ -9,7 +9,10 @@
     role="img"
   >
     <title id="twitterTitle">Link to Balancer's Twitter</title>
-    <g fill-rule="nonzero" fill="none">
+    <g
+      fill-rule="nonzero"
+      fill="none"
+    >
       <path
         class="bg"
         d="M15.962 0C7.147 0 0 7.164 0 16s7.147 16 15.962 16 15.963-7.164 15.963-16S24.777 0 15.962 0z"

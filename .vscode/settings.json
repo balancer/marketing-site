@@ -1,0 +1,9 @@
+{
+  "vue3snippets.enable-compile-vue-file-on-did-save-code": false,
+  "prettier.enable": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

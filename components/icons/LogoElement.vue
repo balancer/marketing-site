@@ -35,7 +35,10 @@
       </g>
     </g>
     <defs>
-      <clipPath id="a"><path fill="#fff" d="M0 0h120v120H0z" /></clipPath>
+      <clipPath id="a"><path
+        fill="#fff"
+        d="M0 0h120v120H0z"
+      /></clipPath>
     </defs>
   </svg>
 </template>

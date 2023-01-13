@@ -1,42 +1,52 @@
 <template>
   <section class="protocol-hero">
     <div class="protocol-hero-container">
-      <div class="md:flex md:items items-center">
-        <div class="pt-12 md:pt-0 order-1 md:order-2 md:pl-8 xl:pl-16">
-          <transition name="img" appear>
+      <div class="md:items items-center md:flex">
+        <div class="order-1 pt-12 md:order-2 md:pt-0 md:pl-8 xl:pl-16">
+          <transition
+            name="img"
+            appear
+          >
             <img
               width="1000"
               height="618"
               class="pt-1 pb-10"
-              :src="require('~/assets/images/hero-protocol.png')"
+              src="~/assets/images/hero-protocol.png"
               alt=""
-            />
+            >
           </transition>
         </div>
         <div class="protocol-hero-content">
-          <transition name="h1" appear>
+          <transition
+            name="h1"
+            appear
+          >
             <h1 class="h1-sans-serif text-white">
               Flexible, efficient, liquid.
             </h1>
           </transition>
-          <transition name="p" appear>
-            <p class="pb-4 font-medium text-lg">
+          <transition
+            name="p"
+            appear
+          >
+            <p class="pb-4 text-lg font-medium">
               Balancer algorithmically manages liquidity to mutually benefit
               investors and traders. Built on&nbsp;Ethereum.
             </p>
           </transition>
-          <transition name="buttons" appear>
+          <transition
+            name="buttons"
+            appear
+          >
             <div class="flex md:pb-0">
               <a
                 class="btn btn-primary btn-hero"
                 href="https://app.balancer.fi/"
-                >Launch app</a
-              >
+              >Launch app</a>
               <a
                 class="btn btn-skeleton-white btn-hero"
                 href="https://docs.balancer.fi"
-                >View docs</a
-              >
+              >View docs</a>
             </div>
           </transition>
         </div>

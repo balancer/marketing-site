@@ -1,51 +1,60 @@
+<script setup>
+</script>
+
 <template>
   <section class="hero-build">
     <div class="hero-build-content">
       <div class="order-1 md:order-2 md:pl-4 xl:pl-16">
-        <transition name="img" appear>
+        <transition
+          name="img"
+          appear
+        >
           <img
             width="1000"
             height="1000"
-            class="pt-1 pb-10 px-4 md:px-12 lg:px-16 xl:px-20 mx-auto w-full max-w-3xl"
-            :src="require('~/assets/images/hero-build.png')"
+            class="mx-auto w-full max-w-3xl px-4 pt-1 pb-10 md:px-12 lg:px-16 xl:px-20"
+            src="~/assets/images/hero-build.png"
             alt=""
-          />
+          >
         </transition>
       </div>
-      <div class="md:pl-8 max-w-lg md:order-1 text-white">
-        <transition name="h1" appear>
+      <div class="max-w-lg text-white md:order-1 md:pl-8">
+        <transition
+          name="h1"
+          appear
+        >
           <h1 class="h1-sans-serif text-white">
             A core building block&nbsp;of&nbsp;DeFi
           </h1>
         </transition>
-        <transition name="p" appear>
+        <transition
+          name="p"
+          appear
+        >
           <p class="p-hero">
             A reliable, open-source, permissionless protocol. Build on
             Balancer to create new innovative types of pools and financial dApps.
           </p>
         </transition>
-        <transition name="buttons" appear>
+        <transition
+          name="buttons"
+          appear
+        >
           <div class="flex pb-4 md:pb-0">
             <a
               class="btn btn-primary btn-hero mr-3"
               href="https://docs.balancer.fi"
-              >Developer docs</a
-            >
+            >Developer docs</a>
             <a
               class="btn btn-skeleton-white btn-hero"
               href="https://github.com/balancer-labs/"
-              >Github code</a
-            >
+            >Github code</a>
           </div>
         </transition>
       </div>
     </div>
   </section>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style scoped>
 .hero-build {

@@ -1,9 +1,42 @@
+<script setup>
+
+import BuildHero from "@/components/pages/build/BuildHero.vue";
+import SmartPools from "@/components/pages/build/SmartPools.vue";
+import LBPs from "@/components/pages/build/LBPs.vue";
+
+import { headMeta } from "@/lib/meta";
+
+definePageMeta({
+  pageTransition: {
+    name: 'slideup'
+  }
+})
+
+// TODO: check that it works with headMeta
+// https://nuxt.com/docs/getting-started/seo-meta#composable-usehead
+useHead({
+    title: "Balancer | Build on a protocol for programmable liquidity",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Balancer is the most flexible and versatile AMM, giving developers unprecedented customizability."
+      }
+    ],
+    ...headMeta({
+      description: "description lorem"
+    })
+});
+
+</script>
+
 <template>
   <div>
     <BuildHero />
     <section class="bg-white">
-      <div class="max-w-7xl md:mx-auto px-4 pt-16 lg:pt-40 pb-16 lg:pb-32">
-        <div class="md:text-center pb-4">
+      <div class="max-w-7xl px-4 py-16 md:mx-auto lg:pt-40 lg:pb-32">
+        <div class="pb-4 md:text-center">
           <h1 class="h1-sans-serif pb-4">
             Start building
           </h1>
@@ -12,21 +45,21 @@
           </p>
         </div>
         <div
-          class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-screen-lg mx-auto"
+          class="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 md:grid-cols-4"
         >
           <a href="https://docs.balancer.fi/products/balancer-pools/weighted-pools">
             <div class="pool relative">
-              <div class="relative flex justify-center items-center">
+              <div class="relative flex items-center justify-center">
                 <img
                   width="244"
                   height="244"
                   class="cover-img"
-                  :src="require('~/assets/images/start-building/smart.jpg')"
+                  src="~/assets/images/start-building/smart.jpg"
                   alt=""
-                />
+                >
               </div>
               <div>
-                <div class="p-2 md:p-3 text-center">
+                <div class="p-2 text-center md:p-3">
                   <p class="font-medium">Create a weighted Pool</p>
                 </div>
               </div>
@@ -36,17 +69,17 @@
             href="https://docs.balancer.fi/getting-started/faqs/pools-and-lbps"
           >
             <div class="pool relative">
-              <div class="relative flex justify-center items-center">
+              <div class="relative flex items-center justify-center">
                 <img
                   width="244"
                   height="244"
                   class="cover-img"
-                  :src="require('~/assets/images/start-building/launch-token.jpg')"
+                  src="~/assets/images/start-building/launch-token.jpg"
                   alt=""
-                />
+                >
               </div>
               <div>
-                <div class="p-2 md:p-3 text-center">
+                <div class="p-2 text-center md:p-3">
                   <p class="font-medium">Launch a token</p>
                 </div>
               </div>
@@ -57,18 +90,38 @@
             href="https://thegraph.com/explorer/subgraph/balancer-labs/balancer"
           >
             <div class="pool relative">
-              <div class="relative flex justify-center items-center">
+              <div class="relative flex items-center justify-center">
                 <img
                   width="244"
                   height="244"
                   class="cover-img"
-                  :src="require('~/assets/images/start-building/data.jpg')"
+                  src="~/assets/images/start-building/data.jpg"
                   alt=""
-                />
+                >
               </div>
               <div>
-                <div class="p-2 md:p-3 text-center">
+                <div class="p-2 text-center md:p-3">
                   <p class="font-medium">Get Balancer data</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://docs.balancer.fi/products/oracles"
+          >
+            <div class="pool relative">
+              <div class="relative flex items-center justify-center">
+                <img
+                  width="244"
+                  height="244"
+                  class="cover-img"
+                  src="~/assets/images/start-building/oracle.jpg"
+                  alt=""
+                >
+              </div>
+              <div>
+                <div class="p-2 text-center md:p-3">
+                  <p class="font-medium">Use price oracles</p>
                 </div>
               </div>
             </div>
@@ -83,42 +136,6 @@
   </div>
 </template>
 
-<script>
-import BuildHero from "@/components/pages/build/BuildHero.vue";
-import SmartPools from "@/components/pages/build/SmartPools.vue";
-import LBPs from "@/components/pages/build/LBPs.vue";
-import Element from "@/components/case-studies/Element.vue";
-import CaseStudies from "@/components/case-studies/CaseStudies.vue";
-
-import { headMeta } from "@/lib/meta";
-
-export default {
-  transition: "slideup",
-  components: {
-    BuildHero,
-    SmartPools,
-    Element,
-    CaseStudies,
-    LBPs
-  },
-  head() {
-    return {
-      title: "Balancer | Build on a protocol for programmable liquidity",
-      meta: [
-        {
-          hid: "description",
-          name: "description",
-          content:
-            "Balancer is the most flexible and versatile AMM, giving developers unprecedented customizability."
-        }
-      ],
-      ...headMeta({
-        description: "description lorem"
-      })
-    };
-  }
-};
-</script>
 
 <style>
 .card {

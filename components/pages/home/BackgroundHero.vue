@@ -7,11 +7,24 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <defs>
-        <path id="a" d="M0 0h1440v687H0z" />
+        <path
+          id="a"
+          d="M0 0h1440v687H0z"
+        />
       </defs>
-      <g fill="none" fill-rule="evenodd">
-        <path d="M0 0h1440v687H0z" fill="#EF2B55" fill-rule="nonzero" />
-        <mask id="b" fill="#fff">
+      <g
+        fill="none"
+        fill-rule="evenodd"
+      >
+        <path
+          d="M0 0h1440v687H0z"
+          fill="#EF2B55"
+          fill-rule="nonzero"
+        />
+        <mask
+          id="b"
+          fill="#fff"
+        >
           <use xlink:href="#a" />
         </mask>
         <g mask="url(#b)">

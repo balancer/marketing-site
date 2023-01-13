@@ -1,10 +1,10 @@
 <template>
   <section>
-    <div class="max-w-screen-2xl mx-auto pt-16 md:pt-32">
+    <div class="mx-auto max-w-screen-2xl pt-16 md:pt-32">
       <div
-        class="grid grid-cols-1 md:grid-cols-2 px-4 xl:px-0 pb-16 lg:pb-32 items-center bg-white"
+        class="grid grid-cols-1 items-center bg-white px-4 pb-16 md:grid-cols-2 lg:pb-32 xl:px-0"
       >
-        <div class="md:mx-auto max-w-lg pr-4 pb-8 md:pb-0">          
+        <div class="max-w-lg pr-4 pb-8 md:mx-auto md:pb-0">
           <h1 class="h1-sans-serif">
             Trade now without&nbsp;barriers
           </h1>
@@ -17,9 +17,9 @@
         <div>
           <img
             class="w-full max-w-2xl"
-            :src="require('~/assets/images/hero-protocol.png')"
+            src="~/assets/images/hero-protocol.png"
             alt=""
-          />
+          >
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@ export default {};
 
 <style scoped>
 .pool {
-  max-width: 248px;  
+  max-width: 248px;
   @apply border border-gray-200 rounded-3xl shadow;
 }
 .case-study {

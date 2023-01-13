@@ -9,7 +9,10 @@
     role="img"
   >
     <title id="mailTitle">Link to Balancer Lab's contact email address</title>
-    <g fill-rule="nonzero" fill="none">
+    <g
+      fill-rule="nonzero"
+      fill="none"
+    >
       <path
         class="bg"
         d="M16.038 0C7.223 0 .075 7.164.075 16s7.148 16 15.963 16S32 24.836 32 16 24.853 0 16.038 0z"

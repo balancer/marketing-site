@@ -2,14 +2,14 @@
   <div>
     <ProtocolHero />
 
-    <section class="pt-16 lg:pt-32 pb-12 lg:pb-32 bg-white">
-      <div class="px-4 md:flex mx-auto max-w-screen-xl">
+    <section class="bg-white pt-16 pb-12 lg:py-32">
+      <div class="mx-auto max-w-screen-xl px-4 md:flex">
         <div class="md:pr-8 lg:pr-12">
           <img
             class="py-12 md:py-0"
-            :src="require('~/assets/images/ui-in-device.jpg')"
+            src="~/assets/images/ui-in-device.jpg"
             alt=""
-          />
+          >
         </div>
         <div class="max-w-lg">
           <h1 class="h1-sans-serif py-6">
@@ -22,7 +22,11 @@
             NASDAQ’s exchange, and then distributing NASDAQ’s trading profits to
             Fidelity’s asset holders.”
           </p>
-          <img class="messari-logo" :src="require('~/assets/images/messari.png')" alt="" />
+          <img
+            class="messari-logo"
+            src="~/assets/images/messari.png"
+            alt=""
+          >
         </div>
       </div>
     </section>
@@ -30,7 +34,7 @@
     <ProtocolAMMs />
 
     <section class="bg-white">
-      <div class="px-4 xl:px-0 max-w-7xl mx-auto pb-16 md:pb-32">
+      <div class="mx-auto max-w-7xl px-4 pb-16 md:pb-32 xl:px-0">
         <div class="grid md:grid-cols-2 md:grid-rows-3 md:gap-8 lg:grid-cols-3 lg:grid-rows-2 lg:gap-12 xl:gap-16">
           <FeatureDetailed
             title="Efficient Asset Managers"
@@ -68,14 +72,20 @@
     </section>
 
     <section>
-      <div class="case-study max-w-7xl mx-auto">
+      <div class="case-study mx-auto max-w-7xl">
         <div
-          class="grid grid-cols-1 md:grid-cols-2 items-center mb-0 lg:mb-32 py-16 md:py-16 text-white bg-aave px-4"
+          class="bg-aave mb-0 grid grid-cols-1 items-center py-16 px-4 text-white md:grid-cols-2 md:py-16 lg:mb-32"
         >
-          <div class="md:mx-auto max-w-md">
-            <p class="py-4 uppercase tracking-widest">Case Study</p>
-            <img class="py-4" :src="require('~/assets/svg/logo-aave.svg')" alt="" />
-            <ol class="font-medium pb-12 md:pb-0">
+          <div class="max-w-md md:mx-auto">
+            <p class="py-4 uppercase tracking-widest">
+              Case Study
+            </p>
+            <img
+              class="py-4"
+              src="~/assets/svg/logo-aave.svg"
+              alt=""
+            >
+            <ol class="pb-12 font-medium md:pb-0">
               <li class="py-4 ">
                 Aave launched their 80/20 AAVE/ETH Safety Incentive pool on
                 Balancer, allowing LPs to help secure their protocol while
@@ -90,9 +100,13 @@
               </li>
             </ol>
           </div>
-          <div class="md:mx-auto max-w-md">
-            <img class="md:py-4" :src="require('~/assets/images/people/stani.jpg')" alt="" />
-            <p class="py-4 italic font-medium">
+          <div class="max-w-md md:mx-auto">
+            <img
+              class="md:py-4"
+              src="~/assets/images/people/stani.jpg"
+              alt=""
+            >
+            <p class="py-4 font-medium italic">
               “Part of what makes DeFi so exciting is its composability, and
               with Balancer this has resulted in a partnership that optimises
               the experience for liquidity providers through the Aave-Balancer
@@ -101,7 +115,7 @@
               more synergies with Balancer in the future.”
             </p>
             <p class="font-medium">
-              Stani Kulechov <br />
+              Stani Kulechov <br>
               Founder and CEO of Aave
             </p>
           </div>
@@ -113,25 +127,12 @@
 
 <script>
 import ProtocolHero from "@/components/pages/protocol/ProtocolHero.vue";
-import {
-  VsaList,
-  VsaItem,
-  VsaHeading,
-  VsaContent,
-  VsaIcon
-} from "vue-simple-accordion";
-import "vue-simple-accordion/dist/vue-simple-accordion.css";
 
 export default {
-  transition: "slideup",
   components: {
-    VsaList,
-    VsaItem,
-    VsaHeading,
-    VsaContent,
-    VsaIcon, 
     ProtocolHero
-  }
+  },
+  transition: "slideup"
 };
 </script>
 

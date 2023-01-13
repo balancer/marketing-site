@@ -1,8 +1,14 @@
 <template>
-  <transition name="fade" appear>
+  <transition
+    name="fade"
+    appear
+  >
     <header class="header">
       <nav class="flex">
-        <NuxtLink class="logotype mr-4 lg:mr-8" to="/">
+        <NuxtLink
+          class="logotype mr-4 lg:mr-8"
+          to="/"
+        >
           <logotype-balancer />
         </NuxtLink>
         <div class="mobile-hide mr-4">
@@ -10,31 +16,36 @@
             class="nav-link nav-link--pink"
             data-hover="Build"
             to="/build"
-            >Build</NuxtLink
           >
+            Build
+          </NuxtLink>
         </div>
       </nav>
       <div class="flex items-center">
         <div class="mobile-hide">
-          <div class="flex items-center nav-utility-link">
+          <div class="nav-utility-link flex items-center">
             <a
               class="nav-link"
               data-hover="Docs"
               href="https://docs.balancer.fi"
-              >Docs
-              <icon-base width="14" height="14" icon-name="docs-external-link"
-                ><icon-external-link /></icon-base
-            ></a>
+            >Docs
+              <icon-base
+                width="14"
+                height="14"
+                icon-name="docs-external-link"
+              ><icon-external-link /></icon-base></a>
           </div>
-          <div class="flex items-center nav-utility-link">
+          <div class="nav-utility-link flex items-center">
             <a
               class="nav-link"
               data-hover="Blog"
               href="https://medium.com/balancer-protocol"
-              >Blog
-              <icon-base width="14" height="14" icon-name="blog-external-link"
-                ><icon-external-link
-              /></icon-base>
+            >Blog
+              <icon-base
+                width="14"
+                height="14"
+                icon-name="blog-external-link"
+              ><icon-external-link /></icon-base>
             </a>
           </div>
         </div>
@@ -42,29 +53,12 @@
           onclick="fathom.trackGoal('OMNVISTW', 0);"
           class="btn-header"
           href="https://app.balancer.fi/"
-          >Explore&nbsp;pools</a
-        >
+        >Explore&nbsp;pools</a>
         <Burger />
       </div>
     </header>
   </transition>
 </template>
-
-<script>
-import Burger from "@/components/menu/Burger.vue";
-import IconBase from "@/components/icons/IconBase.vue";
-import IconExternalLink from "@/components/icons/IconExternalLink.vue";
-import LogotypeBalancer from "@/components/icons/LogotypeBalancer.vue";
-
-export default {
-  components: {
-    Burger,
-    IconBase,
-    IconExternalLink,
-    LogotypeBalancer,
-  },
-};
-</script>
 
 <style scoped>
 .mobile-hide {

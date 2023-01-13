@@ -7,7 +7,10 @@
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#a)" fill="#fff">
+    <g
+      clip-path="url(#a)"
+      fill="#fff"
+    >
       <path
         fill-rule="evenodd"
         clip-rule="evenodd"
@@ -36,7 +39,10 @@
       />
     </g>
     <defs>
-      <clipPath id="a"><path fill="#fff" d="M0 0h120v120H0z" /></clipPath>
+      <clipPath id="a"><path
+        fill="#fff"
+        d="M0 0h120v120H0z"
+      /></clipPath>
     </defs>
   </svg>
 </template>

@@ -9,7 +9,10 @@
     role="img"
   >
     <title id="linkedinTitle">Link to Balancer's LinkedIn profile</title>
-    <g fill-rule="nonzero" fill="none">
+    <g
+      fill-rule="nonzero"
+      fill="none"
+    >
       <path
         class="bg"
         d="M16 0C7.163 0 0 7.164 0 16s7.163 16 16 16c8.836 0 16-7.163 16-16 0-8.836-7.164-16-16-16z"
