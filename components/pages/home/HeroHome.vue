@@ -98,10 +98,10 @@ export default {
             translateZ: 0,
             translateY: [50, 0],
             easing: "easeOutExpo",
-            duration: 800,
-            delay: this.$anime.stagger(30),
+            duration: 600,
+            delay: this.$anime.stagger(20),
           },
-          "+=300"
+          "+=200"
         )
         .add({
           targets: ".word1 .letter",
@@ -221,10 +221,10 @@ export default {
           opacity: [0, 1],
           translateY: [5, 0],
           easing: "easeOutExpo",
-          duration: 800,
+          duration: 600,
           delay: this.$anime.stagger(100),
         },
-        "+=900"
+        "+=500"
       );
     },
   },

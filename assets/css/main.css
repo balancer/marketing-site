@@ -2,6 +2,12 @@
 @import "./global/all.css";
 
 
+:root {
+  --color-beets: #00F89C;
+  --color-aura: hsla(269, 90%, 65%, 1);
+  --color-element: hsla(190, 64%, 73%, 1);
+}
+
 html {
   font-size: 16px;
   word-spacing: 1px;
@@ -78,3 +84,14 @@ html {
 .fade-leave-active {
   transition: all 0.4s ease-out 0.2s;
 }
+
+ 
+.layout-enter-active,
+.layout-leave-active {
+  transition: all 0.2s ease-out;
+  opacity: 1;
+}
+.layout-enter,
+.layout-leave-active {
+  opacity: 0;
+} 

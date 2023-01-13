@@ -3,113 +3,78 @@
     <div class="pt-0 pb-8 md:pb-20 lg:pb-32 md:pt-2 lg:px-8">
       <div class="text-center pb-16 partner-title">
         <h2 class="text-3xl pb-4">Partners & Integrations</h2>
-        <p class="pb-8 text-gray-500">Built on or with Balancer protocol</p>
+        <p class="pb-8 text-gray-500">
+          Built on or integrated with the Balancer&nbsp;protocol
+        </p>
       </div>
       <section>
         <div class="partners">
-          <v-popover offset="16" placement="top">
-            <button class="tooltip-target w-full">
-              <Partner
-                title="Balancer app"
-                bgImageStyle="balancer"
-                linkLabel="app.balancer.fi"
-                url="https://app.balancer.fi"
-                fathomCode="X9TTIGSY"
-                description="Pool explorer and infrastructure for Balancer ecosystem. The original proof-of-concept. Pool and
+          <NuxtLink to="ecosystem/balancer">
+            <Partner
+              title="Balancer app"
+              category="AMM & DEX"
+              bgImageStyle="balancer"
+              linkLabel="app.balancer.fi"
+              url="https://app.balancer.fi"
+              fathomCode="X9TTIGSY"
+              description="Pool explorer and infrastructure for Balancer ecosystem. The original proof-of-concept. Pool and
                   swap tokens. Get veBAL to vote for and claim liquidity mining incentives."
-              >
-                <template #logo>
-                  <logo-balancer />
-                </template>
-              </Partner>
-            </button>
+            >
+              <template #logo>
+                <logo-balancer />
+              </template>
+            </Partner>
+          </NuxtLink>
 
-            <template slot="popover">
-              <CaseStudy
-                title="Balancer app"
-                description="Pool explorer and infrastructure for Balancer ecosystem. The original proof-of-concept. Pool and
-                  swap tokens. Get veBAL to vote for and claim liquidity mining incentives."
-                url="https://app.balancer.fi"
-              />
-            </template>
-          </v-popover>
+          <NuxtLink to="ecosystem/beethoven">
+            <Partner
+              title="Beethoven X"
+              category="AMM on Fantom & Optimism"
+              bgImageStyle="beets"
+              linkLabel="op.beets.fi"
+              url="/ecosystem/beets"
+              description="Official friendly fork of Balancer on Optimism and Fantom. Designed to evolve and adapt, Beethoven X provides all the tools necessary for anyone to participate in the future of finance."
+            >
+              <template #logo>
+                <logo-beets />
+              </template>
+            </Partner>
+          </NuxtLink>
+          <NuxtLink to="ecosystem/aura">
+            <Partner
+              title="Aura"
+              category="DeFi yield booster"
+              bgImageStyle="aura"
+              linkLabel="aura.finance"
+              url="https://aura.finance/"
+              description="Boosting DeFi stakeholders' yield potential and governance power, starting with Balancer. Aura to the Balancer ecosystem is similar to Convex to Curve."
+            >
+              <template #logo>
+                <logo-aura />
+              </template>
+            </Partner>
+          </NuxtLink>
 
-          <v-popover offset="16" placement="top">
-            <button class="tooltip-target w-full">
-              <Partner
-                title="Beethoven X"
-                bgImageStyle="beets"
-                linkLabel="op.beets.fi"
-                url="https://op.beets.fi/"
-                description="Official friendly fork of Balancer on Optimism and Fantom. Designed to evolve and adapt, Beethoven X provides all the tools necessary for anyone to participate in the future of finance."
-              >
-                <template #logo>
-                  <logo-beets />
-                </template>
-              </Partner>
-            </button>
-
-            <template slot="popover">
-              <CaseStudy
-                title="Beethoven X"
-                description="Official friendly fork of Balancer on Optimism and Fantom. Designed to evolve and adapt, Beethoven X provides all the tools necessary for anyone to participate in the future of finance."
-                url="https://op.beets.fi/"
-              />
-            </template>
-          </v-popover>
-
-          <v-popover offset="16" placement="top">
-            <button class="tooltip-target w-full">
-              <Partner
-                title="Aura"
-                bgImageStyle="aura"
-                linkLabel="aura.finance"
-                url="https://aura.finance/"
-                description="Boosting DeFi stakeholders' yield potential and governance power, starting with Balancer. Aura to the Balancer ecosystem is similar to Convex to Curve."
-              >
-                <template #logo>
-                  <logo-aura />
-                </template>
-              </Partner>
-            </button>
-
-            <template slot="popover">
-              <CaseStudy
-                title="Aura"
-                description="Boosting DeFi stakeholders' yield potential and governance power, starting with Balancer. Aura to the Balancer ecosystem is similar to Convex to Curve."
-                url="https://aura.finance/"
-              />
-            </template>
-          </v-popover>
-
-          <v-popover offset="16" placement="top">
-            <button class="tooltip-target w-full">
-              <Partner
-                title="Element"
-                bgImageStyle="element"
-                linkLabel="element.fi"
-                url="https://element.fi"
-                description="Element Finance uses Balancer V2’s custom AMM functionality to enable markets for assets that converge in value over time. Plugging into the V2 ecosystem allows users to swap fixed yield assets from any other major asset in the V2 vault with the gas efficiency of multihop order routing."
-              >
-                <template #logo>
-                  <logo-element />
-                </template>
-              </Partner>
-            </button>
-
-            <template slot="popover">
-              <CaseStudy
-                title="Element Finance"
-                description="Element Finance uses Balancer V2’s custom AMM functionality to enable markets for assets that converge in value over time. Plugging into the V2 ecosystem allows users to swap fixed yield assets from any other major asset in the V2 vault with the gas efficiency of multihop order routing."
-                url="https://element.fi"
-              />
-            </template>
-          </v-popover>
+          <NuxtLink to="ecosystem/element">
+            <Partner
+              title="Element"
+              category="Fixed & variable yield"
+              bgImageStyle="element"
+              linkLabel="element.fi"
+              url="https://element.fi"
+              description="Element Finance uses Balancer V2’s custom AMM functionality to enable markets for assets that converge in value over time. Plugging into the V2 ecosystem allows users to swap fixed yield assets from any other major asset in the V2 vault with the gas efficiency of multihop order routing."
+            >
+              <template #logo>
+                <logo-element />
+              </template>
+            </Partner>
+          </NuxtLink>
 
           <v-popover offset="16" placement="top">
             <button class="tooltip-target w-full">
               <Partner
                 title="Fjord Foundry"
+                category="LBPs for tokens & NFTs"
                 bgImageStyle="fjord"
                 linkLabel="fjordfoundry.com"
                 url="https://fjordfoundry.com/"
@@ -136,6 +101,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="Aave"
+                category="Lend & borrow protocol"
                 bgImageStyle="aave"
                 linkLabel="aave.com"
                 url="https://aave.com/"
@@ -160,6 +126,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="Gyroscope"
+                category="Novel stablecoin architecture"
                 bgImageStyle="gyro"
                 linkLabel="gyro.finance"
                 url="https://gyro.finance/"
@@ -185,6 +152,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="CoW Protocol"
+                category="DEX liquidity aggregator"
                 bgImageStyle="cow"
                 linkLabel="cow.fi"
                 url="https://cow.fi/"
@@ -209,6 +177,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="1inch"
+                category="DEX liquidity aggregator"
                 bgImageStyle="1inch"
                 linkLabel="1inch.io"
                 url="https://1inch.io/"
@@ -234,6 +203,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="Stake DAO"
+                category="DeFi yield booster"
                 bgImageStyle="stakedao"
                 linkLabel="stakedao.org"
                 url="https://stakedao.org/"
@@ -258,6 +228,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="Tetu"
+                category="DeFi yield booster"
                 bgImageStyle="tetu"
                 linkLabel="tetu.io"
                 url="https://tetu.io/"
@@ -282,6 +253,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="Mycelium"
+                category="Perpetual swaps & pools"
                 bgImageStyle="mycelium"
                 linkLabel="mycelium.xyz"
                 url="https://mycelium.xyz/"
@@ -306,6 +278,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="Cron Finance"
+                category="TWAMM for large swaps"
                 bgImageStyle="cron"
                 linkLabel="Medium post"
                 url="https://medium.com/@BalancerGrants/cron-finance-is-developing-twamm-on-top-of-balancer-d5d6bc17919a"
@@ -331,6 +304,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="Tempus"
+                category="Fixed income protocol"
                 bgImageStyle="tempus"
                 linkLabel="tempus.finance"
                 url="https://tempus.finance/"
@@ -355,6 +329,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="PowerPool"
+                category="Automated Defi products"
                 bgImageStyle="powerpool"
                 linkLabel="powerpool.finance"
                 url="https://powerpool.finance/"
@@ -379,6 +354,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="PrimeDAO"
+                category="DAO coordination tools"
                 bgImageStyle="prime"
                 linkLabel="prime.xyz"
                 url="https://www.prime.xyz/"
@@ -403,6 +379,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="Sense Finance"
+                category="Fixed income protocol"
                 bgImageStyle="sense"
                 linkLabel="sense.finance"
                 url="https://sense.finance/"
@@ -427,6 +404,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="Index Coop"
+                category="Structured DeFi products"
                 bgImageStyle="coop"
                 linkLabel="indexcoop.com"
                 url="https://indexcoop.com/"
@@ -451,6 +429,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="Xave Finance"
+                category="Remittances & Savings"
                 bgImageStyle="xave"
                 linkLabel="xave.co"
                 url="https://www.xave.co/"
@@ -475,6 +454,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="Qi DAO"
+                category="Mai stablecoin protocol"
                 bgImageStyle="qi"
                 linkLabel="mai.finance"
                 url="https://www.mai.finance/"
@@ -521,6 +501,7 @@ import LogoTetu from "@/components/icons/LogoTetu.vue";
 import LogoXave from "@/components/icons/LogoXave.vue";
 import LogoStakedao from "@/components/icons/LogoStakedao.vue";
 import LogoQi from "@/components/icons/LogoQi.vue";
+import partnerModal from "@/components/_global/partnerModal.vue";
 
 import CaseStudy from "@/components/case-studies/CaseStudy.vue";
 import Partner from "@/components/_global/Partner.vue";
@@ -537,40 +518,46 @@ export default {
   },
 
   methods: {
+    loadModal() {
+      showModal = true;
+    },
     partnerAnimation() {
-      this.$anime.timeline({ loop: false }).add(
-        {
-          targets: ".ecosystem",
-          opacity: [0, 1],
-          easing: "easeOutBack",
-          duration: 800,
-        },
-        "+=1150"
-      ).add(
-        {
-          targets: ".partner-title",
-          scale: [0.9, 1],
-          opacity: [0, 1],
-          translateZ: 0,
-          translateY: [20, 0],
-          easing: "easeOutBack",
-          duration: 800,
-        },
-        "-=800"
-      )
-      .add(
-        {
-          targets: ".partner",
-          scale: [0.8, 1],
-          opacity: [0, 1],
-          translateZ: 0,
-          translateY: [20, 0],
-          easing: "easeOutBack",
-          duration: 800,
-          delay: this.$anime.stagger(40),
-        },
-        "-=300"
-      );
+      this.$anime
+        .timeline({ loop: false })
+        .add(
+          {
+            targets: ".ecosystem",
+            opacity: [0, 1],
+            easing: "easeOutBack",
+            duration: 300,
+          },
+          "+=600"
+        )
+        .add(
+          {
+            targets: ".partner-title",
+            scale: [0.9, 1],
+            opacity: [0, 1],
+            translateZ: 0,
+            translateY: [20, 0],
+            easing: "easeOutBack",
+            duration: 300,
+          },
+          "-=300"
+        )
+        .add(
+          {
+            targets: ".partner",
+            scale: [0.8, 1],
+            opacity: [0, 1],
+            translateZ: 0,
+            translateY: [20, 0],
+            easing: "easeOutBack",
+            duration: 300,
+            delay: this.$anime.stagger(30),
+          },
+          "-=300"
+        );
     },
   },
   components: {
@@ -596,6 +583,12 @@ export default {
     LogoXave,
     LogoStakedao,
     LogoQi,
+    partnerModal,
+  },
+  data() {
+    return {
+      showModal: false,
+    };
   },
 };
 </script>
@@ -640,11 +633,10 @@ h2.title {
 
 @media (min-width: 1240px) {
   .partners {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 40px;
     grid-row-gap: 64px;
   }
 }
-
 </style>
   

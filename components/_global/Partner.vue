@@ -1,26 +1,34 @@
 <template>
-  <div class="partner group">
-    <div :class="'relative partner__graphic partner__graphic--' + bgImageStyle">
-      <slot name="logo" />
-    </div>
-    <div class="partner__details">
-      <div class="partner__summmary">
-        <div class="relative">
-          <div>
-            <h2 class="title">
-              {{ title }}
-            </h2>
-            <a @click="linkClickHandler" class="link" :href="url">{{
-              linkLabel
-            }}</a>
+  <div class="text-center hover:cursor-pointer" @click="showModal = true">
+  <!-- <NuxtLink class="text-center" :to="url" @click="animation"> -->
+    <div class="partner group">
+      <div
+        :class="'relative partner__graphic partner__graphic--' + bgImageStyle"
+      >
+        <slot name="logo" />
+      </div>
+      <div class="partner__details">
+        <div class="partner__summmary">
+          <div class="relative">
+            <div>
+              <h2 class="title">
+                {{ title }}
+              </h2>
+              <p class="synopsis">{{ category }}</p>
+              <p class="learn-more">Learn more</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- </NuxtLink> -->
 </template>
   
   <script>
+
+import partnerModal from "@/components/_global/partnerModal.vue";
+
 export default {
   props: {
     title: {
@@ -36,6 +44,10 @@ export default {
       required: true,
     },
     fathomCode: {
+      type: String,
+      required: false,
+    },
+    category: {
       type: String,
       required: false,
     },
@@ -56,6 +68,18 @@ export default {
     linkClickHandler() {
       fathom?.trackGoal(fathomCode || "", 0);
     },
+    animation() {      
+      this.$anime
+        .timeline({ loop: false })
+        .add(
+          {
+            targets: ".partner .partner--g",
+            scale: [5, 5],
+            easing: "easeOutBack",
+            duration: 20000,
+          },
+        )         
+    },
   },
 };
 </script>
@@ -71,6 +95,25 @@ export default {
   text-shadow: 0px 1.5px 0px rgba(255, 255, 255, 1);
   @apply text-greyDark block mb-2 group-hover:text-defaultBlue transition-all text-sm;
 }
+.synopsis {
+  @apply text-sm pb-1 group-hover:text-defaultBlue transition-colors;
+}
+.learn-more {
+  @apply text-gray-500 text-sm opacity-0 transition-opacity duration-500;
+}
+
+@media (hover: hover) {
+  .partner:hover .learn-more {
+    opacity: 1;
+  }
+}
+
+@media (hover: none) {
+  .learn-more {
+    opacity: 1;
+  }
+}
+
 .partner {
   width: 100%;
   height: auto;
