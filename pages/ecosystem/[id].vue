@@ -1,20 +1,23 @@
 <script setup>
 const { id } = useRoute().params;
 
-onMounted(()=> {
-  hasHistory();
-  getLogo();
-}),
-
 function hasHistory() {
   return window.history.length > 2;
 }
 
-function getLogo() {
-  return {
-    logo: `logo-${this.$route.params.id}`
-  }
-}
+// function getLogo() {
+  
+//   const partner = `balancer`    
+//   // console.log('logo: ' + logo)
+//   return {
+//     logo: partner    
+//   }
+// }
+
+onMounted(()=> {
+  hasHistory();
+  // getLogo();
+})
 
 </script>
 
@@ -31,7 +34,7 @@ function getLogo() {
     <div class="partner-content">
       <div class="flex flex-col gap-8 md:flex-row">
         <div class="logo">
-          <component :is="logo" />
+          <!-- <component :is="logo-balancer" /> -->
         </div>
         <ContentDoc />
       </div>

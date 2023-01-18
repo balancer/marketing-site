@@ -32,6 +32,7 @@ useHead({
 </script>
 
 <template>
+  <Header />
   <div>
     <BuildHero />
     <section class="bg-white">

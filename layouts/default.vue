@@ -66,11 +66,11 @@ html {
   opacity: 0;
 }
 
-.mobile-hide .nuxt-link-exact-active {
+.mobile-hide .router-link-exact-active {
   @apply text-defaultBlue;
 }
 
-.sidebar-panel .nuxt-link-exact-active, footer .link-featured.nuxt-link-exact-active {
+.sidebar-panel .router-link-exact-active, footer .link-featured.router-link-exact-active {
   @apply text-yellow-300;
 }
 </style>

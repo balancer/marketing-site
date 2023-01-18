@@ -22,18 +22,6 @@ defineProps({
     type: String,
     required: false,
   },
-  linkLabel: {
-    type: String,
-    required: false,
-  },
-  url: {
-    type: String,
-    required: true,
-  },
-  description: {
-    type: String,
-    required: true,
-  },
 });
 
 // function linkClickHandler() {
@@ -118,13 +106,13 @@ defineProps({
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.partner-logo {
+:deep(.partner-logo) {
   transition: all 0.1s ease-out 0.05s;
   @apply scale-50 transform-gpu;
 }
 
-.partner:hover .partner-logo,
-.partner:focus .partner-logo {
+.partner:hover :deep(.partner-logo),
+.partner:focus :deep(.partner-logo) {
   @apply scale-75 transform-gpu;
 }
 
@@ -165,7 +153,7 @@ defineProps({
   box-shadow: 0 50px 100px 0 hsla(240, 91%, 12%, 0.15);
 }
 
-.partner__graphic--beets {
+.partner__graphic--beethovenx {
   background: hsla(163, 68%, 54%, 0.6);
   box-shadow: 0 50px 100px 0 hsla(163, 68%, 54%, 0.15);
 }
@@ -190,7 +178,7 @@ defineProps({
   box-shadow: 0 50px 100px 0 hsla(185, 58%, 48%, 0.15);
 }
 
-.partner__graphic--gyro {
+.partner__graphic--gyroscope {
   background: hsla(313, 97%, 86%, 0.6);
   box-shadow: 0 50px 100px 0 hsla(313, 97%, 86%, 0.15);
 }
@@ -266,7 +254,7 @@ defineProps({
   background: #091f3b;
 }
 
-.partner__graphic--beets::before {
+.partner__graphic--beethovenx::before {
   background: hsla(163, 100%, 43%, 1);
 }
 
@@ -286,7 +274,7 @@ defineProps({
   background: hsla(186, 58%, 49%, 1);
 }
 
-.partner__graphic--gyro::before {
+.partner__graphic--gyroscope::before {
   background: hsla(313, 97%, 86%, 1);
 }
 
@@ -337,6 +325,13 @@ defineProps({
   background: hsla(4, 80%, 61%, 1);
 }
 
+.partner__graphic--paraswap::before {
+  background: hsla(219, 67%, 11%, 1);
+}
+
+
+
+
 /* Partner specific radial gradients on hover */
 
 .partner__graphic--balancer::after {
@@ -358,7 +353,7 @@ defineProps({
   box-shadow: 0 5px 10px 0 hsla(240, 91%, 12%, 0.4);
 }
 
-.partner__graphic--beets::after {
+.partner__graphic--beethovenx::after {
   background-color: hsla(153, 100%, 4%, 1);
 
   background-image: radial-gradient(
@@ -373,10 +368,28 @@ defineProps({
     radial-gradient(at 62% 0%, hsla(157, 100%, 48%, 1) 0px, transparent 50%);
 }
 
-.partner:hover .partner__graphic--beets {
+.partner:hover .partner__graphic--beethovenx {
   box-shadow: 0 5px 10px 0 hsla(163, 68%, 54%, 0.4);
 }
 
+.partner:hover .partner__graphic--aura {
+  background: #ae50ff;
+  background-image: radial-gradient(
+      at 40% 20%,
+      hsla(254, 100%, 74%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--aura {
+  box-shadow: 0 5px 10px 0 rgba(174, 80, 255, 0.4);
+}
 .partner__graphic--element::after {
   background-color: hsla(190, 64%, 73%, 1);
   background-image: radial-gradient(
@@ -430,7 +443,7 @@ defineProps({
   box-shadow: 0 5px 10px 0 hsla(185, 58%, 48%, 0.4);
 }
 
-.partner__graphic--gyro::after {
+.partner__graphic--gyroscope::after {
   background: hsla(313, 97%, 86%, 1);
   background-image: radial-gradient(
       at 54% 29%,
@@ -443,7 +456,7 @@ defineProps({
     radial-gradient(at 96% 4%, hsla(68, 98%, 80%, 1) 0px, transparent 50%);
 }
 
-.partner:hover .partner__graphic--gyro {
+.partner:hover .partner__graphic--gyroscope {
   box-shadow: 0 5px 10px 0 hsla(313, 97%, 86%, 0.4);
 }
 
@@ -656,22 +669,12 @@ defineProps({
   box-shadow: 0 5px 10px 0 hsla(4, 80%, 61%, 0.4);
 }
 
-.partner:hover .partner__graphic--aura {
-  background: #ae50ff;
-  background-image: radial-gradient(
-      at 40% 20%,
-      hsla(254, 100%, 74%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
-    radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
-    radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%);
+.partner:hover .partner__graphic--paraswap {
+  background: hsla(219, 67%, 11%, 1);
+  background: linear-gradient(45deg,hsla(219, 67%, 11%, 1)  30%, hsla(126, 73%, 65%, 1) 100%);
 }
 
-.partner:hover .partner__graphic--aura {
-  box-shadow: 0 5px 10px 0 rgba(174, 80, 255, 0.4);
+.partner:hover .partner__graphic--paraswap {
+  box-shadow: 0 5px 10px 0 hsla(219, 67%, 11%, 0.4);
 }
 </style>

@@ -10,18 +10,14 @@
         </p>
       </div>
       <section>
-        <div class="partners">
+        <div class="partners">              
           <NuxtLink to="ecosystem/balancer">
             <button class="tooltip-target w-full">
               <Partner
                 title="Balancer app"
-                category="AMM & DEX"
+                category="AMM / DEX"
                 bg-image-style="balancer"
-                link-label="app.balancer.fi"
-                url="https://app.balancer.fi"
                 fathom-code="X9TTIGSY"
-                description="Pool explorer and infrastructure for Balancer ecosystem. The original proof-of-concept. Pool and
-                  swap tokens. Get veBAL to vote for and claim liquidity mining incentives."
               >
                 <template #logo>
                   <logo-balancer />
@@ -29,19 +25,16 @@
               </Partner>
             </button>
           </NuxtLink>
-          <NuxtLink to="ecosystem/beethovenx">
+          <NuxtLink to="ecosystem/beethoven-x">
             <button class="tooltip-target w-full">
               <div @click="showModal = true">
                 <Partner
                   title="Beethoven X"
-                  category="AMM on Fantom & Optimism"
-                  bg-image-style="beets"
-                  link-label="op.beets.fi"
-                  url="/ecosystem/beets"
-                  description="Official friendly fork of Balancer on Optimism and Fantom. Designed to evolve and adapt, Beethoven X provides all the tools necessary for anyone to participate in the future of finance."
+                  category="AMM / DEX"
+                  bg-image-style="beethovenx"
                 >
                   <template #logo>
-                    <logo-beets />
+                    <logo-beethovenx />
                   </template>
                 </Partner>
               </div>
@@ -55,9 +48,6 @@
                 title="Aura"
                 category="DeFi yield booster"
                 bg-image-style="aura"
-                link-label="aura.finance"
-                url="https://aura.finance/"
-                description="Boosting DeFi stakeholders' yield potential and governance power, starting with Balancer. Aura to the Balancer ecosystem is similar to Convex to Curve."
               >
                 <template #logo>
                   <logo-aura />
@@ -66,494 +56,276 @@
             </button>
           </NuxtLink>
 
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/element-finance">
             <button class="tooltip-target w-full">
               <Partner
                 title="Element"
                 category="Fixed & variable yield"
-                bg-image-style="element"
-                link-label="element.fi"
-                url="https://element.fi"
-                description="Element Finance uses Balancer V2’s custom AMM functionality to enable markets for assets that converge in value over time. Plugging into the V2 ecosystem allows users to swap fixed yield assets from any other major asset in the V2 vault with the gas efficiency of multihop order routing."
+                bg-image-style="element"                
               >
                 <template #logo>
                   <logo-element />
                 </template>
               </Partner>
             </button>
+          </NuxtLink>
 
-            <template #popper>
-              <CaseStudy
-                title="Element Finance"
-                description="Element Finance uses Balancer V2’s custom AMM functionality to enable markets for assets that converge in value over time. Plugging into the V2 ecosystem allows users to swap fixed yield assets from any other major asset in the V2 vault with the gas efficiency of multihop order routing."
-                url="https://element.fi"
-              />
-            </template>
-          </v-tooltip>
-
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/fjord-nfts">
             <button class="tooltip-target w-full">
               <Partner
-                title="Fjord Foundry"
-                category="LBPs for tokens & NFTs"
+                title="Fjord NFTs"
+                category="Fair NFT launch LBPs"
                 bg-image-style="fjord"
-                link-label="fjordfoundry.com"
-                url="https://fjordfoundry.com/"
-                description="Fjord (formerly Copper Launch), empowers teams to openly and fairly launch their token and generate liquidity.
-              It utilizes a configuration of Balancer's Liquidity Boostrapping Pools (LBPs)."
               >
                 <template #logo>
-                  <logo-fjord />
+                  <logo-fjordnfts />
                 </template>
               </Partner>
             </button>
+          </NuxtLink>
 
-            <template #popper>
-              <CaseStudy
-                title="Fjord Foundry"
-                description="Fjord (formerly Copper Launch), empowers teams to openly and fairly launch their token and generate liquidity.
-              It utilizes a configuration of Balancer's Liquidity Boostrapping Pools (LBPs)."
-                url="https://fjordfoundry.com/"
-              />
-            </template>
-          </v-tooltip>
-
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/aave">
             <button class="tooltip-target w-full">
               <Partner
                 title="Aave"
                 category="Lend & borrow protocol"
                 bg-image-style="aave"
-                link-label="aave.com"
-                url="https://aave.com/"
-                description="Aave is the cornerstone of DeFi lending and borrowing. Aave is a core partner with many joint projects like Boosted Pools and their 80/20 AAVE/ETH Safety Incentive pool."
               >
                 <template #logo>
                   <logo-aave />
                 </template>
               </Partner>
             </button>
+          </NuxtLink>
 
-            <template #popper>
-              <CaseStudy
-                title="Aave"
-                description="Aave is the cornerstone of DeFi lending and borrowing. Aave is a core partner with many joint projects like Boosted Pools and their 80/20 AAVE/ETH Safety Incentive pool."
-                url="https://aave.com/"
-              />
-            </template>
-          </v-tooltip>
-
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/gyroscope">
             <button class="tooltip-target w-full">
               <Partner
                 title="Gyroscope"
-                category="Novel stablecoin architecture"
-                bg-image-style="gyro"
-                link-label="gyro.finance"
-                url="https://gyro.finance/"
-                description="Gyroscope is a new stablecoin that, like a physical gyroscope, remains stable as the surrounding environment changes. It is a revolution in stablecoin architecture, risk control and AMM design. Gyroscope is fully-backed, automates monetary policy, and features new AMMs designed for resilient liquidity. Gyroscope AMMs -- Concentrated Liquidity Pools (CLPs) -- leverage Balancer V2's customizable AMM logic."
+                category="Stablecoin protocol"
+                bg-image-style="gyroscope"
               >
                 <template #logo>
-                  <logo-gyro />
+                  <logo-gyroscope />
                 </template>
               </Partner>
             </button>
+          </NuxtLink>
+          
 
-            <template #popper>
-              <CaseStudy
-                title="Gyroscope"
-                description="Gyroscope is a new stablecoin that, like a physical gyroscope, remains stable as the surrounding environment changes. It is a revolution in stablecoin architecture, risk control and AMM design. Gyroscope is fully-backed, automates monetary policy, and features new AMMs designed for resilient liquidity. Gyroscope AMMs -- Concentrated Liquidity Pools (CLPs) -- leverage Balancer V2's customizable AMM logic."
-                :coming-soon="true"
-                url="https://gyro.finance/"
-              />
-            </template>
-          </v-tooltip>
-
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/cow-protocol">
             <button class="tooltip-target w-full">
               <Partner
                 title="CoW Protocol"
-                category="DEX liquidity aggregator"
+                category="DEX aggregator"
                 bg-image-style="cow"
-                link-label="cow.fi"
-                url="https://cow.fi/"
-                description="The Balancer CoW Protocol leverages the gas efficiency of Balancer V2 multihop swaps to give users the best price and execution possible along with with MEV protection."
               >
                 <template #logo>
                   <logo-cow />
                 </template>
               </Partner>
             </button>
+          </NuxtLink>
 
-            <template #popper>
-              <CaseStudy
-                title="CoW Protocol"
-                description="The Balancer CoW Protocol leverages the gas efficiency of Balancer V2 multihop swaps to give users the best price and execution possible along with with MEV protection."
-                url="https://cow.fi/"
-              />
-            </template>
-          </v-tooltip>
-
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/1inch">
             <button class="tooltip-target w-full">
               <Partner
                 title="1inch"
-                category="DEX liquidity aggregator"
-                bg-image-style="1inch"
-                link-label="1inch.io"
-                url="https://1inch.io/"
-                description="A leading aggregator of liquidity in DeFi. 1inch integrates new and innovative Balancer pool types like Boosted Pools to facilitate cost-efficient swaps.
-              "
+                category="DEX aggregator"
+                bg-image-style="1inch"                
               >
                 <template #logo>
                   <logo-1inch />
                 </template>
               </Partner>
             </button>
+          </NuxtLink>
 
-            <template #popper>
-              <CaseStudy
-                title="1inch"
-                description="A leading aggregator of liquidity in DeFi. 1inch integrates new and innovative Balancer pool types like Boosted Pools to facilitate cost-efficient swaps."
-                url="https://1inch.io/"
-              />
-            </template>
-          </v-tooltip>
-
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/stakedao">
             <button class="tooltip-target w-full">
               <Partner
                 title="Stake DAO"
                 category="DeFi yield booster"
                 bg-image-style="stakedao"
-                link-label="stakedao.org"
-                url="https://stakedao.org/"
-                description="Stake DAO is a non-custodial platform where you can do more with your money. Easily grow, track, and control your assets right from your wallet."
               >
                 <template #logo>
                   <logo-stakedao />
                 </template>
               </Partner>
             </button>
+          </NuxtLink>
 
-            <template #popper>
-              <CaseStudy
-                title="Stake DAO"
-                description="Stake DAO is a non-custodial platform where you can do more with your money. Easily grow, track, and control your assets right from your wallet."
-                url="https://stakedao.org/"
-              />
-            </template>
-          </v-tooltip>
-
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/fjord-foundry">
             <button class="tooltip-target w-full">
               <Partner
-                title="Tetu"
-                category="DeFi yield booster"
-                bg-image-style="tetu"
-                link-label="tetu.io"
-                url="https://tetu.io/"
-                description="Tetu is the money lego asset management that provides automated DeFi solutions. "
+                title="Fjord Foundry"
+                category="Fair token launch LBPs"
+                bg-image-style="fjord"
               >
                 <template #logo>
-                  <logo-tetu />
+                  <logo-fjord />
                 </template>
               </Partner>
             </button>
+          </NuxtLink>          
 
-            <template #popper>
-              <CaseStudy
-                title="Tetu"
-                description="Tetu is the money lego asset management that provides automated DeFi solutions. "
-                url="https://tetu.io/"
-              />
-            </template>
-          </v-tooltip>
-
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/mycelium">
             <button class="tooltip-target w-full">
               <Partner
                 title="Mycelium"
                 category="Perpetual swaps & pools"
                 bg-image-style="mycelium"
-                link-label="mycelium.xyz"
-                url="https://mycelium.xyz/"
-                description="Mycelium (formerly TracerDAO), is an open-source protocol for derivative markets. It utilizes Balancer Protocol for aggregated liquidity and creating a market for leveraged tokens."
               >
                 <template #logo>
                   <logo-mycelium />
                 </template>
               </Partner>
             </button>
+          </NuxtLink>
 
-            <template #popper>
-              <CaseStudy
-                title="Mycelium"
-                description="Mycelium (formerly TracerDAO), is an open-source protocol for derivative markets. It utilizes Balancer Protocol for aggregated liquidity and creating a market for leveraged tokens."
-                url="https://mycelium.xyz/"
-              />
-            </template>
-          </v-tooltip>
+          <NuxtLink to="ecosystem/paraswap">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="ParaSwap"
+                category="DEX aggregator"
+                bg-image-style="paraswap"
+              >
+                <template #logo>
+                  <logo-paraswap />
+                </template>
+              </Partner>
+            </button>
+          </NuxtLink>
 
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/tetu">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="Tetu"
+                category="DeFi yield booster"
+                bg-image-style="tetu"
+              >
+                <template #logo>
+                  <logo-tetu />
+                </template>
+              </Partner>
+            </button>
+          </NuxtLink>          
+
+          <NuxtLink to="ecosystem/cron-finance">
             <button class="tooltip-target w-full">
               <Partner
                 title="Cron Finance"
                 category="TWAMM for large swaps"
                 bg-image-style="cron"
-                link-label="Medium post"
-                url="https://medium.com/@BalancerGrants/cron-finance-is-developing-twamm-on-top-of-balancer-d5d6bc17919a"
-                description="A novel on-chain trade execution engine called TWAMM for permissionless, transparent & gas efficient large token swaps. Cron is building this TWAMM on Balancer."
               >
                 <template #logo>
                   <logo-cron />
                 </template>
               </Partner>
             </button>
+          </NuxtLink>
+          
 
-            <template #popper>
-              <CaseStudy
-                title="Cron Finance"
-                :coming-soon="true"
-                description="A novel on-chain trade execution engine called TWAMM for permissionless, transparent & gas efficient large token swaps. Cron is building this TWAMM on Balancer."
-                url="https://medium.com/@BalancerGrants/cron-finance-is-developing-twamm-on-top-of-balancer-d5d6bc17919a"
-              />
-            </template>
-          </v-tooltip>
-
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/tempus">
             <button class="tooltip-target w-full">
               <Partner
                 title="Tempus"
                 category="Fixed income protocol"
                 bg-image-style="tempus"
-                link-label="tempus.finance"
-                url="https://tempus.finance/"
-                description="An innovative fixed income protocol allowing people to securely lock in a fixed rate on any lending or staking income."
               >
                 <template #logo>
                   <logo-tempus />
                 </template>
               </Partner>
             </button>
+          </NuxtLink>
 
-            <template #popper>
-              <CaseStudy
-                title="Tempus"
-                description="An innovative fixed income protocol allowing people to securely lock in a fixed rate on any lending or staking income."
-                url="https://tempus.finance/"
-              />
-            </template>
-          </v-tooltip>
-
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
-            <button class="tooltip-target w-full">
-              <Partner
-                title="PowerPool"
-                category="Automated Defi products"
-                bg-image-style="powerpool"
-                link-label="powerpool.finance"
-                url="https://powerpool.finance/"
-                description="PowerPool protocol offers automated DeFi products such as vaults and smart token baskets built on top of Power Agent automation network executing transactions according to defined strategies."
-              >
-                <template #logo>
-                  <logo-powerpool />
-                </template>
-              </Partner>
-            </button>
-
-            <template #popper>
-              <CaseStudy
-                title="PowerPool"
-                description="PowerPool protocol offers automated DeFi products such as vaults and smart token baskets built on top of Power Agent automation network executing transactions according to defined strategies."
-                url="https://powerpool.finance/"
-              />
-            </template>
-          </v-tooltip>
-
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/primedao">
             <button class="tooltip-target w-full">
               <Partner
                 title="PrimeDAO"
                 category="DAO coordination tools"
                 bg-image-style="prime"
-                link-label="prime.xyz"
-                url="https://www.prime.xyz/"
-                description="DAOs are growing in power but remain isolated digital organisations. PrimeDAO creates next-generation coordination tools to connect them - built the DAO native way. PrimeDAO uses Balancer for Prime Launch and Prime Pools."
               >
                 <template #logo>
                   <logo-prime />
                 </template>
               </Partner>
             </button>
+          </NuxtLink>
+          
+          <NuxtLink to="ecosystem/powerpool">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="PowerPool"
+                category="Automated Defi products"
+                bg-image-style="powerpool"
+              >
+                <template #logo>
+                  <logo-powerpool />
+                </template>
+              </Partner>
+            </button>
+          </NuxtLink>
 
-            <template #popper>
-              <CaseStudy
-                title="PrimeDAO"
-                description="DAOs are growing in power but remain isolated digital organisations. PrimeDAO creates next-generation coordination tools to connect them - built the DAO native way. PrimeDAO uses Balancer for Prime Launch and Prime Pools."
-                url="https://www.prime.xyz/"
-              />
-            </template>
-          </v-tooltip>
-
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/sense-finance">
             <button class="tooltip-target w-full">
               <Partner
                 title="Sense Finance"
                 category="Fixed income protocol"
                 bg-image-style="sense"
-                link-label="sense.finance"
-                url="https://sense.finance/"
-                description="Sense is a protocol for DeFi yield primitives, and Sense Space, an AMM built on Balancer, facilitates efficient swaps between yield and principle tokens."
               >
                 <template #logo>
                   <logo-sense />
                 </template>
               </Partner>
             </button>
+          </NuxtLink>
 
-            <template #popper>
-              <CaseStudy
-                title="Sense Finance"
-                description="Sense is a protocol for DeFi yield primitives, and Sense Space, an AMM built on Balancer, facilitates efficient swaps between yield and principle tokens."
-                url="https://sense.finance/"
-              />
-            </template>
-          </v-tooltip>
-
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/index-coop">
             <button class="tooltip-target w-full">
               <Partner
                 title="Index Coop"
                 category="Structured DeFi products"
                 bg-image-style="coop"
-                link-label="indexcoop.com"
-                url="https://indexcoop.com/"
-                description="Index Coop builds decentralized structured products that make crypto simple, accessible, and secure. Index Coop is building the first Balancer Managed Pool."
               >
                 <template #logo>
                   <logo-indexcoop />
                 </template>
               </Partner>
             </button>
+          </NuxtLink>
 
-            <template #popper>
-              <CaseStudy
-                title="Index Coop"
-                description="Index Coop builds decentralized structured products that make crypto simple, accessible, and secure. Index Coop is building the first Balancer Managed Pool."
-                url="https://indexcoop.com/"
-              />
-            </template>
-          </v-tooltip>
-
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/xave-finance">
             <button class="tooltip-target w-full">
               <Partner
                 title="Xave Finance"
                 category="Remittances & Savings"
                 bg-image-style="xave"
-                link-label="xave.co"
-                url="https://www.xave.co/"
-                description="Xave (pronounced “Save”) allows financial services companies (“fintechs”) to leverage next generation payments systems for real time remittance transfers and high yield consumer savings"
               >
                 <template #logo>
                   <logo-xave />
                 </template>
               </Partner>
             </button>
+          </NuxtLink>
 
-            <template #popper>
-              <CaseStudy
-                title="Xave Finance"
-                description="Xave (pronounced “Save”) allows financial services companies (“fintechs”) to leverage next generation payments systems for real time remittance transfers and high yield consumer savings."
-                url="https://www.xave.co/"
-              />
-            </template>
-          </v-tooltip>
-
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/qi-dao">
             <button class="tooltip-target w-full">
               <Partner
                 title="Qi DAO"
                 category="Mai stablecoin protocol"
                 bg-image-style="qi"
-                link-label="mai.finance"
-                url="https://www.mai.finance/"
-                description="Creators of $MAI (miMatic) Stablecoin. Mai Finance is an open source and non-custodial stable protocol for extracting value out of priced assets."
               >
                 <template #logo>
                   <logo-qi />
                 </template>
               </Partner>
             </button>
-
-            <template #popper>
-              <CaseStudy
-                title="Qi DAO"
-                description="Creators of $MAI (miMatic) Stablecoin. Mai Finance is an open source and non-custodial stable protocol for extracting value out of priced assets."
-                url="https://www.mai.finance/"
-              />
-            </template>
-          </v-tooltip>
+          </NuxtLink>
         </div>
       </section>
     </div>
-    <partnerModal
-      v-show="showModal"
-      title="hola"
-      @close-modal="showModal = false"
-    />
   </section>
 </template>
 
