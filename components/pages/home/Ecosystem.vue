@@ -11,10 +11,7 @@
       </div>
       <section>
         <div class="partners">
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/balancer">
             <button class="tooltip-target w-full">
               <Partner
                 title="Balancer app"
@@ -31,38 +28,28 @@
                 </template>
               </Partner>
             </button>
-
-            <template #popper>
-              <CaseStudy
-                title="Balancer app"
-                description="Pool explorer and infrastructure for Balancer ecosystem. The original proof-of-concept. Pool and
-                  swap tokens. Get veBAL to vote for and claim liquidity mining incentives."
-                url="https://app.balancer.fi"
-              />
-            </template>
-          </v-tooltip>
-
-
-          <div @click="showModal = true">
-            <Partner
-              title="Beethoven X"
-              category="AMM on Fantom & Optimism"
-              bg-image-style="beets"
-              link-label="op.beets.fi"
-              url="/ecosystem/beets"
-              description="Official friendly fork of Balancer on Optimism and Fantom. Designed to evolve and adapt, Beethoven X provides all the tools necessary for anyone to participate in the future of finance."
-            >
-              <template #logo>
-                <logo-beets />
-              </template>
-            </Partner>
-          </div>
+          </NuxtLink>
+          <NuxtLink to="ecosystem/beethovenx">
+            <button class="tooltip-target w-full">
+              <div @click="showModal = true">
+                <Partner
+                  title="Beethoven X"
+                  category="AMM on Fantom & Optimism"
+                  bg-image-style="beets"
+                  link-label="op.beets.fi"
+                  url="/ecosystem/beets"
+                  description="Official friendly fork of Balancer on Optimism and Fantom. Designed to evolve and adapt, Beethoven X provides all the tools necessary for anyone to participate in the future of finance."
+                >
+                  <template #logo>
+                    <logo-beets />
+                  </template>
+                </Partner>
+              </div>
+            </button>
+          </NuxtLink>
 
 
-          <v-tooltip
-            offset="16"
-            placement="top"
-          >
+          <NuxtLink to="ecosystem/aura">
             <button class="tooltip-target w-full">
               <Partner
                 title="Aura"
@@ -77,15 +64,7 @@
                 </template>
               </Partner>
             </button>
-
-            <template #popper>
-              <CaseStudy
-                title="Aura"
-                description="Boosting DeFi stakeholders' yield potential and governance power, starting with Balancer. Aura to the Balancer ecosystem is similar to Convex to Curve."
-                url="https://aura.finance/"
-              />
-            </template>
-          </v-tooltip>
+          </NuxtLink>
 
           <v-tooltip
             offset="16"
