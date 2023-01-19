@@ -1,5 +1,7 @@
 <script setup>
-const { id } = useRoute().params;
+import {buildPartnerIconUrl} from '~/lib/urls';
+
+const { id : partnerName } = useRoute().params;
 const { next } = useContent();
 
 function hasHistory() {
@@ -25,9 +27,9 @@ onMounted(()=> {
     <div class="partner-content">
       <div class="flex flex-col gap-8 md:flex-row">
         <div class="logo">
-          <!-- #todo: Replace this with dynamic logo based on route -->
-          <logo-balancer />
-          <!-- <component :is="logo-balancer" /> -->
+          <img
+            :src="buildPartnerIconUrl(partnerName)"
+          >
         </div>
         <ContentDoc />
       </div>
