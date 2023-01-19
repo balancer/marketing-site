@@ -1,22 +1,13 @@
 <script setup>
 const { id } = useRoute().params;
+const { next } = useContent();
 
 function hasHistory() {
   return window.history.length > 2;
 }
 
-// function getLogo() {
-  
-//   const partner = `balancer`    
-//   // console.log('logo: ' + logo)
-//   return {
-//     logo: partner    
-//   }
-// }
-
 onMounted(()=> {
   hasHistory();
-  // getLogo();
 })
 
 </script>
@@ -34,9 +25,23 @@ onMounted(()=> {
     <div class="partner-content">
       <div class="flex flex-col gap-8 md:flex-row">
         <div class="logo">
+          <!-- #todo: Replace this with dynamic logo based on route -->
+          <logo-balancer />
           <!-- <component :is="logo-balancer" /> -->
         </div>
         <ContentDoc />
+      </div>
+      <div
+        v-if="next"
+        class="mx-8 mt-20 border-t border-gray-800 pt-8"
+      >
+        <div>Next up:</div>
+        <NuxtLink
+          class="link"
+          :to="next._path"
+        >
+          {{ next.title }}
+        </NuxtLink>
       </div>
     </div>
   </div>
