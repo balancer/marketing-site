@@ -25,7 +25,7 @@ useHead({
       }
     ],
     ...headMeta({
-      description: "description lorem"
+      description: "Balancer is the most flexible and versatile AMM, giving developers unprecedented customizability."
     })
 });
 
