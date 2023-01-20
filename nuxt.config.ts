@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/tailwindcss',
         '@nuxt/content',
+        '@funken-studio/sitemap-nuxt-3'
     ],
     content: {
         // https://content.nuxtjs.org/api/configuration
@@ -49,10 +50,6 @@ export default defineNuxtConfig({
         // https://go.nuxtjs.dev/tailwindcss
         '@nuxtjs/tailwindcss',
     ],
-    sentry: {
-        dsn: 'https://991f8a3901034e0db96f0ff7bf10d24e@o574636.ingest.sentry.io/5818459'
-    },
-
     sitemap: {
         hostname: 'https://balancer.fi',
     },
