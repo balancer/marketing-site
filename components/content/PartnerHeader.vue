@@ -27,7 +27,7 @@ defineProps({
   <div>
     <div class="container">
       <div class="header">
-        <h1 class="text-5xl text-white">
+        <h1 class="text-5xl font-normal text-white">
           {{ title }}
         </h1>
         <p class="font-semibold">

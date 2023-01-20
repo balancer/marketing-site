@@ -27,10 +27,12 @@ definePageMeta({
 
 <template>
   <div>
+    <Header />
     <HeroHome />
     <Ecosystem />
     <Aave />
     <Backers />
     <StatsHome />
+    <Footer />
   </div>
 </template>

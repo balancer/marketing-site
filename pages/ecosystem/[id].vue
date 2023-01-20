@@ -2,7 +2,7 @@
 import {buildPartnerIconUrl} from '~/lib/urls';
 
 const { id : partnerName } = useRoute().params;
-const { next } = useContent();
+const { next, prev } = useContent();
 
 function hasHistory() {
   return window.history.length > 2;
@@ -19,7 +19,7 @@ onMounted(()=> {
     <div class="flex w-full justify-end overflow-hidden p-4">
       <button
         class="close-btn"
-        @click="hasHistory() ? $router.go(-1) : $router.push('/')"
+        @click="$router.push('/')"
       >
         <icon-close />
       </button>
@@ -28,21 +28,36 @@ onMounted(()=> {
       <div class="flex flex-col gap-8 md:flex-row">
         <div class="logo">
           <img
+            class="partner-img"
             :src="buildPartnerIconUrl(partnerName)"
           >
         </div>
-        <ContentDoc />
+        <div class="md list-disc">
+          <ContentDoc />
+        </div>
+      </div>
+    </div>
+    <div class="relative mx-8 flex items-center justify-between border-t border-gray-800 py-8 pt-10">
+      <div
+        v-if="prev"
+        class="prev"
+      >
+        <NuxtLink
+          class="link"
+          :to="prev._path"
+        >
+          &lt;- {{ prev.name }}
+        </NuxtLink>
       </div>
       <div
         v-if="next"
-        class="mx-8 mt-20 border-t border-gray-800 pt-8"
+        class="next"
       >
-        <div>Next up:</div>
         <NuxtLink
           class="link"
           :to="next._path"
         >
-          {{ next.title }}
+          {{ next.name }} <span>-&gt;</span>
         </NuxtLink>
       </div>
     </div>
@@ -50,9 +65,25 @@ onMounted(()=> {
 </template>
 
 <style scoped>
+
+.next {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+}
+.prev {
+  position: absolute;
+  left: 0px;
+  top: 20px;
+}
+
+.md :deep(li) {
+  @apply list-disc ml-6 mb-1;
+}
+
 .partner-page {
   @apply bg-gray-900 overflow-hidden w-full;
-  min-height: 100vh;
+  
 }
 .partner-page::before {
   content: "";
@@ -79,7 +110,7 @@ onMounted(()=> {
 }
 .partner-page :deep(.partner-content) {
   @apply mx-4 px-5 sm:px-8 max-w-4xl lg:m-auto py-10 bg-gray-900 rounded-3xl relative overflow-hidden text-white;
-  min-height: calc(100vh - 76px);
+  min-height: calc(100vh - 141px);
 }
 .partner-page :deep(.partner-content::after) {
   content: "";
