@@ -1,69 +1,136 @@
+
 <script setup>
-// import anime from "animejs/lib/anime.es.js";
 
-defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  comingSoon: {
-    type: Boolean,
-    default: false,
-  },
-  bgImageStyle: {
-    type: String,
-    required: true,
-  },
-  fathomCode: {
-    type: String,
-    required: false,
-  },
-  category: {
-    type: String,
-    required: false,
-  },
-});
+definePageMeta({
+    layout: 'ecosystem'
+  })
 
-// function linkClickHandler() {
-//   fathom?.trackGoal(fathomCode || "", 0);
-// }
+// // const { data } = await useAsyncData(`content-${route.path}`, () => queryContent().where({_path:route.path})
 
-// }
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const { data: posts } = await useAsyncData('posts', () => queryContent('/ecosystem').find())
+
+    
+    function getImgUrl(pic) {
+        return require('~/assets/svg/partners/'+pic+'.svg')
+    }
+
+
+
 </script>
 
 <template>
-  <div
-    class="text-center hover:cursor-pointer"
-    @click="showModal = true"
-  >
-    <!-- <NuxtLink class="text-center" :to="url" @click="animation"> -->
-    <div class="partner group">
-      <div :class="'relative partner__graphic partner__graphic--' + bgImageStyle">
-        <slot name="logo" />
-      </div>
-      <div class="partner__details">
-        <div class="partner__summmary">
-          <div class="relative">
-            <div>
-              <h2 class="title">
-                {{ title }}
-              </h2>
-              <p class="synopsis">
-                {{ category }}
-              </p>
-              <p class="learn-more">
-                Learn more
-              </p>
-            </div>
-          </div>
-        </div>
+  <div>
+    <h1>Hellow</h1>
+    <div class="partners">     
+      <div
+        v-for="post in posts"
+        :key="post._id"
+        class="p-5"
+      >        
+        <NuxtLink :to="post._path">
+          <button class="tooltip-target w-full">
+            <Partner
+              :title="post.title"
+              :category="post.category"
+              :bg-image-style="post.id"
+            >
+              <!-- <template #logo>
+                <logo-{{
+                  post.id
+                  }}}
+                />
+              </template> -->
+
+              <slot name="logo" />
+
+              <!-- <img
+                class="partner-img"
+                :src="'~/assets/svg/partners/' + post.id + '.svg'"
+              > -->
+            </Partner>
+          </button>
+        </NuxtLink>
       </div>
     </div>
+
+    <!-- <NuxtLink :to="post._path"> -->
+    <!-- <p>{{ post.title }}</p>
+          <p>{{ post.category }}</p>
+          <p>{{ post.description }}</p>
+          <p>{{ post.url }}</p>
+          <p>{{ post.id }}</p> -->
+
+    <!-- <img
+            :src="getImgUrl(post.id)"
+            alt=""
+          > -->
+    <!-- <img
+            src="~/assets/svg/partners/balancer.svg"
+            alt=""
+          > -->
+    <!-- <div class="logo bg-gray-200">
+            <img
+              class="partner-img"
+              :src="'/' + post.id + '.svg'"
+            >
+          </div> -->
+    <!-- </NuxtLink> -->
   </div>
-  <!-- </NuxtLink> -->
 </template>
 
+
+
+
 <style scoped>
+
+.ecosystem {
+  @apply pt-24 px-4 relative overflow-hidden;
+}
+
+h2.title {
+  @apply text-2xl pb-8 font-normal text-gray-600;
+}
+.partners {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.v-popover div {
+  @apply w-full;
+}
+
+@media (min-width: 480px) {
+  .partners {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 72px;
+  }
+}
+
+@media (min-width: 820px) {
+  .partners {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 64px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .partners {
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 64px;
+  }
+}
+
+
+
 .title {
   text-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
   text-shadow: 0px 1.5px 0px rgba(255, 255, 255, 1);
@@ -176,7 +243,7 @@ defineProps({
   box-shadow: 0 50px 100px 0 hsla(313, 97%, 86%, 0.15);
 }
 
-.partner__graphic--cow-protocol {
+.partner__graphic--cow {
   background: hsla(226, 71%, 44%, 0.6);
   box-shadow: 0 50px 100px 0 hsla(226, 71%, 44%, 0.15);
 }
@@ -191,7 +258,7 @@ defineProps({
   box-shadow: 0 50px 100px 0 hsla(352, 71%, 60%, 0.15);
 }
 
-.partner__graphic--indexcoop {
+.partner__graphic--coop {
   background: hsla(149, 37%, 48%, 0.6);
   box-shadow: 0 50px 100px 0 hsla(149, 37%, 48%, 0.15);
 }
@@ -231,12 +298,12 @@ defineProps({
   box-shadow: 0 50px 100px 0 hsla(209, 80%, 48%, 0.15);
 }
 
-.partner__graphic--stake-dao {
+.partner__graphic--stakedao {
   background: hsla(268, 74%, 55%, 0.6);
   box-shadow: 0 50px 100px 0 hsla(268, 74%, 55%, 0.15);
 }
 
-.partner__graphic--qidao {
+.partner__graphic--qi {
   background: hsla(4, 80%, 61%, 0.6);
   box-shadow: 0 50px 100px 0 hsla(4, 80%, 61%, 0.15);
 }
@@ -248,11 +315,11 @@ defineProps({
 }
 
 .partner__graphic--beethovenx::before {
-  background: var(--beethoven-x);
+  background: hsla(163, 100%, 43%, 1);
 }
 
 .partner__graphic--aura::before {
-  background: var(--aura);
+  background: hsla(269, 90%, 65%, 1);
 }
 
 .partner__graphic--element::before {
@@ -271,7 +338,7 @@ defineProps({
   background: hsla(313, 97%, 86%, 1);
 }
 
-.partner__graphic--cow-protocol::before {
+.partner__graphic--cow::before {
   background-color: hsla(226, 71%, 44%, 1);
 }
 
@@ -282,7 +349,7 @@ defineProps({
 .partner__graphic--1inch::before {
   background: hsla(352, 71%, 60%, 1);
 }
-.partner__graphic--indexcoop::before {
+.partner__graphic--coop::before {
   background: hsla(149, 37%, 48%, 1);
 }
 
@@ -311,10 +378,10 @@ defineProps({
 .partner__graphic--xave::before {
   background: hsla(209, 80%, 48%, 1);
 }
-.partner__graphic--stake-dao::before {
+.partner__graphic--stakedao::before {
   background: hsla(268, 74%, 55%, 1);
 }
-.partner__graphic--qidao::before {
+.partner__graphic--qi::before {
   background: hsla(4, 80%, 61%, 1);
 }
 
@@ -453,7 +520,7 @@ defineProps({
   box-shadow: 0 5px 10px 0 hsla(313, 97%, 86%, 0.4);
 }
 
-.partner__graphic--cow-protocol::after {
+.partner__graphic--cow::after {
   background: hsla(226, 71%, 44%, 1);
   background-image: radial-gradient(
       at 0% 83%,
@@ -465,7 +532,7 @@ defineProps({
     radial-gradient(at 89% 8%, hsla(300, 66%, 84%, 1) 0px, transparent 50%);
 }
 
-.partner:hover .partner__graphic--cow-protocol {
+.partner:hover .partner__graphic--cow {
   box-shadow: 0 5px 10px 0 hsla(226, 71%, 44%, 0.4);
 }
 
@@ -501,7 +568,7 @@ defineProps({
   box-shadow: 0 5px 10px 0 hsla(352, 71%, 60%, 0.4);
 }
 
-.partner__graphic--indexcoop::after {
+.partner__graphic--coop::after {
   background: hsla(149, 37%, 48%, 1);
   background-image: radial-gradient(
       at 29% 88%,
@@ -512,7 +579,7 @@ defineProps({
     radial-gradient(at 82% 16%, hsla(68, 98%, 80%, 1) 0px, transparent 50%);
 }
 
-.partner:hover .partner__graphic--indexcoop {
+.partner:hover .partner__graphic--coop {
   box-shadow: 0 5px 10px 0 hsla(149, 37%, 48%, 0.4);
 }
 
@@ -629,7 +696,7 @@ defineProps({
   box-shadow: 0 5px 10px 0 hsla(209, 80%, 48%, 0.4);
 }
 
-.partner__graphic--stake-dao::after {
+.partner__graphic--stakedao::after {
   background-color: #ff99da;
   background-image: radial-gradient(
       at 74% 19%,
@@ -644,11 +711,11 @@ defineProps({
     radial-gradient(at 84% 92%, hsla(271, 64%, 63%, 1) 0px, transparent 50%);
 }
 
-.partner:hover .partner__graphic--stake-dao {
+.partner:hover .partner__graphic--stakedao {
   box-shadow: 0 5px 10px 0 hsla(268, 74%, 55%, 0.4);
 }
 
-.partner__graphic--qidao::after {
+.partner__graphic--qi::after {
   background-color: hsla(4, 80%, 61%, 1);
   background-image: radial-gradient(
       at 65% 16%,
@@ -658,7 +725,7 @@ defineProps({
     radial-gradient(at 100% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
     radial-gradient(at 0% 54%, hsla(239, 70%, 67%, 0.6) 0px, transparent 50%);
 }
-.partner:hover .partner__graphic--qidao {
+.partner:hover .partner__graphic--qi {
   box-shadow: 0 5px 10px 0 hsla(4, 80%, 61%, 0.4);
 }
 

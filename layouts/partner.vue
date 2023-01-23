@@ -9,14 +9,14 @@
       </button>
     </div>
     <div class="partner-content">
-      <slot />
+      <ContentDoc />
     </div>
   </div>
 </template>
 <script>
+console.log("Parter LAYOUT");
 
 export default {
-
   methods: {
     hasHistory() {
       return window.history.length > 2;

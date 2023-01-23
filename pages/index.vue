@@ -28,6 +28,7 @@ definePageMeta({
 <template>
   <div>
     <Header />
+    <Sidebar />
     <HeroHome />
     <Ecosystem />
     <Aave />

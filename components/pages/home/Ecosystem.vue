@@ -118,7 +118,7 @@
               <Partner
                 title="CoW Protocol"
                 category="DEX aggregator"
-                bg-image-style="cow"
+                bg-image-style="cow-protocol"
               >
                 <template #logo>
                   <logo-cow />
@@ -141,12 +141,12 @@
             </button>
           </NuxtLink>
 
-          <NuxtLink to="ecosystem/stakedao">
+          <NuxtLink to="ecosystem/stake-dao">
             <button class="tooltip-target w-full">
               <Partner
                 title="Stake DAO"
                 category="DeFi yield booster"
-                bg-image-style="stakedao"
+                bg-image-style="stake-dao"
               >
                 <template #logo>
                   <logo-stakedao />
@@ -240,7 +240,7 @@
             </button>
           </NuxtLink>
 
-          <NuxtLink to="ecosystem/primedao">
+          <NuxtLink to="ecosystem/prime-dao">
             <button class="tooltip-target w-full">
               <Partner
                 title="PrimeDAO"
@@ -287,7 +287,7 @@
               <Partner
                 title="Index Coop"
                 category="Structured DeFi products"
-                bg-image-style="coop"
+                bg-image-style="indexcoop"
               >
                 <template #logo>
                   <logo-indexcoop />
@@ -315,7 +315,7 @@
               <Partner
                 title="Qi DAO"
                 category="Mai stablecoin protocol"
-                bg-image-style="qi"
+                bg-image-style="qidao"
               >
                 <template #logo>
                   <logo-qi />
@@ -343,9 +343,9 @@ function partnerAnimation() {
         targets: ".ecosystem",
         opacity: [0, 1],
         easing: "easeOutBack",
-        duration: 800,
+        duration: 400,
       },
-      "+=1150"
+      "+=250"
     )
     .add(
       {
@@ -353,11 +353,11 @@ function partnerAnimation() {
         scale: [0.9, 1],
         opacity: [0, 1],
         translateZ: 0,
-        translateY: [20, 0],
+        translateY: [40, 0],
         easing: "easeOutBack",
-        duration: 800,
+        duration: 600,
       },
-      "-=800"
+      "-=600"
     )
     .add(
       {
@@ -367,10 +367,10 @@ function partnerAnimation() {
         translateZ: 0,
         translateY: [20, 0],
         easing: "easeOutBack",
-        duration: 800,
-        delay: anime.stagger(40),
+        duration: 600,
+        delay: anime.stagger(30),
       },
-      "-=300"
+      "-=500"
     );
 }
 

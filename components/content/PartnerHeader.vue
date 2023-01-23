@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  title: {
+  name: {
     type: String,
     default: 'Default title'
   },
@@ -12,7 +12,7 @@ defineProps({
     type: String,
     default: 'Default description'
   },
-  display: {
+  displayURL: {
     type: String,
     default: 'Default description'
   },    
@@ -28,7 +28,7 @@ defineProps({
     <div class="container">
       <div class="header">
         <h1 class="text-5xl font-normal text-white">
-          {{ title }}
+          {{ name }}
         </h1>
         <p class="font-semibold">
           {{ category }}
@@ -37,7 +37,7 @@ defineProps({
         <a
           class="link font-semibold"
           :href="url"
-        >{{ display }}
+        >{{ displayURL }}
           <icon-base
             width="14"
             height="14"

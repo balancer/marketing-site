@@ -34,6 +34,7 @@ useHead({
 <template>
   <div>
     <Header />
+    <Sidebar />
     <BuildHero />
     <section class="bg-white">
       <div class="max-w-7xl px-4 py-16 md:mx-auto lg:pt-40 lg:pb-32">

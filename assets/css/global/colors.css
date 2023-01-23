@@ -1,0 +1,24 @@
+
+:root {    
+    --beethoven-x: hsla(163, 100%, 43%, 1);
+    --aura: hsla(269, 90%, 65%, 1);
+    --element-finance: hsla(190, 64%, 73%, 1);
+    --fjord-foundry: hsla(243, 89%, 68%, 1);
+    --fjord-nfts: hsla(243, 89%, 68%, 1);
+    --aave: hsla(186, 58%, 49%, 1);
+    --gyroscope: hsla(313, 97%, 86%, 1);
+    --cow-protocol: hsla(226, 71%, 44%, 1);
+    --mycelium: hsla(163, 42%, 53%, 1);
+    --inch: hsla(352, 71%, 60%, 1);
+    --index-coop: hsla(149, 37%, 48%, 1);
+    --cron-finance: rgba(251, 191, 36, 1);
+    --sense-finance: hsla(205, 73%, 59%, 1);
+    --prime-dao: hsla(344, 77%, 58%, 1);
+    --powerpool: hsla(107, 56%, 52%, 1);
+    --tempus: hsla(25, 85%, 56%, 1);
+    --tetu: hsla(222, 79%, 57%, 1);
+    --xave-finance: hsla(209, 80%, 48%, 1);
+    --stake-dao: hsla(268, 74%, 55%, 1);
+    --qi-dao: hsla(4, 80%, 61%, 1);    
+    --paraswap: hsla(219, 67%, 11%, 1);
+}

@@ -69,7 +69,7 @@ onMounted(()=> {
           duration: 800,
           delay: anime.stagger(30),
         },
-        "+=300"
+        "-=250"
       )
       .add({
         targets: ".word1 .letter",
@@ -79,7 +79,7 @@ onMounted(()=> {
         scale: [1, 0.8],
         duration: 200,
         easing: "easeInExpo",
-        delay: anime.stagger(5, { start: 2000 }),
+        delay: anime.stagger(5, { start: 1200 }),
       })
       .add({
         targets: ".word2 .letter",
@@ -99,7 +99,7 @@ onMounted(()=> {
         scale: [1, 0.8],
         duration: 200,
         easing: "easeInExpo",
-        delay: anime.stagger(5, { start: 2000 }),
+        delay: anime.stagger(5, { start: 1200 }),
       })
       .add({
         targets: ".word3 .letter",
@@ -119,7 +119,7 @@ onMounted(()=> {
         translateY: [0, 50],
         duration: 200,
         easing: "easeInExpo",
-        delay: anime.stagger(5, { start: 2000 }),
+        delay: anime.stagger(5, { start: 1200 }),
       })
       .add({
         targets: ".word4 .letter",
@@ -139,7 +139,7 @@ onMounted(()=> {
         translateY: [0, 50],
         duration: 200,
         easing: "easeInExpo",
-        delay: anime.stagger(5, { start: 2000 }),
+        delay: anime.stagger(5, { start: 1200 }),
       })
       .add({
         targets: ".word5 .letter",
@@ -159,7 +159,7 @@ onMounted(()=> {
         translateY: [0, 50],
         duration: 200,
         easing: "easeInExpo",
-        delay: anime.stagger(5, { start: 2000 }),
+        delay: anime.stagger(5, { start: 1200 }),
       })
       .add({
         targets: ".word6 .letter",
@@ -179,7 +179,7 @@ onMounted(()=> {
         translateY: [0, 50],
         duration: 200,
         easing: "easeInExpo",
-        delay: anime.stagger(5, { start: 2000 }),
+        delay: anime.stagger(5, { start: 1200 }),
       });
   }
 
@@ -193,7 +193,7 @@ onMounted(()=> {
         duration: 800,
         delay: anime.stagger(100),
       },
-      "+=900"
+      "+=250"
     );
 }
 </script>
