@@ -85,7 +85,7 @@
                   alt=""
                 >
                 <p class="font-medium">
-                  Hydra
+                  HydraDX
                 </p>
               </div>
             </div>

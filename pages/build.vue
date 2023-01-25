@@ -47,11 +47,11 @@ useHead({
           </p>
         </div>
         <div
-          class="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 md:grid-cols-4"
+          class="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 md:grid-cols-3"
         >
           <a href="https://docs.balancer.fi/products/balancer-pools/weighted-pools">
             <div class="pool relative">
-              <div class="relative flex items-center justify-center">
+              <div class="relative flex w-full items-center justify-center">
                 <img
                   width="244"
                   height="244"
@@ -71,7 +71,7 @@ useHead({
             href="https://docs.balancer.fi/getting-started/faqs/pools-and-lbps"
           >
             <div class="pool relative">
-              <div class="relative flex items-center justify-center">
+              <div class="relative flex w-full items-center justify-center">
                 <img
                   width="244"
                   height="244"
@@ -92,7 +92,7 @@ useHead({
             href="https://thegraph.com/explorer/subgraph/balancer-labs/balancer"
           >
             <div class="pool relative">
-              <div class="relative flex items-center justify-center">
+              <div class="relative flex w-full items-center justify-center">
                 <img
                   width="244"
                   height="244"
@@ -107,27 +107,7 @@ useHead({
                 </div>
               </div>
             </div>
-          </a>
-          <a
-            href="https://docs.balancer.fi/products/oracles"
-          >
-            <div class="pool relative">
-              <div class="relative flex items-center justify-center">
-                <img
-                  width="244"
-                  height="244"
-                  class="cover-img"
-                  src="~/assets/images/start-building/oracle.jpg"
-                  alt=""
-                >
-              </div>
-              <div>
-                <div class="p-2 text-center md:p-3">
-                  <p class="font-medium">Use price oracles</p>
-                </div>
-              </div>
-            </div>
-          </a>
+          </a>          
         </div>
       </div>
     </section>
@@ -160,6 +140,7 @@ useHead({
 
 .cover-img {
   border-radius: 10px 10px 0 0;
+  @apply w-full;
 }
 
 .integrations-logo {
