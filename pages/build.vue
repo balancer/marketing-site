@@ -166,7 +166,6 @@ useHead({
   width: 80px;
   height: auto;
   transition: 0.2s all ease-in-out;
-  cursor: pointer;
 }
 .integrations-logo:hover,
 .integrations-logo:focus {
