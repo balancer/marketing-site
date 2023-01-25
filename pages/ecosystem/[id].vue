@@ -3,18 +3,14 @@ import {buildPartnerIconUrl} from '~/lib/urls';
 import anime from 'animejs/lib/anime.es.js';
 
 const { id : partnerName } = useRoute().params;
-
 const { id } = useRoute().params;
-
 const { next, prev } = useContent();
 
 function hasHistory() {
   return window.history.length > 2;
 }
 
-
 function appearAnimation() {
-  console.log("animation")
   anime
     .timeline({ loop: false })
     .add(
@@ -46,7 +42,7 @@ function appearAnimation() {
         easing: "easeOutQuart",
         duration: 800,
       },
-      "-=800"
+      "-=900"
     )    
 }
 
@@ -62,97 +58,93 @@ onMounted(()=> {
     class="partner-page"
     @click="$router.push('/')"
   >
-    <Transition name="content">
-      <div>
-        <div class="flex w-full justify-end overflow-hidden p-4">
-          <button
-            class="close-btn"
-            @click="$router.push('/ecosystem')"
-          >
-            <icon-close />
-          </button>
-        </div>
-        <div class="partner-content-container">
-          <div
-            :class="'partner-content ' + id"
-            @click.stop
-          >
-            <div class="flex flex-col gap-10 md:flex-row">
-              <div class="logo">
-                <img
-                  class="partner-img w-full"
-                  :src="buildPartnerIconUrl(partnerName)"
-                >
-              </div>
-              <div class="md">
-                <ContentDoc
-                  class="prose prose-headings:prose-a:text-gray-50 prose-a:no-underline prose-a:text-white prose-p:text-gray-300 prose-ul:text-gray-300 prose-headings:my-0 prose-h3:mb-2 prose-h3:text-lg pb-20"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+    <div>
+      <div class="flex w-full justify-end overflow-hidden p-4">
+        <button
+          class="close-btn"
+          @click="$router.push('/ecosystem')"
+        >
+          <icon-close />
+        </button>
+      </div>
+      <div class="partner-content-container">
         <div
-          class="next-previous"
+          :class="'partner-content ' + id"
           @click.stop
         >
-          <div class="relative flex items-center justify-between px-4">
-            <div
-              v-if="prev"
-              class="prev"
-            >
-              <NuxtLink
-                class="link"
-                :to="prev._path"
+          <div class="flex flex-col gap-10 md:flex-row">
+            <div class="logo">
+              <img
+                class="partner-img w-full"
+                :src="buildPartnerIconUrl(partnerName)"
               >
-                &lt;- {{ prev.name }}
-              </NuxtLink>
             </div>
-            <div
-              v-if="next"
-              class="next"
-            >
-              <NuxtLink
-                class="link"
-                :to="next._path"
-              >
-                {{ next.name }} <span>-&gt;</span>
-              </NuxtLink>
+            <div class="md">
+              <ContentDoc
+                class="prose prose-headings:prose-a:text-gray-50 prose-a:no-underline prose-a:text-white prose-p:text-gray-300 prose-ul:text-gray-300 prose-headings:my-0 prose-h3:mb-2 prose-h3:text-lg pb-20"
+              />
             </div>
           </div>
         </div>
       </div>
-    </Transition>
+      <div
+        class="next-previous"
+        @click.stop
+      >
+        <div class="relative flex items-center justify-between px-4">
+          <div
+            v-if="prev"
+            class="prev"
+          >
+            <NuxtLink
+              class="link"
+              :to="prev._path"
+            >
+              &lt;- {{ prev.name }}
+            </NuxtLink>
+          </div>
+          <div
+            v-if="next"
+            class="next"
+          >
+            <NuxtLink
+              class="link"
+              :to="next._path"
+            >
+              {{ next.name }} <span>-&gt;</span>
+            </NuxtLink>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
 
-.md :deep(h3 a) {
-  @apply font-semibold;
+.partner-page {
+  @apply bg-gray-900 overflow-hidden w-full;  
 }
 
-.content-enter-active,
-.content-leave-active {
-  transition: opacity 0.5s;
-}
-.content-enter,
-.content-leave-to {
-  opacity: 0;
-  transform: translateY(2000px);
-}
-
+/* Sub-navigation section */
 .next-previous{
-  @apply relative border-t border-gray-800 px-5 h-16 bg-gray-900/60;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  @apply relative border-t border-gray-800 px-5 h-16 bg-gray-900/60 backdrop-blur;
 }
 
 .close-btn {
-  width: 44px;
-  height: 44px;
-  @apply rounded-full bg-white flex justify-center items-center hover:bg-yellow-500 focus:bg-yellow-500 transition-colors relative z-10 shadow-lg;
+  @apply rounded-full bg-white flex justify-center items-center hover:bg-yellow-500 focus:bg-yellow-500 transition-colors relative z-10 shadow-lg w-11 h-11;
 }
+
+.next, .prev {
+  @apply text-yellow-500 font-medium hover:text-pink-500 focus:text-pink-500 transition-all;
+}
+.next {
+  @apply absolute right-0 top-5;
+}
+.prev {
+  @apply absolute left-0 top-5;
+}
+
 
 @media (min-height: 600px) {
   .next-previous{
@@ -162,8 +154,11 @@ onMounted(()=> {
     @apply fixed right-4 top-4;
   }
 }
+
+/* Partner logo section */
+
 .partner-img {
-  width: 100px;
+  @apply w-24;
 }
 
 @media (min-width: 768px) {
@@ -174,43 +169,12 @@ onMounted(()=> {
     @apply w-full;
   }
 }
-  
-.next {
-  position: absolute;
-  right: 0px;
-  top: 20px;
-}
-.prev {
-  position: absolute;
-  left: 0px;
-  top: 20px;
-}
 
-.partner-page {
-  @apply bg-gray-900 overflow-hidden w-full;
-  
-}
+/* Purple glow behind the content section */
 
 .partner-content-container {
   transform-style: preserve-3d;
   @apply max-w-4xl mx-auto;
-}
-.partner-content-container:hover::before {
-  content: "";
-  width: 600px;
-  height: 600px;
-  background: linear-gradient(225deg, #ff00ff 0%, #0000ff 100%);
-  bottom: -100px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  @apply rounded-full;
-  filter: blur(300px);
-  overflow: hidden;
-  max-width: 100vw;
-  transition: 0.4s
-   all ease-in-out;
-   opacity: 0.1;
 }
 
 .partner-content-container::before {
@@ -218,58 +182,34 @@ onMounted(()=> {
   width: 600px;
   height: 600px;
   background: linear-gradient(225deg, #ff00ff 0%, #0000ff 100%);
-  bottom: -100px;
-  left: 50%;
   transform: translate(-50%, -50%);
-  position: absolute;
-  @apply rounded-full;
+  @apply rounded-full opacity-100 overflow-hidden absolute left-1/2 transition-all duration-500 -bottom-24;
   filter: blur(300px);
-  overflow: hidden;
-  max-width: 100vw;
-  transition: 0.4s
-   all ease-in-out;
-   opacity: 1;
+  max-width: 100vw;   
 }
-.partner-page :deep(h2) {
-  @apply pt-8 text-white;
-  font-family: "Tiempos Headline Medium", "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+
+.partner-content-container:hover::before {
+   @apply opacity-10;
 }
+
 .partner-page :deep(.partner-content) {
-  @apply mx-4 px-5 sm:px-8 max-w-4xl lg:m-auto py-10 bg-gray-900 rounded-3xl relative overflow-hidden;
-  min-height: 100vh;
-  transition: 0.2s all ease-out;
+  @apply mx-4 px-5 sm:px-8 max-w-4xl lg:m-auto py-10 bg-gray-900 rounded-3xl relative overflow-hidden transition-all duration-200 min-h-screen;
 }
+
+/* Glow on the content card */
 .partner-page :deep(.partner-content::after) {
   content: "";
-  width: 200px;
-  height: 200px;
   background: linear-gradient(225deg, #ff00ff 0%, #ffd500 100%),
     linear-gradient(0deg, #ffffff, #ffffff);
+  filter: blur(180px);  
+  @apply rounded-full absolute opacity-100 transition-all duration-500 w-52 h-52 -top-24 -right-24;
   
-  top: -100px;
-  right: -100px;
-  position: absolute;
-  @apply rounded-full;
-  filter: blur(180px);
-  opacity: 1;
-  transition: all 1s ease-in-out;
 }
-.partner-page :deep(.content) {
-  @apply pt-4;
-}
-.partner-page :deep(.link) {
-  @apply text-yellow-500 font-medium hover:text-pink-500 focus:text-pink-500 transition-all;
-}
-.partner-page :deep(.fill) {
-  fill: theme("colors.yellow.500");
-}
-.partner-page :deep(.link:hover .fil)l,
-.partner-page :deep(.link:focus .fill) {
-  fill: theme("colors.pink.500");
-}
+
 .partner-page :deep(.video) {
   @apply max-w-xs pt-4;
 }
+
 /* partner content colors */
 .partner-page :deep(.partner-content.beethoven-x::after) {
   background: var(--beethoven-x);
@@ -313,7 +253,6 @@ onMounted(()=> {
 .partner-page :deep(.partner-content.prime-dao::after) {
   background: var(--prime-dao);
 }
-
 .partner-page :deep(.partner-content.powerpool::after) {
   background: var(--powerpool);
 }
@@ -343,5 +282,4 @@ onMounted(()=> {
     @apply opacity-10 h-80 w-80;
   }
 }
-
 </style>

@@ -20,7 +20,7 @@ defineProps({
 
 <template>
   <div class="partner-header">
-    <div class="container pb-4">
+    <div class="container pb-8">
       <div class="header">
         <h1 class="text-5xl font-normal text-white">
           {{ name }}
