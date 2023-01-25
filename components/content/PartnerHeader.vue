@@ -2,35 +2,30 @@
 defineProps({
   name: {
     type: String,
-    default: 'Default title'
   },
   category: {
     type: String,
-    default: 'Default description'
   },
   url: {
     type: String,
-    default: 'Default description'
   },
   displayURL: {
     type: String,
-    default: 'Default description'
   },    
   icon: {
     type: String,
-    default: 'IconMarkdown'
   },
 })
 </script>
 
 <template>
-  <div>
-    <div class="container">
+  <div class="partner-header">
+    <div class="container pb-4">
       <div class="header">
         <h1 class="text-5xl font-normal text-white">
           {{ name }}
         </h1>
-        <p class="font-semibold">
+        <p class="category">
           {{ category }}
         </p>
         
@@ -51,3 +46,8 @@ defineProps({
     </div>
   </div>
 </template>
+<style scoped>
+.category {
+  @apply m-0 text-white font-semibold;
+}
+</style>

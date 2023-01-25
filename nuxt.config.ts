@@ -1,4 +1,6 @@
-import { TITLE, headMeta } from './lib/meta'
+
+import { TITLE, headMeta } from './lib/meta';
+import tailwindTypography from '@tailwindcss/typography';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -52,5 +54,10 @@ export default defineNuxtConfig({
     ],
     sitemap: {
         hostname: 'https://balancer.fi',
+    },
+    tailwindcss: {
+        config: {
+            plugins: [tailwindTypography],
+        }
     },
 })

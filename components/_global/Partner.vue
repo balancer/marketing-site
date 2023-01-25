@@ -101,7 +101,7 @@ defineProps({
 
 :deep(.partner-logo) {
   transition: all 0.1s ease-out 0.05s;
-  @apply scale-50 transform-gpu;
+  @apply scale-50 transform-gpu absolute;
 }
 
 .partner:hover :deep(.partner-logo),

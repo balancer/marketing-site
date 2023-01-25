@@ -1,8 +1,8 @@
 <template>
   <svg
     class="partner-logo"
-    width="170"
-    height="170"
+    width="140"
+    height="140"
     viewBox="0 0 120 120"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

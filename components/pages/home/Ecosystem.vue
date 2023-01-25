@@ -74,7 +74,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="Fjord NFTs"
-                category="Fair NFT launch LBPs"
+                category="Fair launch NFT drops"
                 bg-image-style="fjord"
               >
                 <template #logo>
@@ -282,20 +282,6 @@
             </button>
           </NuxtLink>
 
-          <NuxtLink to="ecosystem/index-coop">
-            <button class="tooltip-target w-full">
-              <Partner
-                title="Index Coop"
-                category="Structured DeFi products"
-                bg-image-style="indexcoop"
-              >
-                <template #logo>
-                  <logo-indexcoop />
-                </template>
-              </Partner>
-            </button>
-          </NuxtLink>
-
           <NuxtLink to="ecosystem/xave-finance">
             <button class="tooltip-target w-full">
               <Partner
@@ -305,20 +291,6 @@
               >
                 <template #logo>
                   <logo-xave />
-                </template>
-              </Partner>
-            </button>
-          </NuxtLink>
-
-          <NuxtLink to="ecosystem/qi-dao">
-            <button class="tooltip-target w-full">
-              <Partner
-                title="Qi DAO"
-                category="Mai stablecoin protocol"
-                bg-image-style="qidao"
-              >
-                <template #logo>
-                  <logo-qi />
                 </template>
               </Partner>
             </button>
@@ -388,7 +360,7 @@ h2.title {
 }
 .partners {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-column-gap: 20px;
   grid-row-gap: 40px;
   width: 100%;
@@ -402,7 +374,8 @@ h2.title {
 
 @media (min-width: 480px) {
   .partners {
-    grid-template-columns: repeat(3, 1fr);
+  
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-column-gap: 20px;
     grid-row-gap: 72px;
   }
@@ -410,7 +383,7 @@ h2.title {
 
 @media (min-width: 820px) {
   .partners {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-column-gap: 40px;
     grid-row-gap: 64px;
   }
@@ -418,7 +391,7 @@ h2.title {
 
 @media (min-width: 1240px) {
   .partners {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     grid-column-gap: 40px;
     grid-row-gap: 64px;
   }

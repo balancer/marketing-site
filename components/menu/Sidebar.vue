@@ -231,6 +231,7 @@ watch(sidebarOpen, (newValue) => {
   top: 0;
   left: 0;
   z-index: 1;
+  animation: fade-in 0.15s ease-out both;
 }
 
 .sidebar-panel {
