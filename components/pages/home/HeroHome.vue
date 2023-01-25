@@ -293,7 +293,7 @@ onMounted(()=> {
   @apply mb-7 md:mb-10 flex flex-col items-center;
 }
 .title {
-  font-size: min(9vw, 90px);
+  font-size: min(10.25vw, 90px);
   line-height: 1.1;
   @apply text-center pb-0;
   -webkit-font-smoothing: antialiased;
@@ -301,7 +301,7 @@ onMounted(()=> {
 }
 
 .title-rotator {
-  font-size: min(10vw, 100px);
+  font-size: min(10.75vw, 100px);
   @apply block opacity-0;
 }
 
