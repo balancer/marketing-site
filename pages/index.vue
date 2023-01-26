@@ -6,6 +6,8 @@ import Backers from "@/components/pages/home/Backers.vue";
 import StatsHome from "@/components/pages/home/StatsHome.vue";
 
 definePageMeta({
+  documentDriven: false,
+  layout: 'default',
   pageTransition: {
     name: 'slideup'
   },
@@ -27,13 +29,12 @@ definePageMeta({
 
 <template>
   <div>
-    <Header />
-    <Sidebar />
-    <HeroHome />
-    <Ecosystem />
-    <Aave />
-    <Backers />
-    <StatsHome />
-    <Footer />
+    <NuxtLayout>
+      <HeroHome />
+      <Ecosystem />
+      <Aave />
+      <Backers />
+      <StatsHome />
+    </NuxtLayout>
   </div>
 </template>

@@ -7,6 +7,8 @@ import LBPs from "@/components/pages/build/LBPs.vue";
 import { headMeta } from "@/lib/meta";
 
 definePageMeta({
+  documentDriven: false,
+  layout: 'default',  
   pageTransition: {
     name: 'slideup'
   }
@@ -33,89 +35,88 @@ useHead({
 
 <template>
   <div>
-    <Header />
-    <Sidebar />
-    <BuildHero />
-    <section class="bg-white">
-      <div class="max-w-7xl px-4 py-16 md:mx-auto lg:pt-40 lg:pb-32">
-        <div class="pb-4 md:text-center">
-          <h1 class="pb-4">
-            Start building
-          </h1>
-          <p class="pb-4">
-            Focus on new AMM logic rather than low-level accounting.
-          </p>
-        </div>
-        <div
-          class="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 md:grid-cols-3"
-        >
-          <a href="https://docs.balancer.fi/products/balancer-pools/weighted-pools">
-            <div class="pool relative">
-              <div class="relative flex w-full items-center justify-center">
-                <img
-                  width="244"
-                  height="244"
-                  class="cover-img"
-                  src="~/assets/images/start-building/smart.jpg"
-                  alt=""
-                >
-              </div>
-              <div>
-                <div class="p-2 text-center md:p-3">
-                  <p class="font-medium">Create a weighted Pool</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://docs.balancer.fi/getting-started/faqs/pools-and-lbps"
+    <NuxtLayout>
+      <BuildHero />
+      <section class="bg-white">
+        <div class="max-w-7xl px-4 py-16 md:mx-auto lg:pt-40 lg:pb-32">
+          <div class="pb-4 md:text-center">
+            <h1 class="pb-4">
+              Start building
+            </h1>
+            <p class="pb-4">
+              Focus on new AMM logic rather than low-level accounting.
+            </p>
+          </div>
+          <div
+            class="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 md:grid-cols-3"
           >
-            <div class="pool relative">
-              <div class="relative flex w-full items-center justify-center">
-                <img
-                  width="244"
-                  height="244"
-                  class="cover-img"
-                  src="~/assets/images/start-building/launch-token.jpg"
-                  alt=""
-                >
-              </div>
-              <div>
-                <div class="p-2 text-center md:p-3">
-                  <p class="font-medium">Launch a token</p>
+            <a href="https://docs.balancer.fi/products/balancer-pools/weighted-pools">
+              <div class="pool relative">
+                <div class="relative flex w-full items-center justify-center">
+                  <img
+                    width="244"
+                    height="244"
+                    class="cover-img"
+                    src="~/assets/images/start-building/smart.jpg"
+                    alt=""
+                  >
+                </div>
+                <div>
+                  <div class="p-2 text-center md:p-3">
+                    <p class="font-medium">Create a weighted Pool</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
+            </a>
+            <a
+              href="https://docs.balancer.fi/getting-started/faqs/pools-and-lbps"
+            >
+              <div class="pool relative">
+                <div class="relative flex w-full items-center justify-center">
+                  <img
+                    width="244"
+                    height="244"
+                    class="cover-img"
+                    src="~/assets/images/start-building/launch-token.jpg"
+                    alt=""
+                  >
+                </div>
+                <div>
+                  <div class="p-2 text-center md:p-3">
+                    <p class="font-medium">Launch a token</p>
+                  </div>
+                </div>
+              </div>
+            </a>
 
-          <a
-            href="https://thegraph.com/explorer/subgraph/balancer-labs/balancer"
-          >
-            <div class="pool relative">
-              <div class="relative flex w-full items-center justify-center">
-                <img
-                  width="244"
-                  height="244"
-                  class="cover-img"
-                  src="~/assets/images/start-building/data.jpg"
-                  alt=""
-                >
-              </div>
-              <div>
-                <div class="p-2 text-center md:p-3">
-                  <p class="font-medium">Get Balancer data</p>
+            <a
+              href="https://thegraph.com/explorer/subgraph/balancer-labs/balancer"
+            >
+              <div class="pool relative">
+                <div class="relative flex w-full items-center justify-center">
+                  <img
+                    width="244"
+                    height="244"
+                    class="cover-img"
+                    src="~/assets/images/start-building/data.jpg"
+                    alt=""
+                  >
+                </div>
+                <div>
+                  <div class="p-2 text-center md:p-3">
+                    <p class="font-medium">Get Balancer data</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>          
+            </a>          
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <CaseStudies />
-    <SmartPools />
-    <LBPs />
-    <Footer />
+      <CaseStudies />
+      <SmartPools />
+      <LBPs />
+    </NuxtLayout>
   </div>
 </template>
 

@@ -3,7 +3,7 @@
 
 <template>
   <div>
-    <div class="mainzzz">
+    <div class="main">
       <Header />
       <Sidebar />
       <slot />
@@ -39,18 +39,6 @@ html {
   position: relative;
   z-index: 1;
   box-shadow: 0 20px 40px 0 rgba(0,0,0,0.20);
-}
-
-.drawer-footer {
-  /* place on the bottom */
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #eee;
-  display: grid;
-  place-items: center;
-  padding: 20px 20px 30px 20px;
 }
 
 .slideup-enter-active {

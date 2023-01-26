@@ -1,6 +1,6 @@
 h1 {
   @apply md:text-4xl pb-4 text-black;
-  font-family: "Tiempos Headline Medium", "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+  font-family: "Tiempos Headline Medium", serif;
   ;
 }
 
