@@ -1,5 +1,7 @@
 <script setup>
-defineProps({
+
+const props = defineProps({
+
   name: {
     type: String,
   },
@@ -15,7 +17,15 @@ defineProps({
   icon: {
     type: String,
   },
+  analyticsCode: {
+    type: String,
+  },  
+
 })
+
+function handleClick() {
+  window.fathom.trackGoal(props.analyticsCode, 0)
+}
 </script>
 
 <template>
@@ -32,6 +42,8 @@ defineProps({
         <a
           class="link font-semibold"
           :href="url"
+          target="_blank"
+          @click="handleClick"
         >{{ displayURL }}
           <icon-base
             width="14"
