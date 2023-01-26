@@ -4,32 +4,31 @@ import BuildHero from "@/components/pages/build/BuildHero.vue";
 import SmartPools from "@/components/pages/build/SmartPools.vue";
 import LBPs from "@/components/pages/build/LBPs.vue";
 
-import { headMeta } from "@/lib/meta";
+// import { headMeta } from "@/lib/meta";
 
 definePageMeta({
   documentDriven: false,
-  layout: 'default',  
+  layout: 'default',
   pageTransition: {
     name: 'slideup'
   }
 })
 
-// TODO: check that it works with headMeta
 // https://nuxt.com/docs/getting-started/seo-meta#composable-usehead
-useHead({
-    title: "Balancer | Build on a protocol for programmable liquidity",
-    meta: [
-      {
-        hid: "description",
-        name: "description",
-        content:
-          "Balancer is the most flexible and versatile AMM, giving developers unprecedented customizability."
-      }
-    ],
-    ...headMeta({
-      description: "Balancer is the most flexible and versatile AMM, giving developers unprecedented customizability."
-    })
-});
+// useHead({
+//     title: "Balancer | Build on a protocol for programmable liquidity",
+//     meta: [
+//       {
+//         hid: "description",
+//         name: "description",
+//         content:
+//           "Balancer is the most flexible and versatile AMM, giving developers unprecedented customizability."
+//       }
+//     ],
+//     ...headMeta({
+//       description: "Balancer is the most flexible and versatile AMM, giving developers unprecedented customizability."
+//     })
+// });
 
 </script>
 
@@ -108,7 +107,7 @@ useHead({
                   </div>
                 </div>
               </div>
-            </a>          
+            </a>
           </div>
         </div>
       </section>
