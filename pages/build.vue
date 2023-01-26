@@ -4,8 +4,6 @@ import BuildHero from "@/components/pages/build/BuildHero.vue";
 import SmartPools from "@/components/pages/build/SmartPools.vue";
 import LBPs from "@/components/pages/build/LBPs.vue";
 
-// import { headMeta } from "@/lib/meta";
-
 definePageMeta({
   documentDriven: false,
   layout: 'default',
@@ -25,9 +23,6 @@ useHead({
           "Balancer is the most flexible and versatile AMM, giving developers unprecedented customizability."
       }
     ],
-    // ...headMeta({
-    //   description: "Balancer is the most flexible and versatile AMM, giving developers unprecedented customizability."
-    // })
 });
 
 </script>
