@@ -15,20 +15,20 @@ definePageMeta({
 })
 
 // https://nuxt.com/docs/getting-started/seo-meta#composable-usehead
-// useHead({
-//     title: "Balancer | Build on a protocol for programmable liquidity",
-//     meta: [
-//       {
-//         hid: "description",
-//         name: "description",
-//         content:
-//           "Balancer is the most flexible and versatile AMM, giving developers unprecedented customizability."
-//       }
-//     ],
-//     ...headMeta({
-//       description: "Balancer is the most flexible and versatile AMM, giving developers unprecedented customizability."
-//     })
-// });
+useHead({
+    title: "Balancer | Build on a protocol for programmable liquidity",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Balancer is the most flexible and versatile AMM, giving developers unprecedented customizability."
+      }
+    ],
+    // ...headMeta({
+    //   description: "Balancer is the most flexible and versatile AMM, giving developers unprecedented customizability."
+    // })
+});
 
 </script>
 
