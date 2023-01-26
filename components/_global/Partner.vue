@@ -113,7 +113,7 @@ defineProps({
   aspect-ratio: 1 / 1;
   @apply mb-4 flex items-center justify-center;
   transition: all 0.2s ease-out;
-  @apply w-full h-full relative z-0 rounded-full bg-cover border border-white border-2;
+  @apply w-full h-full relative z-0 rounded-full bg-cover border-2 border-white;
 }
 
 .partner__graphic::before {

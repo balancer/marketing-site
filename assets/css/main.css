@@ -75,13 +75,3 @@
 .sidebar-panel .router-link-exact-active, footer .link-featured.router-link-exact-active {
   @apply text-yellow-500;
 }
-
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.5s;
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0;
-  transform: translateY(2000px);
-}
