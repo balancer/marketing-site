@@ -81,7 +81,7 @@ onMounted(()=> {
             </div>
             <div class="md">
               <ContentDoc
-                class="prose prose-headings:prose-a:text-gray-50 prose-a:no-underline prose-a:text-white prose-p:text-gray-300 prose-ul:text-gray-300 prose-headings:my-0 prose-h3:mb-2 prose-h3:text-lg pb-20"
+                class="prose prose-invert prose-a:no-underline prose-headings:my-0 prose-h3:mb-2 prose-h3:text-lg pb-20"
               />
             </div>
           </div>
@@ -135,7 +135,7 @@ onMounted(()=> {
   @apply rounded-full bg-white flex justify-center items-center hover:bg-yellow-500 focus:bg-yellow-500 transition-colors relative z-10 shadow-lg w-11 h-11;
 }
 
-.next, .prev {
+.next a.link, .prev a.link {
   @apply text-yellow-500 font-medium hover:text-pink-500 focus:text-pink-500 transition-all;
 }
 .next {

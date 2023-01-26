@@ -11,7 +11,7 @@
           <p class="eyebrow gradient-text pb-2 font-medium">
             SMART POOLs
           </p>
-          <h1 class="h1-sans-serif">
+          <h1>
             Customizable AMM logic with Smart Pools
           </h1>
           <p class="pb-4">

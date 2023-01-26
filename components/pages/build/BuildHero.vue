@@ -23,7 +23,7 @@
           name="h1"
           appear
         >
-          <h1 class="h1-sans-serif text-white">
+          <h1 class="text-5xl font-normal text-white">
             A core building block&nbsp;of&nbsp;DeFi
           </h1>
         </transition>

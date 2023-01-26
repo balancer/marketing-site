@@ -39,7 +39,7 @@ useHead({
     <section class="bg-white">
       <div class="max-w-7xl px-4 py-16 md:mx-auto lg:pt-40 lg:pb-32">
         <div class="pb-4 md:text-center">
-          <h1 class="h1-sans-serif pb-4">
+          <h1 class="pb-4">
             Start building
           </h1>
           <p class="pb-4">

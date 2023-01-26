@@ -68,20 +68,13 @@
   transition: all 0.4s ease-out 0.2s;
 }
 
-
-/* 
-.layout-enter-active,
-.layout-leave-active {
-  transition: all 1s;
-  opacity: 1;
+.mobile-hide .router-link-exact-active {
+  @apply text-defaultBlue;
 }
-.layout-enter,
-.layout-leave-active {
-  opacity: 0;
-  transform: translateY(500px);
-} */
 
-
+.sidebar-panel .router-link-exact-active, footer .link-featured.router-link-exact-active {
+  @apply text-yellow-500;
+}
 
 .page-enter-active,
 .page-leave-active {

@@ -12,7 +12,7 @@
           <p class="eyebrow gradient-text pb-2 font-medium">
             Launch a token
           </p>
-          <h1 class="h1-sans-serif">
+          <h1>
             LBPs for a fair and liquid&nbsp;launch
           </h1>
           <p class="pb-4">

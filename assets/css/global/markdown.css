@@ -9,3 +9,11 @@
 .md h3 > a {
     @apply font-semibold;
 }
+
+.md p > a, .md li > a, .md span > a {
+    @apply text-sky-400 hover:text-pink-500 focus:text-pink-500 transition-all;
+}
+
+.md li {
+    line-height: 1.4;
+}

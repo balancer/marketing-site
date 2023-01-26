@@ -3,7 +3,7 @@
 
 <template>
   <div>
-    <div class="main">
+    <div class="mainzzz">
       <Header />
       <Sidebar />
       <slot />
@@ -66,11 +66,4 @@ html {
   opacity: 0;
 }
 
-.mobile-hide .router-link-exact-active {
-  @apply text-defaultBlue;
-}
-
-.sidebar-panel .router-link-exact-active, footer .link-featured.router-link-exact-active {
-  @apply text-yellow-300;
-}
 </style>
