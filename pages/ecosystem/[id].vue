@@ -81,8 +81,14 @@ onMounted(()=> {
             </div>
             <div class="md">
               <ContentDoc
-                class="prose prose-invert prose-a:no-underline prose-headings:my-0 prose-h3:mb-2 prose-h3:text-lg pb-20"
+                class="prose prose-invert prose-a:no-underline prose-headings:my-0 prose-h3:mb-2 prose-h3:text-lg pb-10"
               />
+              <div class="w-full border-t border-gray-800 pb-20">
+                <a
+                  class="inline-block pt-5 text-sm text-gray-400 transition-colors hover:text-pink-500 focus:text-pink-500"
+                  href="https://github.com/balancer-labs/marketing-site/tree/nuxt3/content/ecosystem/"
+                >Propose edits</a>
+              </div>
             </div>
           </div>
         </div>
