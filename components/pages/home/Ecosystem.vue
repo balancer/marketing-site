@@ -17,7 +17,6 @@
                 title="Balancer app"
                 category="AMM / DEX"
                 bg-image-style="balancer"
-                fathom-code="X9TTIGSY"
               >
                 <template #logo>
                   <logo-balancer />

@@ -19,11 +19,6 @@ definePageMeta({
     StatsHome,
   },
   transition: 'slideup',
-  head() {
-    // return {
-    //   link: [{ rel: 'preload', as:'image', href: '/images/hero-home.svg' }]
-    // }
-  },  
 })
 </script>
 
