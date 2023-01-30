@@ -28,7 +28,8 @@ export default defineNuxtConfig({
         ],
         link: [      
             { rel: 'icon', href: '/favicon.svg' },
-            { rel: 'mask-icon', href: '/favicon.svg', color: '#000000' }
+            { rel: 'mask-icon', href: '/favicon.svg', color: '#000000' },
+            { rel: 'preload', as:'font', href: '/fonts/tiemposDispMed.woff2', type: 'font/woff2', crossorigin: 'anonymous' }
         ],   
         script: [
             { src: 'https://scientific-type.balancer.fi/script.js', site: process.env.FATHOM_SITE_ID || 'xxx', defer: true, 'data-spa': 'auto' }
