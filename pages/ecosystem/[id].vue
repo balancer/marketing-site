@@ -85,8 +85,8 @@ onMounted(()=> {
           <div class="flex flex-col gap-10 md:flex-row">
             <div class="logo">
               <img
-                width="100"
-                height="100"
+                width="96"
+                height="96"
                 class="partner-img w-full"
                 :src="buildPartnerIconUrl(partnerName)"
               >

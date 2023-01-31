@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="mx-auto w-full max-w-7xl px-4 pb-32 pt-16 lg:pb-40 lg:pt-0 xl:px-0">
+  <div class="mx-auto w-full max-w-7xl px-4 pb-20 pt-16 md:pb-32 lg:pb-40 lg:pt-0 xl:px-0">
     <div class="grid gap-4 md:grid-cols-3 xl:gap-8">
       <div class="card order-1 flex w-full flex-col justify-between md:order-2">
         <div class="pb-6">
