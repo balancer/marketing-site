@@ -1,35 +1,28 @@
+<script setup>
+const { sidebarOpen, toggleSidebar } = useSidebar();
+</script>
+
 <template>
-  <div id="burger" :class="{ 'active' : sidebarOpen }" @click.prevent="toggleSidebar">
+  <div
+    id="burger"
+    :class="{ active: sidebarOpen }"
+    @click.prevent="toggleSidebar"
+  >
     <slot>
-      <button type="button" class="burger-button" title="Menu">
+      <button
+        type="button"
+        class="burger-button"
+        title="Menu"
+      >
         <span class="hidden">Toggle menu</span>
-        <span class="burger-bar burger-bar--1"></span>
-        <span class="burger-bar burger-bar--2"></span>
-        <span class="burger-bar burger-bar--3"></span>
+        <span class="burger-bar burger-bar--1" />
+        <span class="burger-bar burger-bar--2" />
+        <span class="burger-bar burger-bar--3" />
       </button>
     </slot>
   </div>
 </template>
-<script>
 
-import { mapState, mapMutations } from "vuex";
-
-export default {
-    computed: {
-        ...mapState({
-            sidebarOpen: state => state.sidebar
-        })
-    },
-    methods: {
-        ...mapMutations({
-            toggleSidebar: "toggleSidebar"
-        })
-    }
-};
-
-
-
-</script>
 <style>
 .hidden {
   visibility: hidden;
@@ -86,7 +79,8 @@ button:focus {
   transform: scaleX(1);
 }
 
-.burger-button:hover .burger-bar--1, .burger-button:hover .burger-bar--3 {
+.burger-button:hover .burger-bar--1,
+.burger-button:hover .burger-bar--3 {
   @apply bg-defaultRed;
 }
 
@@ -118,10 +112,8 @@ button:focus {
   transform: rotate(-45deg);
 }
 
-#burger.active:hover .burger-bar--1, #burger.active:hover .burger-bar--3 {
+#burger.active:hover .burger-bar--1,
+#burger.active:hover .burger-bar--3 {
   @apply bg-yellow-200;
 }
-
-
-
 </style>

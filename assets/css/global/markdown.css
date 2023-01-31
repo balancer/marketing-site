@@ -1,0 +1,19 @@
+
+/* This site uses Tailwind typography to style most text. This file contains overrides */
+
+.md h2 {
+    @apply pt-4 text-white;
+    font-family: "Tiempos Headline Medium", "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+}
+
+.md h3 > a {
+    @apply font-semibold;
+}
+
+.md p > a, .md li > a, .md span > a {
+    @apply text-sky-400 hover:text-pink-500 focus:text-pink-500 transition-all;
+}
+
+.md li {
+    line-height: 1.4;
+}

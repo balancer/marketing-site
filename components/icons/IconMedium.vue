@@ -9,7 +9,10 @@
     role="img"
   >
     <title id="mediumTitle">Link to Balancer's blog on Medium</title>
-    <g fill="none" fill-rule="evenodd">
+    <g
+      fill="none"
+      fill-rule="evenodd"
+    >
       <g fill-rule="nonzero">
         <path
           class="bg"

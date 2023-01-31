@@ -1,56 +1,62 @@
+<script setup></script>
+
 <template>
   <header class="header">
     <nav class="flex">
-      <NuxtLink class="link" to="/">
-        <img class="logo" :src="require('~/assets/svg/logo-balancer.svg')" alt="" /><span
+      <NuxtLink
+        class="link"
+        to="/"
+      >
+        <img
+          class="logo"
+          src="~/assets/svg/logo-balancer.svg"
+          alt=""
+        ><span
           class="logotype"
-          >Balancer</span
-        >
+        >Balancer</span>
       </NuxtLink>
 
       <div class="mobile-hide">
-        <transition name="fade" appear>
-          <NuxtLink class="nav-link" data-hover="Protocol" to="protocol"
-            >Protocol</NuxtLink
-          >
-        </transition>
-        <NuxtLink class="nav-link" data-hover="Build" to="build"
-          >Build</NuxtLink
+        <transition
+          name="fade"
+          appear
         >
+          <NuxtLink
+            class="nav-link"
+            data-hover="Protocol"
+            to="protocol"
+          >
+            Protocol
+          </NuxtLink>
+        </transition>
+        <NuxtLink
+          class="nav-link"
+          data-hover="Build"
+          to="build"
+        >
+          Build
+        </NuxtLink>
         <a
           class="nav-link"
           data-hover="Docs"
           href="https://docs.balancer.fi"
-          >Docs</a
-        >
+        >Docs</a>
         <a
           class="nav-link"
           data-hover="Blog"
           href="https://medium.com/balancer-protocol"
-          >Blog</a
-        >
+        >Blog</a>
       </div>
     </nav>
     <div class="flex items-center">
       <a
-        class="px-4 mr-2 py-2 rounded-3xl border border-grey text-white"
+        class="border-grey mr-2 rounded-3xl border px-4 py-2 text-white"
         href="https://app.balancer.fi/"
-        >Launch&nbsp;app</a
-      >
+      >Launch&nbsp;app</a>
       <Burger />
     </div>
   </header>
 </template>
-
-<script>
-import Burger from "@/components/menu/Burger.vue";
-
-export default {
-  components: {
-    Burger
-  }
-};
-</script>
 
 <style scoped>
 .mobile-hide {
@@ -106,7 +112,7 @@ export default {
   left: 0;
   overflow: hidden;
   max-width: 0;
-  border-bottom: 2px solid theme('colors.defaultBlue');
+  border-bottom: 2px solid theme("colors.defaultBlue");
   color: #fff;
   content: attr(data-hover);
   -webkit-transition: max-width 0.2s ease-in-out;

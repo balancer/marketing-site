@@ -10,10 +10,14 @@
     @mouseover="isHover = true"
     @mouseout="isHover = false"
   >
-    <title :id="iconName" lang="en">{{ iconName }} icon</title>
-    <g 
-    class="icon-group"
-    :fill="isHover ? iconHoverColor : iconColor">
+    <title
+      :id="iconName"
+      lang="en"
+    >{{ iconName }} icon</title>
+    <g
+      class="icon-group"
+      :fill="isHover ? iconHoverColor : iconColor"
+    >
       <slot />
     </g>
   </svg>
@@ -24,15 +28,15 @@ export default {
   props: {
     iconName: {
       type: String,
-      default: "box"
+      default: "box",
     },
     width: {
       type: [Number, String],
-      default: 18
+      default: 18,
     },
     height: {
       type: [Number, String],
-      default: 18
+      default: 18,
     },
     iconColor: {
       type: String,
@@ -41,13 +45,13 @@ export default {
     iconHoverColor: {
       type: String,
       // default: "currentColor"
-    }
+    },
   },
   data() {
     return {
-      isHover: false
+      isHover: false,
     };
-  }
+  },
 };
 </script>
 
@@ -59,12 +63,10 @@ svg {
 }
 
 .nav-link:hover .icon-group {
-  fill: theme('colors.defaultBlue');
+  fill: theme("colors.defaultBlue");
 }
 
 .icon-group {
   transition: fill 0.2s ease-in-out;
 }
-
-
 </style>

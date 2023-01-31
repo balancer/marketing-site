@@ -9,7 +9,10 @@
     role="img"
   >
     <title id="discordTitle">Link to Balancer's Discord</title>
-    <g fill="none" fill-rule="evenodd">
+    <g
+      fill="none"
+      fill-rule="evenodd"
+    >
       <path
         class="bg"
         d="M15.981 0C7.167 0 .02 7.163.02 16c0 8.836 7.148 16 15.962 16 8.815 0 15.962-7.164 15.962-16 0-8.837-7.147-16-15.962-16z"

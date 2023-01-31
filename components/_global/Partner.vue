@@ -1,89 +1,111 @@
+<script setup>
+// import anime from "animejs/lib/anime.es.js";
+
+defineProps({
+  title: {
+    type: String,
+    required: true,
+  },
+  comingSoon: {
+    type: Boolean,
+    default: false,
+  },
+  bgImageStyle: {
+    type: String,
+    required: true,
+  },
+  fathomCode: {
+    type: String,
+    required: false,
+  },
+  category: {
+    type: String,
+    required: false,
+  },
+});
+
+// function linkClickHandler() {
+//   fathom?.trackGoal(fathomCode || "", 0);
+// }
+
+// }
+</script>
+
 <template>
-  <div class="partner group">
-    <div :class="'relative partner__graphic partner__graphic--' + bgImageStyle">
-      <slot name="logo" />
-    </div>
-    <div class="partner__details">
-      <div class="partner__summmary">
-        <div class="relative">
-          <div>
-            <h2 class="title">
-              {{ title }}
-            </h2>
-            <a @click="linkClickHandler" class="link" :href="url">{{
-              linkLabel
-            }}</a>
+  <div
+    class="text-center hover:cursor-pointer"
+    @click="showModal = true"
+  >
+    <!-- <NuxtLink class="text-center" :to="url" @click="animation"> -->
+    <div class="partner group">
+      <div :class="'relative partner__graphic partner__graphic--' + bgImageStyle">
+        <slot name="logo" />
+      </div>
+      <div class="partner__details">
+        <div class="partner__summmary">
+          <div class="relative">
+            <div>
+              <h2 class="title">
+                {{ title }}
+              </h2>
+              <p class="synopsis">
+                {{ category }}
+              </p>
+              <p class="learn-more">
+                Learn more
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <!-- </NuxtLink> -->
 </template>
-  
-  <script>
-export default {
-  props: {
-    title: {
-      type: String,
-      required: true,
-    },
-    comingSoon: {
-      type: Boolean,
-      default: false,
-    },
-    bgImageStyle: {
-      type: String,
-      required: true,
-    },
-    fathomCode: {
-      type: String,
-      required: false,
-    },
-    linkLabel: {
-      type: String,
-      required: false,
-    },
-    url: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-      required: true,
-    },
-  },
-  methods: {
-    linkClickHandler() {
-      fathom?.trackGoal(fathomCode || "", 0);
-    },
-  },
-};
-</script>
-  
-  <style scoped>
+
+<style scoped>
 .title {
   text-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
   text-shadow: 0px 1.5px 0px rgba(255, 255, 255, 1);
-  @apply pb-0 text-lg group-hover:text-defaultBlue transition-all;
+  @apply pb-0 text-lg group-hover:text-defaultBlue transition-all font-body font-bold;
 }
 .link {
   text-shadow: 0px 2px 0px rgba(255, 255, 255, 1);
   text-shadow: 0px 1.5px 0px rgba(255, 255, 255, 1);
   @apply text-greyDark block mb-2 group-hover:text-defaultBlue transition-all text-sm;
 }
+.synopsis {
+  @apply text-sm pb-1 group-hover:text-defaultBlue transition-colors;
+}
+.learn-more {
+  @apply text-gray-500 text-sm opacity-0 transition-opacity duration-500;
+}
+
+@media (hover: hover) {
+  .partner:hover .learn-more {
+    opacity: 1;
+  }
+}
+
+@media (hover: none) {
+  .learn-more {
+    opacity: 1;
+  }
+}
+
 .partner {
   width: 100%;
   height: auto;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.partner-logo {
+:deep(.partner-logo) {
   transition: all 0.1s ease-out 0.05s;
-  @apply scale-50 transform-gpu;
+  @apply scale-50 transform-gpu absolute;
 }
 
-.partner:hover .partner-logo,
-.partner:focus .partner-logo {
+.partner:hover :deep(.partner-logo),
+.partner:focus :deep(.partner-logo) {
   @apply scale-75 transform-gpu;
 }
 
@@ -91,7 +113,7 @@ export default {
   aspect-ratio: 1 / 1;
   @apply mb-4 flex items-center justify-center;
   transition: all 0.2s ease-out;
-  @apply w-full h-full relative z-0 rounded-full bg-cover border border-white border-2;
+  @apply w-full h-full relative z-0 rounded-full bg-cover border-2 border-white;
 }
 
 .partner__graphic::before {
@@ -124,7 +146,7 @@ export default {
   box-shadow: 0 50px 100px 0 hsla(240, 91%, 12%, 0.15);
 }
 
-.partner__graphic--beets {
+.partner__graphic--beethovenx {
   background: hsla(163, 68%, 54%, 0.6);
   box-shadow: 0 50px 100px 0 hsla(163, 68%, 54%, 0.15);
 }
@@ -149,12 +171,12 @@ export default {
   box-shadow: 0 50px 100px 0 hsla(185, 58%, 48%, 0.15);
 }
 
-.partner__graphic--gyro {
+.partner__graphic--gyroscope {
   background: hsla(313, 97%, 86%, 0.6);
   box-shadow: 0 50px 100px 0 hsla(313, 97%, 86%, 0.15);
 }
 
-.partner__graphic--cow {
+.partner__graphic--cow-protocol {
   background: hsla(226, 71%, 44%, 0.6);
   box-shadow: 0 50px 100px 0 hsla(226, 71%, 44%, 0.15);
 }
@@ -169,7 +191,7 @@ export default {
   box-shadow: 0 50px 100px 0 hsla(352, 71%, 60%, 0.15);
 }
 
-.partner__graphic--coop {
+.partner__graphic--indexcoop {
   background: hsla(149, 37%, 48%, 0.6);
   box-shadow: 0 50px 100px 0 hsla(149, 37%, 48%, 0.15);
 }
@@ -199,18 +221,38 @@ export default {
   box-shadow: 0 50px 100px 0 hsla(25, 85%, 56%, 0.15);
 }
 
+.partner__graphic--tetu {
+  background: hsla(222, 79%, 57%, 0.6);
+  box-shadow: 0 50px 100px 0 hsla(222, 79%, 57%, 0.15);
+}
+
+.partner__graphic--xave {
+  background: hsla(209, 80%, 48%, 0.6);
+  box-shadow: 0 50px 100px 0 hsla(209, 80%, 48%, 0.15);
+}
+
+.partner__graphic--stake-dao {
+  background: hsla(268, 74%, 55%, 0.6);
+  box-shadow: 0 50px 100px 0 hsla(268, 74%, 55%, 0.15);
+}
+
+.partner__graphic--qidao {
+  background: hsla(4, 80%, 61%, 0.6);
+  box-shadow: 0 50px 100px 0 hsla(4, 80%, 61%, 0.15);
+}
+
 /* Background animation solid color before */
 
 .partner__graphic--balancer::before {
   background: #091f3b;
 }
 
-.partner__graphic--beets::before {
-  background: hsla(163, 100%, 43%, 1);
+.partner__graphic--beethovenx::before {
+  background: var(--beethoven-x);
 }
 
 .partner__graphic--aura::before {
-  background: hsla(269, 90%, 65%, 1);
+  background: var(--aura);
 }
 
 .partner__graphic--element::before {
@@ -225,11 +267,11 @@ export default {
   background: hsla(186, 58%, 49%, 1);
 }
 
-.partner__graphic--gyro::before {
+.partner__graphic--gyroscope::before {
   background: hsla(313, 97%, 86%, 1);
 }
 
-.partner__graphic--cow::before {
+.partner__graphic--cow-protocol::before {
   background-color: hsla(226, 71%, 44%, 1);
 }
 
@@ -240,7 +282,7 @@ export default {
 .partner__graphic--1inch::before {
   background: hsla(352, 71%, 60%, 1);
 }
-.partner__graphic--coop::before {
+.partner__graphic--indexcoop::before {
   background: hsla(149, 37%, 48%, 1);
 }
 
@@ -263,6 +305,25 @@ export default {
 .partner__graphic--tempus::before {
   background: hsla(25, 85%, 56%, 1);
 }
+.partner__graphic--tetu::before {
+  background: hsla(222, 79%, 57%, 1);
+}
+.partner__graphic--xave::before {
+  background: hsla(209, 80%, 48%, 1);
+}
+.partner__graphic--stake-dao::before {
+  background: hsla(268, 74%, 55%, 1);
+}
+.partner__graphic--qidao::before {
+  background: hsla(4, 80%, 61%, 1);
+}
+
+.partner__graphic--paraswap::before {
+  background: hsla(219, 67%, 11%, 1);
+}
+
+
+
 
 /* Partner specific radial gradients on hover */
 
@@ -285,7 +346,7 @@ export default {
   box-shadow: 0 5px 10px 0 hsla(240, 91%, 12%, 0.4);
 }
 
-.partner__graphic--beets::after {
+.partner__graphic--beethovenx::after {
   background-color: hsla(153, 100%, 4%, 1);
 
   background-image: radial-gradient(
@@ -300,10 +361,28 @@ export default {
     radial-gradient(at 62% 0%, hsla(157, 100%, 48%, 1) 0px, transparent 50%);
 }
 
-.partner:hover .partner__graphic--beets {
+.partner:hover .partner__graphic--beethovenx {
   box-shadow: 0 5px 10px 0 hsla(163, 68%, 54%, 0.4);
 }
 
+.partner:hover .partner__graphic--aura {
+  background: #ae50ff;
+  background-image: radial-gradient(
+      at 40% 20%,
+      hsla(254, 100%, 74%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--aura {
+  box-shadow: 0 5px 10px 0 rgba(174, 80, 255, 0.4);
+}
 .partner__graphic--element::after {
   background-color: hsla(190, 64%, 73%, 1);
   background-image: radial-gradient(
@@ -357,7 +436,7 @@ export default {
   box-shadow: 0 5px 10px 0 hsla(185, 58%, 48%, 0.4);
 }
 
-.partner__graphic--gyro::after {
+.partner__graphic--gyroscope::after {
   background: hsla(313, 97%, 86%, 1);
   background-image: radial-gradient(
       at 54% 29%,
@@ -370,11 +449,11 @@ export default {
     radial-gradient(at 96% 4%, hsla(68, 98%, 80%, 1) 0px, transparent 50%);
 }
 
-.partner:hover .partner__graphic--gyro {
+.partner:hover .partner__graphic--gyroscope {
   box-shadow: 0 5px 10px 0 hsla(313, 97%, 86%, 0.4);
 }
 
-.partner__graphic--cow::after {
+.partner__graphic--cow-protocol::after {
   background: hsla(226, 71%, 44%, 1);
   background-image: radial-gradient(
       at 0% 83%,
@@ -386,7 +465,7 @@ export default {
     radial-gradient(at 89% 8%, hsla(300, 66%, 84%, 1) 0px, transparent 50%);
 }
 
-.partner:hover .partner__graphic--cow {
+.partner:hover .partner__graphic--cow-protocol {
   box-shadow: 0 5px 10px 0 hsla(226, 71%, 44%, 0.4);
 }
 
@@ -422,7 +501,7 @@ export default {
   box-shadow: 0 5px 10px 0 hsla(352, 71%, 60%, 0.4);
 }
 
-.partner__graphic--coop::after {
+.partner__graphic--indexcoop::after {
   background: hsla(149, 37%, 48%, 1);
   background-image: radial-gradient(
       at 29% 88%,
@@ -433,7 +512,7 @@ export default {
     radial-gradient(at 82% 16%, hsla(68, 98%, 80%, 1) 0px, transparent 50%);
 }
 
-.partner:hover .partner__graphic--coop {
+.partner:hover .partner__graphic--indexcoop {
   box-shadow: 0 5px 10px 0 hsla(149, 37%, 48%, 0.4);
 }
 
@@ -477,11 +556,7 @@ export default {
 
 .partner__graphic--prime::after {
   background: hsla(344, 77%, 58%, 1);
-  background-image: radial-gradient(
-    farthest-corner at 40px 40px,
-    #43e 0%,
-    #f35 80%
-  );
+  background-image: radial-gradient(farthest-corner at 40px 40px, #43e 0%, #f35 80%);
 }
 
 .partner:hover .partner__graphic--prime {
@@ -509,33 +584,90 @@ export default {
 
 .partner__graphic--tempus::after {
   background: hsla(25, 85%, 56%, 1);
-  background: linear-gradient(
-    45deg,
-    rgba(238, 127, 49, 1) 20%,
-    rgba(30, 9, 199, 1) 100%
-  );
+  background: linear-gradient(45deg, rgba(238, 127, 49, 1) 20%, rgba(30, 9, 199, 1) 100%);
 }
 
 .partner:hover .partner__graphic--tempus {
   box-shadow: 0 5px 10px 0 hsla(25, 85%, 56%, 0.4);
 }
 
-.partner:hover .partner__graphic--aura {
-  background: #ae50ff;
+.partner__graphic--tetu::after {
+  background-color: #99f0ff;
   background-image: radial-gradient(
-      at 40% 20%,
-      hsla(254, 100%, 74%, 1) 0px,
+      at 33% 16%,
+      hsla(50, 66%, 77%, 1) 0px,
       transparent 50%
     ),
-    radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 1) 0px, transparent 50%),
-    radial-gradient(at 80% 50%, hsla(340, 100%, 76%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
-    radial-gradient(at 80% 100%, hsla(242, 100%, 70%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(343, 100%, 76%, 1) 0px, transparent 50%);
+    radial-gradient(at 46% 40%, hsla(164, 75%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 8% 4%, hsla(22, 67%, 62%, 1) 0px, transparent 50%),
+    radial-gradient(at 19% 22%, hsla(192, 89%, 75%, 1) 0px, transparent 50%),
+    radial-gradient(at 83% 33%, hsla(215, 97%, 63%, 1) 0px, transparent 50%),
+    radial-gradient(at 48% 35%, hsla(200, 65%, 71%, 1) 0px, transparent 50%),
+    radial-gradient(at 28% 50%, hsla(220, 71%, 70%, 1) 0px, transparent 50%);
 }
 
-.partner:hover .partner__graphic--aura {
-  box-shadow: 0 5px 10px 0 rgba(174, 80, 255, 0.4);
+.partner:hover .partner__graphic--tetu {
+  box-shadow: 0 5px 10px 0 hsla(222, 79%, 57%, 0.4);
+}
+
+.partner__graphic--xave::after {
+  background-color: #ffb699;
+  background-image: radial-gradient(
+      at 42% 28%,
+      hsla(167, 87%, 63%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 30% 84%, hsla(320, 78%, 79%, 1) 0px, transparent 50%),
+    radial-gradient(at 76% 25%, hsla(218, 89%, 65%, 1) 0px, transparent 50%),
+    radial-gradient(at 34% 7%, hsla(55, 69%, 78%, 1) 0px, transparent 50%),
+    radial-gradient(at 92% 51%, hsla(295, 96%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 76% 57%, hsla(289, 79%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 46%, hsla(106, 60%, 73%, 1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--xave {
+  box-shadow: 0 5px 10px 0 hsla(209, 80%, 48%, 0.4);
+}
+
+.partner__graphic--stake-dao::after {
+  background-color: #ff99da;
+  background-image: radial-gradient(
+      at 74% 19%,
+      hsla(350, 61%, 70%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 73% 52%, hsla(293, 95%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 73% 12%, hsla(268, 70%, 75%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 6%, hsla(156, 69%, 76%, 1) 0px, transparent 50%),
+    radial-gradient(at 76% 40%, hsla(118, 84%, 79%, 1) 0px, transparent 50%),
+    radial-gradient(at 80% 67%, hsla(235, 96%, 64%, 1) 0px, transparent 50%),
+    radial-gradient(at 84% 92%, hsla(271, 64%, 63%, 1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--stake-dao {
+  box-shadow: 0 5px 10px 0 hsla(268, 74%, 55%, 0.4);
+}
+
+.partner__graphic--qidao::after {
+  background-color: hsla(4, 80%, 61%, 1);
+  background-image: radial-gradient(
+      at 65% 16%,
+      hsla(357, 100%, 85%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 100% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 54%, hsla(239, 70%, 67%, 0.6) 0px, transparent 50%);
+}
+.partner:hover .partner__graphic--qidao {
+  box-shadow: 0 5px 10px 0 hsla(4, 80%, 61%, 0.4);
+}
+
+.partner:hover .partner__graphic--paraswap {
+  background: hsla(219, 67%, 11%, 1);
+  background: linear-gradient(45deg,hsla(219, 67%, 11%, 1)  30%, hsla(126, 73%, 65%, 1) 100%);
+}
+
+.partner:hover .partner__graphic--paraswap {
+  box-shadow: 0 5px 10px 0 hsla(219, 67%, 11%, 0.4);
 }
 </style>

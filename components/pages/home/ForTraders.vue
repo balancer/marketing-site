@@ -1,11 +1,13 @@
 <template>
   <section class="bg-white">
-    <div class="max-w-screen-2xl mx-auto">
+    <div class="mx-auto max-w-screen-2xl">
       <div
-        class="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 xl:px-0 pb-16 lg:pb-32 mb-8 items-center bg-white"
+        class="mb-8 grid grid-cols-1 items-center gap-4 bg-white px-4 pb-16 md:grid-cols-2 lg:pb-32 xl:px-0"
       >
-        <div class="md:mx-auto max-w-lg pr-4 pb-8 md:pb-0">
-          <p class="eyebrow gradient-text pb-2 font-medium">For traders</p>
+        <div class="max-w-lg pr-4 pb-8 md:mx-auto md:pb-0">
+          <p class="eyebrow gradient-text pb-2 font-medium">
+            For traders
+          </p>
           <h1 class="h1-sans-serif">
             Decentralized trades at optimal prices
           </h1>
@@ -21,23 +23,31 @@
                 width="24"
                 height="22"
                 class="mr-3"
-                :src="require('~/assets/svg/icon-smart-routing.svg')"
+                src="~/assets/svg/icon-smart-routing.svg"
                 alt=""
-              />
-              <p class="font-medium">Intelligent pricing</p>
+              >
+              <p class="font-medium">
+                Intelligent pricing
+              </p>
             </div>
             <div class="flex pb-5">
-              <img class="mr-3" :src="require('~/assets/svg/icon-umbrella.svg')" alt="" />
-              <p class="font-medium">MEV protection</p>
+              <img
+                class="mr-3"
+                src="~/assets/svg/icon-umbrella.svg"
+                alt=""
+              >
+              <p class="font-medium">
+                MEV protection
+              </p>
             </div>
             <div class="flex pb-5">
               <img
                 width="26"
                 height="25"
                 class="mr-3"
-                :src="require('~/assets/svg/icon-sparkles.svg')"
+                src="~/assets/svg/icon-sparkles.svg"
                 alt=""
-              />
+              >
               <p class="font-medium">
                 Gas optimizations and subsidies
               </p>
@@ -47,11 +57,13 @@
             <a
               class="btn btn-primary btn-hero mr-3"
               href="https://app.balancer.fi/#/trade"
-              >Start trading</a
+            >Start trading</a>
+            <NuxtLink
+              class="btn btn-tertiary btn-hero"
+              to="trade"
             >
-            <NuxtLink class="btn btn-tertiary btn-hero" to="trade"
-              >Trade features</NuxtLink
-            >
+              Trade features
+            </NuxtLink>
           </div>
         </div>
         <div>
@@ -66,12 +78,12 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      :src="require('~/assets/images/tokens/dai-cover.jpg')"
+                      src="~/assets/images/tokens/dai-cover.jpg"
                       alt=""
-                    />
+                    >
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
+                    <div class="p-2 text-center font-medium md:p-3">
                       <p class="text-label">Trade DAI</p>
                     </div>
                   </div>
@@ -87,12 +99,12 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      :src="require('~/assets/images/tokens/wethcover.jpg')"
+                      src="~/assets/images/tokens/wethcover.jpg"
                       alt=""
-                    />
+                    >
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
+                    <div class="p-2 text-center font-medium md:p-3">
                       <p class="text-label">Trade ETH</p>
                     </div>
                   </div>
@@ -108,12 +120,12 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      :src="require('~/assets/images/tokens/bal-cover.jpg')"
+                      src="~/assets/images/tokens/bal-cover.jpg"
                       alt=""
-                    />
+                    >
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
+                    <div class="p-2 text-center font-medium md:p-3">
                       <p class="text-label">Trade BAL</p>
                     </div>
                   </div>
@@ -129,12 +141,12 @@
                       width="300"
                       height="300"
                       class="cover-img"
-                      :src="require('~/assets/images/tokens/wbtc-cover.jpg')"
+                      src="~/assets/images/tokens/wbtc-cover.jpg"
                       alt=""
-                    />
+                    >
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center font-medium">
+                    <div class="p-2 text-center font-medium md:p-3">
                       <p class="text-label">Trade WBTC</p>
                     </div>
                   </div>
@@ -172,7 +184,7 @@ export default {};
 }
 
 .text-label {
-  transition: 0.2s all ease-out;  
+  transition: 0.2s all ease-out;
   @apply text-sm truncate;
 }
 

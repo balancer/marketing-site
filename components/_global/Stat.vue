@@ -1,22 +1,26 @@
 <template>
   <div class="stat-group pb-8 md:pb-0">
-    <p class="label">{{label}}</p>
-    <p class="stat">{{stat}}</p>
+    <p class="label">
+      {{ label }}
+    </p>
+    <p class="stat">
+      {{ stat }}
+    </p>
   </div>
 </template>
 
 <script>
 export default {
-    props: {
-        label: {
-            type: String, 
-            required: true
-        },
-        stat: {
-            type: String, 
-            required: true
-        }                
-    }
+  props: {
+    label: {
+      type: String,
+      required: true,
+    },
+    stat: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>
 

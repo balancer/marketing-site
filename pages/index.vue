@@ -1,33 +1,35 @@
-<template>
-  <div>
-    <HeroHome />
-    <Ecosystem />
-    <Aave />
-    <Backers />
-    <StatsHome />
-  </div>
-</template>
-
-<script>
+<script setup>
 import HeroHome from "@/components/pages/home/HeroHome.vue";
 import Ecosystem from "@/components/pages/home/Ecosystem.vue";
 import Aave from "@/components/case-studies/Aave.vue";
 import Backers from "@/components/pages/home/Backers.vue";
 import StatsHome from "@/components/pages/home/StatsHome.vue";
 
-export default {
-  head() {
-    // return {
-    //   link: [{ rel: 'preload', as:'image', href: '/images/hero-home.svg' }]
-    // }
+definePageMeta({
+  documentDriven: false,
+  layout: 'default',
+  pageTransition: {
+    name: 'slideup'
   },
-  transition: 'slideup', 
   components: {
-    HeroHome, 
+    HeroHome,
     Ecosystem,
     Aave,
     Backers,
-    StatsHome
-  }
-}
+    StatsHome,
+  },
+  transition: 'slideup',
+})
 </script>
+
+<template>
+  <div>
+    <NuxtLayout>
+      <HeroHome />
+      <Ecosystem />
+      <Aave />
+      <Backers />
+      <StatsHome />
+    </NuxtLayout>
+  </div>
+</template>

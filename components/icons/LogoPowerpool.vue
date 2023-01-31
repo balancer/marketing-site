@@ -1,6 +1,6 @@
 <template>
   <svg
-  class="partner-logo"
+    class="partner-logo"
     width="120"
     height="121"
     viewBox="0 0 120 121"

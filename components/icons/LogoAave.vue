@@ -15,7 +15,10 @@
     </g>
     <defs>
       <clipPath id="a">
-        <path fill="#fff" d="M21.002 2.72H99v114.56H21.002z" />
+        <path
+          fill="#fff"
+          d="M21.002 2.72H99v114.56H21.002z"
+        />
       </clipPath>
     </defs>
   </svg>

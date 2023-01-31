@@ -1,12 +1,17 @@
+<script setup>
+</script>
+
 <template>
   <section class="bg-white">
-    <div class="max-w-screen-2xl mx-auto py-16 lg:py-32">
+    <div class="mx-auto max-w-screen-2xl py-16 lg:py-32">
       <div
-        class="grid grid-cols-1 gap-4 md:grid-cols-2 px-4 xl:px-0 py-8 md:py-16 mb-8 items-center bg-white"
+        class="mb-8 grid grid-cols-1 items-center gap-4 bg-white px-4 py-8 md:grid-cols-2 md:py-16 xl:px-0"
       >
-        <div class="md:mx-auto max-w-lg pr-4">
-          <p class="eyebrow gradient-text pb-2 font-medium">SMART POOLs</p>
-          <h1 class="h1-sans-serif">
+        <div class="max-w-lg pr-4 md:mx-auto">
+          <p class="eyebrow gradient-text pb-2 font-medium">
+            SMART POOLs
+          </p>
+          <h1>
             Customizable AMM logic with Smart Pools
           </h1>
           <p class="pb-4">
@@ -15,27 +20,28 @@
             join the pool. Innovate freely on Balancer’s open-source code.
           </p>
 
-          <p class="pb-4 italic">New Balancer V2 Smart Pools are coming soon.</p>
-            <a
-              class="btn btn-tertiary btn-hero btn-inline mb-8 md:mb-4"
-              href="https://docs.balancer.fi/v/v1/smart-contracts/smart-pools"
-              >V1 Smart Pool docs</a
-            >
+          <p class="pb-4 italic">
+            New Balancer V2 Smart Pools are coming soon.
+          </p>
+          <a
+            class="btn btn-tertiary btn-hero btn-inline mb-8 md:mb-4"
+            href="https://docs.balancer.fi/v/v1/smart-contracts/smart-pools"
+          >V1 Smart Pool docs</a>
         </div>
         <div>
           <div>
-            <div class="grid grid-cols-2 gap-4 max-w-lg">
+            <div class="grid max-w-lg grid-cols-2 gap-4">
               <a href="https://docs.balancer.fi/getting-started/faqs/pools-and-lbps">
                 <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
+                  <div class="relative flex items-center justify-center">
                     <img
                       class="cover-img"
-                      :src="require('~/assets/images/smart-pools/fair-launch.jpg')"
+                      src="~/assets/images/smart-pools/fair-launch.jpg"
                       alt=""
-                    />
+                    >
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center">
+                    <div class="p-2 text-center md:p-3">
                       <p class="font-semibold">Fair token launch</p>
                       <p class="hidden">
                         Via a Liquidity Bootstrapping Pool (LBP)
@@ -47,15 +53,15 @@
 
               <a href="https://docs.balancer.fi/v/v1/guides/smart-pool-templates-gui/swing-trading-pool">
                 <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
+                  <div class="relative flex items-center justify-center">
                     <img
                       class="cover-img"
-                      :src="require('~/assets/images/smart-pools/index-fund.jpg')"
+                      src="~/assets/images/smart-pools/index-fund.jpg"
                       alt=""
-                    />
+                    >
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center">
+                    <div class="p-2 text-center md:p-3">
                       <p class="font-semibold">Indices</p>
                       <p class="hidden">Via a Swing Trading Pool</p>
                     </div>
@@ -65,15 +71,15 @@
 
               <a href="https://docs.balancer.fi/v/v1/guides/smart-pool-templates-gui/smart-treasury">
                 <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
+                  <div class="relative flex items-center justify-center">
                     <img
                       class="cover-img"
-                      :src="require('~/assets/images/smart-pools/smart-treasury.jpg')"
+                      src="~/assets/images/smart-pools/smart-treasury.jpg"
                       alt=""
-                    />
+                    >
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center">
+                    <div class="p-2 text-center md:p-3">
                       <p class="font-semibold">Smart treasuries</p>
                       <p class="hidden">Via a Swing Trading Pool</p>
                     </div>
@@ -83,15 +89,15 @@
 
               <a href="https://docs.balancer.fi/v/v1/guides/smart-pool-templates-gui/investors-club">
                 <div class="pool relative">
-                  <div class="relative flex justify-center items-center">
+                  <div class="relative flex items-center justify-center">
                     <img
                       class="cover-img"
-                      :src="require('~/assets/images/smart-pools/investor-clubs.jpg')"
+                      src="~/assets/images/smart-pools/investor-clubs.jpg"
                       alt=""
-                    />
+                    >
                   </div>
                   <div>
-                    <div class="p-2 md:p-3 text-center">
+                    <div class="p-2 text-center md:p-3">
                       <p class="font-semibold">Investor clubs</p>
                       <p class="hidden">Via a Swing Trading Pool</p>
                     </div>
@@ -105,10 +111,6 @@
     </div>
   </section>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style scoped>
 .pool {

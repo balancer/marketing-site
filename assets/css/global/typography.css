@@ -1,11 +1,11 @@
 h1 {
-  @apply font-extrabold md:text-4xl pb-4 text-black;
-  font-family: "Tiempos Headline Medium", "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+  @apply md:text-4xl pb-4 text-black;
+  font-family: "Tiempos Headline Medium", serif;
   ;
 }
 
 h2 {
-    @apply font-bold text-xl md:text-2xl pb-2 text-black;
+    @apply font-display text-xl md:text-2xl pb-2 text-black;
 }
 
 p {
