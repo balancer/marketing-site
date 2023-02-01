@@ -43,7 +43,7 @@
           <div class="flex">          
             <a
               class="btn btn-skeleton-black btn-inline group mr-3"
-              href="https://app.balancer.fi"
+              href="https://fjordfoundry.com/?utm_source=balancer&utm_medium=website"
             ><span>Create LBP on Fjord&nbsp;</span>
           
               <icon-base
