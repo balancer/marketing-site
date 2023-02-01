@@ -63,7 +63,7 @@ useHead({
               </div>
             </a>
             <a
-              href="https://docs.balancer.fi/getting-started/faqs/pools-and-lbps"
+              href="https://fjordfoundry.com/?utm_source=balancer&utm_medium=website"
             >
               <div class="pool relative">
                 <div class="relative flex w-full items-center justify-center">
@@ -77,7 +77,7 @@ useHead({
                 </div>
                 <div>
                   <div class="p-2 text-center md:p-3">
-                    <p class="font-medium">Launch a token</p>
+                    <p class="font-medium">Launch a token on Fjord</p>
                   </div>
                 </div>
               </div>

@@ -31,7 +31,7 @@
         <div>
           <div>
             <div class="grid max-w-lg grid-cols-2 gap-4">
-              <a href="https://docs.balancer.fi/getting-started/faqs/pools-and-lbps">
+              <a href="https://fjordfoundry.com/?utm_source=balancer&utm_medium=website">
                 <div class="pool relative">
                   <div class="relative flex items-center justify-center">
                     <img
