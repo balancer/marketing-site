@@ -22,13 +22,19 @@
           class="group"
         >
           <div class="flex items-center">
-            <div class="w-20 overflow-hidden rounded-full">
-              <img
-                width="80"
-                height="80"
-                src="~/assets/images/people/cb.jpg"
-                alt=""
-              >
+            <div class="w-20 overflow-hidden rounded-full">              
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="~/assets/images/people/cb.avif"
+                >  
+                <img                  
+                  width="80"
+                  height="80"
+                  class="h-20 w-20"
+                  src="~/assets/images/people/cb.jpg"
+                > 
+              </picture>              
             </div>
             <div class="pl-4">
               <p class="font-medium transition-colors group-hover:text-defaultBlue">Chris Burniske</p>
@@ -58,12 +64,18 @@
         >
           <div class="flex items-center">
             <div class="w-20 overflow-hidden rounded-full">
-              <img
-                width="80"
-                height="80"
-                src="~/assets/images/people/ax.png"
-                alt=""
-              >
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="~/assets/images/people/ax.webp"
+                >  
+                <img                  
+                  width="80"
+                  height="80"
+                  class="h-20 w-20"
+                  src="~/assets/images/people/ax.png"
+                > 
+              </picture>
             </div>
             <div class="pl-4">
               <p class="font-medium transition-colors group-hover:text-defaultBlue">Arthur_0x</p>
@@ -91,12 +103,18 @@
         >
           <div class="flex items-center">
             <div class="w-20 overflow-hidden rounded-full">
-              <img
-                width="80"
-                height="80"
-                src="~/assets/images/people/de.jpg"
-                alt=""
-              >
+              <picture>
+                <source
+                  type="image/avif"
+                  srcset="~/assets/images/people/de.avif"
+                >  
+                <img                  
+                  width="80"
+                  height="80"
+                  class="h-20 w-20"
+                  src="~/assets/images/people/de.jpg"
+                > 
+              </picture>
             </div>
             <div class="group pl-4">
               <p class="font-medium transition-colors group-hover:text-defaultBlue">Dan Elitzer</p>
