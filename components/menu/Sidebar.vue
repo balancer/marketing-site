@@ -39,103 +39,234 @@ watch(sidebarOpen, (newValue) => {
             </NuxtLink>
           </div>
           <div class="pb-4">
-            <p class="pb-1 text-gray-400">
-              Infrastructure
+            <p class="pb-1 text-gray-400 tall:pb-2">
+              On Balancer protocol
             </p>
-            <p class="pb-1">
+            <p class="pb-1 tall:pb-2">
               <a
-                class="link"
+                class="link group"
                 href="https://app.balancer.fi/#/"
                 @click="toggleSidebar"
-              >Explore pools</a>
+              >Explore pools               
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
             </p>
-            <p class="pb-1">
+            <p class="pb-1 tall:pb-2">
               <a
-                class="link"
+                class="link group"
                 href="https://app.balancer.fi/#/vebal"
                 @click="toggleSidebar"
-              >Vote with veBAL</a>
+              >Vote with veBAL               
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
+            </p>
+            <p class="pb-1 tall:pb-2">
+              <a
+                class="link group"
+                href="https://app.balancer.fi/#/claim"
+                @click="toggleSidebar"
+              >Claim incentives               
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
+            </p>            
+            <p class="pb-1 tall:pb-2">
+              <a
+                class="link group"
+                href="https://fjordfoundry.com/?utm_source=balancer&utm_medium=website"
+                @click="toggleSidebar"
+              >Create an LBP on Fjord
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
             </p>
             <p>
               <a
-                class="link"
-                href="https://app.balancer.fi/#/claim"
+                class="link group"
+                href="https://fjordnfts.com/?utm_source=balancer&utm_medium=website"
                 @click="toggleSidebar"
-              >Claim incentives</a>
+              >Create an NFT drop on Fjord
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
             </p>
           </div>
           <div class="pb-4">
-            <p class="pb-1 text-gray-400">
+            <p class="pb-1 text-gray-400 tall:pb-2">
               Learn
             </p>
-            <p class="pb-1">
+            <p class="pb-1 tall:pb-2">
               <a
-                class="link"
+                class="link group"
                 href="https://medium.com/balancer-protocol"
                 @click="toggleSidebar"
-              >Blog</a>
+              >Blog               
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
             </p>
-            <p class="pb-1">
+            <p class="pb-1 tall:pb-2">
               <a
-                class="link"
+                class="link group"
                 href="https://docs.balancer.fi"
                 @click="toggleSidebar"
-              >Docs</a>
+              >Docs               
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
             </p>
-            <p class="pb-1">
+            <p class="pb-1 tall:pb-2">
               <a
                 class="link"
                 href="whitepaper.pdf"
                 @click="toggleSidebar"
-              >Whitepaper</a>
+              >V1 Whitepaper</a>
             </p>
-            <p class="pb-1">
+            <p class="pb-1 tall:pb-2">
               <a
-                class="link"
+                class="link group"
                 href="https://angel.co/company/balancer-labs-1"
                 @click="toggleSidebar"
-              >Careers</a>
+              >Careers               
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
             </p>
           </div>
           <div class="pb-4">
-            <p class="pb-1 text-gray-400">
+            <p class="pb-1 text-gray-400 tall:pb-2">
               Ecosystem
             </p>
-            <p class="pb-1">
+            <p class="pb-1 tall:pb-2">
               <a
-                class="link"
+                class="link group"
                 href="https://vote.balancer.finance/"
                 @click="toggleSidebar"
-              >Snapshot governance</a>
+              >Snapshot governance               
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
             </p>
-            <p class="pb-1">
+            <p class="pb-1 tall:pb-2">
               <a
-                class="link"
+                class="link group"
                 href="https://immunefi.com/bounty/balancer/"
                 @click="toggleSidebar"
-              >Immunefi bug bounty</a>
+              >Immunefi bug bounty 
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
             </p>
-            <p class="pb-1">
+            <p class="pb-1 tall:pb-2">
               <a
-                class="link"
+                class="link group"
                 href="https://dune.xyz/balancerlabs"
                 @click="toggleSidebar"
-              >Dune analytics</a>
+              >Dune analytics               
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
             </p>
 
-            <p class="pb-1">
+            <p class="pb-1 tall:pb-2">
               <a
-                class="link"
+                class="link group"
                 href="https://forum.balancer.finance/"
                 @click="toggleSidebar"
-              >Forum</a>
+              >Forum               
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
             </p>
             <p>
               <a
-                class="link"
+                class="link group"
                 href="https://docs.balancer.fi/ecosystem/community/grants"
                 @click="toggleSidebar"
-              >Grants</a>
+              >Grants               
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
             </p>
           </div>
 
@@ -191,7 +322,7 @@ watch(sidebarOpen, (newValue) => {
 
 .link:hover,
 .link:focus-visible {
-  @apply text-defaultRed;
+  @apply text-pink-500;
 }
 
 .link:focus:not(:focus-visible) {

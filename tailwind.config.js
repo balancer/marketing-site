@@ -39,6 +39,9 @@ module.exports = {
       DEFAULT: theme('colors.gray.100', 'currentColor')
     }),
     extend: {
+      screens: {
+        'tall': { 'raw': '(min-height: 800px)' },       
+      },
       
       colors: {
         accent: '#0000ff',
