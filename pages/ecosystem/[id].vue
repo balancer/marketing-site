@@ -43,7 +43,17 @@ function appearAnimation() {
         duration: 800,
       },
       "-=900"
-    )    
+    )
+    .add(
+      {
+        targets: ".edits",
+        opacity: [0, 1],
+        translateY: [20, 0],
+        easing: "easeOutQuart",
+        duration: 800,
+      },
+      "-=600"
+    )        
 }
 
 onMounted(()=> {
@@ -75,6 +85,8 @@ onMounted(()=> {
           <div class="flex flex-col gap-10 md:flex-row">
             <div class="logo">
               <img
+                width="96"
+                height="96"
                 class="partner-img w-full"
                 :src="buildPartnerIconUrl(partnerName)"
               >
@@ -83,7 +95,7 @@ onMounted(()=> {
               <ContentDoc
                 class="prose prose-invert prose-a:no-underline prose-headings:my-0 prose-h3:mb-2 prose-h3:text-lg pb-10"
               />
-              <div class="w-full border-t border-gray-800 pb-20">
+              <div class="edits w-full border-t border-gray-800 pb-20">
                 <a
                   class="inline-block pt-5 text-sm text-gray-400 transition-colors hover:text-pink-500 focus:text-pink-500"
                   href="https://github.com/balancer-labs/marketing-site/tree/main/content/ecosystem/"

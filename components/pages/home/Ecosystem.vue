@@ -1,11 +1,11 @@
 <template>
   <section class="ecosystem divider">
-    <div class="pt-0 pb-8 md:pb-20 md:pt-2 lg:px-8 lg:pb-32">
+    <div class="pt-0 pb-20 md:pt-2 lg:px-8 lg:pb-32">
       <div class="partner-title pb-16 text-center">
         <h2 class="pb-4 font-display text-4xl">
           Partners & Integrations
         </h2>
-        <p class="pb-8 text-gray-500">
+        <p class="pb-0 text-gray-500 md:pb-8">
           Built on or integrated with the Balancer&nbsp;protocol
         </p>
       </div>
