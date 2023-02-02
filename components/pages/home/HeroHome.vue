@@ -53,7 +53,7 @@ onMounted(()=> {
       .timeline({ loop: true })
       .add (
         {
-          targets: [".title", ".title-rotator"],
+          targets: ".title-rotator",
           opacity: [0, 1],
           scale: [0.9, 1],
           translateZ: 0,
@@ -73,7 +73,7 @@ onMounted(()=> {
           duration: 800,
           delay: anime.stagger(30),
         },
-        "-=550"
+        "-=600"
       )
       .add({
         targets: ".word1 .letter",

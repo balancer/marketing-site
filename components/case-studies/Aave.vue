@@ -47,13 +47,19 @@ function startHoverAnimation() {
           </ol>
         </div>
         <div class="max-w-md md:mx-auto">
-          <img
-            class="profile-pic"
-            width="80"
-            height="80"
-            src="~/assets/images/people/stani.jpg"
-            alt=""
-          >
+          <picture class="profile-pic">
+            <source
+              type="image/avif"
+              srcset="~/assets/images/people/stani.avif"
+            >  
+            <img                  
+              width="80"
+              height="80"
+              alt="Stani Kulechov photo"
+              class="h-20 w-20 rounded-full"
+              src="~/assets/images/people/stani.jpg"
+            > 
+          </picture>            
           <p class="py-4 font-medium italic">
             “Part of what makes DeFi so exciting is its composability, and with Balancer
             this has resulted in a partnership that optimises the experience for liquidity

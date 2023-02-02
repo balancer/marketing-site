@@ -28,26 +28,83 @@
 
         <div class="pb-8 md:pb-16 lg:pb-0">
           <p class="pb-2 text-gray-400">
-            Infrastructure
+            On Balancer protocol
           </p>
           <p class="pb-2">
             <a
-              class="link"
+              class="link group"
               href="https://app.balancer.fi/#/"
-            >Explore pools</a>
+            >Explore pools 
+              <icon-base
+                icon-color="bg-yellow-500"
+                width="14"
+                height="14"
+                icon-name="external-link"
+              >
+                <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+              </icon-base>
+            </a>
           </p>
           <p class="pb-2">
             <a
-              class="link"
+              class="link group"
               href="https://app.balancer.fi/#/vebal"
-            >Vote with veBAL</a>
+            >Vote with veBAL 
+              <icon-base
+                icon-color="bg-yellow-500"
+                width="14"
+                height="14"
+                icon-name="external-link"
+              >
+                <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+              </icon-base>
+            </a>
+          </p>
+          <p class="pb-2">
+            <a
+              class="link group"
+              href="https://app.balancer.fi/#/claim"
+            >Claim incentives 
+              <icon-base
+                icon-color="bg-yellow-500"
+                width="14"
+                height="14"
+                icon-name="external-link"
+              >
+                <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+              </icon-base>
+            </a>
+          </p>          
+          <p class="pb-2">
+            <a
+              class="link group"
+              href="https://fjordfoundry.com/?utm_source=balancer&utm_medium=website"
+            >Create an LBP 
+              <icon-base
+                icon-color="bg-yellow-500"
+                width="14"
+                height="14"
+                icon-name="external-link"
+              >
+                <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+              </icon-base>
+            </a>
           </p>
           <p>
             <a
-              class="link"
-              href="https://app.balancer.fi/#/claim"
-            >Claim incentives</a>
-          </p>
+              class="link group"
+              href="https://fjordnfts.com/?utm_source=balancer&utm_medium=website"
+            >Create an NFT drop               
+              <icon-base
+                icon-color="bg-yellow-500"
+                width="14"
+                height="14"
+                icon-name="external-link"
+              >
+                <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+              </icon-base>
+            </a>
+          </p>                    
         </div>
         <div class="pb-8 md:pb-0">
           <p class="pb-2 text-gray-400">
@@ -55,21 +112,39 @@
           </p>
           <p class="pb-2">
             <a
-              class="link"
+              class="link group"
               href="https://docs.balancer.fi"
-            >Docs</a>
+            >Docs 
+              <icon-base
+                icon-color="bg-yellow-500"
+                width="14"
+                height="14"
+                icon-name="external-link"
+              >
+                <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+              </icon-base>
+            </a>
           </p>
           <p class="pb-2">
             <a
               class="link"
               href="whitepaper.pdf"
-            >Whitepaper</a>
+            >V1 Whitepaper</a>
           </p>
           <p>
             <a
-              class="link"
+              class="link group"
               href="https://angel.co/company/balancer-labs-1"
-            >Careers</a>
+            >Careers 
+              <icon-base
+                icon-color="bg-yellow-500"
+                width="14"
+                height="14"
+                icon-name="external-link"
+              >
+                <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+              </icon-base>
+            </a>
           </p>
         </div>
         <div class="pb-8 md:pb-16 lg:pb-0">
@@ -78,33 +153,75 @@
           </p>
           <p class="pb-2">
             <a
-              class="link"
+              class="link group"
               href="https://vote.balancer.finance/"
-            >Snapshot governance</a>
+            >Snapshot governance               <icon-base
+              icon-color="bg-yellow-500"
+              width="14"
+              height="14"
+              icon-name="external-link"
+            >
+              <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+            </icon-base>
+            </a>
           </p>
           <p class="pb-2">
             <a
-              class="link"
+              class="link group"
               href="https://immunefi.com/bounty/balancer/"
-            >Immunefi bug bounty</a>
+            >Immunefi bug bounty 
+              <icon-base
+                icon-color="bg-yellow-500"
+                width="14"
+                height="14"
+                icon-name="external-link"
+              >
+                <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+              </icon-base>
+            </a>
           </p>
           <p class="pb-2">
             <a
-              class="link"
+              class="link group"
               href="https://dune.xyz/balancerlabs"
-            >Dune analytics</a>
+            >Dune analytics               <icon-base
+              icon-color="bg-yellow-500"
+              width="14"
+              height="14"
+              icon-name="external-link"
+            >
+              <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+            </icon-base>
+            </a>
           </p>
           <p class="pb-2">
             <a
-              class="link"
+              class="link group"
               href="https://forum.balancer.finance/"
-            >Forum</a>
+            >Forum 
+              <icon-base
+                icon-color="bg-yellow-500"
+                width="14"
+                height="14"
+                icon-name="external-link"
+              >
+                <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+              </icon-base>
+            </a>
           </p>
           <p class="pb-2">
             <a
-              class="link"
+              class="link group"
               href="https://docs.balancer.fi/ecosystem/community/grants"
-            >Grants</a>
+            >Grants               <icon-base
+              icon-color="bg-yellow-500"
+              width="14"
+              height="14"
+              icon-name="external-link"
+            >
+              <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+            </icon-base>
+            </a>
           </p>
         </div>
 
@@ -172,7 +289,7 @@
 .link:focus-visible,
 .link-featured:hover,
 .link-featured:focus-visible {
-  @apply text-defaultRed;
+  @apply text-pink-500;
 }
 
 .link:focus:not(:focus-visible) {
