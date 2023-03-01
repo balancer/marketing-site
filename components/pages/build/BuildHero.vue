@@ -63,7 +63,7 @@ onMounted(buildHeroAnimation);
           >Developer docs</a>
           <a
             class="btn btn-skeleton-white btn-hero"
-            href="https://github.com/balancer-labs/"
+            href="https://github.com/balancer"
           >Github code</a>
         </div>
       </div>

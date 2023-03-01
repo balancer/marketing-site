@@ -98,7 +98,7 @@ onMounted(()=> {
               <div class="edits w-full border-t border-gray-800 pb-20">
                 <a
                   class="inline-block pt-5 text-sm text-gray-400 transition-colors hover:text-pink-500 focus:text-pink-500"
-                  href="https://github.com/balancer-labs/marketing-site/tree/main/content/ecosystem/"
+                  href="https://github.com/balancer/marketing-site/tree/main/content/ecosystem/"
                 >Propose edits</a>
               </div>
             </div>

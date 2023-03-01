@@ -22,7 +22,7 @@
       <p class="pb-1">
         <a href="https://balancer.finance/whitepaper/">Whitepaper</a>
       </p>
-      <p><a href="https://github.com/balancer-labs/">Github code</a></p>
+      <p><a href="https://github.com/balancer">Github code</a></p>
     </div>
     <div class="pb-8 md:pb-0">
       <p class="pb-1 text-gray-400">

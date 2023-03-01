@@ -296,7 +296,7 @@ watch(sidebarOpen, (newValue) => {
 
               <a
                 class="mr-2"
-                href="https://github.com/balancer-labs/"
+                href="https://github.com/balancer"
               ><icon-github /></a>
 
               <a

@@ -256,7 +256,7 @@
             <div class="flex">
               <a
                 class="mr-3"
-                href="https://github.com/balancer-labs/"
+                href="https://github.com/balancer"
               ><icon-github /></a>
 
               <a
