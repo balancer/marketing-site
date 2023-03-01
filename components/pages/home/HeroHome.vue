@@ -53,7 +53,7 @@ onMounted(()=> {
       .timeline({ loop: true })
       .add (
         {
-          targets: ".hero",
+          targets: [".hero", ".btn-animation"],
           opacity: [0, 1],
           easing: "easeOutQuart",
           duration: 200,
@@ -316,7 +316,9 @@ onMounted(()=> {
   font-size: min(10.75vw, 100px);
   @apply block opacity-0;
 }
-
+.btn-animation {
+  @apply opacity-0;
+}
 .hero {
   @apply pt-12 pb-8 md:py-20 opacity-0;
 }
