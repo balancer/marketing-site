@@ -5,6 +5,14 @@ import anime from 'animejs/lib/anime.es.js';
 function buildHeroAnimation() {
   anime
     .timeline({ loop: false })
+    .add (
+        {
+          targets: ".hero-build",
+          opacity: [0, 1],
+          easing: "easeOutQuart",
+          duration: 200,
+        }
+      )  
     .add(
       {
         targets: ["#h1-hero", "#img-hero", "#p-hero", "#btns-hero"],
@@ -15,8 +23,7 @@ function buildHeroAnimation() {
         easing: "easeOutQuart",
         delay: anime.stagger(80),
         duration: 1000,
-      },
-      "+=150"
+      }
     )
 }
 
@@ -73,7 +80,7 @@ onMounted(buildHeroAnimation);
 
 <style scoped>
 .hero-build {
-  @apply px-4 py-8 bg-white;
+  @apply px-4 py-8 bg-white opacity-0;
 
   overflow: hidden;
   background-color: #01203D;

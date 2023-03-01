@@ -351,7 +351,7 @@ onMounted(partnerAnimation);
 
   <style scoped>
 .ecosystem {
-  @apply pt-24 px-4 relative overflow-hidden;
+  @apply pt-24 px-4 relative overflow-hidden opacity-0;
 }
 
 h2.title {

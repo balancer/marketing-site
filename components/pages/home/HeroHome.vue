@@ -53,6 +53,14 @@ onMounted(()=> {
       .timeline({ loop: true })
       .add (
         {
+          targets: [".hero", ".btn-animation"],
+          opacity: [0, 1],
+          easing: "easeOutQuart",
+          duration: 200,
+        }
+      )      
+      .add (
+        {
           targets: ".title-rotator",
           opacity: [0, 1],
           scale: [0.9, 1],
@@ -60,7 +68,7 @@ onMounted(()=> {
           translateY: [30, 0],
           easing: "easeOutQuart",
           duration: 600,
-        }
+        }, "-=150"
       )
       .add(
         {
@@ -308,8 +316,10 @@ onMounted(()=> {
   font-size: min(10.75vw, 100px);
   @apply block opacity-0;
 }
-
+.btn-animation, .btn-hero {
+  @apply opacity-0;
+}
 .hero {
-  @apply pt-12 pb-8 md:py-20;
+  @apply pt-12 pb-8 md:py-20 opacity-0;
 }
 </style>
