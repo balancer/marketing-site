@@ -316,7 +316,7 @@ onMounted(()=> {
   font-size: min(10.75vw, 100px);
   @apply block opacity-0;
 }
-.btn-animation {
+.btn-animation, .btn-hero {
   @apply opacity-0;
 }
 .hero {
