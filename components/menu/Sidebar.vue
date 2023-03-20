@@ -161,6 +161,22 @@ watch(sidebarOpen, (newValue) => {
             </p>
             <p class="pb-1 tall:pb-2">
               <a
+                class="link group"
+                href="https://app.balancer.fi/#/risks"
+                @click="toggleSidebar"
+              >Risks               
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
+            </p>            
+            <p class="pb-1 tall:pb-2">
+              <a
                 class="link"
                 href="whitepaper.pdf"
                 @click="toggleSidebar"
@@ -182,6 +198,22 @@ watch(sidebarOpen, (newValue) => {
                 </icon-base>
               </a>
             </p>
+            <p class="pb-1 tall:pb-2">
+              <a
+                class="link group"
+                href="https://app.balancer.fi/#/terms-of-use"
+                @click="toggleSidebar"
+              >Terms of Use
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
+            </p>            
           </div>
           <div class="pb-4">
             <p class="pb-1 text-gray-400 tall:pb-2">
@@ -257,7 +289,7 @@ watch(sidebarOpen, (newValue) => {
                 class="link group"
                 href="https://docs.balancer.fi/ecosystem/community/grants"
                 @click="toggleSidebar"
-              >Grants               
+              >Grants          
                 <icon-base
                   icon-color="bg-yellow-500"
                   width="14"
