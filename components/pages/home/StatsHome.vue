@@ -6,7 +6,7 @@
           Ethereum Mainnet stats
         </h2>
         <p class="pb-4 text-gray-500">
-          * As at 11 November 2022
+          * As at 20 March 2023
         </p>
       </div>
       <transition
@@ -17,25 +17,25 @@
           <!-- Volume from https://dune.com/balancerlabs/balancer-exchange -->
           <Stat
             label="Trade vol (7d) *"
-            stat="$963m"
+            stat="$302m"
           /> 
           
           <!-- TVL from https://dune.com/balancerlabs/balancer-pools -->
           <Stat
             label="Total liquidity *"
-            stat="$1.20b"
+            stat="$1.32b"
           />
 
           <!-- LPs from https://dune.com/balancerlabs/balancer-pools -->
           <Stat
             label="Liquidity Providers *"
-            stat="21.7k"
+            stat="23.0k"
           />
 
           <!-- Pools from https://dune.com/balancerlabs/balancer-pools -->
           <Stat
             label="Total pools *"
-            stat="3,663"
+            stat="3,759"
           />
         </div>
       </transition>
