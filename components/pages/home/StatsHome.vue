@@ -6,7 +6,7 @@
           Ethereum Mainnet stats
         </h2>
         <p class="pb-4 text-gray-500">
-          * As at 20 March 2023
+          * As of 20 March 2023
         </p>
       </div>
       <transition
