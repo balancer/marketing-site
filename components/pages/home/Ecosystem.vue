@@ -55,15 +55,15 @@
             </button>
           </NuxtLink>
 
-          <NuxtLink to="ecosystem/element-finance">
+          <NuxtLink to="ecosystem/gyroscope">
             <button class="tooltip-target w-full">
               <Partner
-                title="Element"
-                category="Fixed & variable yield"
-                bg-image-style="element"                
+                title="Gyroscope"
+                category="Stablecoin protocol"
+                bg-image-style="gyroscope"
               >
                 <template #logo>
-                  <logo-element />
+                  <logo-gyroscope />
                 </template>
               </Partner>
             </button>
@@ -83,6 +83,20 @@
             </button>
           </NuxtLink>  
 
+          <NuxtLink to="ecosystem/xave-finance">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="Xave Finance"
+                category="Remittances & Savings"
+                bg-image-style="xave"
+              >
+                <template #logo>
+                  <logo-xave />
+                </template>
+              </Partner>
+            </button>
+          </NuxtLink>          
+
           <NuxtLink to="ecosystem/aave">
             <button class="tooltip-target w-full">
               <Partner
@@ -96,22 +110,7 @@
               </Partner>
             </button>
           </NuxtLink>
-
-          <NuxtLink to="ecosystem/gyroscope">
-            <button class="tooltip-target w-full">
-              <Partner
-                title="Gyroscope"
-                category="Stablecoin protocol"
-                bg-image-style="gyroscope"
-              >
-                <template #logo>
-                  <logo-gyroscope />
-                </template>
-              </Partner>
-            </button>
-          </NuxtLink>
           
-
           <NuxtLink to="ecosystem/cow-protocol">
             <button class="tooltip-target w-full">
               <Partner
@@ -138,7 +137,7 @@
                 </template>
               </Partner>
             </button>
-          </NuxtLink>
+          </NuxtLink>     
 
           <NuxtLink to="ecosystem/stake-dao">
             <button class="tooltip-target w-full">
@@ -154,6 +153,20 @@
             </button>
           </NuxtLink>
 
+          <NuxtLink to="ecosystem/idle">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="Idle"
+                category="Yield Aggregator"
+                bg-image-style="idle"
+              >
+                <template #logo>
+                  <logo-idle />
+                </template>
+              </Partner>
+            </button>
+          </NuxtLink>     
+
           <NuxtLink to="ecosystem/fjord-nfts">
             <button class="tooltip-target w-full">
               <Partner
@@ -168,15 +181,15 @@
             </button>
           </NuxtLink>        
 
-          <NuxtLink to="ecosystem/mycelium">
+          <NuxtLink to="ecosystem/element-finance">
             <button class="tooltip-target w-full">
               <Partner
-                title="Mycelium"
-                category="Perpetual swaps & pools"
-                bg-image-style="mycelium"
+                title="Element"
+                category="Fixed & variable yield"
+                bg-image-style="element"                
               >
                 <template #logo>
-                  <logo-mycelium />
+                  <logo-element />
                 </template>
               </Partner>
             </button>
@@ -276,20 +289,6 @@
               >
                 <template #logo>
                   <logo-sense />
-                </template>
-              </Partner>
-            </button>
-          </NuxtLink>
-
-          <NuxtLink to="ecosystem/xave-finance">
-            <button class="tooltip-target w-full">
-              <Partner
-                title="Xave Finance"
-                category="Remittances & Savings"
-                bg-image-style="xave"
-              >
-                <template #logo>
-                  <logo-xave />
                 </template>
               </Partner>
             </button>

@@ -186,6 +186,11 @@ defineProps({
   box-shadow: 0 50px 100px 0 hsla(163, 42%, 53%, 0.15);
 }
 
+.partner__graphic--idle {
+  background: hsla(236, 91%, 41%, 0.6);
+  box-shadow: 0 50px 100px 0 hsla(236, 91%, 41%, 0.15);
+}
+
 .partner__graphic--1inch {
   background: hsla(352, 71%, 60%, 0.6);
   box-shadow: 0 50px 100px 0 hsla(352, 71%, 60%, 0.15);
@@ -277,6 +282,10 @@ defineProps({
 
 .partner__graphic--mycelium::before {
   background: hsla(163, 42%, 53%, 1);
+}
+
+.partner__graphic--idle::before {
+  background: hsla(236, 91%, 41%, 1);
 }
 
 .partner__graphic--1inch::before {
@@ -484,6 +493,23 @@ defineProps({
 
 .partner:hover .partner__graphic--mycelium {
   box-shadow: 0 5px 10px 0 hsla(163, 42%, 53%, 0.4);
+}
+
+.partner__graphic--idle::after {
+  background: hsla(236, 91%, 41%, 1);
+  background-image: radial-gradient(
+      at 75% 25%,
+      hsla(189, 46%, 57%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 66%, hsla(197, 100%, 51%, 1) 0px, transparent 50%),
+    radial-gradient(at 2% 2%, hsla(197, 100%, 51%, 1) 0px, transparent 50%),
+    radial-gradient(at 1% 31%, hsla(197, 100%, 51%, 1) 0px, transparent 50%),
+    radial-gradient(at 96% 4%, hsla(189, 46%, 57%, 1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--idle {
+  box-shadow: 0 5px 10px 0 hsla(236, 91%, 41%, 0.4);
 }
 
 .partner__graphic--1inch::after {

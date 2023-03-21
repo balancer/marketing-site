@@ -256,6 +256,9 @@ onMounted(()=> {
 .partner-page :deep(.partner-content.mycelium::after) {
   background: var(--mycelium);
 }
+.partner-page :deep(.partner-content.idle::after) {
+  background: var(--idle);
+}
 .partner-page :deep(.partner-content.1inch::after) {
   background: var(--inch);
 }
