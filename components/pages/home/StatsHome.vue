@@ -3,10 +3,10 @@
     <div class="content-container py-16 lg:px-8">
       <div class="pb-8 text-left md:text-center">
         <h2 class="title">
-          Ethereum Mainnet stats
+          Balancer stats
         </h2>
         <p class="pb-4 text-gray-500">
-          * As of 20 March 2023
+          Mainnet, Polygon, Arbitrum
         </p>
       </div>
       <transition
@@ -18,8 +18,8 @@
           <Stat
             label="Trade vol (7d) *"
             stat="$302m"
-          /> 
-          
+          />
+
           <!-- TVL from https://dune.com/balancerlabs/balancer-pools -->
           <Stat
             label="Total liquidity *"
@@ -49,6 +49,71 @@ import Stat from "@/components/_global/Stat.vue";
 export default {
   components: {
     Stat
+  },
+  data() {
+    return {
+      loading: true,
+      success: false,
+      data: undefined,
+    }
+  },
+  methods: {
+    async getProtocolStats() {
+      try {
+        const res = await fetch('https://test-api-v3.balancer.fi/graphql', {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            query: `{
+            protocolMetricsAggregated(chainIds: ["1", "137", "42161", "100"]) { #add additional chains here
+            totalLiquidity
+            totalSwapVolume
+            totalSwapFee
+            poolCount
+            swapFee7d
+            swapVolume7d
+            swapFee24h
+            swapVolume24h
+            yieldCapture24h
+            numLiquidityProviders
+            chains {
+              chainId
+              totalLiquidity
+              totalSwapVolume
+              totalSwapFee
+              poolCount
+              swapFee7d
+              swapVolume7d
+              swapFee24h
+              swapVolume24h
+              yieldCapture24h
+              numLiquidityProviders
+            }
+          }
+          }`
+          }),
+        });
+
+
+        const { data } = await res.json();
+
+        this.data = data.protocolMetricsAggregated;
+        this.loading = false;
+        this.success = true;
+
+        console.log('data', data.protocolMetricsAggregated);
+      }catch {
+        this.loading = false;
+        this.success = false;
+      }
+
+    }
+  },
+  mounted() {
+    this.getProtocolStats()
   }
 }
 </script>
