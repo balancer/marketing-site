@@ -4,7 +4,7 @@
 
 <template>
   <section class="bg-white">
-    <div class="mx-auto max-w-screen-2xl">
+    <div class="mx-auto max-w-screen-2xl pt-16 lg:pt-32">
       <div
         class="grid grid-cols-1 items-center gap-4 bg-white px-4 pb-16 md:grid-cols-2 xl:px-0"
       >

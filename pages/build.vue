@@ -107,8 +107,7 @@ useHead({
         </div>
       </section>
 
-      <CaseStudies />
-      <SmartPools />
+      <CaseStudies />      
       <LBPs />
     </NuxtLayout>
   </div>
