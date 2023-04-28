@@ -3,10 +3,10 @@
     <div class="content-container py-16 lg:px-8">
       <div class="pb-8 text-left md:text-center">
         <h2 class="title">
-          Ethereum Mainnet stats
+          Balancer V2 protocol stats
         </h2>
         <p class="pb-4 text-gray-500">
-          * As of 20 March 2023
+          Ethereum Mainnet, Polygon, Arbitrum & Gnosis
         </p>
       </div>
       <transition
@@ -14,28 +14,25 @@
         appear
       >
         <div class="grid grid-cols-2 md:grid-cols-4">
-          <!-- Volume from https://dune.com/balancerlabs/balancer-exchange -->
           <Stat
-            label="Trade vol (7d) *"
-            stat="$302m"
-          /> 
+            label="Total liquidity"
+            :stat="success ? formatNumber(data.totalLiquidity) : '...'"
+          />
+
           
-          <!-- TVL from https://dune.com/balancerlabs/balancer-pools -->
           <Stat
-            label="Total liquidity *"
-            stat="$1.32b"
+            label="Swap vol (7d)"
+            :stat="success ? formatNumber(data.swapVolume7d) : '...'"
+          />
+          
+          <Stat
+            label="Liquidity Providers"
+            :stat="success ? formatNumber(data.numLiquidityProviders) : '...'"
           />
 
-          <!-- LPs from https://dune.com/balancerlabs/balancer-pools -->
           <Stat
-            label="Liquidity Providers *"
-            stat="23.0k"
-          />
-
-          <!-- Pools from https://dune.com/balancerlabs/balancer-pools -->
-          <Stat
-            label="Total pools *"
-            stat="3,759"
+            label="Total pools"
+            :stat="success ? formatNumber(data.poolCount) : '...'"
           />
         </div>
       </transition>
@@ -49,6 +46,99 @@ import Stat from "@/components/_global/Stat.vue";
 export default {
   components: {
     Stat
+  },
+  data() {
+    return {
+      loading: false,
+      success: false,
+      data: undefined,
+    }
+  },
+  mounted() {
+    this.getProtocolStats()
+  },
+  methods: {
+    formatNumber(value) {
+      if (!value) return '—';
+
+        const absValue = Math.abs(value);
+        const billion = 1000000000;
+        const million = 1000000;
+        const thousand = 1000;
+
+        let formattedValue = '';
+        let suffix = '';
+
+        if (absValue >= billion) {
+          formattedValue = (value / billion).toFixed(2);
+          suffix = 'b';
+        } else if (absValue >= million) {
+          formattedValue = (value / million).toFixed(2);
+          suffix = 'm';
+        } else if (absValue >= thousand) {
+          formattedValue = (value / thousand).toFixed(2);
+          suffix = 'k';
+        } else {
+          formattedValue = value;
+        }
+
+        return `${formattedValue}${suffix}`;
+    }, 
+    async getProtocolStats() {
+      this.loading = true;
+      
+      try {
+        const res = await fetch('https://test-api-v3.balancer.fi/graphql', {
+          method: 'POST',
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            query: `{
+            protocolMetricsAggregated(chainIds: ["1", "137", "42161", "100"]) { #add additional chains here
+            totalLiquidity
+            totalSwapVolume
+            totalSwapFee
+            poolCount
+            swapFee7d
+            swapVolume7d
+            swapFee24h
+            swapVolume24h
+            yieldCapture24h
+            numLiquidityProviders
+            chains {
+              chainId
+              totalLiquidity
+              totalSwapVolume
+              totalSwapFee
+              poolCount
+              swapFee7d
+              swapVolume7d
+              swapFee24h
+              swapVolume24h
+              yieldCapture24h
+              numLiquidityProviders
+            }
+          }
+          }`
+          }),
+        });
+
+
+        const { data } = await res.json();
+
+        this.data = data.protocolMetricsAggregated;
+        this.loading = false;
+        this.success = true;
+
+        console.log('data', data.protocolMetricsAggregated);
+      }catch {
+        this.loading = false;
+        this.success = false;
+      }
+
+    }
   }
 }
 </script>
