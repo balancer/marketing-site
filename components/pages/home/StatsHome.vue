@@ -21,8 +21,8 @@
 
           
           <Stat
-            label="Swap vol (7d)"
-            :stat="success ? formatNumber(data.swapVolume7d) : '...'"
+            label="Swap vol (24h)"
+            :stat="success ? formatNumber(data.swapVolume24h) : '...'"
           />
           
           <Stat
