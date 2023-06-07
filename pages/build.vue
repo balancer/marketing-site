@@ -1,7 +1,6 @@
 <script setup>
 
 import BuildHero from "@/components/pages/build/BuildHero.vue";
-import SmartPools from "@/components/pages/build/SmartPools.vue";
 import LBPs from "@/components/pages/build/LBPs.vue";
 
 definePageMeta({
