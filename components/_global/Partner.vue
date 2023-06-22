@@ -161,9 +161,9 @@ defineProps({
   box-shadow: 0 50px 100px 0 hsla(190, 64%, 73%, 0.15);
 }
 
-.partner__graphic--fjord {
-  background: hsla(243, 89%, 67%, 0.6);
-  box-shadow: 0 50px 100px 0 hsla(243, 89%, 67%, 0.15);
+.partner__graphic--raft {
+  background: hsla(28, 100%, 53%, 1);
+  box-shadow: 0 50px 100px 0 hsla(28, 100%, 53%, 0.15);
 }
 
 .partner__graphic--aave {
@@ -264,8 +264,8 @@ defineProps({
   background-color: hsla(190, 64%, 73%, 1);
 }
 
-.partner__graphic--fjord::before {
-  background: hsla(243, 89%, 68%, 1);
+.partner__graphic--raft::before {
+  background: hsla(28, 100%, 53%, 1);
 }
 
 .partner__graphic--aave::before {
@@ -408,22 +408,20 @@ defineProps({
   box-shadow: 0 5px 10px 0 hsla(190, 64%, 73%, 0.4);
 }
 
-.partner__graphic--fjord::after {
-  background-color: hsla(243, 89%, 67%, 1);
-  background-image: radial-gradient(
-      at 36% 95%,
-      hsla(178, 90%, 48%, 1) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 0% 63%, hsla(256, 59%, 29%, 1) 0px, transparent 50%),
-    radial-gradient(at 79% 28%, hsla(201, 100%, 50%, 1) 0px, transparent 50%),
-    radial-gradient(at 44% 23%, hsla(267, 100%, 57%, 1) 0px, transparent 50%),
-    radial-gradient(at 6% 17%, hsla(211, 93%, 33%, 1) 0px, transparent 50%),
-    radial-gradient(at 75% 52%, hsla(240, 100%, 53%, 1) 0px, transparent 50%);
+.partner__graphic--raft::after {
+  background-color:hsla(0,100%,50%,1);
+  background-image:
+  radial-gradient(at 40% 20%, hsla(28,100%,53%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 0%, hsla(302,100%,56%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+  radial-gradient(at 80% 100%, hsla(28,100%,53%,1) 0px, transparent 50%),
+  radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
 }
 
-.partner:hover .partner__graphic--fjord {
-  box-shadow: 0 5px 10px 0 hsla(243, 89%, 67%, 0.4);
+.partner:hover .partner__graphic--raft {
+  box-shadow: 0 5px 10px 0 hsla(28, 100%, 53%, 0.4);
 }
 
 .partner__graphic--aave::after {
