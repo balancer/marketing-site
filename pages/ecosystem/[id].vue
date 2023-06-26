@@ -238,11 +238,8 @@ onMounted(()=> {
 .partner-page :deep(.partner-content.element-finance::after) {
   background: var(--element-finance);
 }
-.partner-page :deep(.partner-content.fjord-foundry::after) {
-  background: var(--fjord-foundry);
-}
-.partner-page :deep(.partner-content.fjord-nfts::after) {
-  background: var(--fjord-nfts);
+.partner-page :deep(.partner-content.raft::after) {
+  background: var(--raft);
 }
 .partner-page :deep(.partner-content.aave::after) {
   background: var(--aave);

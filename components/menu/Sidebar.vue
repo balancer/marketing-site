@@ -90,38 +90,6 @@ watch(sidebarOpen, (newValue) => {
                 </icon-base>
               </a>
             </p>            
-            <p class="pb-1 tall:pb-2">
-              <a
-                class="link group"
-                href="https://fjordfoundry.com/?utm_source=balancer&utm_medium=website"
-                @click="toggleSidebar"
-              >Create an LBP on Fjord
-                <icon-base
-                  icon-color="bg-yellow-500"
-                  width="14"
-                  height="14"
-                  icon-name="external-link"
-                >
-                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
-                </icon-base>
-              </a>
-            </p>
-            <p>
-              <a
-                class="link group"
-                href="https://fjordnfts.com/?utm_source=balancer&utm_medium=website"
-                @click="toggleSidebar"
-              >Create an NFT drop on Fjord
-                <icon-base
-                  icon-color="bg-yellow-500"
-                  width="14"
-                  height="14"
-                  icon-name="external-link"
-                >
-                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
-                </icon-base>
-              </a>
-            </p>
           </div>
           <div class="pb-4">
             <p class="pb-1 text-gray-400 tall:pb-2">
@@ -284,7 +252,7 @@ watch(sidebarOpen, (newValue) => {
                 </icon-base>
               </a>
             </p>
-            <p>
+            <p class="pb-1 tall:pb-2">
               <a
                 class="link group"
                 href="https://docs.balancer.fi/ecosystem/community/grants"
@@ -300,6 +268,22 @@ watch(sidebarOpen, (newValue) => {
                 </icon-base>
               </a>
             </p>
+            <p>
+              <a
+                class="link group"
+                href="https://github.com/balancer/brand-assets"
+                @click="toggleSidebar"
+              >Brand assets          
+                <icon-base
+                  icon-color="bg-yellow-500"
+                  width="14"
+                  height="14"
+                  icon-name="external-link"
+                >
+                  <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+                </icon-base>
+              </a>
+            </p>            
           </div>
 
           <div class="py-4">

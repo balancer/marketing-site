@@ -75,36 +75,6 @@
               </icon-base>
             </a>
           </p>          
-          <p class="pb-2">
-            <a
-              class="link group"
-              href="https://fjordfoundry.com/?utm_source=balancer&utm_medium=website"
-            >Create an LBP 
-              <icon-base
-                icon-color="bg-yellow-500"
-                width="14"
-                height="14"
-                icon-name="external-link"
-              >
-                <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
-              </icon-base>
-            </a>
-          </p>
-          <p>
-            <a
-              class="link group"
-              href="https://fjordnfts.com/?utm_source=balancer&utm_medium=website"
-            >Create an NFT drop               
-              <icon-base
-                icon-color="bg-yellow-500"
-                width="14"
-                height="14"
-                icon-name="external-link"
-              >
-                <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
-              </icon-base>
-            </a>
-          </p>                    
         </div>
         <div class="pb-8 md:pb-0">
           <p class="pb-2 text-gray-400">
@@ -243,14 +213,30 @@
             <a
               class="link group"
               href="https://docs.balancer.fi/ecosystem/community/grants"
-            >Grants               <icon-base
-              icon-color="bg-yellow-500"
-              width="14"
-              height="14"
-              icon-name="external-link"
-            >
-              <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
-            </icon-base>
+            >Grants               
+              <icon-base
+                icon-color="bg-yellow-500"
+                width="14"
+                height="14"
+                icon-name="external-link"
+              >
+                <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+              </icon-base>
+            </a>
+          </p>
+          <p class="pb-2">
+            <a
+              class="link group"
+              href="https://github.com/balancer/brand-assets"
+            >Brand assets               
+              <icon-base
+                icon-color="bg-yellow-500"
+                width="14"
+                height="14"
+                icon-name="external-link"
+              >
+                <icon-external-link class="fill-gray-100 group-hover:fill-pink-500" />
+              </icon-base>
             </a>
           </p>
         </div>
