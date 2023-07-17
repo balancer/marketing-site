@@ -161,6 +161,11 @@ defineProps({
   box-shadow: 0 50px 100px 0 hsla(190, 64%, 73%, 0.15);
 }
 
+.partner__graphic--kassandra {
+  background: hsla(45, 100%, 50%, 1);
+  box-shadow: 0 50px 100px 0 hsla(45, 100%, 50%, 0.15);
+}
+
 .partner__graphic--raft {
   background: hsla(28, 100%, 53%, 1);
   box-shadow: 0 50px 100px 0 hsla(28, 100%, 53%, 0.15);
@@ -264,6 +269,10 @@ defineProps({
   background-color: hsla(190, 64%, 73%, 1);
 }
 
+.partner__graphic--kassandra::before {
+  background: hsla(45, 100%, 50%, 1);
+}
+
 .partner__graphic--raft::before {
   background: hsla(28, 100%, 53%, 1);
 }
@@ -330,9 +339,6 @@ defineProps({
 .partner__graphic--paraswap::before {
   background: hsla(219, 67%, 11%, 1);
 }
-
-
-
 
 /* Partner specific radial gradients on hover */
 
@@ -406,6 +412,17 @@ defineProps({
 
 .partner:hover .partner__graphic--element {
   box-shadow: 0 5px 10px 0 hsla(190, 64%, 73%, 0.4);
+}
+
+.partner__graphic--kassandra::after {
+  background-color:hsla(44,100%,50%,1);
+  background-image:
+  radial-gradient(at 23% 73%, hsla(14,92%,64%,1) 0px, transparent 50%),
+  radial-gradient(at 97% 2%, hsla(313,78%,58%,1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--kassandra {
+  box-shadow: 0 5px 10px 0 hsla(45, 100%, 50%, 0.4);
 }
 
 .partner__graphic--raft::after {

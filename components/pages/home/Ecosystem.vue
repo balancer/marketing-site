@@ -40,7 +40,6 @@
             </button>
           </NuxtLink>
 
-
           <NuxtLink to="ecosystem/aura">
             <button class="tooltip-target w-full">
               <Partner
@@ -69,6 +68,20 @@
             </button>
           </NuxtLink>
 
+          <NuxtLink to="ecosystem/kassandra">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="Kassandra"
+                category="Asset Management"
+                bg-image-style="kassandra"
+              >
+                <template #logo>
+                  <logo-kassandra />
+                </template>
+              </Partner>
+            </button>
+          </NuxtLink>         
+
           <NuxtLink to="ecosystem/raft">
             <button class="tooltip-target w-full">
               <Partner
@@ -95,7 +108,21 @@
                 </template>
               </Partner>
             </button>
-          </NuxtLink>          
+          </NuxtLink>
+
+          <NuxtLink to="ecosystem/cron-finance">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="Cron Finance"
+                category="TWAMM for large swaps"
+                bg-image-style="cron"
+              >
+                <template #logo>
+                  <logo-cron />
+                </template>
+              </Partner>
+            </button>
+          </NuxtLink>
 
           <NuxtLink to="ecosystem/aave">
             <button class="tooltip-target w-full">
@@ -139,20 +166,6 @@
             </button>
           </NuxtLink>     
 
-          <NuxtLink to="ecosystem/stake-dao">
-            <button class="tooltip-target w-full">
-              <Partner
-                title="Stake DAO"
-                category="DeFi yield booster"
-                bg-image-style="stake-dao"
-              >
-                <template #logo>
-                  <logo-stakedao />
-                </template>
-              </Partner>
-            </button>
-          </NuxtLink>
-
           <NuxtLink to="ecosystem/idle">
             <button class="tooltip-target w-full">
               <Partner
@@ -166,6 +179,20 @@
               </Partner>
             </button>
           </NuxtLink>     
+
+          <NuxtLink to="ecosystem/paraswap">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="ParaSwap"
+                category="DEX aggregator"
+                bg-image-style="paraswap"
+              >
+                <template #logo>
+                  <logo-paraswap />
+                </template>
+              </Partner>
+            </button>
+          </NuxtLink>          
 
           <NuxtLink to="ecosystem/element-finance">
             <button class="tooltip-target w-full">
@@ -181,15 +208,15 @@
             </button>
           </NuxtLink>
 
-          <NuxtLink to="ecosystem/paraswap">
+          <NuxtLink to="ecosystem/stake-dao">
             <button class="tooltip-target w-full">
               <Partner
-                title="ParaSwap"
-                category="DEX aggregator"
-                bg-image-style="paraswap"
+                title="Stake DAO"
+                category="DeFi yield booster"
+                bg-image-style="stake-dao"
               >
                 <template #logo>
-                  <logo-paraswap />
+                  <logo-stakedao />
                 </template>
               </Partner>
             </button>
@@ -208,21 +235,6 @@
               </Partner>
             </button>
           </NuxtLink>          
-
-          <NuxtLink to="ecosystem/cron-finance">
-            <button class="tooltip-target w-full">
-              <Partner
-                title="Cron Finance"
-                category="TWAMM for large swaps"
-                bg-image-style="cron"
-              >
-                <template #logo>
-                  <logo-cron />
-                </template>
-              </Partner>
-            </button>
-          </NuxtLink>
-          
 
           <NuxtLink to="ecosystem/tempus">
             <button class="tooltip-target w-full">
