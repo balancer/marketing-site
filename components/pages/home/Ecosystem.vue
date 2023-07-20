@@ -124,6 +124,20 @@
             </button>
           </NuxtLink>
 
+          <NuxtLink to="ecosystem/fjord-foundry">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="Fjord Foundry"
+                category="Fair token launch LBPs"
+                bg-image-style="fjord"
+              >
+                <template #logo>
+                  <logo-fjord />
+                </template>
+              </Partner>
+            </button>
+          </NuxtLink>          
+
           <NuxtLink to="ecosystem/aave">
             <button class="tooltip-target w-full">
               <Partner
@@ -165,6 +179,20 @@
               </Partner>
             </button>
           </NuxtLink>     
+
+          <NuxtLink to="ecosystem/fjord-nfts">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="Fjord NFTs"
+                category="Fair launch NFT drops"
+                bg-image-style="fjord"
+              >
+                <template #logo>
+                  <logo-fjordnfts />
+                </template>
+              </Partner>
+            </button>
+          </NuxtLink>                  
 
           <NuxtLink to="ecosystem/idle">
             <button class="tooltip-target w-full">
