@@ -43,7 +43,7 @@ useHead({
           <div
             class="mx-auto grid max-w-screen-lg grid-cols-2 gap-4 md:grid-cols-3"
           >
-            <a href="https://docs.balancer.fi/products/balancer-pools/weighted-pools">
+            <a href="https://docs.balancer.fi/concepts/pools/weighted.html">
               <div class="pool relative">
                 <div class="relative flex w-full items-center justify-center">
                   <img
