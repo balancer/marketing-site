@@ -100,7 +100,7 @@
             <button class="tooltip-target w-full">
               <Partner
                 title="Xave Finance"
-                category="Remittances & Savings"
+                category="FX Market Infrastructure"
                 bg-image-style="xave"
               >
                 <template #logo>
