@@ -213,7 +213,7 @@
           <p class="pb-2">
             <a
               class="link group"
-              href="https://dune.xyz/balancerlabs"
+              href="https://dune.com/balancer"
             >Dune analytics               <icon-base
               icon-color="bg-yellow-500"
               width="14"
