@@ -96,7 +96,7 @@ export default {
           },
           body: JSON.stringify({
             query: `{
-            protocolMetricsAggregated(chainIds: ["1", "137", "42161", "100"]) { #add additional chains here
+            protocolMetricsAggregated(chainIds: ["1", "137", "42161", "100", "43114", "8453", "1101"]) { #add additional chains here
             totalLiquidity
             totalSwapVolume
             totalSwapFee
