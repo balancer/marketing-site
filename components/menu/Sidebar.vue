@@ -254,7 +254,7 @@ watch(sidebarOpen, (newValue) => {
             <p class="pb-1 tall:pb-2">
               <a
                 class="link group"
-                href="https://dune.xyz/balancerlabs"
+                href="https://dune.com/balancer"
                 @click="toggleSidebar"
               >Dune analytics               
                 <icon-base
