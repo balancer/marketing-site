@@ -88,7 +88,7 @@ export default {
       this.loading = true;
       
       try {
-        const res = await fetch('https://api-v3.balancer.fi/graphql', {
+        const res = await fetch('https://test-api-v3.balancer.fi/graphql', {
           method: 'POST',
           headers: {
             Accept: 'application/json',
@@ -96,7 +96,7 @@ export default {
           },
           body: JSON.stringify({
             query: `{
-            protocolMetricsAggregated(chainIds: ["1", "137", "42161", "100", "43114", "8453", "1101"]) { #add additional chains here
+            protocolMetricsAggregated(chains: [MAINNET, POLYGON, ARBITRUM, GNOSIS, AVALANCHE, BASE, ZKEVM]) { #add additional chains here
             totalLiquidity
             totalSwapVolume
             totalSwapFee
