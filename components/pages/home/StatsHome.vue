@@ -98,28 +98,9 @@ export default {
             query: `{
             protocolMetricsAggregated(chains: [MAINNET, POLYGON, ARBITRUM, GNOSIS, AVALANCHE, BASE, ZKEVM]) { #add additional chains here
             totalLiquidity
-            totalSwapVolume
-            totalSwapFee
             poolCount
-            swapFee7d
-            swapVolume7d
             swapFee24h
-            swapVolume24h
-            yieldCapture24h
             numLiquidityProviders
-            chains {
-              chainId
-              totalLiquidity
-              totalSwapVolume
-              totalSwapFee
-              poolCount
-              swapFee7d
-              swapVolume7d
-              swapFee24h
-              swapVolume24h
-              yieldCapture24h
-              numLiquidityProviders
-            }
           }
           }`
           }),
