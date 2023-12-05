@@ -88,7 +88,7 @@ export default {
       this.loading = true;
       
       try {
-        const res = await fetch('https://test-api-v3.balancer.fi/graphql', {
+        const res = await fetch('https://api-v3.balancer.fi/graphql', {
           method: 'POST',
           headers: {
             Accept: 'application/json',
