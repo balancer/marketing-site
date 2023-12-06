@@ -99,7 +99,7 @@ export default {
             protocolMetricsAggregated(chains: [MAINNET, POLYGON, ARBITRUM, GNOSIS, AVALANCHE, BASE, ZKEVM]) { #add additional chains here
             totalLiquidity
             poolCount
-            swapFee24h
+            swapVolume24h
             numLiquidityProviders
           }
           }`
