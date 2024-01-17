@@ -171,6 +171,11 @@ defineProps({
   box-shadow: 0 50px 100px 0 hsla(45, 100%, 50%, 0.15);
 }
 
+.partner__graphic--plutus {
+  background: hsla(99, 88%, 43%, 1);
+  box-shadow: 0 50px 100px 0 hsla(99, 88%, 43%, 0.15);
+}
+
 .partner__graphic--raft {
   background: hsla(28, 100%, 53%, 1);
   box-shadow: 0 50px 100px 0 hsla(28, 100%, 53%, 0.15);
@@ -280,6 +285,10 @@ defineProps({
 
 .partner__graphic--kassandra::before {
   background: hsla(45, 100%, 50%, 1);
+}
+
+.partner__graphic--plutus::before {
+  background: var(--plutus);
 }
 
 .partner__graphic--raft::before {
@@ -450,6 +459,18 @@ defineProps({
 
 .partner:hover .partner__graphic--kassandra {
   box-shadow: 0 5px 10px 0 hsla(45, 100%, 50%, 0.4);
+}
+
+.partner__graphic--plutus::after {
+  background-color:hsla(99,88%,42%,1);
+  background-image:
+    radial-gradient(at 27% 97%, hsla(141,78%,32%,1) 0px, transparent 50%),
+    radial-gradient(at 71% 79%, hsla(140,47%,24%,1) 0px, transparent 50%),
+    radial-gradient(at 17% 22%, hsla(90,71%,79%,1) 0px, transparent 50%);
+}
+
+.partner:hover .partner__graphic--plutus {
+  box-shadow: 0 5px 10px 0 hsla(99, 88%, 43%, 0.4);
 }
 
 .partner__graphic--raft::after {
