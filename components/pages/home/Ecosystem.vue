@@ -68,6 +68,20 @@
             </button>
           </NuxtLink>
 
+          <NuxtLink to="ecosystem/plutus">
+            <button class="tooltip-target w-full">
+              <Partner
+                title="Plutus"
+                category="Liquid Staking Derivatives & Governance"
+                bg-image-style="plutus"
+              >
+                <template #logo>
+                  <logo-plutus />
+                </template>
+              </Partner>
+            </button>
+          </NuxtLink>       
+
           <NuxtLink to="ecosystem/kassandra">
             <button class="tooltip-target w-full">
               <Partner

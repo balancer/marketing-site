@@ -6,7 +6,7 @@
           Balancer V2 protocol stats
         </h2>
         <p class="pb-4 text-gray-500">
-          Ethereum Mainnet, Polygon, Arbitrum & Gnosis
+          Ethereum Mainnet, Arbitrum, Gnosis, Avalanche, Base, Polygon PoS & Polygon zkEVM
         </p>
       </div>
       <transition
