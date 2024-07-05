@@ -192,13 +192,13 @@ defineProps({
 }
 
 .partner__graphic--cow-protocol {
-  background: hsla(226, 71%, 44%, 0.6);
-  box-shadow: 0 50px 100px 0 hsla(226, 71%, 44%, 0.15);
+  background: hsla(217, 98%, 24%, 0.6);
+  box-shadow: 0 50px 100px 0 hsla(217, 98%, 24%, 0.15);
 }
 
 .partner__graphic--mycelium {
   background: hsla(163, 42%, 53%, 0.6);
-  box-shadow: 0 50px 100px 0 hsla(163, 42%, 53%, 0.15);
+  box-shadow: 0 50px 100px 0 hsla(163, 42%, 53%, 0.15);   
 }
 
 .partner__graphic--idle {
@@ -304,7 +304,7 @@ defineProps({
 }
 
 .partner__graphic--cow-protocol::before {
-  background-color: hsla(226, 71%, 44%, 1);
+  background-color: hsla(217, 98%, 24%, 1);
 }
 
 .partner__graphic--mycelium::before {
@@ -526,7 +526,7 @@ defineProps({
 }
 
 .partner__graphic--cow-protocol::after {
-  background: hsla(226, 71%, 44%, 1);
+  background: hsla(217, 98%, 24%, 1);
   background-image: radial-gradient(
       at 0% 83%,
       hsla(204, 90%, 74%, 1) 0px,
@@ -538,7 +538,7 @@ defineProps({
 }
 
 .partner:hover .partner__graphic--cow-protocol {
-  box-shadow: 0 5px 10px 0 hsla(226, 71%, 44%, 0.4);
+  box-shadow: 0 5px 10px 0 hsla(217, 98%, 24%, 0.4);  
 }
 
 .partner__graphic--mycelium::after {
