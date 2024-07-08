@@ -68,15 +68,15 @@
             </button>
           </NuxtLink>
 
-          <NuxtLink to="ecosystem/plutus">
+          <NuxtLink to="ecosystem/cow-protocol">
             <button class="tooltip-target w-full">
               <Partner
-                title="Plutus"
-                category="Liquid Staking Derivatives & Governance"
-                bg-image-style="plutus"
+                title="CoW Protocol"
+                category="DEX aggregator"
+                bg-image-style="cow-protocol"
               >
                 <template #logo>
-                  <logo-plutus />
+                  <logo-cow />
                 </template>
               </Partner>
             </button>
@@ -166,19 +166,19 @@
             </button>
           </NuxtLink>
           
-          <NuxtLink to="ecosystem/cow-protocol">
+          <NuxtLink to="ecosystem/plutus">
             <button class="tooltip-target w-full">
               <Partner
-                title="CoW Protocol"
-                category="DEX aggregator"
-                bg-image-style="cow-protocol"
+                title="Plutus"
+                category="Liquid Staking Derivatives & Governance"
+                bg-image-style="plutus"
               >
                 <template #logo>
-                  <logo-cow />
+                  <logo-plutus />
                 </template>
               </Partner>
             </button>
-          </NuxtLink>
+          </NuxtLink> 
 
           <NuxtLink to="ecosystem/1inch">
             <button class="tooltip-target w-full">
